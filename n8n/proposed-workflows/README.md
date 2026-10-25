@@ -1,6 +1,6 @@
-# Reviewed final orchestrator proposal — publication pending
+# Reviewed final orchestrator configuration — published after approval
 
-`research-orchestrator-final-e2e.json` is a portable, inactive proposal with credential references and account metadata removed. The live orchestrator has not been replaced with it. Automatic approval review rejected the persistent import/publication because the exact live-production mutation required explicit user approval.
+`research-orchestrator-final-e2e.json` preserves the reviewed portable configuration. After explicit user approval, the exact research graph was imported and published to the live orchestrator. The portable copy remains inactive and excludes credential references; the active production version is verified against the tested proposal.
 
 Changes compared with the installed baseline:
 
@@ -10,4 +10,4 @@ Changes compared with the installed baseline:
 
 The research parameters and routing were compared against successful execution **196**, allowing the form-input adapter and runtime-injected n8n defaults. That run executed all four agents, reached Download Briefing and saved memory, but selected only **one** eligible peer. Five-peer content coverage remains incomplete; no eligibility checks were relaxed to fill the gap.
 
-[Full test report](../orchestrator/FINAL_E2E_TEST_RESULTS.json). Publishing would persistently change future runs and potentially increase native search usage; it remains a separate approval step.
+[Full test report](../orchestrator/FINAL_E2E_TEST_RESULTS.json). The approved publication changes future runs and may increase native search usage.

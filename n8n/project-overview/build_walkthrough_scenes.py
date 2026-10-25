@@ -11,11 +11,11 @@ FONT='/System/Library/Fonts/Supplemental/Arial.ttf';BOLD='/System/Library/Fonts/
 def font(size,bold=False):return ImageFont.truetype(BOLD if bold else FONT,size)
 NAVY='#10263e';TEAL='#007f83';LIGHT='#edf4f6'
 scenes=[
- ('Run the research project','A walkthrough of the tested configuration using real n8n screens. Live publication is pending approval.','orchestrator-canvas.png'),
+ ('Run the research project','A walkthrough of the published configuration using real n8n screens. Waiting time is compressed.','orchestrator-canvas.png'),
  ('1  Start your local services','Start n8n and Ollama. Confirm gemma4:12b and your SerpApi credentials are configured.',None),
  ('2  Open Research Orchestrator','At localhost:5678, open Research Orchestrator. Click Execute workflow, then open its company form.','orchestrator-canvas.png'),
  ('3  Enter the company','Enter the real company name, official website, sector and geography. Attach its annual report when available.',None),
- ('4  Choose leadership refresh','In the tested configuration, enter yes in Refresh Leadership to run Agent 4 live. Leave it blank to reuse profiles saved within seven days.','agent4-canvas.png'),
+ ('4  Choose leadership refresh','Enter yes in Refresh Leadership to run Agent 4 live. Leave it blank to reuse profiles saved within seven days.','agent4-canvas.png'),
  ('5  Let the agents finish','Agent 1 selects peers; Agents 2 and 3 research signals. Agent 4 researches leaders; the orchestrator compiles the deck.','execution-canvas.png'),
  ('6  Check completion and coverage',f"Run {REPORT['execution_id']} reached Download Briefing and saved memory. It selected {REPORT['selected_peers']} of five requested peers; read the gaps.",'execution-canvas.png'),
  ('7  Download and open the presentation','Open Download Briefing, choose Binary, then download presentation. Open the editable PPTX in PowerPoint.','download-panel.png'),

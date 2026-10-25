@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:06,000
-A walkthrough of the tested configuration using real n8n screens. Live publication is pending approval.
+A walkthrough of the published configuration using real n8n screens. Waiting time is compressed.
 
 2
 00:00:06,000 --> 00:00:12,000
@@ -16,7 +16,7 @@ Enter the real company name, official website, sector and geography. Attach its 
 
 5
 00:00:24,000 --> 00:00:30,000
-In the tested configuration, enter yes in Refresh Leadership to run Agent 4 live. Leave it blank to reuse profiles saved within seven days.
+Enter yes in Refresh Leadership to run Agent 4 live. Leave it blank to reuse profiles saved within seven days.
 
 6
 00:00:30,000 --> 00:00:36,000

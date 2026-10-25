@@ -63,11 +63,16 @@
     186,
     191
   ],
-  "production_publication": "Pending explicit approval after automatic approval review rejected live import/publication",
+  "production_publication": "Published after explicit user approval",
   "limitations": [
     "Only one of five requested peers qualified; content-coverage requirement is not fully met.",
     "Public search evidence and current leadership roles still require original-source review.",
-    "Final validation used the production research graph with reviewed quotation, discovery and optional leadership-refresh changes; the live production workflow has not been updated."
+    "Validation used a form-input adapter; the same reviewed research graph is now published in the live production orchestrator."
   ],
-  "proposed_graph_matches_successful_execution_except_form_adapter_and_injected_n8n_defaults": true
+  "proposed_graph_matches_successful_execution_except_form_adapter_and_injected_n8n_defaults": true,
+  "published_version_id": "3a6fd78d-08b7-4623-bf71-6661d9672041",
+  "published_graph_matches_tested_proposal": true,
+  "runtime_readiness_http_status": 200,
+  "production_form_http_status": 200,
+  "published_refresh_field_verified": true
 }

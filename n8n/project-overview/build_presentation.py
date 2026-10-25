@@ -100,7 +100,7 @@ for title,sub,name,cards,notes in [
  for x,(l,b) in zip([.7,4.85,9.0],cards):card(s,x,5.05,3.64,1.65,l,b)
  note(s,notes)
 
-s=slide('How to run: use the existing local installation','Use Research Orchestrator at localhost:5678; the final tested fixes await live publication.')
+s=slide('How to run: use the existing local installation','Use Research Orchestrator at localhost:5678; the tested fixes are now published.')
 steps=[('1','Start services','Keep Docker/n8n and local Ollama running; confirm gemma4:12b is available.'),('2','Open the workflow','Open Research Orchestrator, refresh the editor, click Execute workflow and open its form.'),('3','Submit the company','Enter real company name, official website, sector and geography. Attach an annual report when available.'),('4','Let the stages complete','Peer checks → public search → signal extraction → leadership recall/research → presentation and memory.'),('5','Download your briefing','Open Download Briefing → Binary → presentation. Use Research Memory - Recall for saved versions.')]
 for i,(num,l,b) in enumerate(steps):
  y=2.43+i*.81;rect(s,.75,y,.42,.42,TEAL);text(s,.86,y+.045,.3,.3,num,16,WHITE,True);text(s,1.45,y,3.05,.52,l,18,INK,True);text(s,4.55,y,7.8,.65,b,16)
@@ -132,10 +132,10 @@ note(s,f"Current saved run: {research['run_id']}. Counts on this slide are read 
 s=slide('Validation and operating limits','All four agents executed in final run 196; the five-peer coverage target remains unmet.')
 card(s,.7,2.55,5.83,3.65,'CHECKED IN THIS PROJECT','Company attribution and quoted evidence\nStructured extraction and date handling\nPeer eligibility and unsupported-revenue stops\nAppend-only memory and prior-run recall\nPowerPoint opens, exports and fits slide bounds')
 card(s,6.82,2.55,5.83,3.65,'WHAT THE READER MUST KNOW','Search snippets need original-source review.\nRole candidates may be stale or disputed.\nHiring is not evidence of deployment.\nSignal counts are not security-risk scores.\nLow-credit search limits coverage; missing means insufficient evidence.')
-text(s,.85,6.42,11.8,.36,'Final run 196: all four agents completed; 1/5 peers qualified. Live publication awaits approval.',15,TEAL,True)
+text(s,.85,6.42,11.8,.36,'Final run 196: all four agents completed; 1/5 peers qualified. Tested changes are published.',15,TEAL,True)
 note(s,'Recorded tests live under each agent directory and n8n/orchestrator. Deterministic checks and selected live/cached regressions were completed; this is not a claim of exhaustive correctness or independently verified current corporate facts. Financial, search and leadership stages all use quota beyond the Agent 2 base query count. Public-source retrieval does not require LinkedIn login, and no full-profile scraping occurs.')
 
-s=slide('Handoff: code, workflow entry points and files','Tested workflow proposal, source code and deliverables; live publication is pending approval.')
+s=slide('Handoff: code, workflow entry points and files','Published workflow, source code and deliverables from the tested implementation.')
 card(s,.7,2.5,7.35,3.55,'GITHUB REPOSITORY','github.com/amitgandre/Mavens-Week3-AmitG\n\nStart: README.md\nImport: n8n/saved-workflows/README.md\nRun / recall: Research Orchestrator; Research Memory - Recall\nPresentation source: n8n/project-overview/build_presentation.py')
 card(s,8.3,2.5,4.32,3.55,'TWO PRESENTATIONS','1  Target research briefing\nBusiness research results\n\n2  Project overview\nGoals, agents, architecture, screenshots, operation and deliverables')
 link=text(s,.85,6.4,11.7,.4,'Open the repository →',18,TEAL,True)

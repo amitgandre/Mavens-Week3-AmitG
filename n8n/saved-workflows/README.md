@@ -7,7 +7,7 @@ contains the complete set; individual JSON files allow selective imports.
 Import the desired JSON through n8n's workflow menu. Credential references are
 removed from these portable copies: select your local Ollama and SerpApi
 credentials after importing. Credential secrets are not included. The backup
-under `../backups/workflows-2026-10-25-checkpoint-28-final.json` preserves references
+under `../backups/workflows-approved-final-publication.json` preserves references
 for restoring into the current instance, but also contains no credential secrets.
 
 These exports are not a full n8n database or credential backup. Preserve the
@@ -27,3 +27,5 @@ synthetic company data. Agent 1 source and test documentation is in `../agent1/`
 Portable exports reflect the final Target briefing work, automatic peer-selection configuration, and low-credit search settings. Review configuration before running; portable workflows import inactive. Temporary production-run workflows remain in the local backup.
 
 Refresh portable exports with `python3 scripts/export_portable_workflows.py <local-backup.json>`. This strips credential references, pinned execution data, runtime state, and account-sharing metadata. Configure local credentials and publish internal-call workflows after import.
+
+The approved final orchestrator includes four financial-discovery queries, a pool of up to twelve candidates and optional `Refresh Leadership=yes`. Its published company form and n8n readiness returned HTTP 200 after restart. Final-run five-peer coverage remains incomplete; see `../orchestrator/FINAL_E2E_TEST_RESULTS.json`.

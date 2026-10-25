@@ -1,6 +1,6 @@
 # Public-source IT and cybersecurity research
 
-Final validation run **196** completed all four agents, PowerPoint generation and memory retention. Only **1/5 peers qualified**, so five-peer coverage remains unmet. The reviewed fixes are in [proposed workflows](n8n/proposed-workflows/README.md); importing/publishing them to live n8n awaits explicit approval. [Presentations and captioned video](presentations/README.md) are now included in this repository.
+Final validation run **196** completed all four agents, PowerPoint generation and memory retention. Only **1/5 peers qualified**, so five-peer coverage remains unmet. The reviewed fixes are in [proposed workflows](n8n/proposed-workflows/README.md); they have now been published to live n8n following explicit approval. [Presentations and captioned video](presentations/README.md) are now included in this repository.
 
 The n8n Orchestrator connects all four agents, recalls or refreshes Agent 4 profiles, generates editable PowerPoint briefings,
 and retains dated research and presentations in persistent local memory.

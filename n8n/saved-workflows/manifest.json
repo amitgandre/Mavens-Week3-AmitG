@@ -19,8 +19,8 @@
     {
       "workflow": "Research Orchestrator",
       "file": "research-orchestrator.json",
-      "nodes": 56,
-      "sha256": "2e68bc6a3ac5f212b9d2ec7a6c059f101cecc19d48f4ba0fa837a4af92b00171"
+      "nodes": 58,
+      "sha256": "0be1c608177baf762d50c1f9a6a322733980b7dc041d62e452019a721462e2d7"
     },
     {
       "workflow": "Cybersecurity Signals",

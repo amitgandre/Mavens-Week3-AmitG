@@ -10,5 +10,6 @@
   "srt_captions": 10,
   "format": "H.264 MP4",
   "visual_review": true,
-  "style": "Condensed captioned screen walkthrough; illustrative company-form values; no audio"
+  "style": "Condensed captioned screen walkthrough; illustrative company-form values; no audio",
+  "publication_status": "Published after explicit user approval"
 }
