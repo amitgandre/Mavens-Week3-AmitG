@@ -34,3 +34,7 @@ Earlier research records, extracted documents, and tested preview snapshots rema
 prototypes. They are not the current Orchestrator entry point.
 
 New briefings use a consolidated visual PowerPoint layout. [Target design preview](n8n/output/Target-visual-preview.pdf) uses retained background research; run Agent 4 again to save the new LinkedIn results before a new orchestrator briefing.
+
+## Project walkthrough presentation
+
+The second presentation covers project goals, all four research agents, architecture, actual n8n screenshots, run/setup instructions and deliverables. Both it and the Target research briefing include dedicated covers. Rebuild with `python3 n8n/project-overview/build_presentation.py` after capturing the local screenshots described in that source. Generated decks/PDFs/screenshots stay local under `n8n/output/`.

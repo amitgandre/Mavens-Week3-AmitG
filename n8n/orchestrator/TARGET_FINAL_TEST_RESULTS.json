@@ -1,12 +1,13 @@
 {
   "powerpoint_opens_and_exports": true,
-  "slides": 11,
-  "pdf_pages": 11,
+  "slides": 12,
+  "pdf_pages": 12,
   "all_shapes_in_bounds": true,
   "all_pdf_pages_have_text": true,
   "package_xml_valid": true,
   "companies": 6,
   "signals": 14,
   "source_records": 288,
-  "evidence_limit": "Public search snippets; original-source verification remains required."
+  "evidence_limit": "Public search snippets; original-source verification remains required.",
+  "dedicated_cover": true
 }
