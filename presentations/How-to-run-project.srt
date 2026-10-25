@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:06,000
+A walkthrough of the tested configuration using real n8n screens. Live publication is pending approval.
+
+2
+00:00:06,000 --> 00:00:12,000
+Start n8n and Ollama. Confirm gemma4:12b and your SerpApi credentials are configured.
+
+3
+00:00:12,000 --> 00:00:18,000
+At localhost:5678, open Research Orchestrator. Click Execute workflow, then open its company form.
+
+4
+00:00:18,000 --> 00:00:24,000
+Enter the real company name, official website, sector and geography. Attach its annual report when available.
+
+5
+00:00:24,000 --> 00:00:30,000
+In the tested configuration, enter yes in Refresh Leadership to run Agent 4 live. Leave it blank to reuse profiles saved within seven days.
+
+6
+00:00:30,000 --> 00:00:36,000
+Agent 1 selects peers; Agents 2 and 3 research signals. Agent 4 researches leaders; the orchestrator compiles the deck.
+
+7
+00:00:36,000 --> 00:00:42,000
+Run 196 reached Download Briefing and saved memory. It selected 1 of five requested peers; read the gaps.
+
+8
+00:00:42,000 --> 00:00:48,000
+Open Download Briefing, choose Binary, then download presentation. Open the editable PPTX in PowerPoint.
+
+9
+00:00:48,000 --> 00:00:54,000
+Open Research Memory - Recall. Enter the company and optionally a run ID, then download saved research.
+
+10
+00:00:54,000 --> 00:01:00,000
+The GitHub presentations folder contains both PowerPoints, PDFs, this video and its caption file.

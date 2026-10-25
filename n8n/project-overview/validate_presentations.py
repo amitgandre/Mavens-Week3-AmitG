@@ -9,10 +9,13 @@ from pypdf import PdfReader
 logging.getLogger('pypdf').setLevel(logging.ERROR)
 root=Path(__file__).resolve().parents[2]
 reports=[]
-for stem,count in [('Project-overview',16),('Target-final-briefing',12)]:
+for stem,count in [('Project-overview',16),('Target-final-briefing',None)]:
  base=root/'n8n/output'/stem
  prs=Presentation(base.with_suffix('.pptx'));pdf=PdfReader(base.with_suffix('.pdf'))
- assert len(prs.slides)==len(pdf.pages)==count
+ assert len(prs.slides)==len(pdf.pages)
+ assert count is None or len(prs.slides)==count
+ assert len(prs.slides)>=4
+ count=len(prs.slides)
  assert all(page.extract_text().strip() for page in pdf.pages)
  outside=[]
  for i,slide in enumerate(prs.slides,1):

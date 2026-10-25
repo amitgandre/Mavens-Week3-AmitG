@@ -1,0 +1,14 @@
+{
+  "width": 1280,
+  "duration_seconds": 60,
+  "captioned_frames_decoded": 4,
+  "audio_tracks": 0,
+  "video_tracks": 1,
+  "height": 720,
+  "passed": true,
+  "burned_in_captions": true,
+  "srt_captions": 10,
+  "format": "H.264 MP4",
+  "visual_review": true,
+  "style": "Condensed captioned screen walkthrough; illustrative company-form values; no audio"
+}

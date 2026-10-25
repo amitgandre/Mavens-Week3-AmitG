@@ -10,9 +10,9 @@ Uses local Ollama Gemma and the existing native Google/SerpApi integration. No H
 4. Wait for **Saved Leadership Briefing** to complete.
 5. Open that node's **Output → JSON → background_markdown** for readable results. `roles` shows CEO/CISO/CTO/CIO candidates or missing/conflicting roles. `profiles` contains supporting professional background claims and source links.
 
-Four discovery searches look for CEO, CISO, CTO and CIO. Up to four additional background searches run for each distinct leader (maximum four people): biography, Deloitte/KPMG/EY employment, education, and public LinkedIn profile snippets. Maximum 20 initial searches per company; retries can consume more of the existing SerpApi allowance. Missing roles are valid. No substitute names or inferred titles are filled in.
+Current low-credit mode uses two combined discovery searches for CEO, CISO, CTO and CIO, followed by one public LinkedIn search for each distinct supported leader (maximum four). This means at most six initial searches/company, with automatic search retries disabled. Missing roles and background fields remain explicit; the reduced query plan limits coverage of prior-firm employment and education. No substitute names or inferred titles are filled in.
 
-The workflow supports an internal **From Orchestrator** sub-workflow trigger with `{ "company_name": "PepsiCo" }`. The current orchestrator reads saved Agent 4 results rather than automatically making up to 20 extra searches for each peer. Run Agent 4 for the desired companies before running a new orchestrator briefing. The latest matching saved background for each company is included in PowerPoint, with its save date and verification caveat.
+The workflow supports an internal **From Orchestrator** sub-workflow trigger with `{ "company_name": "Target" }`. The current orchestrator recalls matching saved leadership profiles and automatically researches companies without a complete/partial profile saved in the last seven days. Dated profiles and caveats are included in the PowerPoint.
 
 ## Evidence and scope
 

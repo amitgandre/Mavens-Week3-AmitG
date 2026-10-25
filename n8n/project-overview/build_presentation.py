@@ -2,6 +2,7 @@
 Requires python-pptx and Pillow. Screenshots are captured from the actual local n8n UI.
 """
 from pathlib import Path
+import json
 from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
@@ -10,7 +11,9 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'n8n/output'
-SHOTS = OUT / 'project-screenshots'
+SHOTS = ROOT / 'n8n/project-overview/assets'
+research=json.loads((OUT/'Target-final-briefing.json').read_text())
+metrics={'companies':len(research['companies']),'signals':len(research['signals']),'sources':len(research['sources']),'leaders':sum(len(b.get('profiles',[])) for b in research.get('leadership_background',[]))}
 NAVY='10263E'; TEAL='007F83'; INK='18334B'; MUTED='526578'; LIGHT='EDF4F6'; WHITE='FFFFFF'; GOLD='E9B85A'
 prs=Presentation(); prs.slide_width=Inches(13.333); prs.slide_height=Inches(7.5)
 
@@ -64,7 +67,7 @@ note(s,'Project overview of the implemented local n8n system. This deck is disti
 
 s=slide('Project goals','Turn a company name into a repeatable, source-linked research briefing.')
 for x,y,label,body in [(0.67,2.55,'01  Identify comparable companies','Find up to five revenue peers using supported financial evidence and sector checks.'),(6.82,2.55,'02  Surface recent signals','Review three calendar months of IT, cybersecurity, technology and leadership news.'),(0.67,4.55,'03  Add professional context','Research CEO, CISO, CTO and CIO candidates, public career history and LinkedIn links.'),(6.82,4.55,'04  Deliver and remember','Create an editable PowerPoint and retain dated research for comparison and recall.')]:card(s,x,y,5.83,1.8,label,body)
-note(s,'Five peers is a target, not a guarantee. Unsupported target revenue blocks research. An eligible-peer shortfall stays explicit. Search excerpts remain preliminary evidence.')
+note(s,'Five peers is a target, not a guarantee. Final run 196 selected one eligible peer and reports a shortfall of four. Unsupported target revenue blocks research. An eligible-peer shortfall stays explicit. Search excerpts remain preliminary evidence.')
 
 s=slide('Architecture: from company input to retained briefing','Explicit workflow routing connects search, local inference, validation and reporting.')
 boxes=[(.7,2.75,'COMPANY FORM','Name • website • sector'),(3.9,2.75,'AGENT 1','Revenue peers + checks'),(7.1,2.75,'AGENTS 2 → 3','Search → extract signals'),(10.3,2.75,'AGENT 4','Leadership + background')]
@@ -83,7 +86,7 @@ for i,(a,b,c,d) in enumerate(rows):
  rect(s,.68,y,11.98,.69,LIGHT if i%2==0 else 'F8FAFB');text(s,.82,y+.12,1.55,.45,a,16,TEAL,True);text(s,2.4,y+.12,2.5,.45,b,16,INK,True);text(s,4.95,y+.12,3.05,.45,c,14);text(s,8.1,y+.12,4.35,.5,d,14);y+=.79
 note(s,'Agents are bounded workflows with defined inputs/outputs and local model extraction, not unrestricted autonomous browsers. Agent 1 resides in the main orchestrator. Test workflows are separate from production.')
 
-s=slide('Agent 1: build the revenue peer set','Actual Research Orchestrator canvas; Agent 1 runs in the opening financial stages.')
+s=slide('Agent 1: build the revenue peer set','Research Orchestrator canvas; Agent 1 runs in the opening financial stages.')
 picture(s,'orchestrator-canvas.png',.68,2.4,12,2.35)
 for x,l,b in [(0.7,'INPUT','Company identity, annual report or retained revenue evidence.'),(4.85,'CHECKS','Quoted amount, year, currency, company attribution and range.'),(9.0,'OUTPUT','Ranked eligible peers and explicit evidence gaps.')]:card(s,x,5.05,3.64,1.65,l,b)
 note(s,'Screenshot: actual local Research Orchestrator. Financial flow includes report upload/retained-report fallback, peer discovery, revenue extraction, normalization and FX validation. Current user-authorized automatic selection sets sources_verified=false. The node name Finalize Reviewed Peers is retained, but there is no interactive pre-approval form in the current production graph.')
@@ -97,11 +100,11 @@ for title,sub,name,cards,notes in [
  for x,(l,b) in zip([.7,4.85,9.0],cards):card(s,x,5.05,3.64,1.65,l,b)
  note(s,notes)
 
-s=slide('How to run: use the existing local installation','Start with Research Orchestrator at localhost:5678.')
+s=slide('How to run: use the existing local installation','Use Research Orchestrator at localhost:5678; the final tested fixes await live publication.')
 steps=[('1','Start services','Keep Docker/n8n and local Ollama running; confirm gemma4:12b is available.'),('2','Open the workflow','Open Research Orchestrator, refresh the editor, click Execute workflow and open its form.'),('3','Submit the company','Enter real company name, official website, sector and geography. Attach an annual report when available.'),('4','Let the stages complete','Peer checks → public search → signal extraction → leadership recall/research → presentation and memory.'),('5','Download your briefing','Open Download Briefing → Binary → presentation. Use Research Memory - Recall for saved versions.')]
 for i,(num,l,b) in enumerate(steps):
  y=2.43+i*.81;rect(s,.75,y,.42,.42,TEAL);text(s,.86,y+.045,.3,.3,num,16,WHITE,True);text(s,1.45,y,3.05,.52,l,18,INK,True);text(s,4.55,y,7.8,.65,b,16)
-note(s,'Current automatic peer decision is user-authorized and continues with explicit gaps; it does not mean original financial sources have been independently verified. Leadership retrieval uses seven-day cached matching profiles. Unsupported target revenue stops the pipeline and produces a review diagnostic. Executing native searches uses SerpApi allowance.')
+note(s,'Final tested automatic peer decision is user-authorized and continues with explicit gaps; it does not mean original financial sources have been independently verified. Leadership retrieval uses seven-day cached matching profiles. Unsupported target revenue stops the pipeline and produces a review diagnostic. Executing native searches uses SerpApi allowance.')
 
 s=slide('Example input: reproduce the Target walkthrough','The main form supplies the company identity and financial-comparison context.')
 card(s,.7,2.5,5.83,3.65,'FORM VALUES','Company Name: Target\nOfficial Website: https://corporate.target.com\nIndustry Sector: Retail\nGeography: United States\nAnnual Report: upload if available')
@@ -122,16 +125,17 @@ note(s,'PDF is a shareable export of the presentation. Full local backup contain
 
 s=slide('Example delivery: the Target research briefing','Actual generated presentation pages, retained separately from this project walkthrough.')
 picture(s,'target-slide-2.png',.65,2.45,6.0,3.4);picture(s,'target-slide-3.png',6.75,2.45,5.95,3.4)
-for x,n,l in [(1.0,'6','Companies'),(4.1,'14','Extracted signals'),(7.2,'288','Source records'),(10.3,'13','Leaders researched')]:
+for x,n,l in [(1.0,str(metrics['companies']),'Companies'),(4.1,str(metrics['signals']),'Extracted signals'),(7.2,str(metrics['sources']),'Source records'),(10.3,str(metrics['leaders']),'Leaders researched')]:
  text(s,x,6.0,2,.5,n,29,TEAL,True);text(s,x,6.53,2.5,.3,l,14,MUTED)
-note(s,'Images are actual exported Target deck pages: peer revenue/signal comparison and company snapshots. Target plus Lowe’s, Albertsons, Kroger, Home Depot and Publix Super Markets. Metrics are from retained production research-178. The dedicated cover requested by the user increases the research deck from eleven to twelve slides; counts of companies/signals/sources are unchanged. Source records include public search evidence and background records, not 288 fully reviewed articles.')
+note(s,f"Current saved run: {research['run_id']}. Counts on this slide are read from that run. "+'Images are actual exported Target deck pages: peer revenue/signal comparison and company snapshots. Companies and counts follow the current saved Target run. Metrics are read from the current saved research JSON. The research deck has a dedicated cover; slide count depends on the current evidence and source appendix. Source records include public search evidence and background records, not fully reviewed articles.')
 
-s=slide('Validation and operating limits','The system preserves evidence boundaries while making the work repeatable.')
+s=slide('Validation and operating limits','All four agents executed in final run 196; the five-peer coverage target remains unmet.')
 card(s,.7,2.55,5.83,3.65,'CHECKED IN THIS PROJECT','Company attribution and quoted evidence\nStructured extraction and date handling\nPeer eligibility and unsupported-revenue stops\nAppend-only memory and prior-run recall\nPowerPoint opens, exports and fits slide bounds')
 card(s,6.82,2.55,5.83,3.65,'WHAT THE READER MUST KNOW','Search snippets need original-source review.\nRole candidates may be stale or disputed.\nHiring is not evidence of deployment.\nSignal counts are not security-risk scores.\nLow-credit search limits coverage; missing means insufficient evidence.')
+text(s,.85,6.42,11.8,.36,'Final run 196: all four agents completed; 1/5 peers qualified. Live publication awaits approval.',15,TEAL,True)
 note(s,'Recorded tests live under each agent directory and n8n/orchestrator. Deterministic checks and selected live/cached regressions were completed; this is not a claim of exhaustive correctness or independently verified current corporate facts. Financial, search and leadership stages all use quota beyond the Agent 2 base query count. Public-source retrieval does not require LinkedIn login, and no full-profile scraping occurs.')
 
-s=slide('Handoff: code, workflow entry points and files','The project is ready to inspect, run and extend from the saved implementation.')
+s=slide('Handoff: code, workflow entry points and files','Tested workflow proposal, source code and deliverables; live publication is pending approval.')
 card(s,.7,2.5,7.35,3.55,'GITHUB REPOSITORY','github.com/amitgandre/Mavens-Week3-AmitG\n\nStart: README.md\nImport: n8n/saved-workflows/README.md\nRun / recall: Research Orchestrator; Research Memory - Recall\nPresentation source: n8n/project-overview/build_presentation.py')
 card(s,8.3,2.5,4.32,3.55,'TWO PRESENTATIONS','1  Target research briefing\nBusiness research results\n\n2  Project overview\nGoals, agents, architecture, screenshots, operation and deliverables')
 link=text(s,.85,6.4,11.7,.4,'Open the repository →',18,TEAL,True)
@@ -146,7 +150,7 @@ target_path=OUT/'Target-final-briefing.pptx'
 target=Presentation(target_path)
 first_text=' '.join(shape.text for shape in target.slides[0].shapes if shape.has_text_frame)
 if 'TARGET RESEARCH BRIEFING' not in first_text:
- s=cover(target,'Target\nIT & Cybersecurity Briefing','Target and five revenue peers\nPublic-source research • July 25 – October 25, 2026','TARGET RESEARCH BRIEFING\n\n6 COMPANIES\n14 SIGNALS')
+ s=cover(target,'Target\nIT & Cybersecurity Briefing',f"Target and {metrics['companies']-1} revenue peers\nPublic-source research • July 25 – October 25, 2026",f"TARGET RESEARCH BRIEFING\n\n{metrics['companies']} COMPANIES\n{metrics['signals']} SIGNALS")
  s.notes_slide.notes_text_frame.text='Dedicated research cover. Prepared for Amit Gandre. Research date October 25, 2026. Search snippets and leadership candidates need original-source verification; revenue peers are provisional. See subsequent slides for findings and linked evidence.'
  ids=target.slides._sldIdLst;ids.insert(0,ids[-1]);target.save(target_path)
 print(f'Project overview: {len(prs.slides)} slides; Target briefing: {len(target.slides)} slides. Both have dedicated covers.')

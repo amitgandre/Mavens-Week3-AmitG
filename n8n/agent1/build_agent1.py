@@ -46,7 +46,7 @@ def chain(name, prompt, schema, pos):
               'batching': {'batchSize': 1, 'delayBetweenBatches': 500}}, pos, 1.9)
     n.update(onError='continueRegularOutput')
     model = node(name+' - Local Gemma', old['Ollama Chat Model']['type'],
-                 {'model': 'gemma4:12b', 'options': {'format': 'json', 'numCtx': 16384, 'numPredict': 4096, 'think': False}},
+                 {'model': 'gemma4:12b', 'options': {'format': 'json', 'numCtx': 16384, 'numPredict': 4096, 'think': False, 'temperature': 0}},
                  [pos[0], pos[1]+230], original='Ollama Chat Model')
     model['id'] = str(uuid.uuid4())
     parser = node(name+' - Schema', old['Structured Output Parser']['type'],
@@ -73,7 +73,7 @@ units must be units, thousands, millions, billions, or trillions; currency an ex
 Do not substitute profit, market capitalization, segment revenue, quarterly figures, or forecasts.
 reporting_scope must be consolidated only if the evidence establishes total group revenue.
 Copy source_url from the supplied sources. evidence_excerpt must be a verbatim excerpt that
-includes the revenue amount. fiscal_year is a four-digit string. Mark missing fields "not found".
+includes the revenue amount. Copy one short contiguous passage (at most 500 characters), ideally the revenue row and adjacent year header. Never combine or rewrite passages. fiscal_year is a four-digit string. Mark missing fields "not found".
 Return only JSON matching the parser. Do not guess missing facts or output analysis.'''
 
 form = copy.deepcopy(old['On form submission'])
@@ -128,11 +128,11 @@ const raw=response.output||response;const target=normalizeRecord(raw,evidence,{c
 return [{json:{target,sector:f['Industry Sector'],geography:f.Geography,ratio_min:f.ratio_min,ratio_max:f.ratio_max,
  fx_rates:f.fx_rates,research_window:{start:f.window_start,end:f.window_end},official_website:f['Official Website']}}];''',[1800,0])
 connect('Extract Revenue Evidence','Build Research Context')
-search('Find Peer Candidates','={{ $json.target.company + " comparable companies similar annual revenue same sector " + $json.sector + " " + $json.geography }}',[2050,0])
+search('Find Peer Candidates','={{ $json.target.company + " comparable companies " + $json.sector + " " + $json.geography + " retailers annual revenue " + Math.round($json.target.revenue_base_units * $json.ratio_min / 1e9) + " to " + Math.round($json.target.revenue_base_units * $json.ratio_max / 1e9) + " billion companies revenue ranking" }}',[2050,0])
 connect('Build Research Context','Find Peer Candidates')
 candidate_item=string_schema(['company','parent_group','sector_overlap','sector_fit','source_url'])
-candidate_schema={'type':'object','properties':{'candidates':{'type':'array','maxItems':10,'items':candidate_item},'limitations':{'type':'string'}},'required':['candidates','limitations'],'additionalProperties':False}
-chain('Extract Peer Candidates','''=Identify up to ten candidate peers in the SAME industry sector and geography as the target.
+candidate_schema={'type':'object','properties':{'candidates':{'type':'array','maxItems':12,'items':candidate_item},'limitations':{'type':'string'}},'required':['candidates','limitations'],'additionalProperties':False}
+chain('Extract Peer Candidates','''=Identify up to twelve candidate peers in the SAME industry sector and geography as the target.
 Context: {{ JSON.stringify($('Build Research Context').first().json) }}
 Search evidence: {{ JSON.stringify(($json.organic_results || []).map(r=>({title:r.title,url:r.link,text:r.snippet}))) }}
 Use only named companies supported by supplied evidence. No prior-knowledge additions.
@@ -147,7 +147,7 @@ code('Validate Peer Candidates','''const r=$input.first().json;const p=r.output|
 const search=$('Find Peer Candidates').first().json;const urls=new Set((search.organic_results||[]).map(r=>r.link));
 const key=s=>String(s||'').toLowerCase().replace(/[^a-z0-9]/g,''); const seen=new Set([key(ctx.target.company)]);
 const candidates=[];for(const c of (p.candidates||[])){const k=key(c.company);if(!k||seen.has(k)||!urls.has(c.source_url))continue;
-seen.add(k);candidates.push({...c,revenue_status:'not verified'});if(candidates.length===10)break;}
+seen.add(k);candidates.push({...c,revenue_status:'not verified'});if(candidates.length===12)break;}
 return [{json:{output:{candidates,limitations:p.limitations||r.error||'Candidate extraction incomplete'}}}];''',[2600,0])
 connect('Extract Peer Candidates','Validate Peer Candidates')
 node('Candidates Found?', 'n8n-nodes-base.if', {'conditions':{'options':{'typeValidation':'strict','version':2},'conditions':[

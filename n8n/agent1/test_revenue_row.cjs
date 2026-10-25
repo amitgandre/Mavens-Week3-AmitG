@@ -1,0 +1,12 @@
+const fs=require('fs'),assert=require('assert');
+const {normalizeRecord}=new Function(fs.readFileSync(__dirname+'/normalize_record.js','utf8')+';return {normalizeRecord};')();
+const row='Net sales $ 104,780 $ 106,566 $ 107,412';
+const evidence={kind:'uploaded_pdf',sources:[{url:'uploaded:Annual_Report',text:'Target Corporation Consolidated Statements of Operations (millions) 2025 2024 2023\n'+row+'\nOther financial rows follow.'}]};
+const raw={company:'Target',annual_revenue:'104,780',currency:'USD',units:'millions',fiscal_year:'2025',reporting_scope:'consolidated',source_url:'uploaded:Annual_Report',evidence_excerpt:row+'\n'+('Unsupported unrelated appended table text. '.repeat(20))};
+const check=x=>normalizeRecord(x,evidence,{company:'Target'});
+assert(check(raw).usable);assert.equal(check(raw).evidence_excerpt,row);assert.equal(check(raw).model_evidence_excerpt,raw.evidence_excerpt);
+assert(!check({...raw,evidence_excerpt:raw.evidence_excerpt.replace('104,780','199,999')}).usable);
+assert(!check({...raw,company:'Walmart'}).usable);
+assert(!check({...raw,source_url:'https://example.com'}).usable);
+assert(!check({...raw,evidence_excerpt:'Revenue was estimated at 104,780.\n'+'invented '.repeat(100)}).usable);
+console.log('PASS: exact supported revenue-row selection; altered amounts, companies, URLs and unsupported rows remain blocked.');

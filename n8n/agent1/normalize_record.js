@@ -17,7 +17,20 @@ function normalizeRecord(raw, evidence, identity) {
   out.currency = String(raw.currency || '').trim().toUpperCase();
   out.fiscal_year = String(raw.fiscal_year || '').trim();
   const source = evidence.sources.find(s => s.url === raw.source_url);
-  const quote = canonical(raw.evidence_excerpt);
+  // A model may append unrelated financial-table rows and mistranscribe one of them.
+  // Keep only an independently supported first revenue row; never repair its words or amount.
+  let excerpt = String(raw.evidence_excerpt || '');
+  const firstRow = excerpt.split(/\r?\n/)[0].trim();
+  if (excerpt.length > 500 && firstRow.length >= 20 && firstRow.length <= 300 &&
+      /^(?:net\s+(?:sales|revenue)|total\s+(?:net\s+)?(?:sales|revenue)|revenues?|sales)\b/i.test(firstRow) &&
+      source && canonical(source.text).includes(canonical(firstRow)) && numberPattern.test(amount) &&
+      canonical(firstRow).replaceAll(',', '').includes(amount.replaceAll(',', ''))) {
+    out.model_evidence_excerpt = excerpt;
+    out.evidence_excerpt = firstRow;
+    out.quotation_scope = 'exact_revenue_row';
+    excerpt = firstRow;
+  }
+  const quote = canonical(excerpt);
   if(source&&!companyKey(source.text).includes(expectedCompany))
     out.issues.push('Cited evidence does not identify the requested company');
   if(source&&identity.official_domain&&/^https?:\/\//i.test(source.url)) {

@@ -3,13 +3,13 @@
 ## Run new research
 
 1. Open **Research Orchestrator**, refresh, and submit its company form.
-2. Review Agent 1's proposed revenue peers at **Review Revenue Peers**.
-3. After approval, Agents 2 and 3 collect and analyze public evidence.
+2. Agent 1 validates and ranks peers, then applies the user-authorized automatic decision. Original-source verification remains pending.
+3. Agents 2 and 3 collect and analyze public evidence using the current low-credit search settings.
 4. The Orchestrator recalls previous research, builds an editable PowerPoint,
    and saves the complete research and presentation as a new memory snapshot.
 5. Download **Download Briefing → Binary → presentation**.
 
-Run [Agent 4](../agent4/README.md) separately for each desired company before a new briefing. The orchestrator reads the latest saved matching company profiles (up to 500 recent background records), includes source links in PowerPoint, and labels their save dates and verification limits. It does not automatically spend additional search quota on leadership discovery for every peer.
+The orchestrator automatically runs [Agent 4](../agent4/README.md) when a researched company has no matching complete/partial leadership profile saved in the past seven days. It reuses recent profiles with save dates and verification limitations. You can also run Agent 4 separately to refresh a company manually. Current Agent 4 low-credit mode uses two discovery searches plus one public LinkedIn query per distinct leader (maximum four), for at most six initial searches/company. Agent 2 uses two base searches/company with extra AI queries and automatic retries disabled. Agent 1 financial discovery and any FX searches add to the overall quota.
 
 There are no HTTP Request nodes, GET/POST configuration,
 external rendering services, or cloud models. Native search integrations handle

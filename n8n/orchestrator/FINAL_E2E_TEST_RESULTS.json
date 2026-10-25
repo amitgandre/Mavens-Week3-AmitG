@@ -1,0 +1,73 @@
+{
+  "flow_completed": true,
+  "execution_id": 196,
+  "run_id": "research-196",
+  "entry_point": "Isolated manual-input copy of current production graph plus the reviewed fixes",
+  "last_node": "Download Briefing",
+  "main_nodes_executed": 45,
+  "agents": {
+    "agent_1": "completed_with_peer_shortfall",
+    "agent_2": {
+      "execution_id": 197,
+      "status": "success",
+      "queries_planned": 4,
+      "queries_succeeded": 4,
+      "queries_failed": 0,
+      "unique_sources": 20,
+      "ready_for_agent3": 3,
+      "needs_review": 17
+    },
+    "agent_3": {
+      "execution_ids": [
+        198,
+        199,
+        200
+      ],
+      "status": "success",
+      "sources_sent": 3,
+      "sources_returned": 3,
+      "signals": 2,
+      "sources_failed_or_missing": 0
+    },
+    "agent_4": {
+      "execution_ids": [
+        201,
+        202
+      ],
+      "status": "success",
+      "companies": [
+        "Target",
+        "Kroger"
+      ],
+      "cache_reused": false
+    }
+  },
+  "requested_peers": 5,
+  "selected_peers": 1,
+  "peer_shortfall": 4,
+  "companies": [
+    "Target",
+    "Kroger"
+  ],
+  "signals": 2,
+  "source_records": 39,
+  "memory_saved": true,
+  "memory_before_rows": 50,
+  "memory_after_rows": 56,
+  "all_previous_memory_rows_unchanged": true,
+  "automatic_recovery_during_final_attempt": false,
+  "preliminary_attempts": [
+    179,
+    180,
+    181,
+    186,
+    191
+  ],
+  "production_publication": "Pending explicit approval after automatic approval review rejected live import/publication",
+  "limitations": [
+    "Only one of five requested peers qualified; content-coverage requirement is not fully met.",
+    "Public search evidence and current leadership roles still require original-source review.",
+    "Final validation used the production research graph with reviewed quotation, discovery and optional leadership-refresh changes; the live production workflow has not been updated."
+  ],
+  "proposed_graph_matches_successful_execution_except_form_adapter_and_injected_n8n_defaults": true
+}
