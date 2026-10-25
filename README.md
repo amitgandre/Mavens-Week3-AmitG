@@ -1,6 +1,6 @@
 # Public-source IT and cybersecurity research
 
-**NOTE: This project was built with extensive use of Codex commands and n8n. With limited prior experience in n8n, coding, and agent development, I manually built and tested the agents by following step-by-step instructions from Codex. Codex provided guidance throughout workflow setup, implementation, troubleshooting, and testing. A few steps were also completed directly by Codex.**
+**NOTE: This project was built with extensive use of Codex commands and n8n. With limited prior experience in n8n, coding, and agent development, I manually built and tested the agents by following step-by-step instructions from Codex. Codex provided guidance throughout workflow setup, implementation, troubleshooting, and testing. Certain steps were also completed directly by Codex.**
 
 Final validation run **196** completed all four agents, PowerPoint generation and memory retention. Only **1/5 peers qualified**, so five-peer coverage remains unmet. The reviewed fixes are in [proposed workflows](n8n/proposed-workflows/README.md); they have now been published to live n8n following explicit approval. [Presentations and captioned video](presentations/README.md) are now included in this repository.
 
