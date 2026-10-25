@@ -1,0 +1,27 @@
+{
+  "live_searches": 4,
+  "live_execution": "success",
+  "final_collector_regression": "passed",
+  "statistics": {
+    "queries_planned": 4,
+    "queries_succeeded": 4,
+    "queries_failed": 0,
+    "unique_sources": 20,
+    "ready_for_agent3": 4,
+    "needs_review": 16
+  },
+  "research_window": {
+    "start": "2026-07-24",
+    "end": "2026-10-24"
+  },
+  "ready_titles": [
+    "Cyber Security Incident Response Senior Manager",
+    "Cloud Network Sr Engineer in Multiple Locations",
+    "Cybersecurity GRC Assoc Principal - Plano, TX",
+    "Associate Principal – Non-Human Identity (NHI) Lead"
+  ],
+  "unapproved_handoff_test": "blocked",
+  "model_calls": 0,
+  "http_request_nodes": 0,
+  "full_articles_retrieved": 0
+}

@@ -1,0 +1,168 @@
+{
+  "updatedAt": "2026-10-25T03:28:53.729Z",
+  "createdAt": "2026-10-25T03:28:53.729Z",
+  "id": "Agent1ReviewGateTest",
+  "name": "Agent 1 - Review Gate Test",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "id": "start",
+      "name": "Start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "draft",
+      "name": "Rank Revenue Peers",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        250,
+        0
+      ],
+      "parameters": {
+        "jsCode": "return [{json:{\"company\": \"Synthetic Review Test\", \"target\": {\"usable\": true}, \"selected_count\": 1, \"shortfall\": 4, \"selected_peers\": [{\"company\": \"Synthetic Peer\", \"source_url\": \"https://example.com\"}], \"next_action\": \"Synthetic approval form test only.\"}}];"
+      }
+    },
+    {
+      "id": "174d3f88-0593-4324-8db4-fce1a8c06a54",
+      "name": "Review Revenue Peers",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "parameters": {
+        "resume": "form",
+        "formTitle": "Review revenue peer briefing",
+        "formDescription": "={{ 'Review the Rank Revenue Peers output before responding. Target: ' + $json.company + '. Selected: ' + $json.selected_count + '/5. ' + $json.next_action }}",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Decision",
+              "fieldType": "dropdown",
+              "requiredField": true,
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Approve"
+                  },
+                  {
+                    "option": "Revise"
+                  },
+                  {
+                    "option": "Reject"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "Sources verified",
+              "fieldType": "dropdown",
+              "requiredField": true,
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "No"
+                  },
+                  {
+                    "option": "Yes"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "Accept fewer than five",
+              "fieldType": "dropdown",
+              "requiredField": true,
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "No"
+                  },
+                  {
+                    "option": "Yes"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "Review notes",
+              "fieldType": "textarea"
+            }
+          ]
+        },
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "position": [
+        500,
+        0
+      ]
+    },
+    {
+      "id": "04fc5487-a0fc-4224-8d04-6eb591c9d379",
+      "name": "Finalize Reviewed Peers",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "const decision=$input.first().json;const draft=$('Rank Revenue Peers').first().json;\nconst approved=decision.Decision==='Approve'&&decision['Sources verified']==='Yes'&&draft.target.usable&&draft.selected_count>0&&(draft.shortfall===0||decision['Accept fewer than five']==='Yes');\nreturn [{json:{...draft,status:approved?'approved':decision.Decision==='Reject'?'rejected':'revision_required',\napproved,review:{decision:decision.Decision,sources_verified:decision['Sources verified']==='Yes',accept_shortfall:decision['Accept fewer than five']==='Yes',notes:decision['Review notes']||''},\ncompanies_for_agent2:approved?[{company:draft.company,is_target:true},...draft.selected_peers.map(p=>({company:p.company,is_target:false,source_url:p.source_url}))]:[]}}];"
+      },
+      "position": [
+        750,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Rank Revenue Peers",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Rank Revenue Peers": {
+      "main": [
+        [
+          {
+            "node": "Review Revenue Peers",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Review Revenue Peers": {
+      "main": [
+        [
+          {
+            "node": "Finalize Reviewed Peers",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Chicago"
+  },
+  "staticData": null,
+  "nodeGroups": [],
+  "pinData": {},
+  "versionId": "18fb4146-9b7c-41e6-8cd2-f80962fb1731",
+  "versionCounter": 1,
+  "triggerCount": 0,
+  "sourceWorkflowId": null,
+  "tags": []
+}

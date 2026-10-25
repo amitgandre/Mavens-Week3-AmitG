@@ -1,0 +1,1094 @@
+{
+  "jobs": [
+    {
+      "json": {
+        "job_id": "job-8",
+        "company": "Lowe's",
+        "topic": "technology",
+        "engine": "google",
+        "query": "\"Lowe's\" (cloud OR identity OR endpoint OR \"OT security\" OR SIEM) (deploys OR adopts OR pilot OR implementation) after:2026-07-24 before:2026-10-26",
+        "window_start": "2026-07-25",
+        "window_end": "2026-10-25"
+      },
+      "pairedItem": {
+        "item": 0
+      }
+    },
+    {
+      "json": {
+        "job_id": "job-16",
+        "company": "Kroger",
+        "topic": "technology",
+        "engine": "google",
+        "query": "\"Kroger\" (cloud OR identity OR endpoint OR \"OT security\" OR SIEM) (deploys OR adopts OR pilot OR implementation) after:2026-07-24 before:2026-10-26",
+        "window_start": "2026-07-25",
+        "window_end": "2026-10-25"
+      },
+      "pairedItem": {
+        "item": 0
+      }
+    },
+    {
+      "json": {
+        "job_id": "job-19",
+        "company": "Home Depot",
+        "topic": "contracts",
+        "engine": "google",
+        "query": "\"Home Depot\" (\"IT services\" OR cybersecurity OR \"security operations\") (contract OR agreement OR partnership) after:2026-07-24 before:2026-10-26",
+        "window_start": "2026-07-25",
+        "window_end": "2026-10-25"
+      },
+      "pairedItem": {
+        "item": 0
+      }
+    }
+  ],
+  "responses": [
+    {
+      "json": {
+        "search_metadata": {
+          "id": "6ade3d2c97255834bf74c488",
+          "status": "Success",
+          "json_endpoint": "https://serpapi.com/searches/KcZT7Z98jGaxzfAFQL17g1dC-m7ATYIc8d848n2jcww/6ade3d2c97255834bf74c488.json",
+          "markdown_endpoint": "https://serpapi.com/searches/KcZT7Z98jGaxzfAFQL17g1dC-m7ATYIc8d848n2jcww/6ade3d2c97255834bf74c488.md",
+          "pixel_position_endpoint": "https://serpapi.com/searches/KcZT7Z98jGaxzfAFQL17g1dC-m7ATYIc8d848n2jcww/6ade3d2c97255834bf74c488.json_with_pixel_position",
+          "created_at": "2026-10-25 17:32:28 UTC",
+          "processed_at": "2026-10-25 17:32:28 UTC",
+          "google_url": "https://www.google.com/search?q=%22Lowe%27s%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&oq=%22Lowe%27s%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&hl=en&sourceid=chrome&ie=UTF-8",
+          "raw_html_file": "https://serpapi.com/searches/KcZT7Z98jGaxzfAFQL17g1dC-m7ATYIc8d848n2jcww/6ade3d2c97255834bf74c488.html",
+          "total_time_taken": 16.42
+        },
+        "search_parameters": {
+          "engine": "google",
+          "q": "\"Lowe's\" (cloud OR identity OR endpoint OR \"OT security\" OR SIEM) (deploys OR adopts OR pilot OR implementation) after:2026-07-24 before:2026-10-26",
+          "google_domain": "google.com",
+          "hl": "en",
+          "device": "desktop"
+        },
+        "search_information": {
+          "query_displayed": "\"Lowe's\" (cloud OR identity OR endpoint OR \"OT security\" OR SIEM) (deploys OR adopts OR pilot OR implementation) after:2026-07-24 before:2026-10-26",
+          "total_results": 3,
+          "time_taken_displayed": 0.35,
+          "organic_results_state": "Results for exact spelling"
+        },
+        "ai_overview": {
+          "page_token": "2C9cBHiczVXrcqJIFH6BfY1hZ8pEEI2XVFFT3YAJ3hCv0T8WArYo0ChNiPk377JPtU-zDaJiotlM_uyeKu3Tfe7N-fr8-suxvfXff3hLQvzgnmWjKMojjJFj5Q3ssnqw8wx2gZ1gayx_Lh3B8hjkCGHA7J6FImMEAsdYtqC-Fi2dVKTGZmwEVrtbC_UZB6pMYi7M5npgraj3l1XAzlj6t_5WlOgmH-QtL0_C7YKvTF8HEOd5ji_mVVZ3qQL4LwgrQKFLH4gfqiFQ_5w_mf5sANaZIy11DU9Hk3QnAzE2EOMAF0mJFVEsRso-D0rd6qQacQBI2jG7D0gB2mnTOmYSx-3H4g-N39OxivRCPr63K2Jl70o7KWVyhO_1U0LR2bZJHXWBlLU4cWIaJ-M4ucc4NIyAFFlIbsswI76YvGgDdQpkqHykdwg-rB39KSKhoSFrItrZHDvf0qXA2sbSSJhtEDe8OKhxWLZnQUctddV54Jhw17Yn7RE37uzgyAGsMad6DtZNy5wtZ9zPZF_gC3dcrVip3iRIM4Ij1IIs1Lqo1iAPi5KybOdbeVg44Ezcf_xDouc1aM2LlSK4v9FrzYLefLXjtcowGwyI6CC3AVxrb-KLiANGRguACLQnoEV7PxNYznCXcJYQPGOoyTBJE-0RlVA2skK7SMHZejIkva8a7StUsp5kmLanGOM7oYdDtW_vWYHK3kV6UfBtCA2KzbiBEpw1w7Q0FWTK18VGUtF5MYgqKFp6rhwSStfsWxCXKytUJg-prtivL0FDTv3Hxgg1U8141bJfEYDeuxvZUx1Jyfv3RRp-SguCA57ewCMLq4dSdbIkpi8_FQnsNBVuar7A564ObuvRZRhhd_4bI8v4nwLtMNCQmMqvAc0EnwJaMtAuAw0e_7IDbZj4Regq0GDceZcH2uF9PyVxAWiK3DsBLR1oD9cG2u8DLSnuOtAOoLgENNhPZedA868CLRloZ0BTFvLZQDsB7XygHYD2xYE2_PpAS4Bn7Zfz6Rau0PUpN9Wfhoqj80tE_I3UJaI-ilAwdh-B9q9TbuGSe1c3nZuZbd5DvkF25s2MHuB7y2Q2wjeeb-HI-jOgTO674eDQzKm9nG1aHrHJLuYtz_Sx7ZGYp1rqIEcBH26pNLahh31Fbv_IfTct38G7ID6h7n2ScL7t4MTSdn3HcqlXndjY-5HTF8Ta3tMHoXzLVW75Um5uLfDW2p8UuFu-zLjOFgucfjcKi3Z9vKi88uLUsddiy-3pUrWurUbyxusNxNau2248FaD_hCExnqZr7Otq2X8JpdVO7iwH3ZX3XHkprh-Go3nn9nGx2ThS1X_clEadsVGOPOirSNppr154VzAaaknzRK81e3lslaO50R7UVnPYJ936kDzDKEkqECakXVuGqNECE8bdGgJtjhICHQ2MacvHLdWgj1ETwN6Gri3ak3MMgfY4ARodiJqEaTswgaHPrOBZ4OalSknny1zFNIxa0WRcRHa-UCoxgbcVCv8AxT2I-Q",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=2C9cBHiczVXrcqJIFH6BfY1hZ8pEEI2XVFFT3YAJ3hCv0T8WArYo0ChNiPk377JPtU-zDaJiotlM_uyeKu3Tfe7N-fr8-suxvfXff3hLQvzgnmWjKMojjJFj5Q3ssnqw8wx2gZ1gayx_Lh3B8hjkCGHA7J6FImMEAsdYtqC-Fi2dVKTGZmwEVrtbC_UZB6pMYi7M5npgraj3l1XAzlj6t_5WlOgmH-QtL0_C7YKvTF8HEOd5ji_mVVZ3qQL4LwgrQKFLH4gfqiFQ_5w_mf5sANaZIy11DU9Hk3QnAzE2EOMAF0mJFVEsRso-D0rd6qQacQBI2jG7D0gB2mnTOmYSx-3H4g-N39OxivRCPr63K2Jl70o7KWVyhO_1U0LR2bZJHXWBlLU4cWIaJ-M4ucc4NIyAFFlIbsswI76YvGgDdQpkqHykdwg-rB39KSKhoSFrItrZHDvf0qXA2sbSSJhtEDe8OKhxWLZnQUctddV54Jhw17Yn7RE37uzgyAGsMad6DtZNy5wtZ9zPZF_gC3dcrVip3iRIM4Ij1IIs1Lqo1iAPi5KybOdbeVg44Ezcf_xDouc1aM2LlSK4v9FrzYLefLXjtcowGwyI6CC3AVxrb-KLiANGRguACLQnoEV7PxNYznCXcJYQPGOoyTBJE-0RlVA2skK7SMHZejIkva8a7StUsp5kmLanGOM7oYdDtW_vWYHK3kV6UfBtCA2KzbiBEpw1w7Q0FWTK18VGUtF5MYgqKFp6rhwSStfsWxCXKytUJg-prtivL0FDTv3Hxgg1U8141bJfEYDeuxvZUx1Jyfv3RRp-SguCA57ewCMLq4dSdbIkpi8_FQnsNBVuar7A564ObuvRZRhhd_4bI8v4nwLtMNCQmMqvAc0EnwJaMtAuAw0e_7IDbZj4Regq0GDceZcH2uF9PyVxAWiK3DsBLR1oD9cG2u8DLSnuOtAOoLgENNhPZedA868CLRloZ0BTFvLZQDsB7XygHYD2xYE2_PpAS4Bn7Zfz6Rau0PUpN9Wfhoqj80tE_I3UJaI-ilAwdh-B9q9TbuGSe1c3nZuZbd5DvkF25s2MHuB7y2Q2wjeeb-HI-jOgTO674eDQzKm9nG1aHrHJLuYtz_Sx7ZGYp1rqIEcBH26pNLahh31Fbv_IfTct38G7ID6h7n2ScL7t4MTSdn3HcqlXndjY-5HTF8Ta3tMHoXzLVW75Um5uLfDW2p8UuFu-zLjOFgucfjcKi3Z9vKi88uLUsddiy-3pUrWurUbyxusNxNau2248FaD_hCExnqZr7Otq2X8JpdVO7iwH3ZX3XHkprh-Go3nn9nGx2ThS1X_clEadsVGOPOirSNppr154VzAaaknzRK81e3lslaO50R7UVnPYJ936kDzDKEkqECakXVuGqNECE8bdGgJtjhICHQ2MacvHLdWgj1ETwN6Gri3ak3MMgfY4ARodiJqEaTswgaHPrOBZ4OalSknny1zFNIxa0WRcRHa-UCoxgbcVCv8AxT2I-Q"
+        },
+        "organic_results": [
+          {
+            "position": 1,
+            "title": "10 Lowe's security leaders",
+            "link": "https://instant.expert/experts/lowes-security-leaders",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAEScAHrOzAVA8uGbVDkV92ePjq3tXxU_jglISt3tli43FrBNTYuHXFNM79Z9AXbg7kgbBPgz89fLjoqiVeIJ69BoCG25fHRgVyUA_-83qzU9UrZFCXjGdbGhtYbILww4Gi3vxgQEp5h9jAXmqN-RCIJUXI&ved=2ahUKEwiezdzO2dWXAxUlTmwGHXbzD_oQFnoECBsQAQ&uoh=1",
+            "displayed_link": "https://instant.expert \u203a Expert directory",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAY1BMVEX6-fb5-fb5-fX__vv___zAv72WlZOenZvd3Nr___2enJuXlpTHxsSlo6FOS0kAAABzcW-rqafMzMn___-CgH4TDAW0s7F8e3kgGxcoJSI-PDkZEw9iYF_i4t9nZWTw8O1YVVTYGqCWAAABBElEQVR4AYyRBZLEMAwEZySHOcu8_3_lOXKlSuei7XDaIECEyBD_nnn6Lw1GetnRNE-LsoqUddN28dkZZZ-s9sM4TXNVh2WepnEwqlUhZg_H03Q-CA_n6XQ8qGqIFzYINJcoA6FRXhoSDppUQTAJblpAGEkCukuJJ-Ald2n8l0GQpEBIitDtGYhg0UaiIRJiUsk483q73--3Q5rkosUmH8--KAp1tXcyFYHgPjMLyDeRZJYKwUi-bDBJQTyzZQm_bF6hvbYg82jDXluCcBw22Uja8wB4Xq_3NLWvj76qaZpftfEyJVqNz_f7Oa6H5_b8GmOlMLQxFI0j4Ef4Nxw8JkyVUCEA6x4UodtWf84AAAAASUVORK5CYII.png",
+            "date": "Oct 15, 2026",
+            "snippet": "Lowe's Director Information Security Gage Saunders and 9 more Lowe's security leaders, with LinkedIn profiles.",
+            "snippet_highlighted_words": [
+              "Lowe's",
+              "Lowe's"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "Lowe's Director Information Security Gage Saunders and 9 more Lowe's security leaders, with LinkedIn profiles.",
+                "source_info_link": "https://instant.expert/experts/lowes-security-leaders",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAY1BMVEX6-fb5-fb5-fX__vv___zAv72WlZOenZvd3Nr___2enJuXlpTHxsSlo6FOS0kAAABzcW-rqafMzMn___-CgH4TDAW0s7F8e3kgGxcoJSI-PDkZEw9iYF_i4t9nZWTw8O1YVVTYGqCWAAABBElEQVR4AYyRBZLEMAwEZySHOcu8_3_lOXKlSuei7XDaIECEyBD_nnn6Lw1GetnRNE-LsoqUddN28dkZZZ-s9sM4TXNVh2WepnEwqlUhZg_H03Q-CA_n6XQ8qGqIFzYINJcoA6FRXhoSDppUQTAJblpAGEkCukuJJ-Ald2n8l0GQpEBIitDtGYhg0UaiIRJiUsk483q73--3Q5rkosUmH8--KAp1tXcyFYHgPjMLyDeRZJYKwUi-bDBJQTyzZQm_bF6hvbYg82jDXluCcBw22Uja8wB4Xq_3NLWvj76qaZpftfEyJVqNz_f7Oa6H5_b8GmOlMLQxFI0j4Ef4Nxw8JkyVUCEA6x4UodtWf84AAAAASUVORK5CYII.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqUBL2dvdG8_dXJsPUNBRVNjQUhyT3pBVlRmdllJUzNqQXFmbHdzTFlCaGFFREJIVnItUlppTy1mdEhkT2d6MzdaMDlQSU9TQXNQaFJCLUJ2dUEwSzBlT3pOR0l2Y2N2akxpNDNEWEFHaU04NFZWaWstYV9hRjRTa3lxeW9jd2ZxQ1BzbmVrN2E1RHk4WnFLVDlVQkc2S3E1WnB3Zlh2NURubU1fR21ZEgQaAggAGsUEEgAaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQKEECAAQABgAIAAqDQoGbG93ZSdzFRZceEAqTgoFY2xvdWQV8mMfPxoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbRoOYXV0aGVudGljYXRpb24aCWVuZHBvaW50cypRCghpZGVudGl0eRUAAAAAGgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtGg5hdXRoZW50aWNhdGlvbhoJZW5kcG9pbnRzMqUBL2dvdG8_dXJsPUNBRVNjQUhyT3pBVlRmdllJUzNqQXFmbHdzTFlCaGFFREJIVnItUlppTy1mdEhkT2d6MzdaMDlQSU9TQXNQaFJCLUJ2dUEwSzBlT3pOR0l2Y2N2akxpNDNEWEFHaU04NFZWaWstYV9hRjRTa3lxeW9jd2ZxQ1BzbmVrN2E1RHk4WnFLVDlVQkc2S3E1WnB3Zlh2NURubU1fR21ZOjYxMCA8Yj5Mb3dlJiMzOTtzPC9iPiBzZWN1cml0eSBsZWFkZXJzIHwgSW5zdGFudCBFeHBlcnRChAE8Yj5Mb3dlJiMzOTtzPC9iPiBEaXJlY3RvciBJbmZvcm1hdGlvbiBTZWN1cml0eSBHYWdlIFNhdW5kZXJzIGFuZCA5IG1vcmUgPGI-TG93ZSYjMzk7czwvYj4gc2VjdXJpdHkgbGVhZGVycywgd2l0aCBMaW5rZWRJbiBwcm9maWxlcy4iAhABSABYAGgA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqUBL2dvdG8_dXJsPUNBRVNjQUhyT3pBVlRmdllJUzNqQXFmbHdzTFlCaGFFREJIVnItUlppTy1mdEhkT2d6MzdaMDlQSU9TQXNQaFJCLUJ2dUEwSzBlT3pOR0l2Y2N2akxpNDNEWEFHaU04NFZWaWstYV9hRjRTa3lxeW9jd2ZxQ1BzbmVrN2E1RHk4WnFLVDlVQkc2S3E1WnB3Zlh2NURubU1fR21ZEgQaAggAGsUEEgAaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQKEECAAQABgAIAAqDQoGbG93ZSdzFRZceEAqTgoFY2xvdWQV8mMfPxoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbRoOYXV0aGVudGljYXRpb24aCWVuZHBvaW50cypRCghpZGVudGl0eRUAAAAAGgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtGg5hdXRoZW50aWNhdGlvbhoJZW5kcG9pbnRzMqUBL2dvdG8_dXJsPUNBRVNjQUhyT3pBVlRmdllJUzNqQXFmbHdzTFlCaGFFREJIVnItUlppTy1mdEhkT2d6MzdaMDlQSU9TQXNQaFJCLUJ2dUEwSzBlT3pOR0l2Y2N2akxpNDNEWEFHaU04NFZWaWstYV9hRjRTa3lxeW9jd2ZxQ1BzbmVrN2E1RHk4WnFLVDlVQkc2S3E1WnB3Zlh2NURubU1fR21ZOjYxMCA8Yj5Mb3dlJiMzOTtzPC9iPiBzZWN1cml0eSBsZWFkZXJzIHwgSW5zdGFudCBFeHBlcnRChAE8Yj5Mb3dlJiMzOTtzPC9iPiBEaXJlY3RvciBJbmZvcm1hdGlvbiBTZWN1cml0eSBHYWdlIFNhdW5kZXJzIGFuZCA5IG1vcmUgPGI-TG93ZSYjMzk7czwvYj4gc2VjdXJpdHkgbGVhZGVycywgd2l0aCBMaW5rZWRJbiBwcm9maWxlcy4iAhABSABYAGgA",
+            "source": "Instant Expert"
+          },
+          {
+            "position": 2,
+            "title": "Lowe's Accelerates Threat Detection and Response by 70%",
+            "link": "https://reliaquest.com/campaigns/build-your-own-ai-driven-soc-swap-in-asset-infios/lowes-case-study",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESngEB6zswFR0m5biIjt2xpY2aRDXP6RvS7Pl0hcyGwp0KDP_oW9kEmGQTT_x4dP2Vc2Av4wIUST1X_9GSXI7ue2Gmw3rpNkE0iiUCzChCoUaPK9hZBB_Fpq9hBFZcbXEWwpBgKqqjHstV7qWCbzZ44lkC6krZc8BMHcVP18hz76wdDbyV8n9gy4QeUn4S3tk5VDF2OkTs4acwj9KDAzug8g&ved=2ahUKEwiezdzO2dWXAxUlTmwGHXbzD_oQFnoECBoQAQ&uoh=1",
+            "displayed_link": "https://reliaquest.com \u203a campaigns \u203a lowes-case-study",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABQElEQVR4AWJwL_AZUEy0QqPz6_QsLq8vJQYzrFtNEJPkAOur6-2srqx_K7JzzX_j8-v-2Vxb_x8XVjy05j_D-tW48aoVgN7rQANhKI7C-F6jHqUnCTBgAAwEIWBtUxWLAOgZA9Xt_mVwYh90hgPMvt-dGkvF-ZaKZlhOAyQe4bgBIALA8f0AAInHjUcAIAQg8dM3LgCOK0ARAoC4ADguAEEAQOMA0DgA9EkoQOMA0DgABKEAiQMA4gqYehIBwLgAIA4AQcQwroB4ywWCliMrXHO5F9XmiSvrxQj46_Lp-mLbvnMgwXyAvMQIN4ARfgAg_ABAmAGMMAMYYQK0VwX8Iqzvgd2hzXtNLhA2QFl38P9_5FVxrQvQA2CMzw6Ik6_jGj8ATz4_QE_uB-gPbn4AnNwJOPLJvYCO417AwvJ17NoHitTtSGxYxdgAAAAASUVORK5CYII.png",
+            "date": "Oct 4, 2026",
+            "snippet": "Learn how Lowe's unified its security tools, automated workflows, and enhanced threat detection to future-proof its security operations.",
+            "snippet_highlighted_words": [
+              "Lowe's"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "Learn how Lowe's unified its security tools, automated workflows, and enhanced threat detection to future-proof its security operations.",
+                "source_info_link": "https://reliaquest.com/campaigns/build-your-own-ai-driven-soc-swap-in-asset-infios/lowes-case-study",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABQElEQVR4AWJwL_AZUEy0QqPz6_QsLq8vJQYzrFtNEJPkAOur6-2srqx_K7JzzX_j8-v-2Vxb_x8XVjy05j_D-tW48aoVgN7rQANhKI7C-F6jHqUnCTBgAAwEIWBtUxWLAOgZA9Xt_mVwYh90hgPMvt-dGkvF-ZaKZlhOAyQe4bgBIALA8f0AAInHjUcAIAQg8dM3LgCOK0ARAoC4ADguAEEAQOMA0DgA9EkoQOMA0DgABKEAiQMA4gqYehIBwLgAIA4AQcQwroB4ywWCliMrXHO5F9XmiSvrxQj46_Lp-mLbvnMgwXyAvMQIN4ARfgAg_ABAmAGMMAMYYQK0VwX8Iqzvgd2hzXtNLhA2QFl38P9_5FVxrQvQA2CMzw6Ik6_jGj8ATz4_QE_uB-gPbn4AnNwJOPLJvYCO417AwvJ17NoHitTtSGxYxdgAAAAASUVORK5CYII.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CuQBL2dvdG8_dXJsPUNBRVNuZ0VCNnpzd0ZaS1Z2UHFsdjJLT3hQckp3aGExYk0wQjBZam5YMzJhUGVuVmg1MnNSSmVYdjg2dlBvT1BrZ1FPOXJfREYxOURXdWJBWkxLQi02TllEbUxmeHpmc3lJQTlLMjdEaWRKQlg5bVB0WG1qSzJ0UWZUVVZiQ2ZIbnJZRElicGpEeFA0OHY5aEg0NFZWTzN1bDQwSHhNbDRiTFlWZ0pxYlc0N0tzUXBLZmp0QU0wOWUtMWdKYlJlblYtWnVGQkdUaGlpQnYxVW1LTHJoT1ROTFhREgQaAggAGp8FEgAaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQPsECAAQABgAIAAqDQoGbG93ZSdzFfRA7j8qTgoFY2xvdWQVAAAAABoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbRoOYXV0aGVudGljYXRpb24aCWVuZHBvaW50cypRCghpZGVudGl0eRUAAAAAGgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtGg5hdXRoZW50aWNhdGlvbhoJZW5kcG9pbnRzMuQBL2dvdG8_dXJsPUNBRVNuZ0VCNnpzd0ZaS1Z2UHFsdjJLT3hQckp3aGExYk0wQjBZam5YMzJhUGVuVmg1MnNSSmVYdjg2dlBvT1BrZ1FPOXJfREYxOURXdWJBWkxLQi02TllEbUxmeHpmc3lJQTlLMjdEaWRKQlg5bVB0WG1qSzJ0UWZUVVZiQ2ZIbnJZRElicGpEeFA0OHY5aEg0NFZWTzN1bDQwSHhNbDRiTFlWZ0pxYlc0N0tzUXBLZmp0QU0wOWUtMWdKYlJlblYtWnVGQkdUaGlpQnYxVW1LTHJoT1ROTFhROkI8Yj5Mb3dlJiMzOTtzPC9iPiBBY2NlbGVyYXRlcyBUaHJlYXQgRGV0ZWN0aW9uIGFuZCBSZXNwb25zZSBieSA3MCVCkwFMZWFybiBob3cgPGI-TG93ZSYjMzk7czwvYj4gdW5pZmllZCBpdHMgc2VjdXJpdHkgdG9vbHMsIGF1dG9tYXRlZCB3b3JrZmxvd3MsIGFuZCBlbmhhbmNlZCB0aHJlYXQgZGV0ZWN0aW9uIHRvIGZ1dHVyZS1wcm9vZiBpdHMgc2VjdXJpdHkgb3BlcmF0aW9ucy4iAhABSABYAGgA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CuQBL2dvdG8_dXJsPUNBRVNuZ0VCNnpzd0ZaS1Z2UHFsdjJLT3hQckp3aGExYk0wQjBZam5YMzJhUGVuVmg1MnNSSmVYdjg2dlBvT1BrZ1FPOXJfREYxOURXdWJBWkxLQi02TllEbUxmeHpmc3lJQTlLMjdEaWRKQlg5bVB0WG1qSzJ0UWZUVVZiQ2ZIbnJZRElicGpEeFA0OHY5aEg0NFZWTzN1bDQwSHhNbDRiTFlWZ0pxYlc0N0tzUXBLZmp0QU0wOWUtMWdKYlJlblYtWnVGQkdUaGlpQnYxVW1LTHJoT1ROTFhREgQaAggAGp8FEgAaACIAKgAyBggDEgJ1czoAQgQIARAASgBaAHIAegCCQPsECAAQABgAIAAqDQoGbG93ZSdzFfRA7j8qTgoFY2xvdWQVAAAAABoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbRoOYXV0aGVudGljYXRpb24aCWVuZHBvaW50cypRCghpZGVudGl0eRUAAAAAGgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtGg5hdXRoZW50aWNhdGlvbhoJZW5kcG9pbnRzMuQBL2dvdG8_dXJsPUNBRVNuZ0VCNnpzd0ZaS1Z2UHFsdjJLT3hQckp3aGExYk0wQjBZam5YMzJhUGVuVmg1MnNSSmVYdjg2dlBvT1BrZ1FPOXJfREYxOURXdWJBWkxLQi02TllEbUxmeHpmc3lJQTlLMjdEaWRKQlg5bVB0WG1qSzJ0UWZUVVZiQ2ZIbnJZRElicGpEeFA0OHY5aEg0NFZWTzN1bDQwSHhNbDRiTFlWZ0pxYlc0N0tzUXBLZmp0QU0wOWUtMWdKYlJlblYtWnVGQkdUaGlpQnYxVW1LTHJoT1ROTFhROkI8Yj5Mb3dlJiMzOTtzPC9iPiBBY2NlbGVyYXRlcyBUaHJlYXQgRGV0ZWN0aW9uIGFuZCBSZXNwb25zZSBieSA3MCVCkwFMZWFybiBob3cgPGI-TG93ZSYjMzk7czwvYj4gdW5pZmllZCBpdHMgc2VjdXJpdHkgdG9vbHMsIGF1dG9tYXRlZCB3b3JrZmxvd3MsIGFuZCBlbmhhbmNlZCB0aHJlYXQgZGV0ZWN0aW9uIHRvIGZ1dHVyZS1wcm9vZiBpdHMgc2VjdXJpdHkgb3BlcmF0aW9ucy4iAhABSABYAGgA",
+            "source": "ReliaQuest"
+          },
+          {
+            "position": 3,
+            "title": "Lowe's Accelerates Threat Detection and Response by 70%",
+            "link": "https://reliaquest.com/campaigns/retail/lowes-case-study?utm_source=DV-Blog?source=post_page---------------------------",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESsgEB6zswFYRsqkA4cs00tmZa0WN2KH-CEPLybbit_3F2SBGJGhlSNuw-mnluvpCDA1xOvWhYx_XiHK8-vfs0HKTiYfJ4uoc23cSBm8vTIvBmg2Ollam82d-_6YI8If7aynDVIlidiAmVS5ZF1VM9ni64TbbMaGCniG4TBfJZi8jmXlwaMDvDbEpJrUEVUrrCIkzRlbNgLyV60-xzvbfC-n6W9ecRUO4AsJGBY01p5Mhthskk&ved=2ahUKEwiezdzO2dWXAxUlTmwGHXbzD_oQFnoECBwQAQ&uoh=1",
+            "displayed_link": "https://reliaquest.com \u203a retail \u203a lowes-case-study",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABQElEQVR4AWJwL_AZUEy0QqPz6_QsLq8vJQYzrFtNEJPkAOur6-2srqx_K7JzzX_j8-v-2Vxb_x8XVjy05j_D-tW48aoVgN7rQANhKI7C-F6jHqUnCTBgAAwEIWBtUxWLAOgZA9Xt_mVwYh90hgPMvt-dGkvF-ZaKZlhOAyQe4bgBIALA8f0AAInHjUcAIAQg8dM3LgCOK0ARAoC4ADguAEEAQOMA0DgA9EkoQOMA0DgABKEAiQMA4gqYehIBwLgAIA4AQcQwroB4ywWCliMrXHO5F9XmiSvrxQj46_Lp-mLbvnMgwXyAvMQIN4ARfgAg_ABAmAGMMAMYYQK0VwX8Iqzvgd2hzXtNLhA2QFl38P9_5FVxrQvQA2CMzw6Ik6_jGj8ATz4_QE_uB-gPbn4AnNwJOPLJvYCO417AwvJ17NoHitTtSGxYxdgAAAAASUVORK5CYII.png",
+            "date": "2 days ago",
+            "snippet": "Learn how Lowe's unified its security tools, automated workflows, and enhanced threat detection to future-proof its security operations.",
+            "snippet_highlighted_words": [
+              "Lowe's"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "Learn how Lowe's unified its security tools, automated workflows, and enhanced threat detection to future-proof its security operations.",
+                "source_info_link": "https://reliaquest.com/campaigns/retail/lowes-case-study?utm_source=DV-Blog?source=post_page---------------------------",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABQElEQVR4AWJwL_AZUEy0QqPz6_QsLq8vJQYzrFtNEJPkAOur6-2srqx_K7JzzX_j8-v-2Vxb_x8XVjy05j_D-tW48aoVgN7rQANhKI7C-F6jHqUnCTBgAAwEIWBtUxWLAOgZA9Xt_mVwYh90hgPMvt-dGkvF-ZaKZlhOAyQe4bgBIALA8f0AAInHjUcAIAQg8dM3LgCOK0ARAoC4ADguAEEAQOMA0DgA9EkoQOMA0DgABKEAiQMA4gqYehIBwLgAIA4AQcQwroB4ywWCliMrXHO5F9XmiSvrxQj46_Lp-mLbvnMgwXyAvMQIN4ARfgAg_ABAmAGMMAMYYQK0VwX8Iqzvgd2hzXtNLhA2QFl38P9_5FVxrQvQA2CMzw6Ik6_jGj8ATz4_QE_uB-gPbn4AnNwJOPLJvYCO417AwvJ17NoHitTtSGxYxdgAAAAASUVORK5CYII.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=Cv4BL2dvdG8_dXJsPUNBRVNzZ0VCNnpzd0ZXSE5fYnZyMEFFU3F3NFNTT3htRUIxUV9mRHYyZ2JqY0VuZ2hEa0hqbVpNVTk1aVNBOS1SdDFkWDhXdFpYWVp3LVkwX1pKOGNjcWQyOXBKdDVrXzYtd1o2OHlzaEo4RnBhMG9PR1NkcXE3WTY1MEk2eFJYXzBuVW5HMlBSTWt1NEtjRjZhQmJ0b3gtaVc0MndWN1czbVFkaG1IQjQ4TnV4V0tDWmptWl9MamZuVm1tSUwtZEFXMkptSmhsSmhIa1l2cG9KOERvVDdNc3pFczloYWxwdDVRNzI3a2xBX0FrSkY5VkZNaXISBBoCCAAauQUSABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAlQUIABAAGAAgACoNCgZsb3dlJ3MVfDfvPypOCgVjbG91ZBUAAAAAGgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtGg5hdXRoZW50aWNhdGlvbhoJZW5kcG9pbnRzKlEKCGlkZW50aXR5FQAAAAAaC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0aDmF1dGhlbnRpY2F0aW9uGgllbmRwb2ludHMy_gEvZ290bz91cmw9Q0FFU3NnRUI2enN3RldITl9idnIwQUVTcXc0U1NPeG1FQjFRX2ZEdjJnYmpjRW5naERrSGptWk1VOTVpU0E5LVJ0MWRYOFd0WlhZWnctWTBfWko4Y2NxZDI5cEp0NWtfNi13WjY4eXNoSjhGcGEwb09HU2RxcTdZNjUwSTZ4UlhfMG5VbkcyUFJNa3U0S2NGNmFCYnRveC1pVzQyd1Y3VzNtUWRobUhCNDhOdXhXS0Naam1aX0xqZm5WbW1JTC1kQVcySm1KaGxKaEhrWXZwb0o4RG9UN01zekVzOWhhbHB0NVE3MjdrbEFfQWtKRjlWRk1pcjpCPGI-TG93ZSYjMzk7czwvYj4gQWNjZWxlcmF0ZXMgVGhyZWF0IERldGVjdGlvbiBhbmQgUmVzcG9uc2UgYnkgNzAlQpMBTGVhcm4gaG93IDxiPkxvd2UmIzM5O3M8L2I-IHVuaWZpZWQgaXRzIHNlY3VyaXR5IHRvb2xzLCBhdXRvbWF0ZWQgd29ya2Zsb3dzLCBhbmQgZW5oYW5jZWQgdGhyZWF0IGRldGVjdGlvbiB0byBmdXR1cmUtcHJvb2YgaXRzIHNlY3VyaXR5IG9wZXJhdGlvbnMuIgIQAUgAWABoAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=Cv4BL2dvdG8_dXJsPUNBRVNzZ0VCNnpzd0ZXSE5fYnZyMEFFU3F3NFNTT3htRUIxUV9mRHYyZ2JqY0VuZ2hEa0hqbVpNVTk1aVNBOS1SdDFkWDhXdFpYWVp3LVkwX1pKOGNjcWQyOXBKdDVrXzYtd1o2OHlzaEo4RnBhMG9PR1NkcXE3WTY1MEk2eFJYXzBuVW5HMlBSTWt1NEtjRjZhQmJ0b3gtaVc0MndWN1czbVFkaG1IQjQ4TnV4V0tDWmptWl9MamZuVm1tSUwtZEFXMkptSmhsSmhIa1l2cG9KOERvVDdNc3pFczloYWxwdDVRNzI3a2xBX0FrSkY5VkZNaXISBBoCCAAauQUSABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAlQUIABAAGAAgACoNCgZsb3dlJ3MVfDfvPypOCgVjbG91ZBUAAAAAGgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtGg5hdXRoZW50aWNhdGlvbhoJZW5kcG9pbnRzKlEKCGlkZW50aXR5FQAAAAAaC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0aDmF1dGhlbnRpY2F0aW9uGgllbmRwb2ludHMy_gEvZ290bz91cmw9Q0FFU3NnRUI2enN3RldITl9idnIwQUVTcXc0U1NPeG1FQjFRX2ZEdjJnYmpjRW5naERrSGptWk1VOTVpU0E5LVJ0MWRYOFd0WlhZWnctWTBfWko4Y2NxZDI5cEp0NWtfNi13WjY4eXNoSjhGcGEwb09HU2RxcTdZNjUwSTZ4UlhfMG5VbkcyUFJNa3U0S2NGNmFCYnRveC1pVzQyd1Y3VzNtUWRobUhCNDhOdXhXS0Naam1aX0xqZm5WbW1JTC1kQVcySm1KaGxKaEhrWXZwb0o4RG9UN01zekVzOWhhbHB0NVE3MjdrbEFfQWtKRjlWRk1pcjpCPGI-TG93ZSYjMzk7czwvYj4gQWNjZWxlcmF0ZXMgVGhyZWF0IERldGVjdGlvbiBhbmQgUmVzcG9uc2UgYnkgNzAlQpMBTGVhcm4gaG93IDxiPkxvd2UmIzM5O3M8L2I-IHVuaWZpZWQgaXRzIHNlY3VyaXR5IHRvb2xzLCBhdXRvbWF0ZWQgd29ya2Zsb3dzLCBhbmQgZW5oYW5jZWQgdGhyZWF0IGRldGVjdGlvbiB0byBmdXR1cmUtcHJvb2YgaXRzIHNlY3VyaXR5IG9wZXJhdGlvbnMuIgIQAUgAWABoAA",
+            "source": "ReliaQuest"
+          }
+        ]
+      },
+      "pairedItem": {
+        "item": 0
+      }
+    },
+    {
+      "json": {
+        "search_metadata": {
+          "id": "6ade3d2c895c9c53e04767da",
+          "status": "Success",
+          "json_endpoint": "https://serpapi.com/searches/FH1Fmul8nv2eaVAXEOt7gNKBGcryvad1FicguKY4NRg/6ade3d2c895c9c53e04767da.json",
+          "markdown_endpoint": "https://serpapi.com/searches/FH1Fmul8nv2eaVAXEOt7gNKBGcryvad1FicguKY4NRg/6ade3d2c895c9c53e04767da.md",
+          "pixel_position_endpoint": "https://serpapi.com/searches/FH1Fmul8nv2eaVAXEOt7gNKBGcryvad1FicguKY4NRg/6ade3d2c895c9c53e04767da.json_with_pixel_position",
+          "created_at": "2026-10-25 17:32:28 UTC",
+          "processed_at": "2026-10-25 17:32:28 UTC",
+          "google_url": "https://www.google.com/search?q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&oq=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&hl=en&sourceid=chrome&ie=UTF-8",
+          "raw_html_file": "https://serpapi.com/searches/FH1Fmul8nv2eaVAXEOt7gNKBGcryvad1FicguKY4NRg/6ade3d2c895c9c53e04767da.html",
+          "total_time_taken": 0.42
+        },
+        "search_parameters": {
+          "engine": "google",
+          "q": "\"Kroger\" (cloud OR identity OR endpoint OR \"OT security\" OR SIEM) (deploys OR adopts OR pilot OR implementation) after:2026-07-24 before:2026-10-26",
+          "google_domain": "google.com",
+          "hl": "en",
+          "device": "desktop"
+        },
+        "search_information": {
+          "query_displayed": "\"Kroger\" (cloud OR identity OR endpoint OR \"OT security\" OR SIEM) (deploys OR adopts OR pilot OR implementation) after:2026-07-24 before:2026-10-26",
+          "total_results": 30400,
+          "time_taken_displayed": 0.25,
+          "organic_results_state": "Results for exact spelling"
+        },
+        "ai_overview": {
+          "page_token": "AQqKxHiczVXdcqJIFH6BfY2xZspEERyJqaKmugG1UQcRjWtuXARsiGAjYNTc7bvsU-3TbPOjYqLZTG52TxX06e7T56_P1-fPvzx3tfz7tz-cOA6i-2p1u91WMCHYsysm8atGtF-Z1QXxotB0fjieYK9K-2eBK5mRwJRsV-hJnG2ExrA916PtnTlYhZNxpGml9KAwmxuR_UT17p6i6qxKf8svnEQnlahiryrxJlyw_OPLCJIKy7BcRa0aPhUA_wURBBAddCC-K4ZB62P6ZPq5ACwLS1quGp6WpvlMBmJyQEwMXCSUCOJkG6PMD0qDu-ndlgFA0o7evUMIaKdJ7-hJYldPtt89_JaOUeQJeT9vV7ZRpko7CRV8hG_lc8Lbs2mXKhoAqXjixImZHbGgOM1jYhpugbS1sdyXYWH7ovOiC9RHIEP0ntzB-Lh51IfEmMYEqxamlc1U5yEdalXXdMyUCaOk4MVRkyGdQWTtntTI43aDlvV4G9w-PC42vcnPzp1WNedUziOGZVszZ8b8SOc1tvadaXL83U2KNDM6Qi0qQm2Am0rcXtSR06_0KrB2wJmYXf7B0fMYtO7FSDHMMnqlWJb41a0d0yrDojEg5gqGFCRwqb2yL2IGmAUpALagPwU9jIpVKhe4SzhLCZ4xsgjGaRg4Q1RKRcuIVhEip_lZnNLbqHEWISpqkmFenmKC75TauWfgdZ4RRJmKPFHwtQkNSt2kgFKcdTd5aCrIw0ddDA1RSSM6DwZTAaTl6ygTPyRGLL4FSbgyBQiQx1RW1FsOUORcf3IY424umYxa8RaT-7tMLSyl798nafwhKQgOeHoFjyKs2hFwjBen0x0g5PsvA3XZ7ulbfgprCFyGEfHnv9CyzP8p0A4NDWeXfh1oFvgQ0NKGdhlo8Pg7NTRRHKd6Mb4KNJhU3uWGdnjfT05cABqShyeg5Q2tfa2h_TrQ0uCuA-0AiktAg3q-dw604CrQ0oZ2BjS0kM8a2glo5w3tALRPNrTx5xtaCjw7G8672-YJX-1ycrTvcwpvDc2HaYPePTHcvWGvp3y3Cf61yy38-N43LO9m5lr3kFXivXUzowvk3rZKa-ELy3ZDgu2QMuWvpkc2Vlkdll3LXsVuvE94e2UFxF3FCU-l1FGZAn4T0t3kDF3Ukdz_Vv5q2YFH9lGyQtUHccoFrkfSk64feLZPtRqxS1bfysYitsN7-iA0bhn-lq2X5_aChHa2UmNu2UbJ90IiMEaDZxfTtjKzGmjBMZ7agW11hnlWd6Rafzf0XlZjBwWt_rpObHXiRo2ZHjPRaKgq7eeepuDFzGe4_bKGN3Ngtcfzx8azE5D9Q1Anc5Nb8uO1PprsBjs-5n_vQpWsmaVSk_QWN-pMhmzQ0VsPPZA6EwnKbKiE-7o6lsYlPzQFWhR1DH5qYAKAkZSSQh-hLoDDNR17tBbnBAKtMwUabYSaRGgZlCLTmNnRs8DM63zdYBsMb5lmk7NKPo73gVCvl6JVKNT-Aexlgyw",
+          "serpapi_link": "https://serpapi.com/search.json?engine=google_ai_overview&page_token=AQqKxHiczVXdcqJIFH6BfY2xZspEERyJqaKmugG1UQcRjWtuXARsiGAjYNTc7bvsU-3TbPOjYqLZTG52TxX06e7T56_P1-fPvzx3tfz7tz-cOA6i-2p1u91WMCHYsysm8atGtF-Z1QXxotB0fjieYK9K-2eBK5mRwJRsV-hJnG2ExrA916PtnTlYhZNxpGml9KAwmxuR_UT17p6i6qxKf8svnEQnlahiryrxJlyw_OPLCJIKy7BcRa0aPhUA_wURBBAddCC-K4ZB62P6ZPq5ACwLS1quGp6WpvlMBmJyQEwMXCSUCOJkG6PMD0qDu-ndlgFA0o7evUMIaKdJ7-hJYldPtt89_JaOUeQJeT9vV7ZRpko7CRV8hG_lc8Lbs2mXKhoAqXjixImZHbGgOM1jYhpugbS1sdyXYWH7ovOiC9RHIEP0ntzB-Lh51IfEmMYEqxamlc1U5yEdalXXdMyUCaOk4MVRkyGdQWTtntTI43aDlvV4G9w-PC42vcnPzp1WNedUziOGZVszZ8b8SOc1tvadaXL83U2KNDM6Qi0qQm2Am0rcXtSR06_0KrB2wJmYXf7B0fMYtO7FSDHMMnqlWJb41a0d0yrDojEg5gqGFCRwqb2yL2IGmAUpALagPwU9jIpVKhe4SzhLCZ4xsgjGaRg4Q1RKRcuIVhEip_lZnNLbqHEWISpqkmFenmKC75TauWfgdZ4RRJmKPFHwtQkNSt2kgFKcdTd5aCrIw0ddDA1RSSM6DwZTAaTl6ygTPyRGLL4FSbgyBQiQx1RW1FsOUORcf3IY424umYxa8RaT-7tMLSyl798nafwhKQgOeHoFjyKs2hFwjBen0x0g5PsvA3XZ7ulbfgprCFyGEfHnv9CyzP8p0A4NDWeXfh1oFvgQ0NKGdhlo8Pg7NTRRHKd6Mb4KNJhU3uWGdnjfT05cABqShyeg5Q2tfa2h_TrQ0uCuA-0AiktAg3q-dw604CrQ0oZ2BjS0kM8a2glo5w3tALRPNrTx5xtaCjw7G8672-YJX-1ycrTvcwpvDc2HaYPePTHcvWGvp3y3Cf61yy38-N43LO9m5lr3kFXivXUzowvk3rZKa-ELy3ZDgu2QMuWvpkc2Vlkdll3LXsVuvE94e2UFxF3FCU-l1FGZAn4T0t3kDF3Ukdz_Vv5q2YFH9lGyQtUHccoFrkfSk64feLZPtRqxS1bfysYitsN7-iA0bhn-lq2X5_aChHa2UmNu2UbJ90IiMEaDZxfTtjKzGmjBMZ7agW11hnlWd6Rafzf0XlZjBwWt_rpObHXiRo2ZHjPRaKgq7eeepuDFzGe4_bKGN3Ngtcfzx8azE5D9Q1Anc5Nb8uO1PprsBjs-5n_vQpWsmaVSk_QWN-pMhmzQ0VsPPZA6EwnKbKiE-7o6lsYlPzQFWhR1DH5qYAKAkZSSQh-hLoDDNR17tBbnBAKtMwUabYSaRGgZlCLTmNnRs8DM63zdYBsMb5lmk7NKPo73gVCvl6JVKNT-Aexlgyw"
+        },
+        "organic_results": [
+          {
+            "position": 1,
+            "title": "Kroger testing 24-hour store hours at Cincinnati location",
+            "link": "https://www.facebook.com/wlwt5/posts/kroger-is-testing-24-hour-store-hours-at-one-cincinnati-location-as-part-of-a-sm/1547671400720242/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESwwEB6zswFbGKv5lDIDs7dWjYm2HQq_GdPWwpJUcGdQGbGSFtfGi8g9Xhez6WNVuagueko8Cfdpe1rR1F8Z0Nj7D3kTt9nC9FrW8UzQI3yll3VSYj3CvVEXdc649Nx4QC8Y5jp7q8GKGIjK7C1YwcYnvpLExzLpxz1GP3KXKPVRiuYypesFuIOV1EntatU7rFiu7k0WWj5rhEFoJOsgWTNfgNW7RBR92sbQZh7sQBffWNxby8VnqUReElanII8qs4bYvDadU&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQFnoECBEQAQ&uoh=1",
+            "displayed_link": "1.2K+ reactions",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
+            "snippet": "Kroger is testing 24-hour store hours at one Cincinnati location as part of a small pilot program. FULL STORY \u2b07\ufe0f ; Evan Sutton \u00b7 11 reactions \u00b7 5 comments.",
+            "snippet_highlighted_words": [
+              "Kroger",
+              "pilot"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "Kroger is testing 24-hour store hours at one Cincinnati location as part of a small pilot program. FULL STORY \u2b07\ufe0f ; Evan Sutton \u00b7 11 reactions \u00b7 5 comments.",
+                "source_info_link": "https://www.facebook.com/wlwt5/posts/kroger-is-testing-24-hour-store-hours-at-one-cincinnati-location-as-part-of-a-sm/1547671400720242/",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpUCL2dvdG8_dXJsPUNBRVN3d0VCNnpzd0ZVaUlXWUpJeUJIZXpnbHUzWmpkT2dJTEFhSElsT1M4RDZ2ckNkVnZyLVJBN18xX1BxejJBTkFvQzNaVU4yOGpnV0FoT2VFeXh1dUJ3RnkwSG9sTTRmUG50T1ZwSTl2RlZ6YWVyTE9wUFZxMzFtNUJDU2RZaVlrUnh0WnZTVEQ1ZUJNZ3FPeTctOUVia3VuMWctRkEwRnAxU0RxZ1NfbEdyenRrcHFXQ0JvS2w4VEN5b2ZxaUJPd2xrZ2NRUTFGcWU2Z1JfajNBNVd1OFdVY0pteUhqQm1rdUVIS19NNzJYSWd0VzZNOHNNdkxwaWNpZnR3d0FFV2pJWlJ6RVJWQRIEGgIIABrCBRICCAAaACIAKgAyBggBEgJ1czoAQgQIARAASgBaAHIAegCCQJwFCAAQABgAIAAqDQoGa3JvZ2VyFchKZkAqMwoFY2xvdWQVAAAAABoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbSo2CghpZGVudGl0eRXAHlo_GgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtMpUCL2dvdG8_dXJsPUNBRVN3d0VCNnpzd0ZVaUlXWUpJeUJIZXpnbHUzWmpkT2dJTEFhSElsT1M4RDZ2ckNkVnZyLVJBN18xX1BxejJBTkFvQzNaVU4yOGpnV0FoT2VFeXh1dUJ3RnkwSG9sTTRmUG50T1ZwSTl2RlZ6YWVyTE9wUFZxMzFtNUJDU2RZaVlrUnh0WnZTVEQ1ZUJNZ3FPeTctOUVia3VuMWctRkEwRnAxU0RxZ1NfbEdyenRrcHFXQ0JvS2w4VEN5b2ZxaUJPd2xrZ2NRUTFGcWU2Z1JfajNBNVd1OFdVY0pteUhqQm1rdUVIS19NNzJYSWd0VzZNOHNNdkxwaWNpZnR3d0FFV2pJWlJ6RVJWQTpAPGI-S3JvZ2VyPC9iPiB0ZXN0aW5nIDI0LWhvdXIgc3RvcmUgaG91cnMgYXQgQ2luY2lubmF0aSBsb2NhdGlvbkK7ATxiPktyb2dlcjwvYj4gaXMgdGVzdGluZyAyNC1ob3VyIHN0b3JlIGhvdXJzIGF0IG9uZSBDaW5jaW5uYXRpIGxvY2F0aW9uIGFzIHBhcnQgb2YgYSBzbWFsbCA8Yj5waWxvdDwvYj4gcHJvZ3JhbS4gRlVMTCBTVE9SWSDirIfvuI8gOyBFdmFuIFN1dHRvbiAmbWlkZG90OyAxMSByZWFjdGlvbnMgJm1pZGRvdDsgNSBjb21tZW50cy4iAhABSABYAGgA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpUCL2dvdG8_dXJsPUNBRVN3d0VCNnpzd0ZVaUlXWUpJeUJIZXpnbHUzWmpkT2dJTEFhSElsT1M4RDZ2ckNkVnZyLVJBN18xX1BxejJBTkFvQzNaVU4yOGpnV0FoT2VFeXh1dUJ3RnkwSG9sTTRmUG50T1ZwSTl2RlZ6YWVyTE9wUFZxMzFtNUJDU2RZaVlrUnh0WnZTVEQ1ZUJNZ3FPeTctOUVia3VuMWctRkEwRnAxU0RxZ1NfbEdyenRrcHFXQ0JvS2w4VEN5b2ZxaUJPd2xrZ2NRUTFGcWU2Z1JfajNBNVd1OFdVY0pteUhqQm1rdUVIS19NNzJYSWd0VzZNOHNNdkxwaWNpZnR3d0FFV2pJWlJ6RVJWQRIEGgIIABrCBRICCAAaACIAKgAyBggBEgJ1czoAQgQIARAASgBaAHIAegCCQJwFCAAQABgAIAAqDQoGa3JvZ2VyFchKZkAqMwoFY2xvdWQVAAAAABoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbSo2CghpZGVudGl0eRXAHlo_GgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtMpUCL2dvdG8_dXJsPUNBRVN3d0VCNnpzd0ZVaUlXWUpJeUJIZXpnbHUzWmpkT2dJTEFhSElsT1M4RDZ2ckNkVnZyLVJBN18xX1BxejJBTkFvQzNaVU4yOGpnV0FoT2VFeXh1dUJ3RnkwSG9sTTRmUG50T1ZwSTl2RlZ6YWVyTE9wUFZxMzFtNUJDU2RZaVlrUnh0WnZTVEQ1ZUJNZ3FPeTctOUVia3VuMWctRkEwRnAxU0RxZ1NfbEdyenRrcHFXQ0JvS2w4VEN5b2ZxaUJPd2xrZ2NRUTFGcWU2Z1JfajNBNVd1OFdVY0pteUhqQm1rdUVIS19NNzJYSWd0VzZNOHNNdkxwaWNpZnR3d0FFV2pJWlJ6RVJWQTpAPGI-S3JvZ2VyPC9iPiB0ZXN0aW5nIDI0LWhvdXIgc3RvcmUgaG91cnMgYXQgQ2luY2lubmF0aSBsb2NhdGlvbkK7ATxiPktyb2dlcjwvYj4gaXMgdGVzdGluZyAyNC1ob3VyIHN0b3JlIGhvdXJzIGF0IG9uZSBDaW5jaW5uYXRpIGxvY2F0aW9uIGFzIHBhcnQgb2YgYSBzbWFsbCA8Yj5waWxvdDwvYj4gcHJvZ3JhbS4gRlVMTCBTVE9SWSDirIfvuI8gOyBFdmFuIFN1dHRvbiAmbWlkZG90OyAxMSByZWFjdGlvbnMgJm1pZGRvdDsgNSBjb21tZW50cy4iAhABSABYAGgA",
+            "source": "Facebook \u00b7 WLWT",
+            "read_more_link": "https://www.facebook.com/wlwt5/posts/kroger-is-testing-24-hour-store-hours-at-one-cincinnati-location-as-part-of-a-sm/1547671400720242/#:~:text=Kroger%20is%20testing%2024%2Dhour%20store,pilot%20program.%20FULL%20STORY%20%E2%AC%87%EF%B8%8F&text=Evan%20Sutton&text=11%20reactions%20%C2%B7&text=5%20comments"
+          },
+          {
+            "position": 2,
+            "title": "Fort Wayne Kroger set to be open 24/7 as part of pilot ...",
+            "link": "https://www.21alivenews.com/2026/09/25/fort-wayne-kroger-set-be-open-247-part-pilot-program/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlwEB6zswFfaJXyBclipwm5riffFK5_7Q376Ba9d9IUM8M9j0okd-FJchqT1TH8J5e3MFSVNoEuF6h99tiwgDf-LYpslizfLsmHNOAbKEpUWXlduBLxtbaqjOwIpEvOxew_CZPRucy1e9fB2e0oPauB4b2b9XrdUEB3xhbpj3S_9AuYiw8quv1p026sK9GC6hiVoH9GjWknx_&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQFnoECBUQAQ&uoh=1",
+            "displayed_link": "https://www.21alivenews.com \u203a 2026/09/25 \u203a fort-way...",
+            "favicon": "https://serpapi.com/searches/6ade3d2c895c9c53e04767da/images/8_apsIVhjo35fw_VZeEHcHD6n7hRJGv7ExQKEjaQfos.png",
+            "date": "Sep 25, 2026",
+            "snippet": "(WPTA) - One Fort Wayne Kroger location is set to be one of many that are participating in a small pilot program that'll test the store being open for 24 hours ...",
+            "snippet_highlighted_words": [
+              "Kroger",
+              "pilot"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "(WPTA) - One Fort Wayne Kroger location is set to be one of many that are participating in a small pilot program that'll test the store being open for 24 hours ...",
+                "source_info_link": "https://www.21alivenews.com/2026/09/25/fort-wayne-kroger-set-be-open-247-part-pilot-program/",
+                "icon": "https://serpapi.com/searches/6ade3d2c895c9c53e04767da/images/8_apsIVhjo35fw_VZeEHcHTi7MpmxfqBu2iLux62jbVB_TV_vVBcpBUkIRqSTrPW.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CtoBL2dvdG8_dXJsPUNBRVNsd0VCNnpzd0ZjRWd5UG1lRWtvMk9zR1d5eFVTZDdyY0Z0Y2Z4RElyQTI5blltRHE4UjBFZWt5MDlFd093TllmdXV1bmJaRW9MNEhLdkNpN1R1Q3BMV1A0RzZ5LXBKVmV3T1FIRXBCSVczSWFNYkRWUHNyS1R6bnNNaHcwdzhFZWpHaUw3TkVGSEVqZWRoRnJaNENGcW84eU5yMFlaOUo2bzFIZ3ljejM5b3BrWUpPaUNxdjh2a0xZUkoxOWw4Vi1CVTdOLWdFVmtabTYSBBoCCAAakgUSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDsBAgAEAAYACAAKg0KBmtyb2dlchVKeTVAKjMKBWNsb3VkFQAAAAAaC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0qNgoIaWRlbnRpdHkVtHazPxoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbTLaAS9nb3RvP3VybD1DQUVTbHdFQjZ6c3dGY0VneVBtZUVrbzJPc0dXeXhVU2Q3cmNGdGNmeERJckEyOW5ZbURxOFIwRWVreTA5RXdPd05ZZnV1dW5iWkVvTDRIS3ZDaTdUdUNwTFdQNEc2eS1wSlZld09RSEVwQklXM0lhTWJEVlBzcktUem5zTWh3MHc4RWVqR2lMN05FRkhFamVkaEZyWjRDRnFvOHlOcjBZWjlKNm8xSGd5Y3ozOW9wa1lKT2lDcXY4dmtMWVJKMTlsOFYtQlU3Ti1nRVZrWm02OkxGb3J0IFdheW5lIDxiPktyb2dlcjwvYj4gc2V0IHRvIGJlIG9wZW4gMjQvNyBhcyBwYXJ0IG9mIDxiPnBpbG90PC9iPiBwcm9ncmFtQroBKFdQVEEpIC0gT25lIEZvcnQgV2F5bmUgPGI-S3JvZ2VyPC9iPiBsb2NhdGlvbiBpcyBzZXQgdG8gYmUgb25lIG9mIG1hbnkgdGhhdCBhcmUgcGFydGljaXBhdGluZyBpbiBhIHNtYWxsIDxiPnBpbG90PC9iPiBwcm9ncmFtIHRoYXQmIzM5O2xsIHRlc3QgdGhlIHN0b3JlIGJlaW5nIG9wZW4gZm9yIDI0IGhvdXJzJm5ic3A7Li4uIgIQAUgAWABoAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CtoBL2dvdG8_dXJsPUNBRVNsd0VCNnpzd0ZjRWd5UG1lRWtvMk9zR1d5eFVTZDdyY0Z0Y2Z4RElyQTI5blltRHE4UjBFZWt5MDlFd093TllmdXV1bmJaRW9MNEhLdkNpN1R1Q3BMV1A0RzZ5LXBKVmV3T1FIRXBCSVczSWFNYkRWUHNyS1R6bnNNaHcwdzhFZWpHaUw3TkVGSEVqZWRoRnJaNENGcW84eU5yMFlaOUo2bzFIZ3ljejM5b3BrWUpPaUNxdjh2a0xZUkoxOWw4Vi1CVTdOLWdFVmtabTYSBBoCCAAakgUSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDsBAgAEAAYACAAKg0KBmtyb2dlchVKeTVAKjMKBWNsb3VkFQAAAAAaC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0qNgoIaWRlbnRpdHkVtHazPxoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbTLaAS9nb3RvP3VybD1DQUVTbHdFQjZ6c3dGY0VneVBtZUVrbzJPc0dXeXhVU2Q3cmNGdGNmeERJckEyOW5ZbURxOFIwRWVreTA5RXdPd05ZZnV1dW5iWkVvTDRIS3ZDaTdUdUNwTFdQNEc2eS1wSlZld09RSEVwQklXM0lhTWJEVlBzcktUem5zTWh3MHc4RWVqR2lMN05FRkhFamVkaEZyWjRDRnFvOHlOcjBZWjlKNm8xSGd5Y3ozOW9wa1lKT2lDcXY4dmtMWVJKMTlsOFYtQlU3Ti1nRVZrWm02OkxGb3J0IFdheW5lIDxiPktyb2dlcjwvYj4gc2V0IHRvIGJlIG9wZW4gMjQvNyBhcyBwYXJ0IG9mIDxiPnBpbG90PC9iPiBwcm9ncmFtQroBKFdQVEEpIC0gT25lIEZvcnQgV2F5bmUgPGI-S3JvZ2VyPC9iPiBsb2NhdGlvbiBpcyBzZXQgdG8gYmUgb25lIG9mIG1hbnkgdGhhdCBhcmUgcGFydGljaXBhdGluZyBpbiBhIHNtYWxsIDxiPnBpbG90PC9iPiBwcm9ncmFtIHRoYXQmIzM5O2xsIHRlc3QgdGhlIHN0b3JlIGJlaW5nIG9wZW4gZm9yIDI0IGhvdXJzJm5ic3A7Li4uIgIQAUgAWABoAA",
+            "source": "WPTA | 21Alive | Fort Wayne, IN",
+            "read_more_link": "https://www.21alivenews.com/2026/09/25/fort-wayne-kroger-set-be-open-247-part-pilot-program/#:~:text=(WPTA)%20%2D%20One%20Fort%20Wayne,for%2024%20hours%20a%20day."
+          },
+          {
+            "position": 3,
+            "title": "Kroger's 500 Robots, Delhaize's 90% Forecast Accuracy & ...",
+            "link": "https://www.youtube.com/watch?v=dLaKto2EJkg",
+            "displayed_link": "60+ views \u00b7 2 months ago",
+            "thumbnail": "https://serpapi.com/searches/6ade3d2c895c9c53e04767da/images/8_apsIVhjo35fw_VZeEHcP1jqsi0Zy3N3EsByov0b-s.jpeg",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png",
+            "snippet": "Kroger's 500 Robots, Delhaize's 90% Forecast Accuracy & McDonald's 220M-Record AI Data Lake \u00b7 Comments.",
+            "duration": "9:35",
+            "about_this_result": {
+              "source": {
+                "description": "Kroger's 500 Robots, Delhaize's 90% Forecast Accuracy & McDonald's 220M-Record AI Data Lake \u00b7 Comments.",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAhUlEQVR4AWNwL_ChCFPHgP8MxqxA7ArEKVBcCcUNIAznI-RdQXrABgAZpv8ZjP6Tg0F6QQbsosCAXSADHmGVVPIC0jKEDHgAMuAbmgRE445D___feYzXIJBeBigH04BVW_9DAcgwqEGYaik2gGIvUByIlEbjDooTEiwps5GRlNmolpkowgBVP9wMSzSKGAAAAABJRU5ErkJggg.png"
+              }
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVm5hak0tNWFxM25lcDNNazYyY2lKeS1JOXdjZVcyOEtTekNnRm1VcG43dDFoaTR1ZG9JeXd6ZlkwN0VYQTVTT1dNYVVqOUdCTGctTmNFN3RqemVKSGVsLXlEM3hXZmNzdmw0em85MW01VjdxNmZZUVhNVC1YX1R0SjdTNnJpRXkzdVESFgoQCgQIMEgCCgQISEgCCgIIPxoCCAAaFhIAGgAiACoAMgA6AEIASgBaAHIAegAiAhABSABYAGgA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CpgBL2dvdG8_dXJsPUNBRVNaZ0hyT3pBVm5hak0tNWFxM25lcDNNazYyY2lKeS1JOXdjZVcyOEtTekNnRm1VcG43dDFoaTR1ZG9JeXd6ZlkwN0VYQTVTT1dNYVVqOUdCTGctTmNFN3RqemVKSGVsLXlEM3hXZmNzdmw0em85MW01VjdxNmZZUVhNVC1YX1R0SjdTNnJpRXkzdVESFgoQCgQIMEgCCgQISEgCCgIIPxoCCAAaFhIAGgAiACoAMgA6AEIASgBaAHIAegAiAhABSABYAGgA",
+            "video_link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcSZ_teW4BihAuSHPdOWGV-zwa7hgr0H9IJ5bQ",
+            "source": "YouTube \u00b7 IHL Group"
+          },
+          {
+            "position": 4,
+            "title": "Kroger Wants AI To Reshape Corporate Work. Will Store ...",
+            "link": "https://transformidy.com/insights/special-intelligence/kroger-ai-store-experience-2026/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESkgEB6zswFQaZen29uPgK-9NXFtfUSXqZA9Os4gi1bX7ZONH7tGhH0IPKvVNkB_IEMJr0SzAvu3a9TuR1foUoNsa3GCBTKrL3jd6_ScrcH_Lvk03wHwPeaV6cG6yJaCeIbe3hs8dQUfDKRsY2R81bW81jfsFXHeMUjMPCwKp9zR_DBkCkOUChrAdWRokgf2ntPk308A&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQFnoECBQQAQ&uoh=1",
+            "displayed_link": "https://transformidy.com \u203a insights \u203a special-intelligence",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAIAAAD9b0jDAAAAlklEQVR4AWP4jwR-__79nxoAxdDKmgYGIoCTmw9IZ-ROhvS9cIRpKAJ0dPUBtbEKKeJCDAwSwWHRIJ0Ju3jz98MRHkMR5lLXUIS5DFwyIMQvT6GhCNDTN0lOzVDHyEZCQQdmLsJQQmFKCEyaMp2BgRfZ0ICQKGJjH4-TKTV01NBRQ0cNHTV01NBRQ5tbuzAbE4QMpQEAAKJo65B33qFwAAAAAElFTkSuQmCC.png",
+            "date": "Oct 15, 2026",
+            "snippet": "Kroger's planned AI-enabled restructuring raises an operating question: will store teams and shoppers experience better support, responsiveness and ...",
+            "snippet_highlighted_words": [
+              "Kroger's"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "Kroger's planned AI-enabled restructuring raises an operating question: will store teams and shoppers experience better support, responsiveness and ...",
+                "source_info_link": "https://transformidy.com/insights/special-intelligence/kroger-ai-store-experience-2026/",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAIAAAD9b0jDAAAAlklEQVR4AWP4jwR-__79nxoAxdDKmgYGIoCTmw9IZ-ROhvS9cIRpKAJ0dPUBtbEKKeJCDAwSwWHRIJ0Ju3jz98MRHkMR5lLXUIS5DFwyIMQvT6GhCNDTN0lOzVDHyEZCQQdmLsJQQmFKCEyaMp2BgRfZ0ICQKGJjH4-TKTV01NBRQ0cNHTV01NBRQ5tbuzAbE4QMpQEAAKJo65B33qFwAAAAAElFTkSuQmCC.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CtQBL2dvdG8_dXJsPUNBRVNrZ0VCNnpzd0ZadEJWMGRtRnBoenJjSVRxeEJid3JrZnRMV0lpTmgya2NUalFULU8zWUtfNlRSNEtpUG5iMlhwUTRSN2l1Mm51UG9KLW5CVDVjT2tTVG9Jem9kVThmbVlpeG5QczB5UTVFQV9rQkZ1RzY1RzRKb2d4cFhmekVvUERyMGc0NW9ISWhZTkpWTWxQVjF5M1dPZkk5akxFT0tKS3BqNzVKOE5aWkpaLV9yNkFuVEVqRHhZT2ZYeG5ITDl0MUhMdmcSBBoCCAAa6wQSABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAxwQIABAAGAAgACoNCgZrcm9nZXIVQrNgQCozCgVjbG91ZBVNm40-GgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtKjYKCGlkZW50aXR5Fe3JBD4aC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0y1AEvZ290bz91cmw9Q0FFU2tnRUI2enN3Rlp0QlYwZG1GcGh6cmNJVHF4QmJ3cmtmdExXSWlOaDJrY1RqUVQtTzNZS182VFI0S2lQbmIyWHBRNFI3aXUybnVQb0otbkJUNWNPa1NUb0l6b2RVOGZtWWl4blBzMHlRNUVBX2tCRnVHNjVHNEpvZ3hwWGZ6RW9QRHIwZzQ1b0hJaFlOSlZNbFBWMXkzV09mSTlqTEVPS0pLcGo3NUo4TlpaSlotX3I2QW5URWpEeFlPZlh4bkhMOXQxSEx2ZzpAPGI-S3JvZ2VyPC9iPiBXYW50cyBBSSBUbyBSZXNoYXBlIENvcnBvcmF0ZSBXb3JrLiBXaWxsIFN0b3JlIC4uLkKnATxiPktyb2dlciYjMzk7czwvYj4gcGxhbm5lZCBBSS1lbmFibGVkIHJlc3RydWN0dXJpbmcgcmFpc2VzIGFuIG9wZXJhdGluZyBxdWVzdGlvbjogd2lsbCBzdG9yZSB0ZWFtcyBhbmQgc2hvcHBlcnMgZXhwZXJpZW5jZSBiZXR0ZXIgc3VwcG9ydCwgcmVzcG9uc2l2ZW5lc3MgYW5kJm5ic3A7Li4uIgIQAUgAWABoAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CtQBL2dvdG8_dXJsPUNBRVNrZ0VCNnpzd0ZadEJWMGRtRnBoenJjSVRxeEJid3JrZnRMV0lpTmgya2NUalFULU8zWUtfNlRSNEtpUG5iMlhwUTRSN2l1Mm51UG9KLW5CVDVjT2tTVG9Jem9kVThmbVlpeG5QczB5UTVFQV9rQkZ1RzY1RzRKb2d4cFhmekVvUERyMGc0NW9ISWhZTkpWTWxQVjF5M1dPZkk5akxFT0tKS3BqNzVKOE5aWkpaLV9yNkFuVEVqRHhZT2ZYeG5ITDl0MUhMdmcSBBoCCAAa6wQSABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAxwQIABAAGAAgACoNCgZrcm9nZXIVQrNgQCozCgVjbG91ZBVNm40-GgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtKjYKCGlkZW50aXR5Fe3JBD4aC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0y1AEvZ290bz91cmw9Q0FFU2tnRUI2enN3Rlp0QlYwZG1GcGh6cmNJVHF4QmJ3cmtmdExXSWlOaDJrY1RqUVQtTzNZS182VFI0S2lQbmIyWHBRNFI3aXUybnVQb0otbkJUNWNPa1NUb0l6b2RVOGZtWWl4blBzMHlRNUVBX2tCRnVHNjVHNEpvZ3hwWGZ6RW9QRHIwZzQ1b0hJaFlOSlZNbFBWMXkzV09mSTlqTEVPS0pLcGo3NUo4TlpaSlotX3I2QW5URWpEeFlPZlh4bkhMOXQxSEx2ZzpAPGI-S3JvZ2VyPC9iPiBXYW50cyBBSSBUbyBSZXNoYXBlIENvcnBvcmF0ZSBXb3JrLiBXaWxsIFN0b3JlIC4uLkKnATxiPktyb2dlciYjMzk7czwvYj4gcGxhbm5lZCBBSS1lbmFibGVkIHJlc3RydWN0dXJpbmcgcmFpc2VzIGFuIG9wZXJhdGluZyBxdWVzdGlvbjogd2lsbCBzdG9yZSB0ZWFtcyBhbmQgc2hvcHBlcnMgZXhwZXJpZW5jZSBiZXR0ZXIgc3VwcG9ydCwgcmVzcG9uc2l2ZW5lc3MgYW5kJm5ic3A7Li4uIgIQAUgAWABoAA",
+            "source": "Transformidy"
+          },
+          {
+            "position": 5,
+            "title": "Retail Cloud Is a $58B Market. Partners Decide Who Gets ...",
+            "link": "https://www.linkedin.com/pulse/retail-cloud-58b-market-partners-decide-who-gets-next-kamel-rust-xsfaf",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESoAEB6zswFaefScuvZztFX3ipp8cvDt6n7aU28zqFFsIa8AV7jVkwfs0_SQi_-OJiAhpKrgo05cmx5qdSzRRgWrXySMuJUWpYotONyFZkJJMYpxH-ilqQH16BvTfg5RwnQbJNgkcUTO2E9H0dpRBV5x3CmxaDIAuhmd4AUNpqeFeMYO2xQorykrTsJ6okCN-R8xjhizq2KngKb6Lbl_EKPBIE&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQFnoECBIQAQ&uoh=1",
+            "displayed_link": "9 reactions",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAm0lEQVR4AWP4__8_RRhMyLfs3sNQvOk_KRikB24ATNB2yhEQJtoQuAEwzVAAYtPVAMJe4Cjf8l-0bsd_RkIGQAGc_ej9t_-TDt_7_-vPXzD_6Yfv_-2nHSXWAAT49P33_z9__4HZl559JM2Aqm3XwXyXGcfA_H___pFmgFj9DjCfp3IrTIgkA5ADbbAbQA6mKDPp9x7YBTOAIgwAVba5DGceMlQAAAAASUVORK5CYII.png",
+            "snippet": "Kroger split its workloads between Microsoft Azure and Google Cloud , and Albertsons ' CIO Anuj Dhanda said of Amazon, \"We wouldn't want to develop the ...",
+            "snippet_highlighted_words": [
+              "Kroger",
+              "Cloud"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "Kroger split its workloads between Microsoft Azure and Google Cloud , and Albertsons ' CIO Anuj Dhanda said of Amazon, \"We wouldn't want to develop the ...",
+                "source_info_link": "https://www.linkedin.com/pulse/retail-cloud-58b-market-partners-decide-who-gets-next-kamel-rust-xsfaf",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8_9hAAAAm0lEQVR4AWP4__8_RRhMyLfs3sNQvOk_KRikB24ATNB2yhEQJtoQuAEwzVAAYtPVAMJe4Cjf8l-0bsd_RkIGQAGc_ej9t_-TDt_7_-vPXzD_6Yfv_-2nHSXWAAT49P33_z9__4HZl559JM2Aqm3XwXyXGcfA_H___pFmgFj9DjCfp3IrTIgkA5ADbbAbQA6mKDPp9x7YBTOAIgwAVba5DGceMlQAAAAASUVORK5CYII.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CuYBL2dvdG8_dXJsPUNBRVNvQUVCNnpzd0ZmQ2trWlVwWFRTSExUY09JeGktQ2lGcUlRMklUMHR2Vjk2UjdoS0lHalVvOWxuTV91cGM5VEFwRldsR3ctRk5sNE1aWjRQbEp1Q21pWUc4MXRLV1hVZy1YZHZZQUNMVG8tZzdiVWtOYmpyMFhlLXJRT3hjOVZtMllmWUNqUV9CMmZrQk5WTDUzVG9yM2lSQ3hWUU1xSVdYdEpocWZSS3JDNTYwOVZiR1BpZkNDcGVHTUJaSWFIQzBrci1PWFNXSzRZUHpBdHNfT2Jqc0hSZWYSBBoCCAAalwUSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA8wQIABAAGAAgACoNCgZrcm9nZXIVZfbePiozCgVjbG91ZBWlWlFAGgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtKjYKCGlkZW50aXR5FaXYaz4aC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0y5gEvZ290bz91cmw9Q0FFU29BRUI2enN3RmZDa2taVXBYVFNITFRjT0l4aS1DaUZxSVEySVQwdHZWOTZSN2hLSUdqVW85bG5NX3VwYzlUQXBGV2xHdy1GTmw0TVpaNFBsSnVDbWlZRzgxdEtXWFVnLVhkdllBQ0xUby1nN2JVa05ianIwWGUtclFPeGM5Vm0yWWZZQ2pRX0IyZmtCTlZMNTNUb3IzaVJDeFZRTXFJV1h0SmhxZlJLckM1NjA5VmJHUGlmQ0NwZUdNQlpJYUhDMGtyLU9YU1dLNFlQekF0c19PYmpzSFJlZjpGUmV0YWlsIDxiPkNsb3VkPC9iPiBJcyBhICQ1OEIgTWFya2V0LiBQYXJ0bmVycyBEZWNpZGUgV2hvIEdldHMgdGhlIC4uLkK7ATxiPktyb2dlcjwvYj4gc3BsaXQgaXRzIHdvcmtsb2FkcyBiZXR3ZWVuIE1pY3Jvc29mdCBBenVyZSBhbmQgR29vZ2xlIDxiPkNsb3VkPC9iPiAsIGFuZCBBbGJlcnRzb25zICYjMzk7IENJTyBBbnVqIERoYW5kYSBzYWlkIG9mIEFtYXpvbiwgJnF1b3Q7V2Ugd291bGRuJiMzOTt0IHdhbnQgdG8gZGV2ZWxvcCB0aGUmbmJzcDsuLi4iAhABSABYAGgA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CuYBL2dvdG8_dXJsPUNBRVNvQUVCNnpzd0ZmQ2trWlVwWFRTSExUY09JeGktQ2lGcUlRMklUMHR2Vjk2UjdoS0lHalVvOWxuTV91cGM5VEFwRldsR3ctRk5sNE1aWjRQbEp1Q21pWUc4MXRLV1hVZy1YZHZZQUNMVG8tZzdiVWtOYmpyMFhlLXJRT3hjOVZtMllmWUNqUV9CMmZrQk5WTDUzVG9yM2lSQ3hWUU1xSVdYdEpocWZSS3JDNTYwOVZiR1BpZkNDcGVHTUJaSWFIQzBrci1PWFNXSzRZUHpBdHNfT2Jqc0hSZWYSBBoCCAAalwUSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJA8wQIABAAGAAgACoNCgZrcm9nZXIVZfbePiozCgVjbG91ZBWlWlFAGgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtKjYKCGlkZW50aXR5FaXYaz4aC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0y5gEvZ290bz91cmw9Q0FFU29BRUI2enN3RmZDa2taVXBYVFNITFRjT0l4aS1DaUZxSVEySVQwdHZWOTZSN2hLSUdqVW85bG5NX3VwYzlUQXBGV2xHdy1GTmw0TVpaNFBsSnVDbWlZRzgxdEtXWFVnLVhkdllBQ0xUby1nN2JVa05ianIwWGUtclFPeGM5Vm0yWWZZQ2pRX0IyZmtCTlZMNTNUb3IzaVJDeFZRTXFJV1h0SmhxZlJLckM1NjA5VmJHUGlmQ0NwZUdNQlpJYUhDMGtyLU9YU1dLNFlQekF0c19PYmpzSFJlZjpGUmV0YWlsIDxiPkNsb3VkPC9iPiBJcyBhICQ1OEIgTWFya2V0LiBQYXJ0bmVycyBEZWNpZGUgV2hvIEdldHMgdGhlIC4uLkK7ATxiPktyb2dlcjwvYj4gc3BsaXQgaXRzIHdvcmtsb2FkcyBiZXR3ZWVuIE1pY3Jvc29mdCBBenVyZSBhbmQgR29vZ2xlIDxiPkNsb3VkPC9iPiAsIGFuZCBBbGJlcnRzb25zICYjMzk7IENJTyBBbnVqIERoYW5kYSBzYWlkIG9mIEFtYXpvbiwgJnF1b3Q7V2Ugd291bGRuJiMzOTt0IHdhbnQgdG8gZGV2ZWxvcCB0aGUmbmJzcDsuLi4iAhABSABYAGgA",
+            "source": "LinkedIn \u00b7 Monica Kamel-Rust, MBA",
+            "read_more_link": "https://www.linkedin.com/pulse/retail-cloud-58b-market-partners-decide-who-gets-next-kamel-rust-xsfaf#:~:text=Kroger%20split%20its%20workloads%20between,much%20as%20Amazon%20would%20do."
+          },
+          {
+            "position": 6,
+            "title": "Kroger to lay off 3000 employees as it leans into artificial ...",
+            "link": "https://www.facebook.com/wrdwtv/posts/kroger-to-lay-off-3000-employees-as-it-leans-into-artificial-intelligence/1543009967872875/",
+            "displayed_link": "50+ reactions \u00b7 1 week ago",
+            "thumbnail": "https://serpapi.com/searches/6ade3d2c895c9c53e04767da/images/8_apsIVhjo35fw_VZeEHcAtTRkczr_oeI-vtYJkzqVY.jpeg",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png",
+            "snippet": "Kroger deploys AI-powered pricing system in 500 stores. Adam Boe. 2y \u00b7 Public \u00b7 Kroger shoppers, be aware. Kroger has been deploying its AI-powered pricing ...",
+            "duration": "0:51",
+            "about_this_result": {
+              "source": {
+                "description": "Kroger deploys AI-powered pricing system in 500 stores. Adam Boe. 2y \u00b7 Public \u00b7 Kroger shoppers, be aware. Kroger has been deploying its AI-powered pricing ...",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAXVBMVEVHcEwHZv8HaP8IZ_8IZ_8IZv8IaP8IZ_8HZv8Haf8IZ_8IaP8IZ_8AXv8AV_8AYv-SqP_P1__m6__e5f9wlP____-tvP9jiv82c_8IZ_8Iaf-fsf________8AW_-wrobhAAAAH3RSTlMAM4bC6v1h7v8Z3UL_______7_________wRiFwenBhp_Z0gAAAOhJREFUeAFtk0UWwzAMBWWHFHOZe_9bBn9Nr7Mdg5AiQjZt17WNFFTTDxwZ-kKNigvUmJw2XGF0dByx1jlnPTPDjiYqDofj8XQ4L9bsL6vozpedq13_3eJk4G-XXPIac8zBHUs5EIl48Q4Tws3ziiAZ5f7j3Vq7O5b0iOGE1Z0cRxpqS3mwSbbU4VHndukW8GwHiQ_BzUO2KceIw7MIqJBHyIZk_WwKSv6KcD_frlsqt_P5joBELJ-3iNZD8YDC_82zz1pWS5U1u5bmmY1JLdMQmVoaOIxmIdVYDXWUxVAD8Xp_FvnN1mEG0f0e5ixC4ikAAAAASUVORK5CYII.png"
+              }
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=Co0CL2dvdG8_dXJsPUNBRVN2UUVCNnpzd0ZXZ3VzWGpNcFlsMG5jdjdPY0JjWFpiSUMyeXV6bGdCWk1EUUJFMy10WWp2RDdMdWt1QksxZ0p2TTgybERlalpGcE52ZWVXV2tBY0dVSHNHeGJXck9JTkttbnJCY1ZPcThPWFkxUHgteXpvTGhkZThUNW5qd2U2Y2tnRDYxcXlHTko4RlpEYzU0dkVjUFllNWs2OFVTSHVHS2JkUGVTX3RCU3hla1BtUkZsemc2T2RwZ0htYmJxN0dvRk4zNnRGbV9pVzkxbkp2WHZkMlM0VnVqaGktWWVTbmU0c1ZWUXJZYUFtYlVsVG0ydDBlUTRyX0p2eGgyNVkSFgoQCgQIMEgCCgQISEgCCgIIPxoCCAAaFhIAGgAiACoAMgA6AEIASgBaAHIAegAiAhABSABYAGgA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=Co0CL2dvdG8_dXJsPUNBRVN2UUVCNnpzd0ZXZ3VzWGpNcFlsMG5jdjdPY0JjWFpiSUMyeXV6bGdCWk1EUUJFMy10WWp2RDdMdWt1QksxZ0p2TTgybERlalpGcE52ZWVXV2tBY0dVSHNHeGJXck9JTkttbnJCY1ZPcThPWFkxUHgteXpvTGhkZThUNW5qd2U2Y2tnRDYxcXlHTko4RlpEYzU0dkVjUFllNWs2OFVTSHVHS2JkUGVTX3RCU3hla1BtUkZsemc2T2RwZ0htYmJxN0dvRk4zNnRGbV9pVzkxbkp2WHZkMlM0VnVqaGktWWVTbmU0c1ZWUXJZYUFtYlVsVG0ydDBlUTRyX0p2eGgyNVkSFgoQCgQIMEgCCgQISEgCCgIIPxoCCAAaFhIAGgAiACoAMgA6AEIASgBaAHIAegAiAhABSABYAGgA",
+            "source": "Facebook \u00b7 News 12 26 Augusta"
+          },
+          {
+            "position": 7,
+            "title": "Assistant Store Leader",
+            "link": "https://www.krogerfamilycareers.com/en/sites/CX_2001/job/243686/?useExactKeywordFlag=true",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlAEB6zswFa8phSC9fMI6ZVPi7_33d-k3XGPNdIYLuhMyzWpS-bll0LOxjc6fuY4_FaLL2G3ouxPvFgwAawNo8xYp-aS2YQzmGMA8TnI2fp9sXJulNSRJHYMEBwcAshf1kkfESJ2BfMbLNQs3EGNFMp9IxDUSyOaHNer38xUDhpLAl2si6drTTRBXbj6ErHR0KjjT2SyU&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQFnoECA8QAQ&uoh=1",
+            "displayed_link": "https://www.krogerfamilycareers.com \u203a sites \u203a job",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAM1BMVEVHcEwOSJgQS5gRS5gRS5gRS5gRS5gQS5gRS5gQSpgQS5YQS5gQSpgQS5gRS5gRS5gRS5gE0WGyAAAAEXRSTlMABXzcoyr8ks5oEblLOh5Z7IWQS5IAAAC6SURBVHgBYhiCAMD2VCBbAIJAZEmT-1_25cQPW9kaGgOid0xhzmF5w_qI_lI7btqJ9b42-C_CizK-kjx_QWPisXXvTuttoKqddLWmfb1ABdMIJFc5vY6ap-BrRJGhQilKD86xVTkrS7L83ZtBKimEZqxtp6YiLUQY85Pp2C9QRwBNEDYlxOcb5EXKKye9Lt7UT-I09rnzd9fr891x6DJ8tDcF8waeOkTNI_dVasNhpze6jTXClZ4bogAAq8EG0EFDD5EAAAAASUVORK5CYII.png",
+            "date": "4 days ago",
+            "snippet": "The Kroger Family of Companies offers comprehensive benefits to support your Associate Well-Being, including Physical, Emotional, Financial and more. We'll help ...",
+            "snippet_highlighted_words": [
+              "Kroger"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "The Kroger Family of Companies offers comprehensive benefits to support your Associate Well-Being, including Physical, Emotional, Financial and more. We'll help ...",
+                "source_info_link": "https://www.krogerfamilycareers.com/en/sites/CX_2001/job/243686/?useExactKeywordFlag=true",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAM1BMVEVHcEwOSJgQS5gRS5gRS5gRS5gRS5gQS5gRS5gQSpgQS5YQS5gQSpgQS5gRS5gRS5gRS5gE0WGyAAAAEXRSTlMABXzcoyr8ks5oEblLOh5Z7IWQS5IAAAC6SURBVHgBYhiCAMD2VCBbAIJAZEmT-1_25cQPW9kaGgOid0xhzmF5w_qI_lI7btqJ9b42-C_CizK-kjx_QWPisXXvTuttoKqddLWmfb1ABdMIJFc5vY6ap-BrRJGhQilKD86xVTkrS7L83ZtBKimEZqxtp6YiLUQY85Pp2C9QRwBNEDYlxOcb5EXKKye9Lt7UT-I09rnzd9fr891x6DJ8tDcF8waeOkTNI_dVasNhpze6jTXClZ4bogAAq8EG0EFDD5EAAAAASUVORK5CYII.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CtYBL2dvdG8_dXJsPUNBRVNsQUVCNnpzd0ZZcXBMa0hZa0xIQXRKU2dzbjBjUk9kU085RUJvZ3RQTmlKZlVMOFBOelpmNFpDd1FfclRMc3o2eDYxVWMtLWw1VW5hcGlMWWZUMHpEbVJIdEo0cGVvYm1RaE5hYk9lczNaQ19UZnJCSVk3SF9pbG52T1M2M3FYMmNDQ1dJQUFYc2x2dW5oNkFjNFl5M0g1ZVBCTnRhWDhRcm5MbW5ZcXc5TkVhZkVRYWhlSjd1X28yRHlDQ1gtLWJWMzh1NTM3ShIEGgIIABrwBBIAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDMBAgAEAAYACAAKg0KBmtyb2dlchW-mWJAKjMKBWNsb3VkFQDYZD0aC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0qNgoIaWRlbnRpdHkVnZjCPhoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbTLWAS9nb3RvP3VybD1DQUVTbEFFQjZ6c3dGWXFwTGtIWWtMSEF0SlNnc24wY1JPZFNPOUVCb2d0UE5pSmZVTDhQTnpaZjRaQ3dRX3JUTHN6Nng2MVVjLS1sNVVuYXBpTFlmVDB6RG1SSHRKNHBlb2JtUWhOYWJPZXMzWkNfVGZyQklZN0hfaWxudk9TNjNxWDJjQ0NXSUFBWHNsdnVuaDZBYzRZeTNINWVQQk50YVg4UXJuTG1uWXF3OU5FYWZFUWFoZUo3dV9vMkR5Q0NYLS1iVjM4dTUzN0o6NkFzc2lzdGFudCBTdG9yZSBMZWFkZXIgLSBUaGUgPGI-S3JvZ2VyPC9iPiBDby4gQ2FyZWVyc0K0AVRoZSA8Yj5Lcm9nZXI8L2I-IEZhbWlseSBvZiBDb21wYW5pZXMgb2ZmZXJzIGNvbXByZWhlbnNpdmUgYmVuZWZpdHMgdG8gc3VwcG9ydCB5b3VyIEFzc29jaWF0ZSBXZWxsLUJlaW5nLCBpbmNsdWRpbmcgUGh5c2ljYWwsIEVtb3Rpb25hbCwgRmluYW5jaWFsIGFuZCBtb3JlLiBXZSYjMzk7bGwgaGVscCZuYnNwOy4uLiICEAFIAFgAaAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CtYBL2dvdG8_dXJsPUNBRVNsQUVCNnpzd0ZZcXBMa0hZa0xIQXRKU2dzbjBjUk9kU085RUJvZ3RQTmlKZlVMOFBOelpmNFpDd1FfclRMc3o2eDYxVWMtLWw1VW5hcGlMWWZUMHpEbVJIdEo0cGVvYm1RaE5hYk9lczNaQ19UZnJCSVk3SF9pbG52T1M2M3FYMmNDQ1dJQUFYc2x2dW5oNkFjNFl5M0g1ZVBCTnRhWDhRcm5MbW5ZcXc5TkVhZkVRYWhlSjd1X28yRHlDQ1gtLWJWMzh1NTM3ShIEGgIIABrwBBIAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDMBAgAEAAYACAAKg0KBmtyb2dlchW-mWJAKjMKBWNsb3VkFQDYZD0aC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0qNgoIaWRlbnRpdHkVnZjCPhoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbTLWAS9nb3RvP3VybD1DQUVTbEFFQjZ6c3dGWXFwTGtIWWtMSEF0SlNnc24wY1JPZFNPOUVCb2d0UE5pSmZVTDhQTnpaZjRaQ3dRX3JUTHN6Nng2MVVjLS1sNVVuYXBpTFlmVDB6RG1SSHRKNHBlb2JtUWhOYWJPZXMzWkNfVGZyQklZN0hfaWxudk9TNjNxWDJjQ0NXSUFBWHNsdnVuaDZBYzRZeTNINWVQQk50YVg4UXJuTG1uWXF3OU5FYWZFUWFoZUo3dV9vMkR5Q0NYLS1iVjM4dTUzN0o6NkFzc2lzdGFudCBTdG9yZSBMZWFkZXIgLSBUaGUgPGI-S3JvZ2VyPC9iPiBDby4gQ2FyZWVyc0K0AVRoZSA8Yj5Lcm9nZXI8L2I-IEZhbWlseSBvZiBDb21wYW5pZXMgb2ZmZXJzIGNvbXByZWhlbnNpdmUgYmVuZWZpdHMgdG8gc3VwcG9ydCB5b3VyIEFzc29jaWF0ZSBXZWxsLUJlaW5nLCBpbmNsdWRpbmcgUGh5c2ljYWwsIEVtb3Rpb25hbCwgRmluYW5jaWFsIGFuZCBtb3JlLiBXZSYjMzk7bGwgaGVscCZuYnNwOy4uLiICEAFIAFgAaAA",
+            "source": "The Kroger Co. Careers",
+            "read_more_link": "https://www.krogerfamilycareers.com/en/sites/CX_2001/job/243686/?useExactKeywordFlag=true#:~:text=The%20Kroger%20Family%20of%20Companies,you%20thrive%2C%20with%20access%20to%3A"
+          },
+          {
+            "position": 8,
+            "title": "Kroger tests 24-hour stores in Ohio and Indiana",
+            "link": "https://finance.yahoo.com/small-business/articles/kroger-tests-24-hour-stores-181106223.html",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESlwEB6zswFRNztaDH-5vHqpUUgPgJeyuZAyozWMg-6n11gKd6j3KcPJ6uzCdZ7CUlMz0o1acGU2oHFvHCf6Km30Hg-_NH7KOHjWeSYwzTGbbc25LO1pmBoSrLg0EJr5GMu1gU_uQINb1OUYAec0Yg4BPNMhaBl9I4mn075iIZqIi14q8HQOkhoL8ZFdMKjL3VIhiMek4AEnGd&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQFnoECBAQAQ&uoh=1",
+            "displayed_link": "https://finance.yahoo.com \u203a small-business \u203a articles \u203a k...",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAA8FBMVEVeAc1dActaAcVYAcFXAb5WAbxUAbhTAbVRALFPAK1NAKlLAKRIAKyKyVFJAKFVN6Oe8wqIxFJIAJ1OALtXK7BGALFiZJKl_wB7pWo6AKmOz01fU6BzkXpoeIStotBUGbSZ6CiQ1EVxh4aEulxWSZXa1un___8zAJhGAJldR6cwALBgXpaT3DhOFKjz8vdpb5Xm5e1PLaBsT7JDAJPIweJeNLB1mHOPf8Lc3Op7ZLkgAJq0rNQaAIsyAIhBAI9AAIw-AIg8AINXO5S8udBIIp19b66Cdqqgl74hAHo5AH2rpMdxXqGAbrOfksNCIoVmTKYUy_OsAAABhklEQVR4AW3RBXYDMQwEUIeZs2EGhbehtmFmvP9tOvI-l-exv0mS4JhMJrPZbLFYrTabzW53OJxOp8vlcjNBlCmSBvz_GMjtEf8f84I8wH-P-bwwv_h2zK6OBYIhr8fvDwtJ0iJR45wWiyeSbGEB4xthqXhac8Ey8WwyBwOqK_OFYime1VxaOV5JVqkGqwtJjkgjXm5qrXhCaxfCHZ30WrherwvDXuKZZq7r7QXjqWSfCAgbCDZ7Jh5rDrH06n9LvpOBg8FAoDZHpNDQRsQZT6YkcTZglHV78zoZGZGB88FgsRBOtj59j0TYUnDZSfqLMKALWB39SnW-XC5XwhiOv6YymHOkAdk8spVcN1eAG5lWa_GNAg2QtFVlAwOy1cK4cDbdzha4EJeuKL1GBB-r0Y62REOiPVFap8Oxe4KdBcxfm3ar-q47vIy6x0t3dB1t06DzWcjXenS7k769VO-6vunSgR4gYJjxSXhN5nRanU7n01kh_3_-rQDkrBCEKIMoA_6qW5LKB-nIZaQqRO4KAAAAAElFTkSuQmCC.png",
+            "date": "Oct 1, 2026",
+            "snippet": "Kroger is piloting 24-hour operations at six stores in Ohio and Indiana, the first time the Cincinnati-based grocer has moved in this direction since ...",
+            "snippet_highlighted_words": [
+              "Kroger"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "Kroger is piloting 24-hour operations at six stores in Ohio and Indiana, the first time the Cincinnati-based grocer has moved in this direction since ...",
+                "source_info_link": "https://finance.yahoo.com/small-business/articles/kroger-tests-24-hour-stores-181106223.html",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAA8FBMVEVeAc1dActaAcVYAcFXAb5WAbxUAbhTAbVRALFPAK1NAKlLAKRIAKyKyVFJAKFVN6Oe8wqIxFJIAJ1OALtXK7BGALFiZJKl_wB7pWo6AKmOz01fU6BzkXpoeIStotBUGbSZ6CiQ1EVxh4aEulxWSZXa1un___8zAJhGAJldR6cwALBgXpaT3DhOFKjz8vdpb5Xm5e1PLaBsT7JDAJPIweJeNLB1mHOPf8Lc3Op7ZLkgAJq0rNQaAIsyAIhBAI9AAIw-AIg8AINXO5S8udBIIp19b66Cdqqgl74hAHo5AH2rpMdxXqGAbrOfksNCIoVmTKYUy_OsAAABhklEQVR4AW3RBXYDMQwEUIeZs2EGhbehtmFmvP9tOvI-l-exv0mS4JhMJrPZbLFYrTabzW53OJxOp8vlcjNBlCmSBvz_GMjtEf8f84I8wH-P-bwwv_h2zK6OBYIhr8fvDwtJ0iJR45wWiyeSbGEB4xthqXhac8Ey8WwyBwOqK_OFYime1VxaOV5JVqkGqwtJjkgjXm5qrXhCaxfCHZ30WrherwvDXuKZZq7r7QXjqWSfCAgbCDZ7Jh5rDrH06n9LvpOBg8FAoDZHpNDQRsQZT6YkcTZglHV78zoZGZGB88FgsRBOtj59j0TYUnDZSfqLMKALWB39SnW-XC5XwhiOv6YymHOkAdk8spVcN1eAG5lWa_GNAg2QtFVlAwOy1cK4cDbdzha4EJeuKL1GBB-r0Y62REOiPVFap8Oxe4KdBcxfm3ar-q47vIy6x0t3dB1t06DzWcjXenS7k769VO-6vunSgR4gYJjxSXhN5nRanU7n01kh_3_-rQDkrBCEKIMoA_6qW5LKB-nIZaQqRO4KAAAAAElFTkSuQmCC.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CtoBL2dvdG8_dXJsPUNBRVNsd0VCNnpzd0ZkRmpwWnZmR0VxeW9HVVVuZmZYZHVkcjlQYWZyT0ZNQ0RtcGYxOTZ4LUwzQlFXUGl0TnZycTVTMGJhX3pWWWw0ZWUzTkFaMEUyS0xRaXhUdTd3MUozaC1neWVBYVJqSGR0TW5fSnR1VTJkaWd4eG5qN1RWbHdoSERud2FsZnNRdkhwa2lXcXRvR2xUTDNiV1NTcnMxRHV6UF9iZkdFeEkxVnozdDhmRFdsWXllQnc2TVU2TEt3WnBDVTJrTFk0Ymh3Q1gSBBoCCAAa9wQSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDRBAgAEAAYACAAKg0KBmtyb2dlchXw-DpAKjMKBWNsb3VkFZ2sbzwaC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0qNgoIaWRlbnRpdHkVEUCKPRoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbTLaAS9nb3RvP3VybD1DQUVTbHdFQjZ6c3dGZEZqcFp2ZkdFcXlvR1VVbmZmWGR1ZHI5UGFmck9GTUNEbXBmMTk2eC1MM0JRV1BpdE52cnE1UzBiYV96VllsNGVlM05BWjBFMktMUWl4VHU3dzFKM2gtZ3llQWFSakhkdE1uX0p0dVUyZGlneHhuajdUVmx3aEhEbndhbGZzUXZIcGtpV3F0b0dsVEwzYldTU3JzMUR1elBfYmZHRXhJMVZ6M3Q4ZkRXbFl5ZUJ3Nk1VNkxLd1pwQ1Uya0xZNGJod0NYOkY8Yj5Lcm9nZXI8L2I-IHRlc3RzIDI0LWhvdXIgc3RvcmVzIGluIE9oaW8gYW5kIEluZGlhbmEgLSBZYWhvbyBGaW5hbmNlQqUBPGI-S3JvZ2VyPC9iPiBpcyBwaWxvdGluZyAyNC1ob3VyIG9wZXJhdGlvbnMgYXQgc2l4IHN0b3JlcyBpbiBPaGlvIGFuZCBJbmRpYW5hLCB0aGUgZmlyc3QgdGltZSB0aGUgQ2luY2lubmF0aS1iYXNlZCBncm9jZXIgaGFzIG1vdmVkIGluIHRoaXMgZGlyZWN0aW9uIHNpbmNlJm5ic3A7Li4uIgIQAUgAWABoAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CtoBL2dvdG8_dXJsPUNBRVNsd0VCNnpzd0ZkRmpwWnZmR0VxeW9HVVVuZmZYZHVkcjlQYWZyT0ZNQ0RtcGYxOTZ4LUwzQlFXUGl0TnZycTVTMGJhX3pWWWw0ZWUzTkFaMEUyS0xRaXhUdTd3MUozaC1neWVBYVJqSGR0TW5fSnR1VTJkaWd4eG5qN1RWbHdoSERud2FsZnNRdkhwa2lXcXRvR2xUTDNiV1NTcnMxRHV6UF9iZkdFeEkxVnozdDhmRFdsWXllQnc2TVU2TEt3WnBDVTJrTFk0Ymh3Q1gSBBoCCAAa9wQSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDRBAgAEAAYACAAKg0KBmtyb2dlchXw-DpAKjMKBWNsb3VkFZ2sbzwaC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0qNgoIaWRlbnRpdHkVEUCKPRoLb3Qgc2VjdXJpdHkaDWl2O3A7ZW5kcG9pbnQaCWl2O3A7c2llbTLaAS9nb3RvP3VybD1DQUVTbHdFQjZ6c3dGZEZqcFp2ZkdFcXlvR1VVbmZmWGR1ZHI5UGFmck9GTUNEbXBmMTk2eC1MM0JRV1BpdE52cnE1UzBiYV96VllsNGVlM05BWjBFMktMUWl4VHU3dzFKM2gtZ3llQWFSakhkdE1uX0p0dVUyZGlneHhuajdUVmx3aEhEbndhbGZzUXZIcGtpV3F0b0dsVEwzYldTU3JzMUR1elBfYmZHRXhJMVZ6M3Q4ZkRXbFl5ZUJ3Nk1VNkxLd1pwQ1Uya0xZNGJod0NYOkY8Yj5Lcm9nZXI8L2I-IHRlc3RzIDI0LWhvdXIgc3RvcmVzIGluIE9oaW8gYW5kIEluZGlhbmEgLSBZYWhvbyBGaW5hbmNlQqUBPGI-S3JvZ2VyPC9iPiBpcyBwaWxvdGluZyAyNC1ob3VyIG9wZXJhdGlvbnMgYXQgc2l4IHN0b3JlcyBpbiBPaGlvIGFuZCBJbmRpYW5hLCB0aGUgZmlyc3QgdGltZSB0aGUgQ2luY2lubmF0aS1iYXNlZCBncm9jZXIgaGFzIG1vdmVkIGluIHRoaXMgZGlyZWN0aW9uIHNpbmNlJm5ic3A7Li4uIgIQAUgAWABoAA",
+            "source": "Yahoo Finance",
+            "read_more_link": "https://finance.yahoo.com/small-business/articles/kroger-tests-24-hour-stores-181106223.html#:~:text=Kroger%20is%20piloting%2024%2Dhour%20operations,back%20hours%20during%20the%20pandemic."
+          },
+          {
+            "position": 9,
+            "title": "Kroger Expands Fold Bitcoin Gift Card Offering After Pilot",
+            "link": "https://www.pymnts.com/blockchain/bitcoin/2026/kroger-expands-fold-bitcoin-gift-card-offering-after-successful-pilot/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESsAEB6zswFe0xMdFsWgtQxeHw2juNJ3DVG-l-tLcapjVR9BdQSgOfk-dTWhAExOTahKMqDS2Eju7Nlfbrhvdn8bl5vwTgNyH19idJagHUPuGjKghkr8kqUr619JckEie-9ghtMw3GA8BUbW2fWKbh7IA3NMVoApm9P2Im23Y2cqb0Cg_QvZ8XwGbn4KP3wLacBMeSItwOXiXx7VvJTgW-krt3KFQhMzEAPKoeDt2DC7JMfQ&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQFnoECBcQAQ&uoh=1",
+            "displayed_link": "https://www.pymnts.com \u203a blockchain \u203a kroger-expand...",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAi0lEQVR4Ac3OEQzDUBCA4dN5RvVkOqdLKsWm7jp4VKxLoTLnUrGeQnUOPcfqv2UvGexy3P50ly-5nByYPodvfXv1mPi1FP_4gHn8NBnsN49lnjp4eawlN4KGqNCFeIEhxBraEGe4O9R8dIJFHNpmZjuwiUdy1otHUllVlRZ5Dx46CSZoQmzWVeUMvQHXu3Dr-9OELgAAAABJRU5ErkJggg.png",
+            "date": "Aug 20, 2026",
+            "snippet": "Following the pilot at Kroger, the Fold Bitcoin Gift Card is now available in values from $25 to $500 online or at select Kroger stores nationwide, the release ...",
+            "snippet_highlighted_words": [
+              "pilot",
+              "Kroger",
+              "Kroger"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "Following the pilot at Kroger, the Fold Bitcoin Gift Card is now available in values from $25 to $500 online or at select Kroger stores nationwide, the release ...",
+                "source_info_link": "https://www.pymnts.com/blockchain/bitcoin/2026/kroger-expands-fold-bitcoin-gift-card-offering-after-successful-pilot/",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAi0lEQVR4Ac3OEQzDUBCA4dN5RvVkOqdLKsWm7jp4VKxLoTLnUrGeQnUOPcfqv2UvGexy3P50ly-5nByYPodvfXv1mPi1FP_4gHn8NBnsN49lnjp4eawlN4KGqNCFeIEhxBraEGe4O9R8dIJFHNpmZjuwiUdy1otHUllVlRZ5Dx46CSZoQmzWVeUMvQHXu3Dr-9OELgAAAABJRU5ErkJggg.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CvwBL2dvdG8_dXJsPUNBRVNzQUVCNnpzd0ZYWDF3WWxMZjJGUlFKYi1xSmJjZnRhNnB2YzRYWHI5U2d5ZFhoNENZWE45ZDdPYm1ocjhNOGVCNUx3SjNEWXdKZXY3YVpMaU9WRnVYUl9QclRMSFNLbEdtdjE5bEtxdGNEaC1uQWVUcUw5ZzVjaFVHUTBVYW5zS2t5LW5lSjctWExUZGJNX18ybWhjZVE5SDMyc3JyUUhaZFlHUDFtSTNhby1UR1Z0OWZkdXBJRkp4Zi1MUmJpcGdOVmNnQWwyU01IY1BXaHVkVVhmekhUelVremZ1cW52bk9fOWMzNjg2cTFhOWNnEgQaAggAGrMFEgIIABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAjQUIABAAGAAgACoNCgZrcm9nZXIV9ndtQCozCgVjbG91ZBXH0Jc8GgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtKjYKCGlkZW50aXR5FXCpZEAaC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0y_AEvZ290bz91cmw9Q0FFU3NBRUI2enN3RlhYMXdZbExmMkZSUUpiLXFKYmNmdGE2cHZjNFhYcjlTZ3lkWGg0Q1lYTjlkN09ibWhyOE04ZUI1THdKM0RZd0pldjdhWkxpT1ZGdVhSX1ByVExIU0tsR212MTlsS3F0Y0RoLW5BZVRxTDlnNWNoVUdRMFVhbnNLa3ktbmVKNy1YTFRkYk1fXzJtaGNlUTlIMzJzcnJRSFpkWUdQMW1JM2FvLVRHVnQ5ZmR1cElGSnhmLUxSYmlwZ05WY2dBbDJTTUhjUFdodWRVWGZ6SFR6VWt6ZnVxbnZuT185YzM2ODZxMWE5Y2c6SDxiPktyb2dlcjwvYj4gRXhwYW5kcyBGb2xkIEJpdGNvaW4gR2lmdCBDYXJkIE9mZmVyaW5nIEFmdGVyIDxiPlBpbG90PC9iPkK9AUZvbGxvd2luZyB0aGUgPGI-cGlsb3Q8L2I-IGF0IDxiPktyb2dlcjwvYj4sIHRoZSBGb2xkIEJpdGNvaW4gR2lmdCBDYXJkIGlzIG5vdyBhdmFpbGFibGUgaW4gdmFsdWVzIGZyb20gJDI1IHRvICQ1MDAgb25saW5lIG9yIGF0IHNlbGVjdCA8Yj5Lcm9nZXI8L2I-IHN0b3JlcyBuYXRpb253aWRlLCB0aGUgcmVsZWFzZSZuYnNwOy4uLiICEAFIAFgAaAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CvwBL2dvdG8_dXJsPUNBRVNzQUVCNnpzd0ZYWDF3WWxMZjJGUlFKYi1xSmJjZnRhNnB2YzRYWHI5U2d5ZFhoNENZWE45ZDdPYm1ocjhNOGVCNUx3SjNEWXdKZXY3YVpMaU9WRnVYUl9QclRMSFNLbEdtdjE5bEtxdGNEaC1uQWVUcUw5ZzVjaFVHUTBVYW5zS2t5LW5lSjctWExUZGJNX18ybWhjZVE5SDMyc3JyUUhaZFlHUDFtSTNhby1UR1Z0OWZkdXBJRkp4Zi1MUmJpcGdOVmNnQWwyU01IY1BXaHVkVVhmekhUelVremZ1cW52bk9fOWMzNjg2cTFhOWNnEgQaAggAGrMFEgIIABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAjQUIABAAGAAgACoNCgZrcm9nZXIV9ndtQCozCgVjbG91ZBXH0Jc8GgtvdCBzZWN1cml0eRoNaXY7cDtlbmRwb2ludBoJaXY7cDtzaWVtKjYKCGlkZW50aXR5FXCpZEAaC290IHNlY3VyaXR5Gg1pdjtwO2VuZHBvaW50GglpdjtwO3NpZW0y_AEvZ290bz91cmw9Q0FFU3NBRUI2enN3RlhYMXdZbExmMkZSUUpiLXFKYmNmdGE2cHZjNFhYcjlTZ3lkWGg0Q1lYTjlkN09ibWhyOE04ZUI1THdKM0RZd0pldjdhWkxpT1ZGdVhSX1ByVExIU0tsR212MTlsS3F0Y0RoLW5BZVRxTDlnNWNoVUdRMFVhbnNLa3ktbmVKNy1YTFRkYk1fXzJtaGNlUTlIMzJzcnJRSFpkWUdQMW1JM2FvLVRHVnQ5ZmR1cElGSnhmLUxSYmlwZ05WY2dBbDJTTUhjUFdodWRVWGZ6SFR6VWt6ZnVxbnZuT185YzM2ODZxMWE5Y2c6SDxiPktyb2dlcjwvYj4gRXhwYW5kcyBGb2xkIEJpdGNvaW4gR2lmdCBDYXJkIE9mZmVyaW5nIEFmdGVyIDxiPlBpbG90PC9iPkK9AUZvbGxvd2luZyB0aGUgPGI-cGlsb3Q8L2I-IGF0IDxiPktyb2dlcjwvYj4sIHRoZSBGb2xkIEJpdGNvaW4gR2lmdCBDYXJkIGlzIG5vdyBhdmFpbGFibGUgaW4gdmFsdWVzIGZyb20gJDI1IHRvICQ1MDAgb25saW5lIG9yIGF0IHNlbGVjdCA8Yj5Lcm9nZXI8L2I-IHN0b3JlcyBuYXRpb253aWRlLCB0aGUgcmVsZWFzZSZuYnNwOy4uLiICEAFIAFgAaAA",
+            "source": "PYMNTS.com",
+            "read_more_link": "https://www.pymnts.com/blockchain/bitcoin/2026/kroger-expands-fold-bitcoin-gift-card-offering-after-successful-pilot/#:~:text=Following%20the%20pilot%20at%20Kroger%2C,stores%20nationwide%2C%20the%20release%20said."
+          }
+        ],
+        "pagination": {
+          "current": 1,
+          "next": "https://www.google.com/search?q=%22Kroger%22+(cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM)+(deploys+OR+adopts+OR+pilot+OR+implementation)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvzSZ2nD69FmiEBcGjIZ7LA4GTZyQ:1792949548419&ei=LD3earaRGbSsw8cPnrWUsQQ&start=10&sa=N&sstk=AS6-VmI03cGqEAMuIVcZnq44oTnieBYfve8LPb9g43ApmtEmAyjR5H5o7odtnKxlM1DKLv2B3IK3a9YairtCD9s31enUMyPFhXZelg&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQ8NMDegQIORAW",
+          "other_pages": {
+            "2": "https://www.google.com/search?q=%22Kroger%22+(cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM)+(deploys+OR+adopts+OR+pilot+OR+implementation)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvzSZ2nD69FmiEBcGjIZ7LA4GTZyQ:1792949548419&ei=LD3earaRGbSsw8cPnrWUsQQ&start=10&sa=N&sstk=AS6-VmI03cGqEAMuIVcZnq44oTnieBYfve8LPb9g43ApmtEmAyjR5H5o7odtnKxlM1DKLv2B3IK3a9YairtCD9s31enUMyPFhXZelg&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQ8tMDegQIORAE",
+            "3": "https://www.google.com/search?q=%22Kroger%22+(cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM)+(deploys+OR+adopts+OR+pilot+OR+implementation)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvzSZ2nD69FmiEBcGjIZ7LA4GTZyQ:1792949548419&ei=LD3earaRGbSsw8cPnrWUsQQ&start=20&sa=N&sstk=AS6-VmI03cGqEAMuIVcZnq44oTnieBYfve8LPb9g43ApmtEmAyjR5H5o7odtnKxlM1DKLv2B3IK3a9YairtCD9s31enUMyPFhXZelg&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQ8tMDegQIORAG",
+            "4": "https://www.google.com/search?q=%22Kroger%22+(cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM)+(deploys+OR+adopts+OR+pilot+OR+implementation)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvzSZ2nD69FmiEBcGjIZ7LA4GTZyQ:1792949548419&ei=LD3earaRGbSsw8cPnrWUsQQ&start=30&sa=N&sstk=AS6-VmI03cGqEAMuIVcZnq44oTnieBYfve8LPb9g43ApmtEmAyjR5H5o7odtnKxlM1DKLv2B3IK3a9YairtCD9s31enUMyPFhXZelg&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQ8tMDegQIORAI",
+            "5": "https://www.google.com/search?q=%22Kroger%22+(cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM)+(deploys+OR+adopts+OR+pilot+OR+implementation)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvzSZ2nD69FmiEBcGjIZ7LA4GTZyQ:1792949548419&ei=LD3earaRGbSsw8cPnrWUsQQ&start=40&sa=N&sstk=AS6-VmI03cGqEAMuIVcZnq44oTnieBYfve8LPb9g43ApmtEmAyjR5H5o7odtnKxlM1DKLv2B3IK3a9YairtCD9s31enUMyPFhXZelg&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQ8tMDegQIORAK",
+            "6": "https://www.google.com/search?q=%22Kroger%22+(cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM)+(deploys+OR+adopts+OR+pilot+OR+implementation)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvzSZ2nD69FmiEBcGjIZ7LA4GTZyQ:1792949548419&ei=LD3earaRGbSsw8cPnrWUsQQ&start=50&sa=N&sstk=AS6-VmI03cGqEAMuIVcZnq44oTnieBYfve8LPb9g43ApmtEmAyjR5H5o7odtnKxlM1DKLv2B3IK3a9YairtCD9s31enUMyPFhXZelg&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQ8tMDegQIORAM",
+            "7": "https://www.google.com/search?q=%22Kroger%22+(cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM)+(deploys+OR+adopts+OR+pilot+OR+implementation)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvzSZ2nD69FmiEBcGjIZ7LA4GTZyQ:1792949548419&ei=LD3earaRGbSsw8cPnrWUsQQ&start=60&sa=N&sstk=AS6-VmI03cGqEAMuIVcZnq44oTnieBYfve8LPb9g43ApmtEmAyjR5H5o7odtnKxlM1DKLv2B3IK3a9YairtCD9s31enUMyPFhXZelg&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQ8tMDegQIORAO",
+            "8": "https://www.google.com/search?q=%22Kroger%22+(cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM)+(deploys+OR+adopts+OR+pilot+OR+implementation)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvzSZ2nD69FmiEBcGjIZ7LA4GTZyQ:1792949548419&ei=LD3earaRGbSsw8cPnrWUsQQ&start=70&sa=N&sstk=AS6-VmI03cGqEAMuIVcZnq44oTnieBYfve8LPb9g43ApmtEmAyjR5H5o7odtnKxlM1DKLv2B3IK3a9YairtCD9s31enUMyPFhXZelg&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQ8tMDegQIORAQ",
+            "9": "https://www.google.com/search?q=%22Kroger%22+(cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM)+(deploys+OR+adopts+OR+pilot+OR+implementation)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvzSZ2nD69FmiEBcGjIZ7LA4GTZyQ:1792949548419&ei=LD3earaRGbSsw8cPnrWUsQQ&start=80&sa=N&sstk=AS6-VmI03cGqEAMuIVcZnq44oTnieBYfve8LPb9g43ApmtEmAyjR5H5o7odtnKxlM1DKLv2B3IK3a9YairtCD9s31enUMyPFhXZelg&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQ8tMDegQIORAS",
+            "10": "https://www.google.com/search?q=%22Kroger%22+(cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM)+(deploys+OR+adopts+OR+pilot+OR+implementation)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvzSZ2nD69FmiEBcGjIZ7LA4GTZyQ:1792949548419&ei=LD3earaRGbSsw8cPnrWUsQQ&start=90&sa=N&sstk=AS6-VmI03cGqEAMuIVcZnq44oTnieBYfve8LPb9g43ApmtEmAyjR5H5o7odtnKxlM1DKLv2B3IK3a9YairtCD9s31enUMyPFhXZelg&ved=2ahUKEwi217vH2dWXAxU01vACHZ4aJUYQ8tMDegQIORAU"
+          }
+        },
+        "serpapi_pagination": {
+          "current": 1,
+          "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&start=10",
+          "next": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&start=10",
+          "other_pages": {
+            "2": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&start=10",
+            "3": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&start=20",
+            "4": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&start=30",
+            "5": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&start=40",
+            "6": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&start=50",
+            "7": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&start=60",
+            "8": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&start=70",
+            "9": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&start=80",
+            "10": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Kroger%22+%28cloud+OR+identity+OR+endpoint+OR+%22OT+security%22+OR+SIEM%29+%28deploys+OR+adopts+OR+pilot+OR+implementation%29+after%3A2026-07-24+before%3A2026-10-26&start=90"
+          }
+        }
+      },
+      "pairedItem": {
+        "item": 1
+      }
+    },
+    {
+      "json": {
+        "search_metadata": {
+          "id": "6ade3d2c2ed123d33603849f",
+          "status": "Success",
+          "json_endpoint": "https://serpapi.com/searches/5CkCNRkVw6p3qgNFMvyPjoK2c2RfkdKhdjLzqIPO3q8/6ade3d2c2ed123d33603849f.json",
+          "markdown_endpoint": "https://serpapi.com/searches/5CkCNRkVw6p3qgNFMvyPjoK2c2RfkdKhdjLzqIPO3q8/6ade3d2c2ed123d33603849f.md",
+          "pixel_position_endpoint": "https://serpapi.com/searches/5CkCNRkVw6p3qgNFMvyPjoK2c2RfkdKhdjLzqIPO3q8/6ade3d2c2ed123d33603849f.json_with_pixel_position",
+          "created_at": "2026-10-25 17:32:28 UTC",
+          "processed_at": "2026-10-25 17:32:28 UTC",
+          "google_url": "https://www.google.com/search?q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&oq=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&hl=en&sourceid=chrome&ie=UTF-8",
+          "raw_html_file": "https://serpapi.com/searches/5CkCNRkVw6p3qgNFMvyPjoK2c2RfkdKhdjLzqIPO3q8/6ade3d2c2ed123d33603849f.html",
+          "total_time_taken": 0.46
+        },
+        "search_parameters": {
+          "engine": "google",
+          "q": "\"Home Depot\" (\"IT services\" OR cybersecurity OR \"security operations\") (contract OR agreement OR partnership) after:2026-07-24 before:2026-10-26",
+          "google_domain": "google.com",
+          "hl": "en",
+          "device": "desktop"
+        },
+        "search_information": {
+          "query_displayed": "\"Home Depot\" (\"IT services\" OR cybersecurity OR \"security operations\") (contract OR agreement OR partnership) after:2026-07-24 before:2026-10-26",
+          "total_results": 31000,
+          "time_taken_displayed": 0.21,
+          "organic_results_state": "Results for exact spelling"
+        },
+        "ai_overview": {
+          "text_blocks": [
+            {
+              "type": "paragraph",
+              "snippet": "The Home Depot manages its enterprise IT services and cybersecurity infrastructure through a comprehensive internal framework heavily supplemented by strategic third-party contractor agreements. Following its historic 2014 data breach (which stemmed from a compromised third-party vendor credential), the company completely overhauled its security operations. Today, it operates a strict vendor risk management architecture where all external technology partners, IT providers, and security platforms are bound by strict contractual obligations to safeguard restricted data.",
+              "reference_indexes": [
+                0,
+                1
+              ]
+            },
+            {
+              "type": "heading",
+              "snippet": "\ud83d\udee0\ufe0f Core Technology Ecosystem & Tool Partnerships"
+            },
+            {
+              "type": "paragraph",
+              "snippet": "Rather than relying on a single managed service provider, Home Depot constructs its Security Operations Center (SOC) framework by integrating major enterprise security platforms:",
+              "reference_indexes": [
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "type": "list",
+              "list": [
+                {
+                  "snippet": "Identity Security: Home Depot has a massive partnership with SailPoint to manage access information for millions of internal associates and contingent contractors. This system uses APIs integrated directly into their IT management systems.",
+                  "snippet_links": [
+                    {
+                      "text": "SailPoint",
+                      "link": "https://www.sailpoint.com/customers/the-home-depot"
+                    }
+                  ],
+                  "reference_indexes": [
+                    5
+                  ]
+                },
+                {
+                  "snippet": "IT Service Management (ITSM): The company uses ServiceNow integrated directly into its cybersecurity stack to track, auto-provision, and manage tickets for application access and infrastructure maintenance.",
+                  "reference_indexes": [
+                    5
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "snippet": "\ud83d\udcdc Contractual Mandates for IT Vendors & Contractors"
+            },
+            {
+              "type": "paragraph",
+              "snippet": "For businesses or individuals seeking to partner with or supply IT services to Home Depot, compliance and governance contracts are strictly enforced through the corporate procurement pipeline:",
+              "reference_indexes": [
+                6
+              ]
+            },
+            {
+              "type": "list",
+              "list": [
+                {
+                  "snippet": "The Vendor Risk Management Program: Any service provider or partner accessing Home Depot systems is risk-classified based on the sensitivity of the data they manage. Contracts enforce strict data devaluation, encryption mandates (both at-rest and in-transit), and regular security monitoring.",
+                  "reference_indexes": [
+                    0
+                  ]
+                },
+                {
+                  "snippet": "Contingent & Contract IT Work: Home Depot regularly fills specialized cybersecurity operations roles (such as Architecture, Zero Trust engineering, and Incident Response) using temporary contract agreements handled through its dedicated Home Depot Contract Work Portal.",
+                  "snippet_links": [
+                    {
+                      "text": "Home Depot Contract Work Portal",
+                      "link": "https://contractwork.homedepot.com/about-us/"
+                    }
+                  ],
+                  "reference_indexes": [
+                    3,
+                    7,
+                    8
+                  ]
+                },
+                {
+                  "snippet": "Onboarding via Portals: Prospective non-merchandising IT and logistics providers must formally apply via the Home Depot Supplier Hub / HDConnect Portal, where they are legally required to submit extensive proof of insurance, W-9 documentation, and complete compliance background checks.",
+                  "snippet_links": [
+                    {
+                      "text": "Home Depot Supplier Hub / HDConnect Portal",
+                      "link": "https://corporate.homedepot.com/page/contact-us"
+                    }
+                  ],
+                  "reference_indexes": [
+                    6,
+                    9
+                  ]
+                },
+                {
+                  "snippet": "Insider Trading & Code of Conduct Constraints: Because IT contractors and cybersecurity service providers inherently gain access to material non-public data, they are contractually bound by the Home Depot Business Code of Conduct and Ethics, strictly forbidding them or their affiliates from trading Home Depot securities based on system access.",
+                  "snippet_links": [
+                    {
+                      "text": "Home Depot Business Code of Conduct and Ethics",
+                      "link": "https://ir.homedepot.com/~/media/Files/H/HomeDepot-IR/2026/us-bcce-eng-aug-2026.pdf"
+                    }
+                  ],
+                  "reference_indexes": [
+                    10
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "snippet": "\ud83c\udfe2 Internal Security Operations Functions"
+            },
+            {
+              "type": "paragraph",
+              "snippet": "Home Depot's internal team actively coordinates with external contractors to cover 10 major pillars of security operations:",
+              "reference_indexes": [
+                3,
+                4
+              ]
+            },
+            {
+              "type": "list",
+              "list": [
+                {
+                  "snippet": "Identity & Access Management (IAM): Continuous control of both human and non-human identity landscapes."
+                },
+                {
+                  "snippet": "Security & Network Operations: Running the physical and digital elements of firewalls and network engineering."
+                },
+                {
+                  "snippet": "Internal Threat Operations: Incident response and real-time response to active compromises."
+                },
+                {
+                  "snippet": "Issue & Compliance Management: Continuous technical control assessments."
+                },
+                {
+                  "snippet": "AI and Modern Infrastructure: Developing automated, modern AI frameworks to scale defensive threat intelligence engineering across cloud systems.",
+                  "reference_indexes": [
+                    3,
+                    4,
+                    7,
+                    11,
+                    12
+                  ]
+                }
+              ]
+            }
+          ],
+          "references": [
+            {
+              "index": 0,
+              "title": "DATA SECURITY",
+              "link": "https://ir.homedepot.com/~/media/Images/H/HomeDepot-IR/Data%20Security_2018.pdf",
+              "snippet": "Page 1 \u2022 Data protection strategies are in place and focused on data devaluation and data access monitoring. Governance, Risk & Compliance \u2022 Sensitive data attribu...",
+              "source": "The Home Depot",
+              "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://ir.homedepot.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+              "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS77bK77j1rm1ymQbi5j8VjK9FMqEAdZievZ_VmS8UEbI4N9OyMuraT0RYQf_tN1VMVGexV0LVzyAkZZP5z2Icb8SX3ZKxbpz7-HzoUh4eTU3uZhlycHGBhEAm_iNWfF81-XBS3E4PashEDWyxJzlzRU_p47A"
+            },
+            {
+              "index": 1,
+              "title": "A Third-Party Vendor Cost Home Depot $179 Million in Data Breach",
+              "link": "https://www.commercialintegrator.com/insights/a-third-party-vendor-cost-home-depot-179-million-in-data-breach/95182/",
+              "snippet": "In addition to the massive amount of money it has to cough up to resolve these issues, Home Depot also agreed to hire a chief information security officer, offer s...",
+              "source": "Commercial Integrator",
+              "source_icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.commercialintegrator.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+              "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGZDSNc4lYIXpPa_KnTgNpld_GjCmKv1947qP_TWMaTjYDI9VcWMfbNlQYsmEhnkEGrzdXh7hIleRYjOZr8ei1wVnTQW4P78miIKvizrJzt4PHIMN_8An3Ojaard4nKaCskOufYVs7UdW7SGOThzya2fkhWw"
+            },
+            {
+              "index": 2,
+              "title": "Annual Report 2025 - Investor Relations - The Home Depot",
+              "link": "https://ir.homedepot.com/~/media/Files/H/HomeDepot-IR/2026/thd-annualreport-2025.pdf",
+              "snippet": "Security Officer (\u201cCISO\u201d). Our cybersecurity team, in partnership with third parties, designs and implements our data security and cybersecurity programs, risk ass...",
+              "source": "The Home Depot",
+              "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://ir.homedepot.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+              "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTeGnU-EtTq70X6HYmdAj1QWq-lJqq2AHMRQeyBCjGi11bbzmyOF0Cu-he-UgvqDiNl5a21qSrFk417tap1LM-H9tmyeSc5Rsd8l7J4buYgCw2rmpn03gGh6yqkl4EGSV9heEFARp9SF2i1bFhVRn7Hq_aKw"
+            },
+            {
+              "index": 3,
+              "title": "Cybersecurity Jobs at The Home Depot | Technology Careers",
+              "link": "https://careers.homedepot.com/career-areas/technology/cybersecurity/",
+              "snippet": "Workplace: The Home Depot Cybersecurity Team (remote and onsite); growing rapidly to protect customers and company. Service Areas: Identity & Access Management (in...",
+              "source": "The Home Depot Careers",
+              "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://careers.homedepot.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+              "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgiHK0zwGofmapze4FoMulMUUhRaQLWnlF-XZW37z-WjDbPYr9skTulFSi2QMaG2WW1EOFHq36KxIqsHTWl_FcMwl4NduYlo1aetKs5We2rY5Y57ozp-NQC2YJooB0FG4jt0sRnxdpouw52jY8tMFsnjqrSw"
+            },
+            {
+              "index": 4,
+              "title": "Cybersecurity Analyst - PII Compliance (Remote)",
+              "link": "https://builtin.com/job/cybersecurity-analyst-governance-risk-and-compliance/8839153",
+              "snippet": "Position Purpose: Protecting what matters most to our associates and consumers by securing our sensitive data and critical assets from current and emerging threats...",
+              "source": "Built In",
+              "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://builtin.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+            },
+            {
+              "index": 5,
+              "title": "Identity Security Customer Story - The Home Depot",
+              "link": "https://www.sailpoint.com/customers/the-home-depot",
+              "snippet": "Using the right tools Integrating apps into the solution SailPoint has become a single source of truth for all user access across The Home Depot. David Hetzler, Di...",
+              "source": "SailPoint",
+              "source_icon": "https://encrypted-tbn3.gstatic.com/faviconV2?url=https://www.sailpoint.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+              "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKbA6nKX9QxhJ5CPFlNbOO2k73LqicTXouEdW1zfz00_ZvNVyxyzb5ZKELeoRb60js02ofvzj9JIF6XAdvhpf5Xb_lmuXH7wQf_5z6nyKfph1mGmf82p6-UP-1VCd3OBPUMXAgL9TE7lddgW5BMys2UfQ7xg"
+            },
+            {
+              "index": 6,
+              "title": "Suppliers and Providers - The Home Depot",
+              "link": "https://www.homedepot.com/c/suppliers_and_providers",
+              "snippet": "Partner Types: Merchandising suppliers (products), Non-merchandising suppliers (technology/logistics/maintenance via potential_suppliers@homedepot.com), Installati...",
+              "source": "The Home Depot",
+              "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.homedepot.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+              "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVHK3y6i24YGpcwpqw1Jo77nxQxuZhdrg5cBfG1fvomOVTRqx7-RcMeWX5U2BiYyTSIOKTfKfF3sQW5aBp3hJSWsWTtjme83wX3qrPC9jGRJeijMyyK_yjV7DWC2JOkAScPZXBM2l64OeF_Nta56rmf9ln8w"
+            },
+            {
+              "index": 7,
+              "title": "Home Depot Cyber Security Jobs, Employment",
+              "link": "https://www.indeed.com/q-home-depot-cyber-security-jobs.html",
+              "snippet": "Home depot cyber security jobs * Cybersecurity Senior Engineer - Non Human Identity (Remote) Home Depot / THD Remote in Atlanta, GA $120,000 - $160,000 a year Coll...",
+              "source": "Indeed",
+              "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.indeed.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+            },
+            {
+              "index": 8,
+              "title": "About Us",
+              "link": "https://contractwork.homedepot.com/about-us/",
+              "snippet": "Frequently Asked Questions * What does contingent work look like at The Home Depot? Contingent work, or contract work, supports specific projects for a set timefra...",
+              "source": "Home Depot on Demand",
+              "source_icon": "https://encrypted-tbn1.gstatic.com/faviconV2?url=https://contractwork.homedepot.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+              "thumbnail": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXWBa0LVj6MAHbdcmySiXSXmvBe9P6ngvvnufPuNrVzzQ2uTe69oyf-Wz8E-tF6tmB41YEyVZOAO55MXEdLUE68CSBwaxLRRepSlasSJh_00KJ-gYKlolih0QQq9oMMit3gNaC7fjEJxIYz2snMdP6UuSajQ"
+            },
+            {
+              "index": 9,
+              "title": "Contact Us",
+              "link": "https://corporate.homedepot.com/page/contact-us",
+              "snippet": "Vendor/Supplier/Provider Services If you have an interest in becoming a vendor/supplier/service provider for Home Depot, please visit the HDConnect which is The Ho...",
+              "source": "The Home Depot",
+              "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://corporate.homedepot.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+              "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSooa44S2t6pg8x2fyFbwGH2IKuMOGiLFkauFesaFjxmsRKQ8Pn7IgtMNmYwLsL-6eENKP48Q_p9LjkMEzlHG8ecjJlYPBBTyfdCEfYE1_jVrT6zuplj60JoFhjswV3Ufq39DG0CxOPu2Nfml0x1-pqA5fQKQ"
+            },
+            {
+              "index": 10,
+              "title": "Business Code of Conduct and Ethics - Investor Relations",
+              "link": "https://ir.homedepot.com/~/media/Files/H/HomeDepot-IR/2026/us-bcce-eng-aug-2026.pdf",
+              "snippet": "RSP Highlights -. 2021.06.21.msg. THE HOME DEPOT. BUSINESS. CODE OF. CONDUCT. AND ETHICS. \u00a9 2026 Home Depot Product Authority, LLC. All Rights Reserved. U.S. ENGLI...",
+              "source": "The Home Depot",
+              "source_icon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://ir.homedepot.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+            },
+            {
+              "index": 11,
+              "title": "The Home Depot Career Growth Story | Amy",
+              "link": "https://careers.homedepot.com/2026/03/23/cybersecurity-career-growth-story-corporate-testimonials/",
+              "snippet": "CAREER GROWTH STORY Amy Cybersecurity Director Before joining our team in 2021, Amy was looking for a company with a strong culture and values that matched her own...",
+              "source": "The Home Depot Careers",
+              "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://careers.homedepot.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
+              "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSG2obbbwVXGIW2GIo4c42DwYk3l3mm8zG3GTOoyRd3TcH7rDCMgOl34SVP4zT8mSmnXMxzKALoODLC18qUQp8A3FJIgoWD7osD5RC42D6iNR9s930f88bNKGJrAKndLuiibzEjUNP5ne6GvYlbb1VUPX1LA"
+            },
+            {
+              "index": 12,
+              "title": "Cybersecurity Software Engineer II | ML & AI (Remote)",
+              "link": "https://careers.homedepot.com/job/23859282/cybersecurity-software-engineer-ii-ml-ai-remote-remote/",
+              "snippet": "Position Purpose: The Home Depot is looking to hire a Cybersecurity Software Engineer II to help design and develop innovative AI-powered security solutions that p...",
+              "source": "The Home Depot Careers",
+              "source_icon": "https://encrypted-tbn0.gstatic.com/faviconV2?url=https://careers.homedepot.com&client=AIM&size=128&type=FAVICON&fallback_opts=TYPE,SIZE,URL"
+            }
+          ]
+        },
+        "organic_results": [
+          {
+            "position": 1,
+            "title": "Cybersecurity Software Engineer II | ML & AI (Remote)",
+            "link": "https://careers.homedepot.com/job/23859282/cybersecurity-software-engineer-ii-ml-ai-remote-remote",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESnAEB6zswFTatXbvbp-Vk3LrvYV283R6BN3dK2z5LlVj3EOzfo4scYkGGkJsvMtCem8T3fMohuMHZgKO_iEbC6vOj8Sg_se91MRRzS_8yUhov1bH3co9ppkyvN8xZulvu2hdQZhg67-HF2vGV47RzG4wx4Uh1OklR5Ltv0OiAveDnMcC7gWBnDgBb0Vb6EACCFdgFGnswXaWcJ1CW7xg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQFnoECBsQAQ&uoh=1",
+            "displayed_link": "https://careers.homedepot.com \u203a job \u203a cybersecurity-soft...",
+            "favicon": "https://serpapi.com/searches/6ade3d2c2ed123d33603849f/images/K7ksBJrqrmYSfvKIXMhUgB1W944_tOb4UjOY4x0r6ng.png",
+            "date": "Aug 20, 2026",
+            "snippet": "The Home Depot is looking to hire a Cybersecurity Software Engineer II to help design and develop innovative AI-powered security solutions that protect ...",
+            "snippet_highlighted_words": [
+              "Home Depot",
+              "Cybersecurity"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "The Home Depot is looking to hire a Cybersecurity Software Engineer II to help design and develop innovative AI-powered security solutions that protect ...",
+                "source_info_link": "https://careers.homedepot.com/job/23859282/cybersecurity-software-engineer-ii-ml-ai-remote-remote",
+                "icon": "https://serpapi.com/searches/6ade3d2c2ed123d33603849f/images/K7ksBJrqrmYSfvKIXMhUgN3Q1vDuJ7W8LYF0KdkYtTCSIHCPFZlb9eMn3cFmpuos.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CuEBL2dvdG8_dXJsPUNBRVNuQUVCNnpzd0ZXZXE2cTd3amlKV0JJbGF1OE9jT0lxSWZzMDk3enlWVVpsRzQ5Mk9fVzhVdWdsTzgwRjFzMVNFVEVSNnJscmdVaTBCZTk3Y0RHNjBSZ0tCQWFHa3RJVURWbTZ1MmpQVWFUZlFsX1NoZnpzVm50QVhpU0JacnZPUXBZLThtYWY0anRuWlllZzViN0sxcjdkRHkyV0pPcUdMdENFN1F0SU5MRlFrMEsyVnZjUUYwWmc0TWR4M1RNdHVNTXJlU3pYOVQ0aXc3V2pTbmtrEgQaAggAGrwEEgIIABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAlgQIABAAGAAgACoLCgRob21lFVrtFkEqDAoFZGVwb3QVdHQVQSoJCgJpdBX-9R9AKg8KCHNlcnZpY2VzFQAAAAAy4QEvZ290bz91cmw9Q0FFU25BRUI2enN3RldlcTZxN3dqaUpXQklsYXU4T2NPSXFJZnMwOTd6eVZVWmxHNDkyT19XOFV1Z2xPODBGMXMxU0VURVI2cmxyZ1VpMEJlOTdjREc2MFJnS0JBYUdrdElVRFZtNnUyalBVYVRmUWxfU2hmenNWbnRBWGlTQlpydk9RcFktOG1hZjRqdG5aWWVnNWI3SzFyN2REeTJXSk9xR0x0Q0U3UXRJTkxGUWswSzJWdmNRRjBaZzRNZHgzVE10dU1NcmVTelg5VDRpdzdXalNua2s6QDxiPkN5YmVyc2VjdXJpdHk8L2I-IFNvZnR3YXJlIEVuZ2luZWVyIElJIHwgTUwgJmFtcDsgQUkgKFJlbW90ZSlCrgFUaGUgPGI-SG9tZSBEZXBvdDwvYj4gaXMgbG9va2luZyB0byBoaXJlIGEgPGI-Q3liZXJzZWN1cml0eTwvYj4gU29mdHdhcmUgRW5naW5lZXIgSUkgdG8gaGVscCBkZXNpZ24gYW5kIGRldmVsb3AgaW5ub3ZhdGl2ZSBBSS1wb3dlcmVkIHNlY3VyaXR5IHNvbHV0aW9ucyB0aGF0IHByb3RlY3QmbmJzcDsuLi4iAhABSABYAGgA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CuEBL2dvdG8_dXJsPUNBRVNuQUVCNnpzd0ZXZXE2cTd3amlKV0JJbGF1OE9jT0lxSWZzMDk3enlWVVpsRzQ5Mk9fVzhVdWdsTzgwRjFzMVNFVEVSNnJscmdVaTBCZTk3Y0RHNjBSZ0tCQWFHa3RJVURWbTZ1MmpQVWFUZlFsX1NoZnpzVm50QVhpU0JacnZPUXBZLThtYWY0anRuWlllZzViN0sxcjdkRHkyV0pPcUdMdENFN1F0SU5MRlFrMEsyVnZjUUYwWmc0TWR4M1RNdHVNTXJlU3pYOVQ0aXc3V2pTbmtrEgQaAggAGrwEEgIIABoAIgAqADIGCAESAnVzOgBCBAgBEABKAFoAcgB6AIJAlgQIABAAGAAgACoLCgRob21lFVrtFkEqDAoFZGVwb3QVdHQVQSoJCgJpdBX-9R9AKg8KCHNlcnZpY2VzFQAAAAAy4QEvZ290bz91cmw9Q0FFU25BRUI2enN3RldlcTZxN3dqaUpXQklsYXU4T2NPSXFJZnMwOTd6eVZVWmxHNDkyT19XOFV1Z2xPODBGMXMxU0VURVI2cmxyZ1VpMEJlOTdjREc2MFJnS0JBYUdrdElVRFZtNnUyalBVYVRmUWxfU2hmenNWbnRBWGlTQlpydk9RcFktOG1hZjRqdG5aWWVnNWI3SzFyN2REeTJXSk9xR0x0Q0U3UXRJTkxGUWswSzJWdmNRRjBaZzRNZHgzVE10dU1NcmVTelg5VDRpdzdXalNua2s6QDxiPkN5YmVyc2VjdXJpdHk8L2I-IFNvZnR3YXJlIEVuZ2luZWVyIElJIHwgTUwgJmFtcDsgQUkgKFJlbW90ZSlCrgFUaGUgPGI-SG9tZSBEZXBvdDwvYj4gaXMgbG9va2luZyB0byBoaXJlIGEgPGI-Q3liZXJzZWN1cml0eTwvYj4gU29mdHdhcmUgRW5naW5lZXIgSUkgdG8gaGVscCBkZXNpZ24gYW5kIGRldmVsb3AgaW5ub3ZhdGl2ZSBBSS1wb3dlcmVkIHNlY3VyaXR5IHNvbHV0aW9ucyB0aGF0IHByb3RlY3QmbmJzcDsuLi4iAhABSABYAGgA",
+            "source": "The Home Depot Careers",
+            "read_more_link": "https://careers.homedepot.com/job/23859282/cybersecurity-software-engineer-ii-ml-ai-remote-remote#:~:text=BENEFITS"
+          },
+          {
+            "position": 2,
+            "title": "Cybersecurity Analyst | PCI (Remote) at The Home Depot",
+            "link": "https://www.linkedin.com/jobs/view/cybersecurity-analyst-pci-remote-at-the-home-depot-4456265885",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmwEB6zswFZKvKsZ77mE3TzggKGZuK01lEuk1-MpzshLVjGPUYhmpFPzd5JUOu94qA0gTWRJwkdYG34xGMx-na8AxzhwOr8bRlgZZ9XzyI_mLCAEFNYTy5E9v9mTiWJWe2FC1xFCrXwlcNWDPrOzAqbMCXiFvoZQi0KMdwfrwgLNl1cWGpKWzRbwVJdrq81s8UfNqOF7GvGfQUi0WPg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQFnoECB4QAQ&uoh=1",
+            "displayed_link": "https://www.linkedin.com \u203a jobs \u203a view \u203a cybersecurity-a...",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDUlEQVR4AWP4____gOLB44D6nTcsGIo33QHi_zTGd0B2YTiAPpYjHIHNAf_piQk6wGPW8f_rLz8HYRCbXg5AWI4GQGJ0cwDY12gAJDbcHUA4CkZAIqQUK7Ts_m_SfxBMs5RupswBaACr-P47b_5zlG_5DyzZ_r_-8hNF7vuvP__nn3r0X6JhJ-0ccPrR-_-H7735jw9cf_n5v0D1Nuo5gBxQve06zR0AjoL7b7_-__zjN4bc-ScfaOeA33___k9Yfg4mDw7u_Xdeo6uhnQP6D93FMNxlxjF0ZbRzgMXEQ9iyI90cALIMJoccDXRzAK6CZog6YNQBow6gIx54Bwx4x2RAu2bAysoEZu9o7xgAQrvkxt3WZi0AAAAASUVORK5CYII.png",
+            "date": "Aug 22, 2026",
+            "snippet": "Eager to learn about Cybersecurity, how Home Depot operates, and all things related to payment compliance and security \u00b7 Possess strong technical skills and/or ...",
+            "snippet_highlighted_words": [
+              "Cybersecurity",
+              "Home Depot"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "Eager to learn about Cybersecurity, how Home Depot operates, and all things related to payment compliance and security \u00b7 Possess strong technical skills and/or ...",
+                "source_info_link": "https://www.linkedin.com/jobs/view/cybersecurity-analyst-pci-remote-at-the-home-depot-4456265885",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDUlEQVR4AWP4____gOLB44D6nTcsGIo33QHi_zTGd0B2YTiAPpYjHIHNAf_piQk6wGPW8f_rLz8HYRCbXg5AWI4GQGJ0cwDY12gAJDbcHUA4CkZAIqQUK7Ts_m_SfxBMs5RupswBaACr-P47b_5zlG_5DyzZ_r_-8hNF7vuvP__nn3r0X6JhJ-0ccPrR-_-H7735jw9cf_n5v0D1Nuo5gBxQve06zR0AjoL7b7_-__zjN4bc-ScfaOeA33___k9Yfg4mDw7u_Xdeo6uhnQP6D93FMNxlxjF0ZbRzgMXEQ9iyI90cALIMJoccDXRzAK6CZog6YNQBow6gIx54Bwx4x2RAu2bAysoEZu9o7xgAQrvkxt3WZi0AAAAASUVORK5CYII.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CuABL2dvdG8_dXJsPUNBRVNtd0VCNnpzd0ZYV2lUNy1Ield5ZHc2cEdMV2VwU3I1MFRqdnoyTkx5YURSQ2NWSmp5UDJQQi1sR2pnSU9pX19TbnFzZTh6MmxMc0lNdHJuT2t2WDZwZDU1Ql9NTkd5bk9rM2ZNajMwNGx6WjRJWlRaazVlWG5BcmxwdmRyUkp2ckVhdHVrTjlSa3FJb05CRktQRXpucFR5N2c4Q0c0SVFldVk4c3hPbjBETEJCU1oxYXlNSTV4UzJDYjMtc2dtVC03VDRnNnc2Rlo0WVhPeWNod2cSBBoCCAAazAQSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAqAQIABAAGAAgACoLCgRob21lFT4Bl0AqDAoFZGVwb3QVFmOWQCoJCgJpdBWy6J5AKg8KCHNlcnZpY2VzFX7spTky4AEvZ290bz91cmw9Q0FFU213RUI2enN3RlhXaVQ3LUh6V3lkdzZwR0xXZXBTcjUwVGp2ejJOTHlhRFJDY1ZKanlQMlBCLWxHamdJT2lfX1NucXNlOHoybExzSU10cm5Pa3ZYNnBkNTVCX01OR3luT2szZk1qMzA0bHpaNElaVFprNWVYbkFybHB2ZHJSSnZyRWF0dWtOOVJrcUlvTkJGS1BFem5wVHk3ZzhDRzRJUWV1WThzeE9uMERMQkJTWjFheU1JNXhTMkNiMy1zZ21ULTdUNGc2dzZGWjRZWE95Y2h3ZzpEPGI-Q3liZXJzZWN1cml0eTwvYj4gQW5hbHlzdCB8IFBDSSAoUmVtb3RlKSBhdCBUaGUgPGI-SG9tZSBEZXBvdDwvYj5CvQFFYWdlciB0byBsZWFybiBhYm91dCA8Yj5DeWJlcnNlY3VyaXR5PC9iPiwgaG93IDxiPkhvbWUgRGVwb3Q8L2I-IG9wZXJhdGVzLCBhbmQgYWxsIHRoaW5ncyByZWxhdGVkIHRvIHBheW1lbnQgY29tcGxpYW5jZSBhbmQgc2VjdXJpdHkgJm1pZGRvdDsgUG9zc2VzcyBzdHJvbmcgdGVjaG5pY2FsIHNraWxscyBhbmQvb3ImbmJzcDsuLi4iAhABSABYAGgA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CuABL2dvdG8_dXJsPUNBRVNtd0VCNnpzd0ZYV2lUNy1Ield5ZHc2cEdMV2VwU3I1MFRqdnoyTkx5YURSQ2NWSmp5UDJQQi1sR2pnSU9pX19TbnFzZTh6MmxMc0lNdHJuT2t2WDZwZDU1Ql9NTkd5bk9rM2ZNajMwNGx6WjRJWlRaazVlWG5BcmxwdmRyUkp2ckVhdHVrTjlSa3FJb05CRktQRXpucFR5N2c4Q0c0SVFldVk4c3hPbjBETEJCU1oxYXlNSTV4UzJDYjMtc2dtVC03VDRnNnc2Rlo0WVhPeWNod2cSBBoCCAAazAQSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAqAQIABAAGAAgACoLCgRob21lFT4Bl0AqDAoFZGVwb3QVFmOWQCoJCgJpdBWy6J5AKg8KCHNlcnZpY2VzFX7spTky4AEvZ290bz91cmw9Q0FFU213RUI2enN3RlhXaVQ3LUh6V3lkdzZwR0xXZXBTcjUwVGp2ejJOTHlhRFJDY1ZKanlQMlBCLWxHamdJT2lfX1NucXNlOHoybExzSU10cm5Pa3ZYNnBkNTVCX01OR3luT2szZk1qMzA0bHpaNElaVFprNWVYbkFybHB2ZHJSSnZyRWF0dWtOOVJrcUlvTkJGS1BFem5wVHk3ZzhDRzRJUWV1WThzeE9uMERMQkJTWjFheU1JNXhTMkNiMy1zZ21ULTdUNGc2dzZGWjRZWE95Y2h3ZzpEPGI-Q3liZXJzZWN1cml0eTwvYj4gQW5hbHlzdCB8IFBDSSAoUmVtb3RlKSBhdCBUaGUgPGI-SG9tZSBEZXBvdDwvYj5CvQFFYWdlciB0byBsZWFybiBhYm91dCA8Yj5DeWJlcnNlY3VyaXR5PC9iPiwgaG93IDxiPkhvbWUgRGVwb3Q8L2I-IG9wZXJhdGVzLCBhbmQgYWxsIHRoaW5ncyByZWxhdGVkIHRvIHBheW1lbnQgY29tcGxpYW5jZSBhbmQgc2VjdXJpdHkgJm1pZGRvdDsgUG9zc2VzcyBzdHJvbmcgdGVjaG5pY2FsIHNraWxscyBhbmQvb3ImbmJzcDsuLi4iAhABSABYAGgA",
+            "source": "LinkedIn",
+            "read_more_link": "https://www.linkedin.com/jobs/view/cybersecurity-analyst-pci-remote-at-the-home-depot-4456265885#:~:text=Eager%20to%20learn%20about%20Cybersecurity%2C,to%20payment%20compliance%20and%20security&text=Possess%20strong%20technical%20skills%20and%2For,to%20continuously%20grow%20technical%20knowledge"
+          },
+          {
+            "position": 3,
+            "title": "Cybersecurity Senior Engineer - Non Human Identity ...",
+            "link": "https://careers.homedepot.com/job/23914666/cybersecurity-senior-engineer-non-human-identity-remote-remote",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESpAEB6zswFTQSAsnEZ0ks1xb8uq1cERUGmRxBC0C59MrqLd1gDHkMMs71d1ICkOPjmfN3eC1TcaKsvwFI__bn2nI7NZ_yhD2-Ad_ejiwOf1LCku0d94EWApWllOpPDBrih2ppNegGfFDpTouno9STbNmN5UbzhLIP5mHJ3XZB3uQ5L6MMniPcmAbAz_HMKTGGlmWc_t2I8M0_w8R64DGyZM6ZFrL4Uw&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQFnoECCAQAQ&uoh=1",
+            "displayed_link": "https://careers.homedepot.com \u203a job \u203a cybersecurity-seni...",
+            "favicon": "https://serpapi.com/searches/6ade3d2c2ed123d33603849f/images/K7ksBJrqrmYSfvKIXMhUgCQHKj8l-yC1wmJzNmqQMn0.png",
+            "date": "Aug 20, 2026",
+            "snippet": "Find Cybersecurity Senior Engineer - Non Human Identity (Remote) and other Technology jobs at The Home Depot in Atlanta, GA and apply online today.",
+            "snippet_highlighted_words": [
+              "Cybersecurity",
+              "Home Depot"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "Find Cybersecurity Senior Engineer - Non Human Identity (Remote) and other Technology jobs at The Home Depot in Atlanta, GA and apply online today.",
+                "source_info_link": "https://careers.homedepot.com/job/23914666/cybersecurity-senior-engineer-non-human-identity-remote-remote",
+                "icon": "https://serpapi.com/searches/6ade3d2c2ed123d33603849f/images/K7ksBJrqrmYSfvKIXMhUgDmJEW0bJISg8G_0DsSOWgV4qoIl1PvY5817DcllOYoC.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CuwBL2dvdG8_dXJsPUNBRVNwQUVCNnpzd0ZhRGpLTmFXa2hwZ0xnZzVHQVhOLVFkdWxJak14RDQ0SWFLdjRtNnBrd0xKZS1PNS1EOWRnbk5hNXRjOGZVT3JtcUJDeGZsWHYwMXFBZGszWWhBekI4ZVU4RWEwandCQWw5bXFBTGx6STJtLXNoN2tvbXF0MVlJSDVJMFdDRG13bGQ5NzFJR2lrTW5LSHlEMVlvRklaYzJlRm8tVDAwRDZLVlR1UHRLeGFOYmgxYmt6LWRWbmU5VG92RWR6ZVdxeXBVT3NENzY2dlJheldtc0JLZVdlVUESBBoCCAAavAQSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkCWBAgAEAAYACAAKgsKBGhvbWUVpkoVQSoMCgVkZXBvdBVfuxNBKgkKAml0FfhxLUAqDwoIc2VydmljZXMVAAAAADLsAS9nb3RvP3VybD1DQUVTcEFFQjZ6c3dGYURqS05hV2tocGdMZ2c1R0FYTi1RZHVsSWpNeEQ0NElhS3Y0bTZwa3dMSmUtTzUtRDlkZ25OYTV0YzhmVU9ybXFCQ3hmbFh2MDFxQWRrM1loQXpCOGVVOEVhMGp3QkFsOW1xQUxsekkybS1zaDdrb21xdDFZSUg1STBXQ0Rtd2xkOTcxSUdpa01uS0h5RDFZb0ZJWmMyZUZvLVQwMEQ2S1ZUdVB0S3hhTmJoMWJrei1kVm5lOVRvdkVkemVXcXlwVU9zRDc2NnZSYXpXbXNCS2VXZVVBOkI8Yj5DeWJlcnNlY3VyaXR5PC9iPiBTZW5pb3IgRW5naW5lZXIgLSBOb24gSHVtYW4gSWRlbnRpdHkgKFJlbW90ZSlCoQFGaW5kIDxiPkN5YmVyc2VjdXJpdHk8L2I-IFNlbmlvciBFbmdpbmVlciAtIE5vbiBIdW1hbiBJZGVudGl0eSAoUmVtb3RlKSBhbmQgb3RoZXIgVGVjaG5vbG9neSBqb2JzIGF0IFRoZSA8Yj5Ib21lIERlcG90PC9iPiBpbiBBdGxhbnRhLCBHQSBhbmQgYXBwbHkgb25saW5lIHRvZGF5LiICEAFIAFgAaAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CuwBL2dvdG8_dXJsPUNBRVNwQUVCNnpzd0ZhRGpLTmFXa2hwZ0xnZzVHQVhOLVFkdWxJak14RDQ0SWFLdjRtNnBrd0xKZS1PNS1EOWRnbk5hNXRjOGZVT3JtcUJDeGZsWHYwMXFBZGszWWhBekI4ZVU4RWEwandCQWw5bXFBTGx6STJtLXNoN2tvbXF0MVlJSDVJMFdDRG13bGQ5NzFJR2lrTW5LSHlEMVlvRklaYzJlRm8tVDAwRDZLVlR1UHRLeGFOYmgxYmt6LWRWbmU5VG92RWR6ZVdxeXBVT3NENzY2dlJheldtc0JLZVdlVUESBBoCCAAavAQSAggAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkCWBAgAEAAYACAAKgsKBGhvbWUVpkoVQSoMCgVkZXBvdBVfuxNBKgkKAml0FfhxLUAqDwoIc2VydmljZXMVAAAAADLsAS9nb3RvP3VybD1DQUVTcEFFQjZ6c3dGYURqS05hV2tocGdMZ2c1R0FYTi1RZHVsSWpNeEQ0NElhS3Y0bTZwa3dMSmUtTzUtRDlkZ25OYTV0YzhmVU9ybXFCQ3hmbFh2MDFxQWRrM1loQXpCOGVVOEVhMGp3QkFsOW1xQUxsekkybS1zaDdrb21xdDFZSUg1STBXQ0Rtd2xkOTcxSUdpa01uS0h5RDFZb0ZJWmMyZUZvLVQwMEQ2S1ZUdVB0S3hhTmJoMWJrei1kVm5lOVRvdkVkemVXcXlwVU9zRDc2NnZSYXpXbXNCS2VXZVVBOkI8Yj5DeWJlcnNlY3VyaXR5PC9iPiBTZW5pb3IgRW5naW5lZXIgLSBOb24gSHVtYW4gSWRlbnRpdHkgKFJlbW90ZSlCoQFGaW5kIDxiPkN5YmVyc2VjdXJpdHk8L2I-IFNlbmlvciBFbmdpbmVlciAtIE5vbiBIdW1hbiBJZGVudGl0eSAoUmVtb3RlKSBhbmQgb3RoZXIgVGVjaG5vbG9neSBqb2JzIGF0IFRoZSA8Yj5Ib21lIERlcG90PC9iPiBpbiBBdGxhbnRhLCBHQSBhbmQgYXBwbHkgb25saW5lIHRvZGF5LiICEAFIAFgAaAA",
+            "source": "The Home Depot Careers"
+          },
+          {
+            "position": 4,
+            "title": "Full Time Home Depot Cyber Security Jobs in Ventura, CA",
+            "link": "https://www.ziprecruiter.com/Jobs/Full-Time-Home-Depot-Cyber-Security/-in-Ventura,CA",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESjwEB6zswFXIbHY8gbvEl3zygdD8z5chN4lzBBsjB8NEYoYdDpn9N0viB1piZps9hFE0NUE4LjoKwaWvUNR-ELQf8ALmqF-JzWVPOPWoqKM4xW5wGb4A3upBkB4dKTrsbFNSa-1SWDl3PYA8gqVAPk3yYL7NY-amKXd6m-viroXbMsJVZger4Ypz4ApUsIT8ihw&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQFnoECB8QAQ&uoh=1",
+            "displayed_link": "https://www.ziprecruiter.com \u203a Jobs \u203a -in-Ventura,CA",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAPFBMVEVHcEwAIyUAIyUBIyUAIyUAISUAGiMCJSUbYzcgbztH4mNF22EAAh4AESEqi0Q1rFBAzVwtlkg6vVYZWzR6wT5nAAAAA3RSTlMATNwp31ooAAAAwklEQVR4Aa3TQRKDIAwFUEWJKAmEcP-7Vh3itEFd9a-cPP8iAwzD6KbbuHG3-THj4PTTQ4vXiRsmtSW0LKrThbBuLSvcYTzzX8QLA1qklGNLTvSL3nPRZmLwBiUoVvHPGKRvVsXaI4uisMGZhPnUjVmo2xMxcIwcEM2erV23rbaWQQ-EOSOB75EolMycSyCySGmfryJryZzIYkQiLAUJMaJB5Ap7fS9BZYsLwvHHMQe7ih64HnRDN3_raRr3eqlfn8MHhzkTceQ2NrIAAAAASUVORK5CYII.png",
+            "date": "4 days ago",
+            "snippet": "A Full Time Home Depot Cyber Security professional is responsible for protecting the company's digital assets, networks, and customer data from cyber threats.",
+            "snippet_highlighted_words": [
+              "Home Depot"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "A Full Time Home Depot Cyber Security professional is responsible for protecting the company's digital assets, networks, and customer data from cyber threats.",
+                "source_info_link": "https://www.ziprecruiter.com/Jobs/Full-Time-Home-Depot-Cyber-Security/-in-Ventura,CA",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAPFBMVEVHcEwAIyUAIyUBIyUAIyUAISUAGiMCJSUbYzcgbztH4mNF22EAAh4AESEqi0Q1rFBAzVwtlkg6vVYZWzR6wT5nAAAAA3RSTlMATNwp31ooAAAAwklEQVR4Aa3TQRKDIAwFUEWJKAmEcP-7Vh3itEFd9a-cPP8iAwzD6KbbuHG3-THj4PTTQ4vXiRsmtSW0LKrThbBuLSvcYTzzX8QLA1qklGNLTvSL3nPRZmLwBiUoVvHPGKRvVsXaI4uisMGZhPnUjVmo2xMxcIwcEM2erV23rbaWQQ-EOSOB75EolMycSyCySGmfryJryZzIYkQiLAUJMaJB5Ap7fS9BZYsLwvHHMQe7ih64HnRDN3_raRr3eqlfn8MHhzkTceQ2NrIAAAAASUVORK5CYII.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CtABL2dvdG8_dXJsPUNBRVNqd0VCNnpzd0ZaanFmVHh0RDVYdHE2UGY5MUt1VjRRZkpzMVVsampKRTdqRnB1MnZ2NlJVVEYyaWRFUU9uNEJiZ09vWUdwdTBkQXBya2FGdUx0TkhjNDZyRmI2cmczY3VGaXJjQ3pud1dkUUFYZ2dKTFR5UVZ4eThCTk1TdnNOX25RZ0ZzSXlOWkktN2lMdnRxRkxQYlBGWlNNd1lJaWswd1pLREs4dFkzWTl4NjllZjFwSzJlR1VteHZsUkFCUHI5URIEGgIIABqiBBIAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkD-AwgAEAAYACAAKgsKBGhvbWUV7Ri2QCoMCgVkZXBvdBVkbK1AKgkKAml0FZjDbD8qDwoIc2VydmljZXMVfYOrPjLQAS9nb3RvP3VybD1DQUVTandFQjZ6c3dGWmpxZlR4dEQ1WHRxNlBmOTFLdVY0UWZKczFVbGpqSkU3akZwdTJ2djZSVVRGMmlkRVFPbjRCYmdPb1lHcHUwZEFwcmthRnVMdE5IYzQ2ckZiNnJnM2N1RmlyY0N6bndXZFFBWGdnSkxUeVFWeHk4Qk5NU3ZzTl9uUWdGc0l5TlpJLTdpTHZ0cUZMUGJQRlpTTXdZSWlrMHdaS0RLOHRZM1k5eDY5ZWYxcEsyZUdVbXh2bFJBQlByOVE6PkZ1bGwgVGltZSA8Yj5Ib21lIERlcG90PC9iPiBDeWJlciBTZWN1cml0eSBKb2JzIGluIFZlbnR1cmEsIENBQqkBQSBGdWxsIFRpbWUgPGI-SG9tZSBEZXBvdDwvYj4gQ3liZXIgU2VjdXJpdHkgcHJvZmVzc2lvbmFsIGlzIHJlc3BvbnNpYmxlIGZvciBwcm90ZWN0aW5nIHRoZSBjb21wYW55JiMzOTtzIGRpZ2l0YWwgYXNzZXRzLCBuZXR3b3JrcywgYW5kIGN1c3RvbWVyIGRhdGEgZnJvbSBjeWJlciB0aHJlYXRzLiICEAFIAFgAaAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CtABL2dvdG8_dXJsPUNBRVNqd0VCNnpzd0ZaanFmVHh0RDVYdHE2UGY5MUt1VjRRZkpzMVVsampKRTdqRnB1MnZ2NlJVVEYyaWRFUU9uNEJiZ09vWUdwdTBkQXBya2FGdUx0TkhjNDZyRmI2cmczY3VGaXJjQ3pud1dkUUFYZ2dKTFR5UVZ4eThCTk1TdnNOX25RZ0ZzSXlOWkktN2lMdnRxRkxQYlBGWlNNd1lJaWswd1pLREs4dFkzWTl4NjllZjFwSzJlR1VteHZsUkFCUHI5URIEGgIIABqiBBIAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkD-AwgAEAAYACAAKgsKBGhvbWUV7Ri2QCoMCgVkZXBvdBVkbK1AKgkKAml0FZjDbD8qDwoIc2VydmljZXMVfYOrPjLQAS9nb3RvP3VybD1DQUVTandFQjZ6c3dGWmpxZlR4dEQ1WHRxNlBmOTFLdVY0UWZKczFVbGpqSkU3akZwdTJ2djZSVVRGMmlkRVFPbjRCYmdPb1lHcHUwZEFwcmthRnVMdE5IYzQ2ckZiNnJnM2N1RmlyY0N6bndXZFFBWGdnSkxUeVFWeHk4Qk5NU3ZzTl9uUWdGc0l5TlpJLTdpTHZ0cUZMUGJQRlpTTXdZSWlrMHdaS0RLOHRZM1k5eDY5ZWYxcEsyZUdVbXh2bFJBQlByOVE6PkZ1bGwgVGltZSA8Yj5Ib21lIERlcG90PC9iPiBDeWJlciBTZWN1cml0eSBKb2JzIGluIFZlbnR1cmEsIENBQqkBQSBGdWxsIFRpbWUgPGI-SG9tZSBEZXBvdDwvYj4gQ3liZXIgU2VjdXJpdHkgcHJvZmVzc2lvbmFsIGlzIHJlc3BvbnNpYmxlIGZvciBwcm90ZWN0aW5nIHRoZSBjb21wYW55JiMzOTtzIGRpZ2l0YWwgYXNzZXRzLCBuZXR3b3JrcywgYW5kIGN1c3RvbWVyIGRhdGEgZnJvbSBjeWJlciB0aHJlYXRzLiICEAFIAFgAaAA",
+            "source": "ZipRecruiter",
+            "read_more_link": "https://www.ziprecruiter.com/Jobs/Full-Time-Home-Depot-Cyber-Security/-in-Ventura,CA#:~:text=A%20Full%20Time%20Home%20Depot,customer%20data%20from%20cyber%20threats."
+          },
+          {
+            "position": 5,
+            "title": "Military Commitment",
+            "link": "https://careers.homedepot.com/career-areas/military/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbwHrOzAV7yKjPrjcayZ5z-7pdaJlWrhlJr90aHHzbJZscc86wW6tcYMuNbT8uq-jYsskBAFCoH0vN8Q3vL_7JkEYHxGlz7crV_RLRkfawEKRMvPoDLf7CPk77CzxQGEzkFIcN6vNd1uiPFxWnGlhBQ&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQFnoECB0QAQ&uoh=1",
+            "displayed_link": "https://careers.homedepot.com \u203a Career Areas",
+            "favicon": "https://serpapi.com/searches/6ade3d2c2ed123d33603849f/images/K7ksBJrqrmYSfvKIXMhUgMMv56MnOU6egRxo6ZfD4so.png",
+            "date": "Sep 14, 2026",
+            "snippet": "The Home Depot is an approved DoD SkillBridge and Hiring our Heroes partner. Our Military Fellowship Program offers talented transitioning service members and ...",
+            "snippet_highlighted_words": [
+              "Home Depot"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "The Home Depot is an approved DoD SkillBridge and Hiring our Heroes partner. Our Military Fellowship Program offers talented transitioning service members and ...",
+                "source_info_link": "https://careers.homedepot.com/career-areas/military/",
+                "icon": "https://serpapi.com/searches/6ade3d2c2ed123d33603849f/images/K7ksBJrqrmYSfvKIXMhUgIQWVHI9jrW2sQxakZ6TSAQjBeb8DK9rCAeFel5H6Y3U.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqQBL2dvdG8_dXJsPUNBRVNid0hyT3pBVmZxeEJqS0wzQlM5WDRnR1ZJSURuYUg1NVdMYUlmUGxmdVg4Vjc2VWJyOUtYRGRhOVBuWEppQmNZS09fQTFQbUpWUy1aMnZnbldkN0NUTE4wdmVLRHNWY1NuTk0ybkNGS3d0a2RveF9HT1NHLWtCYkd5QWVRcUFmT1lzUFZNRHozQUdTQlR5WWdkTk9XNFESBBoCCAAa6wMSAggBGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDFAwgAEAAYACAAKgsKBGhvbWUVYIAwQSoMCgVkZXBvdBVTuy9BKgkKAml0FQAAAAAqDwoIc2VydmljZXMVcbHEPDKkAS9nb3RvP3VybD1DQUVTYndIck96QVZmcXhCaktMM0JTOVg0Z0dWSUlEbmFINTVXTGFJZlBsZnVYOFY3NlVicjlLWERkYTlQblhKaUJjWUtPX0ExUG1KVlMtWjJ2Z25XZDdDVExOMHZlS0RzVmNTbk5NMm5DRkt3dGtkb3hfR09TRy1rQmJHeUFlUXFBZk9Zc1BWTUR6M0FHU0JUeVlnZE5PVzRROixNaWxpdGFyeSBDb21taXRtZW50IC0gVGhlIEhvbWUgRGVwb3QgQ2FyZWVyc0KuAVRoZSA8Yj5Ib21lIERlcG90PC9iPiBpcyBhbiBhcHByb3ZlZCBEb0QgU2tpbGxCcmlkZ2UgYW5kIEhpcmluZyBvdXIgSGVyb2VzIHBhcnRuZXIuIE91ciBNaWxpdGFyeSBGZWxsb3dzaGlwIFByb2dyYW0gb2ZmZXJzIHRhbGVudGVkIHRyYW5zaXRpb25pbmcgc2VydmljZSBtZW1iZXJzIGFuZCZuYnNwOy4uLiICEAFIAFgAaAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqQBL2dvdG8_dXJsPUNBRVNid0hyT3pBVmZxeEJqS0wzQlM5WDRnR1ZJSURuYUg1NVdMYUlmUGxmdVg4Vjc2VWJyOUtYRGRhOVBuWEppQmNZS09fQTFQbUpWUy1aMnZnbldkN0NUTE4wdmVLRHNWY1NuTk0ybkNGS3d0a2RveF9HT1NHLWtCYkd5QWVRcUFmT1lzUFZNRHozQUdTQlR5WWdkTk9XNFESBBoCCAAa6wMSAggBGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkDFAwgAEAAYACAAKgsKBGhvbWUVYIAwQSoMCgVkZXBvdBVTuy9BKgkKAml0FQAAAAAqDwoIc2VydmljZXMVcbHEPDKkAS9nb3RvP3VybD1DQUVTYndIck96QVZmcXhCaktMM0JTOVg0Z0dWSUlEbmFINTVXTGFJZlBsZnVYOFY3NlVicjlLWERkYTlQblhKaUJjWUtPX0ExUG1KVlMtWjJ2Z25XZDdDVExOMHZlS0RzVmNTbk5NMm5DRkt3dGtkb3hfR09TRy1rQmJHeUFlUXFBZk9Zc1BWTUR6M0FHU0JUeVlnZE5PVzRROixNaWxpdGFyeSBDb21taXRtZW50IC0gVGhlIEhvbWUgRGVwb3QgQ2FyZWVyc0KuAVRoZSA8Yj5Ib21lIERlcG90PC9iPiBpcyBhbiBhcHByb3ZlZCBEb0QgU2tpbGxCcmlkZ2UgYW5kIEhpcmluZyBvdXIgSGVyb2VzIHBhcnRuZXIuIE91ciBNaWxpdGFyeSBGZWxsb3dzaGlwIFByb2dyYW0gb2ZmZXJzIHRhbGVudGVkIHRyYW5zaXRpb25pbmcgc2VydmljZSBtZW1iZXJzIGFuZCZuYnNwOy4uLiICEAFIAFgAaAA",
+            "source": "The Home Depot",
+            "read_more_link": "https://careers.homedepot.com/career-areas/military/#:~:text=The%20Home%20Depot%20is%20an,talented%20transitioning%20service%20members%20and"
+          },
+          {
+            "position": 6,
+            "title": "Student Internships",
+            "link": "https://careers.homedepot.com/student-internships/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESbQHrOzAVAbTX3VCj01N4-pxWy32A8dQ2WOb8ZuDc6y5QvEbIl6wMWZFw9cPlRV0GxUw8aQrqzDBSMUQq5zVn7zdDywbYa2lhfj9H4pTGBFag4U6xtNLyoPLt-I1hlRE5jjjJGtbdxotb9lmuq8w&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQFnoECCEQAQ&uoh=1",
+            "displayed_link": "https://careers.homedepot.com \u203a student-internships",
+            "favicon": "https://serpapi.com/searches/6ade3d2c2ed123d33603849f/images/K7ksBJrqrmYSfvKIXMhUgBJ4hKlm_ftgoMcAPuAyv2w.png",
+            "date": "Sep 14, 2026",
+            "snippet": "The Home Depot Internship Program is an award-winning paid 11-week internship. ... \u201cNot only did I learn about cybersecurity at The Home Depot, but I also ...",
+            "snippet_highlighted_words": [
+              "Home Depot",
+              "cybersecurity",
+              "Home Depot"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "The Home Depot Internship Program is an award-winning paid 11-week internship. ...",
+                "source_info_link": "https://careers.homedepot.com/student-internships/",
+                "icon": "https://serpapi.com/searches/6ade3d2c2ed123d33603849f/images/K7ksBJrqrmYSfvKIXMhUgJF-R8flDcOeYozLhYt0rtFk-t2q-RSLYt-C7A70UmkY.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CqEBL2dvdG8_dXJsPUNBRVNiUUhyT3pBVnpNOFRNWHZqNDB1VEVocFFMOUstbWNSMXVQUnlyenBFX19kNVlYX2t2SlptdXJJRjNKSm1SQUtuYS1zYWFQYnVZRDdkc2xmZVdwMUNsczlRTWVCOXFmbDVsMkQxem0xZWdXY1hGQXNUZ3JvR0xfSEdhSmVGTzN0eGd6elU1MkZ4V055dV9CMFBjQUESBBoCCAAa9AMSAggBGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDOAwgAEAAYACAAKgsKBGhvbWUVFWA2QSoMCgVkZXBvdBWcBTVBKgkKAml0FbgBtD4qDwoIc2VydmljZXMVAAAAADKhAS9nb3RvP3VybD1DQUVTYlFIck96QVZ6TThUTVh2ajQwdVRFaHBRTDlLLW1jUjF1UFJ5cnpwRV9fZDVZWF9rdkpabXVySUYzSkptUkFLbmEtc2FhUGJ1WUQ3ZHNsZmVXcDFDbHM5UU1lQjlxZmw1bDJEMXptMWVnV2NYRkFzVGdyb0dMX0hHYUplRk8zdHhnenpVNTJGeFdOeXVfQjBQY0FBOixTdHVkZW50IEludGVybnNoaXBzIC0gVGhlIEhvbWUgRGVwb3QgQ2FyZWVyc0K6AVRoZSA8Yj5Ib21lIERlcG90PC9iPiBJbnRlcm5zaGlwIFByb2dyYW0gaXMgYW4gYXdhcmQtd2lubmluZyBwYWlkIDExLXdlZWsgaW50ZXJuc2hpcC4gLi4uIOKAnE5vdCBvbmx5IGRpZCBJIGxlYXJuIGFib3V0IDxiPmN5YmVyc2VjdXJpdHk8L2I-IGF0IFRoZSA8Yj5Ib21lIERlcG90PC9iPiwgYnV0IEkgYWxzbyZuYnNwOy4uLiICEAFIAFgAaAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CqEBL2dvdG8_dXJsPUNBRVNiUUhyT3pBVnpNOFRNWHZqNDB1VEVocFFMOUstbWNSMXVQUnlyenBFX19kNVlYX2t2SlptdXJJRjNKSm1SQUtuYS1zYWFQYnVZRDdkc2xmZVdwMUNsczlRTWVCOXFmbDVsMkQxem0xZWdXY1hGQXNUZ3JvR0xfSEdhSmVGTzN0eGd6elU1MkZ4V055dV9CMFBjQUESBBoCCAAa9AMSAggBGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkDOAwgAEAAYACAAKgsKBGhvbWUVFWA2QSoMCgVkZXBvdBWcBTVBKgkKAml0FbgBtD4qDwoIc2VydmljZXMVAAAAADKhAS9nb3RvP3VybD1DQUVTYlFIck96QVZ6TThUTVh2ajQwdVRFaHBRTDlLLW1jUjF1UFJ5cnpwRV9fZDVZWF9rdkpabXVySUYzSkptUkFLbmEtc2FhUGJ1WUQ3ZHNsZmVXcDFDbHM5UU1lQjlxZmw1bDJEMXptMWVnV2NYRkFzVGdyb0dMX0hHYUplRk8zdHhnenpVNTJGeFdOeXVfQjBQY0FBOixTdHVkZW50IEludGVybnNoaXBzIC0gVGhlIEhvbWUgRGVwb3QgQ2FyZWVyc0K6AVRoZSA8Yj5Ib21lIERlcG90PC9iPiBJbnRlcm5zaGlwIFByb2dyYW0gaXMgYW4gYXdhcmQtd2lubmluZyBwYWlkIDExLXdlZWsgaW50ZXJuc2hpcC4gLi4uIOKAnE5vdCBvbmx5IGRpZCBJIGxlYXJuIGFib3V0IDxiPmN5YmVyc2VjdXJpdHk8L2I-IGF0IFRoZSA8Yj5Ib21lIERlcG90PC9iPiwgYnV0IEkgYWxzbyZuYnNwOy4uLiICEAFIAFgAaAA",
+            "source": "The Home Depot Careers",
+            "read_more_link": "https://careers.homedepot.com/student-internships/#:~:text=The%20Home%20Depot%20Internship%20Program,an%20award%2Dwinning%20paid%2011%2Dweek%20internship.&text=%E2%80%9CNot%20only%20did%20I%20learn,elevator%20speech%2C%20and%20emotional%20intelligence."
+          },
+          {
+            "position": 7,
+            "title": "Cybersecurity Manager at The Home Depot",
+            "link": "https://www.remoterocketship.com/us/company/homedepot/jobs/cybersecurity-manager-united-states-remote/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESoQEB6zswFemIt0pQaz747bdE2QVEVvB6-UwgYEPukBV6qpNA42S88rreQlPrDpdpyQpD22HM-_vxqUqZhED9cOVwDAXCMoJrvV12XAGjRLCHWpayR1JSDorv2REBI8ghuAUmDVsmBQq6fWQtwAszEFgac0OzYHLJ0q0gwWhjrSQI_WOOM7AX2PlsXXh542AKZxoE7gyxIecA6sAnS6L_e5sOug&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQFnoECBwQAQ&uoh=1",
+            "displayed_link": "https://www.remoterocketship.com \u203a homedepot \u203a jobs",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAaVBMVEVHcEwLCw8LCw8LCw8LCw8LCw8LCw8LCw8LCw8LCw8GBggAAABIMlOPY6mveNYABgdvTnPHiPrPjvugbsYiGiRbP2DYlPZ3Un8JCg3Iid_emO_on_W5f7vjnOrypubqoeP9r-zVlcWmc5fQenL6AAAAC3RSTlMAMobC6f9f7hfgPqi7sN4AAAEaSURBVHgBbNIFksQgFATQuEzHsbjd_5CLxmq7FB7O9674QRjFcRQGvvdNksZX0uRFWR6_kme3_d4Emd__BhRlVRVWsyfVaNqubVsCs_JzP9Cq6yR2BLk-53NeIalUXiJWZ05vA-MdF0DV8QJxKu9-W0-5TAGUfIBs-17gBMCgcCgYHxuFgRc6E6wcVfg0jnpiHHqRtXmaltFmKjRGnj3KLGmxmeSiOgbB5nlwtgprsV0WwLyZrMxZ5A5U093QHDuTBwrczGZfVdx--iq-tmJQuh3rft7o6-cDmxgBGM59o7Wz1Dw8jmZoKgDnGt8TE_NlKCYxySlo6G25-WwUKz10N-r4SmbLRMrdbXMX0Vf-BpTDlzQJJ2q82QEABdYb8gI3THgAAAAASUVORK5CYII.png",
+            "date": "1 day ago",
+            "snippet": "The Home Depot is hiring remotely in United States. Apply now. Find more ... Cybersecurity Manager. 0 minutes ago. United States \u2013 Remote. $170 ...",
+            "snippet_highlighted_words": [
+              "Home Depot",
+              "Cybersecurity"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "The Home Depot is hiring remotely in United States. Apply now. Find more ... Cybersecurity Manager. 0 minutes ago. United States \u2013 Remote. $170 ...",
+                "source_info_link": "https://www.remoterocketship.com/us/company/homedepot/jobs/cybersecurity-manager-united-states-remote/",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAaVBMVEVHcEwLCw8LCw8LCw8LCw8LCw8LCw8LCw8LCw8LCw8GBggAAABIMlOPY6mveNYABgdvTnPHiPrPjvugbsYiGiRbP2DYlPZ3Un8JCg3Iid_emO_on_W5f7vjnOrypubqoeP9r-zVlcWmc5fQenL6AAAAC3RSTlMAMobC6f9f7hfgPqi7sN4AAAEaSURBVHgBbNIFksQgFATQuEzHsbjd_5CLxmq7FB7O9674QRjFcRQGvvdNksZX0uRFWR6_kme3_d4Emd__BhRlVRVWsyfVaNqubVsCs_JzP9Cq6yR2BLk-53NeIalUXiJWZ05vA-MdF0DV8QJxKu9-W0-5TAGUfIBs-17gBMCgcCgYHxuFgRc6E6wcVfg0jnpiHHqRtXmaltFmKjRGnj3KLGmxmeSiOgbB5nlwtgprsV0WwLyZrMxZ5A5U093QHDuTBwrczGZfVdx--iq-tmJQuh3rft7o6-cDmxgBGM59o7Wz1Dw8jmZoKgDnGt8TE_NlKCYxySlo6G25-WwUKz10N-r4SmbLRMrdbXMX0Vf-BpTDlzQJJ2q82QEABdYb8gI3THgAAAAASUVORK5CYII.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CugBL2dvdG8_dXJsPUNBRVNvUUVCNnpzd0ZmSFNza2wya19Yb3JaMWw3SVZGRDFIUzFidDRpNHBFR1MzeFdjQnQ2NGRKRndkd3BUUGZUbmM3OUF1YThrQ0JZOVhkSGNMQWJMeEVVNGsxRVBpa0Fqd1J3cWN2ZlFDOW9qQmhFZ05COFV4MzVPNmZRSWVGcXdQbEV3UEFEaC14ZjI0OFlmUTdXMkJSX0dqSmt0Y1RxdUdjVGFzZVBVd3lYUVBfUzg4X2pnSk5ZWDlMbE00TE1GLW0zOUJVZmtkZVVMT2xjQUp3cG9XTnAtQkxyURIEGgIIABqwBBIAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkCMBAgAEAAYACAAKgsKBGhvbWUVCOOKQCoMCgVkZXBvdBX3k3RAKgkKAml0FdyIeEAqDwoIc2VydmljZXMVtzRjPDLoAS9nb3RvP3VybD1DQUVTb1FFQjZ6c3dGZkhTc2tsMmtfWG9yWjFsN0lWRkQxSFMxYnQ0aTRwRUdTM3hXY0J0NjRkSkZ3ZHdwVFBmVG5jNzlBdWE4a0NCWTlYZEhjTEFiTHhFVTRrMUVQaWtBandSd3FjdmZRQzlvakJoRWdOQjhVeDM1TzZmUUllRnF3UGxFd1BBRGgteGYyNDhZZlE3VzJCUl9HakprdGNUcXVHY1Rhc2VQVXd5WFFQX1M4OF9qZ0pOWVg5TGxNNExNRi1tMzlCVWZrZGVVTE9sY0FKd3BvV05wLUJMclE6NTxiPkN5YmVyc2VjdXJpdHk8L2I-IE1hbmFnZXIgYXQgVGhlIDxiPkhvbWUgRGVwb3Q8L2I-QqgBVGhlIDxiPkhvbWUgRGVwb3Q8L2I-IGlzIGhpcmluZyByZW1vdGVseSBpbiBVbml0ZWQgU3RhdGVzLiBBcHBseSBub3cuIEZpbmQgbW9yZSAuLi4gPGI-Q3liZXJzZWN1cml0eTwvYj4gTWFuYWdlci4gMCBtaW51dGVzIGFnby4gVW5pdGVkIFN0YXRlcyDigJMgUmVtb3RlLiAkMTcwJm5ic3A7Li4uIgIQAUgAWABoAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CugBL2dvdG8_dXJsPUNBRVNvUUVCNnpzd0ZmSFNza2wya19Yb3JaMWw3SVZGRDFIUzFidDRpNHBFR1MzeFdjQnQ2NGRKRndkd3BUUGZUbmM3OUF1YThrQ0JZOVhkSGNMQWJMeEVVNGsxRVBpa0Fqd1J3cWN2ZlFDOW9qQmhFZ05COFV4MzVPNmZRSWVGcXdQbEV3UEFEaC14ZjI0OFlmUTdXMkJSX0dqSmt0Y1RxdUdjVGFzZVBVd3lYUVBfUzg4X2pnSk5ZWDlMbE00TE1GLW0zOUJVZmtkZVVMT2xjQUp3cG9XTnAtQkxyURIEGgIIABqwBBIAGgAiACoAMgYIARICdXM6AEIECAEQAEoAWgByAHoAgkCMBAgAEAAYACAAKgsKBGhvbWUVCOOKQCoMCgVkZXBvdBX3k3RAKgkKAml0FdyIeEAqDwoIc2VydmljZXMVtzRjPDLoAS9nb3RvP3VybD1DQUVTb1FFQjZ6c3dGZkhTc2tsMmtfWG9yWjFsN0lWRkQxSFMxYnQ0aTRwRUdTM3hXY0J0NjRkSkZ3ZHdwVFBmVG5jNzlBdWE4a0NCWTlYZEhjTEFiTHhFVTRrMUVQaWtBandSd3FjdmZRQzlvakJoRWdOQjhVeDM1TzZmUUllRnF3UGxFd1BBRGgteGYyNDhZZlE3VzJCUl9HakprdGNUcXVHY1Rhc2VQVXd5WFFQX1M4OF9qZ0pOWVg5TGxNNExNRi1tMzlCVWZrZGVVTE9sY0FKd3BvV05wLUJMclE6NTxiPkN5YmVyc2VjdXJpdHk8L2I-IE1hbmFnZXIgYXQgVGhlIDxiPkhvbWUgRGVwb3Q8L2I-QqgBVGhlIDxiPkhvbWUgRGVwb3Q8L2I-IGlzIGhpcmluZyByZW1vdGVseSBpbiBVbml0ZWQgU3RhdGVzLiBBcHBseSBub3cuIEZpbmQgbW9yZSAuLi4gPGI-Q3liZXJzZWN1cml0eTwvYj4gTWFuYWdlci4gMCBtaW51dGVzIGFnby4gVW5pdGVkIFN0YXRlcyDigJMgUmVtb3RlLiAkMTcwJm5ic3A7Li4uIgIQAUgAWABoAA",
+            "source": "Remote Rocketship",
+            "read_more_link": "https://www.remoterocketship.com/us/company/homedepot/jobs/cybersecurity-manager-united-states-remote/#:~:text=Cybersecurity%20Manager,%24170k%20%2D%20%24240k%20%2F%20year"
+          },
+          {
+            "position": 8,
+            "title": "How do you get into the Home Depot IT department",
+            "link": "https://www.reddit.com/r/HomeDepot/comments/1vods6d/how_do_you_get_into_the_home_depot_it_department/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESoAEB6zswFWC_HyFgtXC0HMB0get3ApwOlEIQY3HbZOO4Mhxv6G5aS7RJN2AxeVoWE0yNsrA257lVN6OivNthSdKfvTm8OcE5nsubZLl0SPq775ucDyji98TniqobECMyJJeIVwZtwSSUCaC_hSOU55sp2A5h9WHokOhhckAqSi16djw_kCpQ3Rg5CtLmMA6MwvG92FbYWV5vC8YbZNi7BPrW&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQFnoECDIQAQ&uoh=1",
+            "displayed_link": "40+ comments",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAqFBMVEVHcEz_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_PAD_____RQD_PAD_QAD_MQDS4Of_RAD_NwD6-vv4_v_K2N_z-fra5uzm7_H72NLq9vkCCAvweWDol4r_hm3-mYX9YTj-cFDW7PP45uP4qJjbUTNBR0rRtbD_wLO-MgW1vsHfzc_gFQDUqKf_WAb_UgAxODwAHilxLR1scnTHa13kHQCLRbHLAAAADHRSTlMA_kAZ4YjF7WQ0GH3klhKFAAABhUlEQVQokW2T53aDMAyFoSGQpMfyJmaEnb1X-_5vVttkkDT3BxJ8xyBdCce5a9j3A9cN_P7QedcggIeCwQvqeU8EhIA3erKvDgJa1ZTD10cmVghNxYOOugzWY4RQiQF6Fna_tz5fNigMDfRsnd1z5zleNs0Yc52bmh89ECzWF4FpllkGge5dB0wpxrQqV_vlqqyoMPf68dDp6-KLJCmLKbppWpRJUlCAvuODmKEPmgnwnYCTTwwhwgPHJXVocrlv3xtO98rGmriOyyFVEqE5zaR9-Fv96KtKgbu6E5w3UsrdAScGJvSwU6Fscqx78XW1M6XC-RHsSQnHeajUTFfrm1ZIlaZKJbItRCZKpWlFTCvGBMriOFWbxeJ0Wiw2YRrHEbUmGPtIFkVxHE-sdBI1GbH2WeNFzsYsYtfJ5KoDY7m4GW9HJrKxFosiZmJmmNcukBkBJvnWnGHRNifGdbitkakJOBZQF0UNoh3YfYm-bwPlRIu3-TvryOvd1_kf6iz1C3z9Hf4AClYvY_ay9KgAAAAASUVORK5CYII.png",
+            "snippet": "Hi, I'm working a a sales associate and wondering how to get into the HD IT department. I have my BS in computer science, 20+ years of software experience, ...",
+            "about_this_result": {
+              "source": {
+                "description": "Most of them were in cybersecurity though. Good luck! Edit ... Help desk at Home Depot (USA 2 year contract). 15. 20. Easiest position to get ...",
+                "source_info_link": "https://www.reddit.com/r/HomeDepot/comments/1vods6d/how_do_you_get_into_the_home_depot_it_department/",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y-mAAAAqFBMVEVHcEz_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_RQD_PAD_____RQD_PAD_QAD_MQDS4Of_RAD_NwD6-vv4_v_K2N_z-fra5uzm7_H72NLq9vkCCAvweWDol4r_hm3-mYX9YTj-cFDW7PP45uP4qJjbUTNBR0rRtbD_wLO-MgW1vsHfzc_gFQDUqKf_WAb_UgAxODwAHilxLR1scnTHa13kHQCLRbHLAAAADHRSTlMA_kAZ4YjF7WQ0GH3klhKFAAABhUlEQVQokW2T53aDMAyFoSGQpMfyJmaEnb1X-_5vVttkkDT3BxJ8xyBdCce5a9j3A9cN_P7QedcggIeCwQvqeU8EhIA3erKvDgJa1ZTD10cmVghNxYOOugzWY4RQiQF6Fna_tz5fNigMDfRsnd1z5zleNs0Yc52bmh89ECzWF4FpllkGge5dB0wpxrQqV_vlqqyoMPf68dDp6-KLJCmLKbppWpRJUlCAvuODmKEPmgnwnYCTTwwhwgPHJXVocrlv3xtO98rGmriOyyFVEqE5zaR9-Fv96KtKgbu6E5w3UsrdAScGJvSwU6Fscqx78XW1M6XC-RHsSQnHeajUTFfrm1ZIlaZKJbItRCZKpWlFTCvGBMriOFWbxeJ0Wiw2YRrHEbUmGPtIFkVxHE-sdBI1GbH2WeNFzsYsYtfJ5KoDY7m4GW9HJrKxFosiZmJmmNcukBkBJvnWnGHRNifGdbitkakJOBZQF0UNoh3YfYm-bwPlRIu3-TvryOvd1_kf6iz1C3z9Hf4AClYvY_ay9KgAAAAASUVORK5CYII.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CuYBL2dvdG8_dXJsPUNBRVNvQUVCNnpzd0ZScXprVnVlbDM4QWJFV0l4MUNWZHVmM0VpdnVMNWRwY24zTzlrbHRPQkhtaTRiM0tOUWdhMUN4S2lqdENzUUVONGZWWTlhQWlEWjZQVkhZV1JVMkoxeDBkVlFyUEM4Qi1hVnA5LXN5bnQycXJmdUZOZkVTdUQxQi1HLUxHZUtoSlVOTW5fc1VKRmFtcnlfWFF1UWhseVRIQWItTmJGanlGeHowODhXMzZDWUxVVHJ6NV95NjRLM2xWcG5zMkxTaEppUG1rTGpHNzIzSFNxa2wSBBoCCAAavAQSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAmAQIABAAGAAgACoLCgRob21lFVZTg0AqDAoFZGVwb3QVMuODQCoJCgJpdBUcuxI8Kg8KCHNlcnZpY2VzFdh3LD4y5gEvZ290bz91cmw9Q0FFU29BRUI2enN3RlJxemtWdWVsMzhBYkVXSXgxQ1ZkdWYzRWl2dUw1ZHBjbjNPOWtsdE9CSG1pNGIzS05RZ2ExQ3hLaWp0Q3NRRU40ZlZZOWFBaURaNlBWSFlXUlUySjF4MGRWUXJQQzhCLWFWcDktc3ludDJxcmZ1Rk5mRVN1RDFCLUctTEdlS2hKVU5Nbl9zVUpGYW1yeV9YUXVRaGx5VEhBYi1OYkZqeUZ4ejA4OFczNkNZTFVUcno1X3k2NEszbFZwbnMyTFNoSmlQbWtMakc3MjNIU3FrbDpASG93IGRvIHlvdSBnZXQgaW50byB0aGUgPGI-SG9tZSBEZXBvdDwvYj4gSVQgZGVwYXJ0bWVudCAtIFJlZGRpdEKrAU1vc3Qgb2YgdGhlbSB3ZXJlIGluIDxiPmN5YmVyc2VjdXJpdHk8L2I-IHRob3VnaC4gR29vZCBsdWNrISBFZGl0IC4uLiBIZWxwIGRlc2sgYXQgPGI-SG9tZSBEZXBvdDwvYj4gKFVTQSAyIHllYXIgPGI-Y29udHJhY3Q8L2I-KS4gMTUuIDIwLiBFYXNpZXN0IHBvc2l0aW9uIHRvIGdldCZuYnNwOy4uLiICEAFIAFgAaAA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CuYBL2dvdG8_dXJsPUNBRVNvQUVCNnpzd0ZScXprVnVlbDM4QWJFV0l4MUNWZHVmM0VpdnVMNWRwY24zTzlrbHRPQkhtaTRiM0tOUWdhMUN4S2lqdENzUUVONGZWWTlhQWlEWjZQVkhZV1JVMkoxeDBkVlFyUEM4Qi1hVnA5LXN5bnQycXJmdUZOZkVTdUQxQi1HLUxHZUtoSlVOTW5fc1VKRmFtcnlfWFF1UWhseVRIQWItTmJGanlGeHowODhXMzZDWUxVVHJ6NV95NjRLM2xWcG5zMkxTaEppUG1rTGpHNzIzSFNxa2wSBBoCCAAavAQSABoAIgAqADIGCAMSAnVzOgBCBAgBEABKAFoAcgB6AIJAmAQIABAAGAAgACoLCgRob21lFVZTg0AqDAoFZGVwb3QVMuODQCoJCgJpdBUcuxI8Kg8KCHNlcnZpY2VzFdh3LD4y5gEvZ290bz91cmw9Q0FFU29BRUI2enN3RlJxemtWdWVsMzhBYkVXSXgxQ1ZkdWYzRWl2dUw1ZHBjbjNPOWtsdE9CSG1pNGIzS05RZ2ExQ3hLaWp0Q3NRRU40ZlZZOWFBaURaNlBWSFlXUlUySjF4MGRWUXJQQzhCLWFWcDktc3ludDJxcmZ1Rk5mRVN1RDFCLUctTEdlS2hKVU5Nbl9zVUpGYW1yeV9YUXVRaGx5VEhBYi1OYkZqeUZ4ejA4OFczNkNZTFVUcno1X3k2NEszbFZwbnMyTFNoSmlQbWtMakc3MjNIU3FrbDpASG93IGRvIHlvdSBnZXQgaW50byB0aGUgPGI-SG9tZSBEZXBvdDwvYj4gSVQgZGVwYXJ0bWVudCAtIFJlZGRpdEKrAU1vc3Qgb2YgdGhlbSB3ZXJlIGluIDxiPmN5YmVyc2VjdXJpdHk8L2I-IHRob3VnaC4gR29vZCBsdWNrISBFZGl0IC4uLiBIZWxwIGRlc2sgYXQgPGI-SG9tZSBEZXBvdDwvYj4gKFVTQSAyIHllYXIgPGI-Y29udHJhY3Q8L2I-KS4gMTUuIDIwLiBFYXNpZXN0IHBvc2l0aW9uIHRvIGdldCZuYnNwOy4uLiICEAFIAFgAaAA",
+            "source": "Reddit \u00b7 r/HomeDepot"
+          },
+          {
+            "position": 9,
+            "title": "Becoming a Supplier - THD Prospective Suppliers",
+            "link": "https://supplierhub-prospective.homedepot.com/hc/en-us/articles/360034558452-Becoming-a-Supplier",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=CAESmwEB6zswFVSXJkuw_1VwI-TjzXBeiqDF_GBE9QEFrqlePRW1BrxoH4knoGzCrThfBiZYhozKfVakh7Vz3ww8_L2W6u9zALaF7kvRr9PV7v0MM1M6A4GQo9g1o9JE8xtAlp8x9z1N0ZuYskWaYsluzvp7fFzWxk0YOs4C3mssh8Dyn88fsaFIoieebd_sKdXw8kDK4BjWYa3ekWBlMg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQFnoECCIQAQ&uoh=1",
+            "displayed_link": "https://supplierhub-prospective.homedepot.com \u203a articles",
+            "favicon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAJ1BMVEX5YwL5YgL____5VgD5SwD_7-r-4Nb9zbz8qo36fET7kmj8wKv6ci7NQv1cAAAAAnRSTlP_-rjfK0gAAAGeSURBVDiNbZSLrsQgCEQpD0X0_7_3Dmjb3Zs12cTqKQMDXbp-LpLJRrW76NeSaD6nEH0DImej3VR80D9AepOzYTYJHiSfgMzhBYgzli3m0dcLZFreQvB-aEtCx5j8ADI1E_eunV2kCEGsG8BxT8IJ-g-hbR5A-mpFpNIHAcXr1h_MPWiJ8Ev0U4XMDkKNUV8bfmIoT90-oP4BafOsn7llMBDhujbgjZsiS4rGO34RXZ1XAtJGErBNVd3yTkBMmEFjSwwkZDKN4ZMngkuUBMGnF2IUOwHiBadpadjCydML8FrKTXioe_bDdMfYIdAZKSIIP4XlUFSLY1QCh8BpV8hMEPc8aM-nm9DQSmfqDeDZ9gwkgR62mAwG9hVQ_lmNAPJDMLDRlsSqkcP8-G5-ETksLWCm7uSvjK9ngMoiND4wjmjkAWa-vAlRyZ25jUC1B6j5JCtiot4kKGzIDYhV7RUj-8eeMeL-QlBFEaWSLRpFPPe7TNspds3cYMR670-htmcMT0nYe73izGTVV0c1uc-KGfWJXwL98-FD_-NvYFx_F3INcpju-eUAAAAASUVORK5CYII.png",
+            "date": "Aug 6, 2026",
+            "snippet": "If you are a prospective supplier for stores in the U.S. that is not currently under contract with The Home Depot and are inquiring to ... IT services (staffing & ...",
+            "snippet_highlighted_words": [
+              "contract",
+              "Home Depot",
+              "IT services"
+            ],
+            "about_this_result": {
+              "source": {
+                "description": "If you are a prospective supplier for stores in the U.S. that is not currently under contract with The Home Depot and are inquiring to ... IT services (staffing & ...",
+                "source_info_link": "https://supplierhub-prospective.homedepot.com/hc/en-us/articles/360034558452-Becoming-a-Supplier",
+                "icon": "https://serpapi.com/images/i/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAJ1BMVEX5YwL5YgL____5VgD5SwD_7-r-4Nb9zbz8qo36fET7kmj8wKv6ci7NQv1cAAAAAnRSTlP_-rjfK0gAAAGeSURBVDiNbZSLrsQgCEQpD0X0_7_3Dmjb3Zs12cTqKQMDXbp-LpLJRrW76NeSaD6nEH0DImej3VR80D9AepOzYTYJHiSfgMzhBYgzli3m0dcLZFreQvB-aEtCx5j8ADI1E_eunV2kCEGsG8BxT8IJ-g-hbR5A-mpFpNIHAcXr1h_MPWiJ8Ev0U4XMDkKNUV8bfmIoT90-oP4BafOsn7llMBDhujbgjZsiS4rGO34RXZ1XAtJGErBNVd3yTkBMmEFjSwwkZDKN4ZMngkuUBMGnF2IUOwHiBadpadjCydML8FrKTXioe_bDdMfYIdAZKSIIP4XlUFSLY1QCh8BpV8hMEPc8aM-nm9DQSmfqDeDZ9gwkgR62mAwG9hVQ_lmNAPJDMLDRlsSqkcP8-G5-ETksLWCm7uSvjK9ngMoiND4wjmjkAWa-vAlRyZ25jUC1B6j5JCtiot4kKGzIDYhV7RUj-8eeMeL-QlBFEaWSLRpFPPe7TNspds3cYMR670-htmcMT0nYe73izGTVV0c1uc-KGfWJXwL98-FD_-NvYFx_F3INcpju-eUAAAAASUVORK5CYII.png"
+              },
+              "languages": [
+                "en"
+              ],
+              "regions": [
+                "US"
+              ]
+            },
+            "about_page_link": "https://www.google.com/search/about-this-result?origin=www.google.com&req=CuABL2dvdG8_dXJsPUNBRVNtd0VCNnpzd0ZmZmFmbXRTZENNeDRlLTMwVUhzTmIyRzVIcS05VHlvQ3Q5QTBUbTYxcUQ3QzVQOFVsYzZjYUIyMVRLTFJmRU5aRVlTcTh2aFBvZGVqNFJGVkI0VXA1RUdoWHJzODNwcVlWYi1CazB6WWlLVnBYdTlUc2xrWS01QVN5ZFluZzUzZlppQTktT25MOWc3d0J0VXVEM3p4OTV1ZFRmdG1CS05TaTJYUWRyUmRPbHp0Vi1CdXVKY2hzYkpfNEVVVGtkNkQ2NTRzbFhYbncSBBoCCAAawAQSAggAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkCaBAgAEAAYACAAKgsKBGhvbWUVX4kNQSoMCgVkZXBvdBVfiQ1BKgkKAml0FeurbD4qDwoIc2VydmljZXMVXDigPjLgAS9nb3RvP3VybD1DQUVTbXdFQjZ6c3dGZmZhZm10U2RDTXg0ZS0zMFVIc05iMkc1SHEtOVR5b0N0OUEwVG02MXFEN0M1UDhVbGM2Y2FCMjFUS0xSZkVOWkVZU3E4dmhQb2RlajRSRlZCNFVwNUVHaFhyczgzcHFZVmItQmswellpS1ZwWHU5VHNsa1ktNUFTeWRZbmc1M2ZaaUE5LU9uTDlnN3dCdFV1RDN6eDk1dWRUZnRtQktOU2kyWFFkclJkT2x6dFYtQnV1SmNoc2JKXzRFVVRrZDZENjU0c2xYWG53Oi9CZWNvbWluZyBhIFN1cHBsaWVyIC0gVEhEIFByb3NwZWN0aXZlIFN1cHBsaWVyc0LEAUlmIHlvdSBhcmUgYSBwcm9zcGVjdGl2ZSBzdXBwbGllciBmb3Igc3RvcmVzIGluIHRoZSBVLlMuIHRoYXQgaXMgbm90IGN1cnJlbnRseSB1bmRlciA8Yj5jb250cmFjdDwvYj4gd2l0aCBUaGUgPGI-SG9tZSBEZXBvdDwvYj4gYW5kIGFyZSBpbnF1aXJpbmcgdG8gLi4uIDxiPklUIHNlcnZpY2VzPC9iPiAoc3RhZmZpbmcgJmFtcDsmbmJzcDsuLi4iAhABSABYAGgA",
+            "about_page_serpapi_link": "https://serpapi.com/search.json?engine=google_about_this_result&google_domain=google.com&req_token=CuABL2dvdG8_dXJsPUNBRVNtd0VCNnpzd0ZmZmFmbXRTZENNeDRlLTMwVUhzTmIyRzVIcS05VHlvQ3Q5QTBUbTYxcUQ3QzVQOFVsYzZjYUIyMVRLTFJmRU5aRVlTcTh2aFBvZGVqNFJGVkI0VXA1RUdoWHJzODNwcVlWYi1CazB6WWlLVnBYdTlUc2xrWS01QVN5ZFluZzUzZlppQTktT25MOWc3d0J0VXVEM3p4OTV1ZFRmdG1CS05TaTJYUWRyUmRPbHp0Vi1CdXVKY2hzYkpfNEVVVGtkNkQ2NTRzbFhYbncSBBoCCAAawAQSAggAGgAiACoAMgYIAxICdXM6AEIECAEQAEoAWgByAHoAgkCaBAgAEAAYACAAKgsKBGhvbWUVX4kNQSoMCgVkZXBvdBVfiQ1BKgkKAml0FeurbD4qDwoIc2VydmljZXMVXDigPjLgAS9nb3RvP3VybD1DQUVTbXdFQjZ6c3dGZmZhZm10U2RDTXg0ZS0zMFVIc05iMkc1SHEtOVR5b0N0OUEwVG02MXFEN0M1UDhVbGM2Y2FCMjFUS0xSZkVOWkVZU3E4dmhQb2RlajRSRlZCNFVwNUVHaFhyczgzcHFZVmItQmswellpS1ZwWHU5VHNsa1ktNUFTeWRZbmc1M2ZaaUE5LU9uTDlnN3dCdFV1RDN6eDk1dWRUZnRtQktOU2kyWFFkclJkT2x6dFYtQnV1SmNoc2JKXzRFVVRrZDZENjU0c2xYWG53Oi9CZWNvbWluZyBhIFN1cHBsaWVyIC0gVEhEIFByb3NwZWN0aXZlIFN1cHBsaWVyc0LEAUlmIHlvdSBhcmUgYSBwcm9zcGVjdGl2ZSBzdXBwbGllciBmb3Igc3RvcmVzIGluIHRoZSBVLlMuIHRoYXQgaXMgbm90IGN1cnJlbnRseSB1bmRlciA8Yj5jb250cmFjdDwvYj4gd2l0aCBUaGUgPGI-SG9tZSBEZXBvdDwvYj4gYW5kIGFyZSBpbnF1aXJpbmcgdG8gLi4uIDxiPklUIHNlcnZpY2VzPC9iPiAoc3RhZmZpbmcgJmFtcDsmbmJzcDsuLi4iAhABSABYAGgA",
+            "source": "The Home Depot",
+            "read_more_link": "https://supplierhub-prospective.homedepot.com/hc/en-us/articles/360034558452-Becoming-a-Supplier#:~:text=IT%20services%20(staffing%20%26%20computer,software%2Fhardware)"
+          }
+        ],
+        "pagination": {
+          "current": 1,
+          "next": "https://www.google.com/search?q=%22Home+Depot%22+(%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22)+(contract+OR+agreement+OR+partnership)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvMYqo9tJODNvWUQW5a-iiEV_Qz4A:1792949548454&ei=LD3eauyiG6u0ptQPsMrHGQ&start=10&sa=N&sstk=AS6-VmJRcK97FKYk1f3FhIWd_Ar7j5EkHkjITgHWcN3pXdC3Sp-yj_W9_pwpLtDj-mmdQF8ZUc2h_E6eKkHH8tvOZsqBk-ozVt2dQg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQ8NMDegQINxAW",
+          "other_pages": {
+            "2": "https://www.google.com/search?q=%22Home+Depot%22+(%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22)+(contract+OR+agreement+OR+partnership)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvMYqo9tJODNvWUQW5a-iiEV_Qz4A:1792949548454&ei=LD3eauyiG6u0ptQPsMrHGQ&start=10&sa=N&sstk=AS6-VmJRcK97FKYk1f3FhIWd_Ar7j5EkHkjITgHWcN3pXdC3Sp-yj_W9_pwpLtDj-mmdQF8ZUc2h_E6eKkHH8tvOZsqBk-ozVt2dQg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQ8tMDegQINxAE",
+            "3": "https://www.google.com/search?q=%22Home+Depot%22+(%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22)+(contract+OR+agreement+OR+partnership)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvMYqo9tJODNvWUQW5a-iiEV_Qz4A:1792949548454&ei=LD3eauyiG6u0ptQPsMrHGQ&start=20&sa=N&sstk=AS6-VmJRcK97FKYk1f3FhIWd_Ar7j5EkHkjITgHWcN3pXdC3Sp-yj_W9_pwpLtDj-mmdQF8ZUc2h_E6eKkHH8tvOZsqBk-ozVt2dQg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQ8tMDegQINxAG",
+            "4": "https://www.google.com/search?q=%22Home+Depot%22+(%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22)+(contract+OR+agreement+OR+partnership)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvMYqo9tJODNvWUQW5a-iiEV_Qz4A:1792949548454&ei=LD3eauyiG6u0ptQPsMrHGQ&start=30&sa=N&sstk=AS6-VmJRcK97FKYk1f3FhIWd_Ar7j5EkHkjITgHWcN3pXdC3Sp-yj_W9_pwpLtDj-mmdQF8ZUc2h_E6eKkHH8tvOZsqBk-ozVt2dQg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQ8tMDegQINxAI",
+            "5": "https://www.google.com/search?q=%22Home+Depot%22+(%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22)+(contract+OR+agreement+OR+partnership)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvMYqo9tJODNvWUQW5a-iiEV_Qz4A:1792949548454&ei=LD3eauyiG6u0ptQPsMrHGQ&start=40&sa=N&sstk=AS6-VmJRcK97FKYk1f3FhIWd_Ar7j5EkHkjITgHWcN3pXdC3Sp-yj_W9_pwpLtDj-mmdQF8ZUc2h_E6eKkHH8tvOZsqBk-ozVt2dQg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQ8tMDegQINxAK",
+            "6": "https://www.google.com/search?q=%22Home+Depot%22+(%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22)+(contract+OR+agreement+OR+partnership)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvMYqo9tJODNvWUQW5a-iiEV_Qz4A:1792949548454&ei=LD3eauyiG6u0ptQPsMrHGQ&start=50&sa=N&sstk=AS6-VmJRcK97FKYk1f3FhIWd_Ar7j5EkHkjITgHWcN3pXdC3Sp-yj_W9_pwpLtDj-mmdQF8ZUc2h_E6eKkHH8tvOZsqBk-ozVt2dQg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQ8tMDegQINxAM",
+            "7": "https://www.google.com/search?q=%22Home+Depot%22+(%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22)+(contract+OR+agreement+OR+partnership)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvMYqo9tJODNvWUQW5a-iiEV_Qz4A:1792949548454&ei=LD3eauyiG6u0ptQPsMrHGQ&start=60&sa=N&sstk=AS6-VmJRcK97FKYk1f3FhIWd_Ar7j5EkHkjITgHWcN3pXdC3Sp-yj_W9_pwpLtDj-mmdQF8ZUc2h_E6eKkHH8tvOZsqBk-ozVt2dQg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQ8tMDegQINxAO",
+            "8": "https://www.google.com/search?q=%22Home+Depot%22+(%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22)+(contract+OR+agreement+OR+partnership)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvMYqo9tJODNvWUQW5a-iiEV_Qz4A:1792949548454&ei=LD3eauyiG6u0ptQPsMrHGQ&start=70&sa=N&sstk=AS6-VmJRcK97FKYk1f3FhIWd_Ar7j5EkHkjITgHWcN3pXdC3Sp-yj_W9_pwpLtDj-mmdQF8ZUc2h_E6eKkHH8tvOZsqBk-ozVt2dQg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQ8tMDegQINxAQ",
+            "9": "https://www.google.com/search?q=%22Home+Depot%22+(%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22)+(contract+OR+agreement+OR+partnership)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvMYqo9tJODNvWUQW5a-iiEV_Qz4A:1792949548454&ei=LD3eauyiG6u0ptQPsMrHGQ&start=80&sa=N&sstk=AS6-VmJRcK97FKYk1f3FhIWd_Ar7j5EkHkjITgHWcN3pXdC3Sp-yj_W9_pwpLtDj-mmdQF8ZUc2h_E6eKkHH8tvOZsqBk-ozVt2dQg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQ8tMDegQINxAS",
+            "10": "https://www.google.com/search?q=%22Home+Depot%22+(%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22)+(contract+OR+agreement+OR+partnership)+after:2026-07-24+before:2026-10-26&sca_esv=0b474a2607dcc93d&hl=en&sxsrf=APpeQnvMYqo9tJODNvWUQW5a-iiEV_Qz4A:1792949548454&ei=LD3eauyiG6u0ptQPsMrHGQ&start=90&sa=N&sstk=AS6-VmJRcK97FKYk1f3FhIWd_Ar7j5EkHkjITgHWcN3pXdC3Sp-yj_W9_pwpLtDj-mmdQF8ZUc2h_E6eKkHH8tvOZsqBk-ozVt2dQg&ved=2ahUKEwjs6L3H2dWXAxUrmokEHTDlMQMQ8tMDegQINxAU"
+          }
+        },
+        "serpapi_pagination": {
+          "current": 1,
+          "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&start=10",
+          "next": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&start=10",
+          "other_pages": {
+            "2": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&start=10",
+            "3": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&start=20",
+            "4": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&start=30",
+            "5": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&start=40",
+            "6": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&start=50",
+            "7": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&start=60",
+            "8": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&start=70",
+            "9": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&start=80",
+            "10": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en&q=%22Home+Depot%22+%28%22IT+services%22+OR+cybersecurity+OR+%22security+operations%22%29+%28contract+OR+agreement+OR+partnership%29+after%3A2026-07-24+before%3A2026-10-26&start=90"
+          }
+        }
+      },
+      "pairedItem": {
+        "item": 2
+      }
+    }
+  ]
+}

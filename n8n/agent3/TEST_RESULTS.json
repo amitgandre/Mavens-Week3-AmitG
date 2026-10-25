@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "recorded_excerpt_signals": 1,
+  "synthetic_signals": 4,
+  "source_references_preserved": true,
+  "search_requests": 0,
+  "model": "gemma4:12b"
+}

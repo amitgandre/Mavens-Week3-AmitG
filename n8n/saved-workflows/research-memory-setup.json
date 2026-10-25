@@ -1,0 +1,112 @@
+{
+  "updatedAt": "2026-10-25T04:21:30.264Z",
+  "createdAt": "2026-10-25T04:21:30.264Z",
+  "id": "Week3ResearchMemorySetup",
+  "name": "Research Memory - Setup",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "id": "525c21c3-efd6-4e97-b44f-cd9146731b54",
+      "name": "Start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "parameters": {},
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "8bbad17d-ac7e-4560-a0f3-91a065bc18f2",
+      "name": "Create Research Memory",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "parameters": {
+        "resource": "table",
+        "operation": "create",
+        "tableName": "Week3 Research Memory",
+        "columns": {
+          "column": [
+            {
+              "name": "run_id",
+              "type": "string"
+            },
+            {
+              "name": "company_key",
+              "type": "string"
+            },
+            {
+              "name": "run_time",
+              "type": "string"
+            },
+            {
+              "name": "record_type",
+              "type": "string"
+            },
+            {
+              "name": "title",
+              "type": "string"
+            },
+            {
+              "name": "payload_json",
+              "type": "string"
+            },
+            {
+              "name": "pptx_base64",
+              "type": "string"
+            },
+            {
+              "name": "filename",
+              "type": "string"
+            },
+            {
+              "name": "window_start",
+              "type": "string"
+            },
+            {
+              "name": "window_end",
+              "type": "string"
+            },
+            {
+              "name": "status",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {
+          "createIfNotExists": true
+        }
+      },
+      "position": [
+        250,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Create Research Memory",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "nodeGroups": [],
+  "pinData": {},
+  "versionId": "34eaedb3-79d3-40e7-a5a3-b525bfe8f5fb",
+  "versionCounter": 1,
+  "triggerCount": 0,
+  "sourceWorkflowId": null,
+  "tags": []
+}

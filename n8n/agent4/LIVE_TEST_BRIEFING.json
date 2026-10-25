@@ -1,0 +1,904 @@
+{
+  "agent": 4,
+  "company_name": "PepsiCo",
+  "company_key": "pepsico",
+  "retrieved_at": "2026-10-25T16:37:02.789Z",
+  "status": "partial",
+  "roles": [
+    {
+      "role": "CEO",
+      "status": "source_reported_current",
+      "candidates": [
+        {
+          "person_name": "Ramon Laguarta",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-156e07c0",
+          "source_url": "https://www.linkedin.com/in/ramonlaguarta",
+          "evidence_excerpt": "Ramon Laguarta - Chairman & Chief Executive Officer at ... Chairman & Chief Executive Officer at PepsiCo · CEO of PepsiCo, a global food and beverage leader with 23 brands generating more than $1 billion each in",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        },
+        {
+          "person_name": "Ramon Laguarta",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-6bcfe9a6",
+          "source_url": "https://en.wikipedia.org/wiki/Ram%C3%B3n_Laguarta",
+          "evidence_excerpt": "Ramón Laguarta (born 1963) is a Spanish businessman who is the chairman and chief executive officer of PepsiCo. He became CEO on 3 October 2018.",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        },
+        {
+          "person_name": "Ramon Laguarta",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-da83b1b5",
+          "source_url": "https://www.historyoasis.com/post/pepsico-ceo",
+          "evidence_excerpt": "PepsiCo's leadership timeline from 1898 founder Caleb Bradham to current CEO Ramon Laguarta through pivotal eras shaping the company.",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "Oct 13, 2025"
+        }
+      ]
+    },
+    {
+      "role": "CISO",
+      "status": "current_role_disputed",
+      "candidates": [
+        {
+          "person_name": "Zulfi Ahmed",
+          "role": "CISO",
+          "status": "reported_current",
+          "source_id": "src-8a668625",
+          "source_url": "https://www.linkedin.com/in/zulfi-ahmed-26aa789",
+          "evidence_excerpt": "Zulfi Ahmed - ciso at PepsiCo\nciso at PepsiCo · Experience: PepsiCo · Education: mba · Location: Plano · 100 connections on LinkedIn. View Zulfi Ahmed's profile on LinkedIn, ...",
+          "verification_status": "conflicting_historical_or_current_sources",
+          "publication_date": "not found",
+          "contrary_evidence": [
+            {
+              "source_id": "src-290c2246",
+              "source_url": "https://www.khmertimeskh.com/49540/u-s-companies-seek-cyber-experts-for-top-jobs-board-seats",
+              "evidence_excerpt": "The soft drink and snack maker lost its CISO, Zulfi Ahmed, to MetLife Inc earlier this year."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "CTO",
+      "status": "conflicting_sources",
+      "candidates": [
+        {
+          "person_name": "Anil Sharma",
+          "role": "CTO",
+          "status": "reported_current",
+          "source_id": "src-99e423c6",
+          "source_url": "https://www.linkedin.com/posts/kyndryl-india_anil-sharma-cto-at-pepsico-secret-mantras-activity-7353325593431560192-b6ik",
+          "evidence_excerpt": "Anil Sharma , CTO at PepsiCo | Secret Mantras for driving Innovation.",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        },
+        {
+          "person_name": "Anil Sharma",
+          "role": "CTO",
+          "status": "reported_current",
+          "source_id": "src-ebec4cd6",
+          "source_url": "https://x.com/KyndrylIndia/status/1947574892318130553",
+          "evidence_excerpt": "Anil Sharma, Chief Technology Officer at PepsiCo, shares his vision for innovation at scale and the significant value it brings to the",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        },
+        {
+          "person_name": "Shyam Venkat",
+          "role": "CTO",
+          "status": "reported_current",
+          "source_id": "src-0dbe3a18",
+          "source_url": "https://www.comparably.com/companies/pepsico/shyam-venkat",
+          "evidence_excerpt": "Shyam Venkat — SVP & Global CTO at PepsiCo\nShyam Venkat serves as the SVP & Global CTO of PepsiCo. Shyam started at PepsiCo in November of 2016. Shyam currently resides in the Dallas/Fort Worth Area.",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        }
+      ]
+    },
+    {
+      "role": "CIO",
+      "status": "not found",
+      "candidates": []
+    }
+  ],
+  "profiles": [
+    {
+      "agent": 4,
+      "person_name": "Ramon Laguarta",
+      "company_name": "PepsiCo",
+      "roles": [
+        "CEO"
+      ],
+      "role_sources": [
+        {
+          "person_name": "Ramon Laguarta",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-156e07c0",
+          "source_url": "https://www.linkedin.com/in/ramonlaguarta",
+          "evidence_excerpt": "Ramon Laguarta - Chairman & Chief Executive Officer at ... Chairman & Chief Executive Officer at PepsiCo · CEO of PepsiCo, a global food and beverage leader with 23 brands generating more than $1 billion each in",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        },
+        {
+          "person_name": "Ramon Laguarta",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-6bcfe9a6",
+          "source_url": "https://en.wikipedia.org/wiki/Ram%C3%B3n_Laguarta",
+          "evidence_excerpt": "Ramón Laguarta (born 1963) is a Spanish businessman who is the chairman and chief executive officer of PepsiCo. He became CEO on 3 October 2018.",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        },
+        {
+          "person_name": "Ramon Laguarta",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-da83b1b5",
+          "source_url": "https://www.historyoasis.com/post/pepsico-ceo",
+          "evidence_excerpt": "PepsiCo's leadership timeline from 1898 founder Caleb Bradham to current CEO Ramon Laguarta through pivotal eras shaping the company.",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "Oct 13, 2025"
+        }
+      ],
+      "retrieved_at": "2026-10-25T16:37:02.789Z",
+      "sources": [
+        {
+          "source_id": "src-f27d96e5",
+          "source_url": "https://cstoredecisions.com/ramon-laguarta-elected-ceo-of-pepsico",
+          "title": "Ramon Laguarta Elected CEO of PepsiCo",
+          "evidence_text": "Ramon Laguarta Elected CEO of PepsiCo\n... Leadership. Events. Chain of the Year · 40 Under 40 · CStore Connections · CStore ... Leadership. Events. Chain of the Year · 40 Under 40 · CStore Connections ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-715a5cd7",
+          "source_url": "https://www.youtube.com/shorts/CrSXk5uRzQU",
+          "title": "PepsiCo CEO Ramon Laguarta: Consumer is more stable but ...",
+          "evidence_text": "PepsiCo CEO Ramon Laguarta: Consumer is more stable but ...\nPepsiCo CEO Ramon Laguarta on Thursday said he doesn't believe the consumer is in a better spot, as families are anxious about inflation ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-5afae18d",
+          "source_url": "https://jp.weforum.org/people/ramon-laguarta",
+          "title": "Ramon Laguarta | World Economic ...",
+          "evidence_text": "Ramon Laguarta | World Economic ...\nRamon Laguarta is Chairman of the Board of Directors and Chief Executive Officer of PepsiCo. He joined the company in 1996, becoming CEO in 2018 and ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-46fcb4fa",
+          "source_url": "https://www.marketscreener.com/insider/RAMON-LAGUARTA-A1KMPQ",
+          "title": "Ramon Laguarta: Positions, Relations and Network",
+          "evidence_text": "Ramon Laguarta: Positions, Relations and Network\nChief Executive Officer at PepsiCo, Inc., Discover Ramon Laguarta's known position history, network and 92 relationships. Find out about his known public assets",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-faaf328b",
+          "source_url": "https://www.scribd.com/document/960728336/MGE-1-Team-3-S6-Pepsico-Organizational-Structure-1",
+          "title": "PepsiCo Global Leadership Team Overview | PDF",
+          "evidence_text": "PepsiCo Global Leadership Team Overview | PDF\nPepsiCo: History, Mission, and Strategy. 4 pages. PepsiCo 2011 Annual Report ... Ramon Laguarta's pep+ Sustainability Vision. 69 pages. PepsiCo: Global ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-794f8136",
+          "source_url": "https://www.crunchbase.com/person/ramon-laguarta",
+          "title": "Ramon Laguarta - Chief Executive Officer @ PepsiCo",
+          "evidence_text": "Ramon Laguarta - Chief Executive Officer @ PepsiCo\nRamon Laguarta holds 2 board and advisor roles as Board of Directors at IBM and Chairman of the Board at PepsiCo . IBM Logo. IBM ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-b1c8180d",
+          "source_url": "https://www.linkedin.com/posts/sns-insider_pepsico-foodandbeverage-usf-activity-7424512000904323072-TKTW",
+          "title": "PepsiCo's Strategic Shift Under Ramon Laguarta",
+          "evidence_text": "PepsiCo's Strategic Shift Under Ramon Laguarta\nPepsiCo is making notable strategic adjustments as it heads into 2026 under CEO Ramon Laguarta, with plans to sharpen its North American ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-d0f420ea",
+          "source_url": "https://www.verdict.co.uk/commerce/ramon-laguarta-pepsicos-new-ceo",
+          "title": "Who is Ramon Laguarta, PepsiCo's new CEO? - Verdict",
+          "evidence_text": "Who is Ramon Laguarta, PepsiCo's new CEO? - Verdict\nPepsiCo has confirmed that Ramon Laguarta will replace departing CEO Indra K. Nooyi after she announced she will step down as head of the ...",
+          "publication_date": "Aug 6, 2018",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-fdb9f065",
+          "source_url": "https://www.quora.com/What-are-some-of-the-biggest-challenges-facing-Ramon-Laguarta-Chairman-and-CEO-of-PepsiCo",
+          "title": "What are some of the biggest challenges facing Ramon ...",
+          "evidence_text": "What are some of the biggest challenges facing Ramon ...\nRamon Laguarta is the Chairman of the Board of Directors and Chief Executive Officer of PepsiCo.￼mon Laguarta is the Chairman of the Board of ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-fef32d45",
+          "source_url": "https://www.facebook.com/61592845231981/posts/-ramon-laguarta-ceo-of-pepsico-says-everything-at-the-company-that-is-not-relate/122125251171428174",
+          "title": "Ramon Laguarta, CEO of PepsiCo, says everything at the ...",
+          "evidence_text": "Ramon Laguarta, CEO of PepsiCo, says everything at the ...\nRamon Laguarta, CEO of PepsiCo, says everything at the company that is not related to growth \"will not be part of the company.",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-f4b8dd8a",
+          "source_url": "https://www.facebook.com/PepsiCoJOBS/photos/ramon-laguarta-pepsico-ceo-travelled-to-poland-to-congratulate-the-local-team-af/2208940892486365?locale=es_LA",
+          "title": "Ramon Laguarta, PepsiCo CEO, travelled to Poland ...",
+          "evidence_text": "Ramon Laguarta, PepsiCo CEO, travelled to Poland ...\nRamon Laguarta, PepsiCo CEO, travelled to Poland to congratulate the local team after PepsiCo Poland was named 'Business Unit of the Year'.",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-45a2bf47",
+          "source_url": "https://uk.marketscreener.com/insider/RAMON-LAGUARTA-A1KMPQ",
+          "title": "Ramon Laguarta: Positions, Relations and Network",
+          "evidence_text": "Ramon Laguarta: Positions, Relations and Network\nChief Executive Officer at PepsiCo, Inc., Discover Ramon Laguarta's known position history, network and 94 relationships. Find ... Education of Ramon Laguarta ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-e7e3ce83",
+          "source_url": "https://www.linkedin.com/posts/ramonlaguarta_pepsicoproud-activity-7161675914613911552-03Za",
+          "title": "#pepsicoproud | Ramon Laguarta | 98 comments",
+          "evidence_text": "#pepsicoproud | Ramon Laguarta | 98 comments\nRamon Laguarta Well done Team PepsiCo Creating bp2w® - An Even ... Education · Technology · Leadership · Ecommerce · User Experience ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        }
+      ],
+      "review_queue": [
+        {
+          "source_id": "src-3da3415d",
+          "source_url": "https://prod.cm.bloomberg.com/profile/person/18967774",
+          "title": "Ramon L Laguarta, Pepsico Inc: Profile and Biography",
+          "evidence_text": "Ramon L Laguarta, Pepsico Inc: Profile and Biography\nRamon L Laguarta is Chairman/CEO at Pepsico Inc. See Ramon L Laguarta's compensation, career history, education, & memberships.",
+          "publication_date": "2 days ago",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": [
+            "Full person name not present"
+          ]
+        }
+      ],
+      "search_failures": [],
+      "search_count": 3,
+      "identity_note": "Sources require full name and company context; name matches alone are not accepted. Same-name ambiguity still requires review.",
+      "analysis_status": "complete",
+      "error": null,
+      "claims": [
+        {
+          "category": "professional_role",
+          "organization": "PepsiCo",
+          "statement": "Ramon Laguarta is Chairman of the Board of Directors and Chief Executive Officer of PepsiCo.",
+          "date_or_period": "not found",
+          "source_id": "src-5afae18d",
+          "source_url": "https://jp.weforum.org/people/ramon-laguarta",
+          "evidence_excerpt": "Ramon Laguarta is Chairman of the Board of Directors and Chief Executive Officer of PepsiCo.",
+          "evidence_level": "search_snippet",
+          "verification_status": "needs_original_source_verification",
+          "sec_school": null,
+          "sec_membership_basis": null
+        },
+        {
+          "category": "professional_role",
+          "organization": "PepsiCo",
+          "statement": "PepsiCo has confirmed that Ramon Laguarta will replace departing CEO Indra K. Nooyi",
+          "date_or_period": "Aug 6, 2018",
+          "source_id": "src-d0f420ea",
+          "source_url": "https://www.verdict.co.uk/commerce/ramon-laguarta-pepsicos-new-ceo",
+          "evidence_excerpt": "PepsiCo has confirmed that Ramon Laguarta will replace departing CEO Indra K. Nooyi after she announced she will step down as head of the",
+          "evidence_level": "search_snippet",
+          "verification_status": "needs_original_source_verification",
+          "sec_school": null,
+          "sec_membership_basis": null
+        },
+        {
+          "category": "professional_role",
+          "organization": "PepsiCo",
+          "statement": "Chief Executive Officer at PepsiCo, Inc.",
+          "date_or_period": "not found",
+          "source_id": "src-46fcb4fa",
+          "source_url": "https://www.marketscreener.com/insider/RAMON-LAGUARTA-A1KMPQ",
+          "evidence_excerpt": "Chief Executive Officer at PepsiCo, Inc.",
+          "evidence_level": "search_snippet",
+          "verification_status": "needs_original_source_verification",
+          "sec_school": null,
+          "sec_membership_basis": null
+        }
+      ],
+      "rejected_claims": [
+        {
+          "category": "professional_role",
+          "organization": "PepsiCo",
+          "statement": "Ramon Laguarta joined the company in 1996, becoming CEO in 2018",
+          "date_or_period": "1996, 2018",
+          "source_id": "src-5afae18d",
+          "source_url": "https://jp.weforum.org/people/ramon-laguarta",
+          "evidence_excerpt": "He joined the company in 1996, becoming CEO in 2018",
+          "evidence_level": "search_snippet",
+          "verification_status": "needs_original_source_verification",
+          "sec_school": null,
+          "sec_membership_basis": null,
+          "rejection_reasons": [
+            "Explicit professional role not established"
+          ]
+        },
+        {
+          "category": "professional_role",
+          "organization": "PepsiCo",
+          "statement": "Ramon Laguarta - Chief Executive Officer @ PepsiCo",
+          "date_or_period": "not found",
+          "source_id": "src-794f8136",
+          "source_url": "https://www.crunchbase.com/person/ramon-laguarta",
+          "evidence_excerpt": "Ramon Laguarta - Chief Executive Officer @ PepsiCo",
+          "evidence_level": "search_snippet",
+          "verification_status": "needs_original_source_verification",
+          "sec_school": null,
+          "sec_membership_basis": null,
+          "rejection_reasons": [
+            "Outside professional research scope"
+          ]
+        },
+        {
+          "category": "professional_role",
+          "organization": "IBM",
+          "statement": "Ramon Laguarta holds 2 board and advisor roles as Board of Directors at IBM",
+          "date_or_period": "not found",
+          "source_id": "src-794f8136",
+          "source_url": "https://www.crunchbase.com/person/ramon-laguarta",
+          "evidence_excerpt": "Ramon Laguarta holds 2 board and advisor roles as Board of Directors at IBM",
+          "evidence_level": "search_snippet",
+          "verification_status": "needs_original_source_verification",
+          "sec_school": null,
+          "sec_membership_basis": null,
+          "rejection_reasons": [
+            "Explicit professional role not established"
+          ]
+        },
+        {
+          "category": "professional_role",
+          "organization": "PepsiCo",
+          "statement": "Ramon Laguarta, CEO of PepsiCo, travelled to Poland to congratulate the local team after PepsiCo Poland was named 'Business Unit of the Year'.",
+          "date_or_period": "not found",
+          "source_id": "src-f4b8dd8a",
+          "source_url": "https://www.facebook.com/PepsiCoJOBS/photos/ramon-laguarta-pepsico-ceo-travelled-to-poland-to-congratulate-the-local-team-af/2208940892486365?locale=es_LA",
+          "evidence_excerpt": "Ramon Laguarta, PepsiCo CEO, travelled to Poland to congratulate the local team after PepsiCo Poland was named 'Business Unit of the Year'.",
+          "evidence_level": "search_snippet",
+          "verification_status": "needs_original_source_verification",
+          "sec_school": null,
+          "sec_membership_basis": null,
+          "rejection_reasons": [
+            "Explicit professional role not established"
+          ]
+        }
+      ],
+      "requested_firm_experience": {
+        "status": "not found",
+        "matches": []
+      },
+      "sec_education": {
+        "status": "not found",
+        "matches": []
+      },
+      "limitations": [
+        "Public professional background only; no contact details, family information, personal addresses, or private data collected.",
+        "Search snippets are preliminary evidence; current roles, employment and education need original-source verification.",
+        "Not found means insufficient supplied evidence, not proof of no experience or attendance.",
+        "Background research is historical and is not restricted to the three-month news window.",
+        "SEC attendance does not imply playing football or any other sport."
+      ],
+      "background_markdown": "**Ramon Laguarta — PepsiCo**\n- Ramon Laguarta is Chairman of the Board of Directors and Chief Executive Officer of PepsiCo. — [PepsiCo](<https://jp.weforum.org/people/ramon-laguarta>) · needs source verification\n- PepsiCo has confirmed that Ramon Laguarta will replace departing CEO Indra K. Nooyi — [PepsiCo](<https://www.verdict.co.uk/commerce/ramon-laguarta-pepsicos-new-ceo>) · needs source verification\n- Chief Executive Officer at PepsiCo, Inc. — [PepsiCo](<https://www.marketscreener.com/insider/RAMON-LAGUARTA-A1KMPQ>) · needs source verification",
+      "profile_type": "person_background"
+    },
+    {
+      "agent": 4,
+      "person_name": "Zulfi Ahmed",
+      "company_name": "PepsiCo",
+      "roles": [
+        "CISO"
+      ],
+      "role_sources": [
+        {
+          "person_name": "Zulfi Ahmed",
+          "role": "CISO",
+          "status": "reported_current",
+          "source_id": "src-8a668625",
+          "source_url": "https://www.linkedin.com/in/zulfi-ahmed-26aa789",
+          "evidence_excerpt": "Zulfi Ahmed - ciso at PepsiCo\nciso at PepsiCo · Experience: PepsiCo · Education: mba · Location: Plano · 100 connections on LinkedIn. View Zulfi Ahmed's profile on LinkedIn, ...",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        }
+      ],
+      "retrieved_at": "2026-10-25T16:37:02.789Z",
+      "sources": [
+        {
+          "source_id": "src-e16c164d",
+          "source_url": "https://www.linkedin.com/in/zulfi-ahmed-26aa789",
+          "title": "Zulfi Ahmed - ciso at PepsiCo",
+          "evidence_text": "Zulfi Ahmed - ciso at PepsiCo\nciso at PepsiCo · Experience: PepsiCo · Education: mba · Location: Plano · 100 connections on LinkedIn. View Zulfi Ahmed's profile on LinkedIn, ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-d7e954b9",
+          "source_url": "https://www.linkedin.com/in/zulfiahmed",
+          "title": "Zulfi Ahmed, CRISC, CISM, CC - Forbes #5 InfoSec ...",
+          "evidence_text": "Zulfi Ahmed, CRISC, CISM, CC - Forbes #5 InfoSec ...\n... Zulfi Ahmed, CRISC, CISM, CC's profile on LinkedIn, a professional ... PepsiCo. Dec 2007 - Jan 2014 6 years 2 months. Plano, TX. Develop and implement ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-290c2246",
+          "source_url": "https://www.khmertimeskh.com/49540/u-s-companies-seek-cyber-experts-for-top-jobs-board-seats",
+          "title": "U.S. Companies Seek Cyber Experts For Top Jobs, Board ...",
+          "evidence_text": "U.S. Companies Seek Cyber Experts For Top Jobs, Board ...\n... PepsiCo declined to comment. The soft drink and snack maker lost its CISO, Zulfi Ahmed, to MetLife Inc earlier this year. CHANGING FACE OF ...",
+          "publication_date": "May 31, 2014",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        },
+        {
+          "source_id": "src-c3f46273",
+          "source_url": "https://www.linkedin.com/pub/dir/Zulfi/Ahmed/us-0-United-States",
+          "title": "6 \"Zulfi Ahmed\" profiles",
+          "evidence_text": "6 \"Zulfi Ahmed\" profiles\n6 Results for \"Zulfi Ahmed\" in United States Search worldwide ; Ciso at PepsiCo. Plano, TX. PepsiCo, +1 more. mba ; Forbes #5 InfoSec program/CISO 2023, Fortune ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": []
+        }
+      ],
+      "review_queue": [
+        {
+          "source_id": "src-fda7d61d",
+          "source_url": "https://wiza.co/d/pepsico/e66b/ed-hickey",
+          "title": "Ed Hickey - VP, Finance at Pepsico",
+          "evidence_text": "Ed Hickey - VP, Finance at Pepsico\nEd Hickey is based out of United States and works at Pepsico as VP, Finance. Reveal contact info for free. Ed Hickey's Contact Information.",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": [
+            "Full person name not present"
+          ]
+        },
+        {
+          "source_id": "src-ff91fc92",
+          "source_url": "https://wiza.co/d/pepsico/e66b/cynthia-clark",
+          "title": "Cynthia Clark - Director Global Product Development at ...",
+          "evidence_text": "Cynthia Clark - Director Global Product Development at ...\nCynthia Clark is based out of Yorktown Heights, New York, United States and works at Pepsico as Director Global Product Development.",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": [
+            "Full person name not present"
+          ]
+        },
+        {
+          "source_id": "src-651ea7c0",
+          "source_url": "https://wiza.co/d/pepsico/e66b/vic-cali",
+          "title": "Vic Cali - Sr Manager, Revenue Management at Pepsico",
+          "evidence_text": "Vic Cali - Sr Manager, Revenue Management at Pepsico\nSr Manager, Revenue Management at Pepsico. Vic Cali is based out of Denver, Colorado, United States and works at Pepsico as Sr Manager, Revenue Management.",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": [
+            "Full person name not present"
+          ]
+        },
+        {
+          "source_id": "src-97d1686c",
+          "source_url": "https://wiza.co/d/pepsico/e66b/marcus-finch",
+          "title": "Marcus Finch - Major Incident Management at Pepsico",
+          "evidence_text": "Marcus Finch - Major Incident Management at Pepsico\nMarcus Finch is based out of Dallas-Fort Worth Metroplex and works at Pepsico as CTO Manager - Major Incident Management. Reveal contact info for free. Marcus ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": [
+            "Full person name not present"
+          ]
+        },
+        {
+          "source_id": "src-cb74992a",
+          "source_url": "https://wiza.co/d/pepsico/e66b/stephanie-skinner",
+          "title": "Stephanie Skinner - CIO and VP Corporate & Global ...",
+          "evidence_text": "Stephanie Skinner - CIO and VP Corporate & Global ...\nStephanie Skinner is CIO and VP Corporate & Global Functions at Pepsico. Where is Stephanie Skinner based? Stephanie Skinner is based out of New York, United ...",
+          "publication_date": "not found",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": [
+            "Full person name not present"
+          ]
+        },
+        {
+          "source_id": "src-14c230f9",
+          "source_url": "https://cdnc.heyzine.com/files/uploaded/0cc2404b3599898df6d9a50385ab614fefde4a19-1.pdf",
+          "title": "CONVERGE25 NATIONAL ORBIE",
+          "evidence_text": "CONVERGE25 NATIONAL ORBIE\nDeloitte Global Services Limited. St. Louis ORBIE Awards. *Andre Allen ... PepsiCo North America. DallasCIO ORBIE Awards. *Manish Kothari.",
+          "publication_date": "Aug 14, 2025",
+          "retrieved_at": "2026-10-25T16:37:02.789Z",
+          "evidence_level": "search_snippet",
+          "full_article_retrieved": false,
+          "review_reasons": [
+            "Full person name not present"
+          ]
+        }
+      ],
+      "search_failures": [
+        {
+          "topic": "education",
+          "error": "Service unavailable - try again later or consider setting this node to retry automatically (in the node settings)"
+        }
+      ],
+      "search_count": 3,
+      "identity_note": "Sources require full name and company context; name matches alone are not accepted. Same-name ambiguity still requires review.",
+      "analysis_status": "complete",
+      "error": null,
+      "claims": [
+        {
+          "category": "professional_role",
+          "organization": "PepsiCo",
+          "statement": "Zulfi Ahmed - ciso at PepsiCo",
+          "date_or_period": "not found",
+          "source_id": "src-e16c164d",
+          "source_url": "https://www.linkedin.com/in/zulfi-ahmed-26aa789",
+          "evidence_excerpt": "Zulfi Ahmed - ciso at PepsiCo\nciso at PepsiCo · Experience: PepsiCo · Education: mba · Location: Plano · 100 connections on LinkedIn.",
+          "evidence_level": "search_snippet",
+          "verification_status": "needs_original_source_verification",
+          "sec_school": null,
+          "sec_membership_basis": null
+        },
+        {
+          "category": "professional_role",
+          "organization": "MetLife Inc",
+          "statement": "The soft drink and snack maker lost its CISO, Zulfi Ahmed, to MetLife Inc earlier this year.",
+          "date_or_period": "May 31, 2014",
+          "source_id": "src-290c2246",
+          "source_url": "https://www.khmertimeskh.com/49540/u-s-companies-seek-cyber-experts-for-top-jobs-board-seats",
+          "evidence_excerpt": "The soft drink and snack maker lost its CISO, Zulfi Ahmed, to MetLife Inc earlier this year.",
+          "evidence_level": "search_snippet",
+          "verification_status": "needs_original_source_verification",
+          "sec_school": null,
+          "sec_membership_basis": null
+        }
+      ],
+      "rejected_claims": [
+        {
+          "category": "professional_role",
+          "organization": "PepsiCo",
+          "statement": "Zulfi Ahmed, CRISC, CISM, CC's profile on LinkedIn, a professional ... PepsiCo. Dec 2007 - Jan 2014 6 years 2 months. Plano, TX. Develop and implement ...",
+          "date_or_period": "Dec 2007 - Jan 2014",
+          "source_id": "src-d7e954b9",
+          "source_url": "https://www.linkedin.com/in/zulfiahmed",
+          "evidence_excerpt": "Zulfi Ahmed, CRISC, CISM, CC's profile on LinkedIn, a professional ... PepsiCo. Dec 2007 - Jan 2014 6 years 2 months. Plano, TX. Develop and implement ...",
+          "evidence_level": "search_snippet",
+          "verification_status": "needs_original_source_verification",
+          "sec_school": null,
+          "sec_membership_basis": null,
+          "rejection_reasons": [
+            "Explicit professional role not established"
+          ]
+        },
+        {
+          "category": "education",
+          "organization": "not found",
+          "statement": "Education: mba",
+          "date_or_period": "not found",
+          "source_id": "src-e16c164d",
+          "source_url": "https://www.linkedin.com/in/zulfi-ahmed-26aa789",
+          "evidence_excerpt": "Education: mba",
+          "evidence_level": "search_snippet",
+          "verification_status": "needs_original_source_verification",
+          "sec_school": null,
+          "sec_membership_basis": "Current SEC member school list as of 2026-10-25; does not establish sports participation or membership at time of attendance",
+          "rejection_reasons": [
+            "Named institution absent from quotation"
+          ]
+        }
+      ],
+      "requested_firm_experience": {
+        "status": "not found",
+        "matches": []
+      },
+      "sec_education": {
+        "status": "not found",
+        "matches": []
+      },
+      "limitations": [
+        "Public professional background only; no contact details, family information, personal addresses, or private data collected.",
+        "Search snippets are preliminary evidence; current roles, employment and education need original-source verification.",
+        "Not found means insufficient supplied evidence, not proof of no experience or attendance.",
+        "Background research is historical and is not restricted to the three-month news window.",
+        "SEC attendance does not imply playing football or any other sport."
+      ],
+      "background_markdown": "**Zulfi Ahmed — PepsiCo**\n- Zulfi Ahmed - ciso at PepsiCo — [PepsiCo](<https://www.linkedin.com/in/zulfi-ahmed-26aa789>) · needs source verification\n- The soft drink and snack maker lost its CISO, Zulfi Ahmed, to MetLife Inc earlier this year. — [MetLife Inc](<https://www.khmertimeskh.com/49540/u-s-companies-seek-cyber-experts-for-top-jobs-board-seats>) · needs source verification",
+      "profile_type": "person_background"
+    }
+  ],
+  "discovery_sources": [
+    {
+      "source_id": "src-a9201ed8",
+      "source_url": "https://en.wikipedia.org/wiki/Indra_Nooyi",
+      "title": "Indra Nooyi",
+      "evidence_text": "Indra Nooyi\n... who was the chairman and chief executive officer (CEO) of PepsiCo from 2006 to 2018. Indra Nooyi. Born. Indra Krishnamurthy. (1955-10-28) ...",
+      "publication_date": "not found",
+      "queried_role": "CEO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-9bc5b910",
+      "source_url": "https://www.pepsico.com/en/leadership",
+      "title": "Leadership",
+      "evidence_text": "Leadership\nOur Leadership ; ramon-laguarta-1. Ramon L. Laguarta. Chairman and Chief Executive Officer ; anne-tse. Anne Tse. Chief Executive Officer, Asia Pacific Foods.",
+      "publication_date": "not found",
+      "queried_role": "CEO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-156e07c0",
+      "source_url": "https://www.linkedin.com/in/ramonlaguarta",
+      "title": "Ramon Laguarta - Chairman & Chief Executive Officer at ...",
+      "evidence_text": "Ramon Laguarta - Chairman & Chief Executive Officer at ...\nChairman & Chief Executive Officer at PepsiCo · CEO of PepsiCo, a global food and beverage leader with 23 brands generating more than $1 billion each in ...",
+      "publication_date": "not found",
+      "queried_role": "CEO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-6bcfe9a6",
+      "source_url": "https://en.wikipedia.org/wiki/Ram%C3%B3n_Laguarta",
+      "title": "Ramón Laguarta",
+      "evidence_text": "Ramón Laguarta\nRamón Laguarta (born 1963) is a Spanish businessman who is the chairman and chief executive officer of PepsiCo. He became CEO on 3 October 2018.",
+      "publication_date": "not found",
+      "queried_role": "CEO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-da83b1b5",
+      "source_url": "https://www.historyoasis.com/post/pepsico-ceo",
+      "title": "PepsiCo CEO History",
+      "evidence_text": "PepsiCo CEO History\nPepsiCo's leadership timeline from 1898 founder Caleb Bradham to current CEO Ramon Laguarta through pivotal eras shaping the company.",
+      "publication_date": "Oct 13, 2025",
+      "queried_role": "CEO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-8a668625",
+      "source_url": "https://www.linkedin.com/in/zulfi-ahmed-26aa789",
+      "title": "Zulfi Ahmed - ciso at PepsiCo",
+      "evidence_text": "Zulfi Ahmed - ciso at PepsiCo\nciso at PepsiCo · Experience: PepsiCo · Education: mba · Location: Plano · 100 connections on LinkedIn. View Zulfi Ahmed's profile on LinkedIn, ...",
+      "publication_date": "not found",
+      "queried_role": "CISO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-63df8fd4",
+      "source_url": "https://sps.columbia.edu/person/sara-andrews",
+      "title": "Sara Andrews",
+      "evidence_text": "Sara Andrews\nAs PepsiCo's Global Chief Information Security Officer (CISO), Sara is responsible for developing the risk-based information security strategy for PepsiCo ...",
+      "publication_date": "not found",
+      "queried_role": "CISO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-382662cb",
+      "source_url": "https://www.linkedin.com/in/tom-bresnahan-15563874",
+      "title": "Tom Bresnahan - A transformative, top-performing senior IT ...",
+      "evidence_text": "Tom Bresnahan - A transformative, top-performing senior IT ...\nInterim Chief Information Security Officer. PepsiCo. 2006 - 2007 1 year ... * Represented PepsiCo Corporate Audit and CISO at the PepsiCo Asia Pacific ...",
+      "publication_date": "not found",
+      "queried_role": "CISO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-95d66ce5",
+      "source_url": "https://www.businesswire.com/news/home/20200811005277/en/PepsiCo-Chief-Information-Security-Officer-Sara-Andrews-Joins-FireEye-Board-of-Directors",
+      "title": "PepsiCo Chief Information Security Officer Sara Andrews ...",
+      "evidence_text": "PepsiCo Chief Information Security Officer Sara Andrews ...\nAndrews currently serves as Senior Vice President and Chief Information Security Officer (CISO) at PepsiCo. Andrews brings more than two ...",
+      "publication_date": "Aug 11, 2020",
+      "queried_role": "CISO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-d1449de2",
+      "source_url": "https://www.aspendigital.org/person/sara-andrews",
+      "title": "Sara Andrews - US Cybersecurity Group",
+      "evidence_text": "Sara Andrews - US Cybersecurity Group\nPrior to joining Experian, Sara was the Global Chief Information Security Officer at PepsiCo and held the position of Chief Network Security Officer at Verizon.",
+      "publication_date": "not found",
+      "queried_role": "CISO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-03e8906d",
+      "source_url": "https://www.linkedin.com/in/shyam-venkat-8b123b6b",
+      "title": "Shyam Venkat - PepsiCo North America",
+      "evidence_text": "Shyam Venkat - PepsiCo North America\nChief Digital and Information Officer - PepsiCo North America · Experience: PepsiCo ... Performed this interim 8 month role in addition to the Global CTO role.",
+      "publication_date": "not found",
+      "queried_role": "CTO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-f9695fb6",
+      "source_url": "https://www.labs.pepsico.com/team",
+      "title": "Team | PepsiCo Labs",
+      "evidence_text": "Team | PepsiCo Labs\nMagesh Bagavathi. SVP, Chief Technology Officer. ©2021 PepsiCo. All rights reserved. Footer. Contact · Careers · Terms & Privacy.",
+      "publication_date": "not found",
+      "queried_role": "CTO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-99e423c6",
+      "source_url": "https://www.linkedin.com/posts/kyndryl-india_anil-sharma-cto-at-pepsico-secret-mantras-activity-7353325593431560192-b6ik",
+      "title": "PepsiCo CTO on innovation and generative AI adoption",
+      "evidence_text": "PepsiCo CTO on innovation and generative AI adoption\nAnil Sharma, Chief Technology Officer at PepsiCo, shares his vision ... Anil Sharma , CTO at PepsiCo | Secret Mantras for driving Innovation.",
+      "publication_date": "not found",
+      "queried_role": "CTO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-0dbe3a18",
+      "source_url": "https://www.comparably.com/companies/pepsico/shyam-venkat",
+      "title": "Shyam Venkat — SVP & Global CTO at PepsiCo",
+      "evidence_text": "Shyam Venkat — SVP & Global CTO at PepsiCo\nShyam Venkat serves as the SVP & Global CTO of PepsiCo. Shyam started at PepsiCo in November of 2016. Shyam currently resides in the Dallas/Fort Worth Area.",
+      "publication_date": "not found",
+      "queried_role": "CTO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-ebec4cd6",
+      "source_url": "https://x.com/KyndrylIndia/status/1947574892318130553",
+      "title": "Kyndryl India",
+      "evidence_text": "Kyndryl India\nAnil Sharma, Chief Technology Officer at PepsiCo, shares his vision for innovation at scale and the significant value it brings to the ...",
+      "publication_date": "not found",
+      "queried_role": "CTO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-7e148cfa",
+      "source_url": "https://www.cio.com/article/4141091/pepsicos-refreshing-take-on-ai-to-fuel-global-growth.html",
+      "title": "PepsiCo's refreshing take on AI to fuel global growth - CIO",
+      "evidence_text": "PepsiCo's refreshing take on AI to fuel global growth - CIO\nCarl is executive regional editor, EMEA, for CIO.com and has over 20 years of B2B journalism experience in tech, finance, and corporate ...",
+      "publication_date": "Mar 11, 2026",
+      "queried_role": "CIO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-1b94bbd1",
+      "source_url": "https://www.fritolay.com/sites/fritolay.com/files/2021-06/Shyam%20Venkat%202021_0.pdf",
+      "title": "Shyam Venkat",
+      "evidence_text": "Shyam Venkat\nShyam Venkat is the chief information officer for PepsiCo Foods North America. In his role, Shyam leads all aspects of the IT organization including ...",
+      "publication_date": "not found",
+      "queried_role": "CIO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-458d5e4e",
+      "source_url": "https://www.linkedin.com/in/joan-pertak-09729154",
+      "title": "Joan Pertak - Sr. Vice President & Chief Information Officer ...",
+      "evidence_text": "Joan Pertak - Sr. Vice President & Chief Information Officer ...\nSr. Vice President & Chief Information Officer at PepsiCo · Experience: PepsiCo · Education: State University of New York at Albany ...",
+      "publication_date": "not found",
+      "queried_role": "CIO",
+      "evidence_level": "search_snippet"
+    },
+    {
+      "source_id": "src-66b70fc2",
+      "source_url": "https://us.pg.com/leadership-team/seth-cohen",
+      "title": "Seth Cohen - P&G Leadership",
+      "evidence_text": "Seth Cohen - P&G Leadership\nPrior to his tenure at PepsiCo, Cohen was global CIO for Reckitt Benckiser Group ... Global Chief Information Officer, PepsiCo. 2017, Global Group Chief ...",
+      "publication_date": "not found",
+      "queried_role": "CIO",
+      "evidence_level": "search_snippet"
+    }
+  ],
+  "rejected_leaders": [
+    {
+      "person_name": "Ramon L. Laguarta",
+      "role": "CEO",
+      "status": "reported_current",
+      "source_id": "src-9bc5b910",
+      "source_url": "https://www.pepsico.com/en/leadership",
+      "evidence_excerpt": "Ramon L. Laguarta. Chairman and Chief Executive Officer",
+      "verification_status": "needs_current_role_verification",
+      "publication_date": "not found",
+      "rejection_reasons": [
+        "Quotation does not identify target company"
+      ]
+    },
+    {
+      "person_name": "Shyam Venkat",
+      "role": "CIO",
+      "status": "reported_current",
+      "source_id": "src-1b94bbd1",
+      "source_url": "https://www.fritolay.com/sites/fritolay.com/files/2021-06/Shyam%20Venkat%202021_0.pdf",
+      "evidence_excerpt": "Shyam Venkat\nShyam Venkat is the chief information officer for PepsiCo Foods North America. In his role, Shyam leads all aspects of the IT organization including",
+      "verification_status": "needs_current_role_verification",
+      "publication_date": "not found",
+      "rejection_reasons": [
+        "Regional/divisional role is not the company-wide requested role"
+      ]
+    }
+  ],
+  "search_failures": [
+    {
+      "topic": "education",
+      "error": "Service unavailable - try again later or consider setting this node to retry automatically (in the node settings)"
+    }
+  ],
+  "statistics": {
+    "leaders_researched": 2,
+    "roles_with_candidates": 1,
+    "claims": 5,
+    "background_analysis_errors": 0,
+    "initial_search_budget": 10
+  },
+  "background_markdown": "**CEO**: Ramon Laguarta (source_reported_current)\n**CISO**: Zulfi Ahmed (current_role_disputed)\n**CTO**: Anil Sharma, Shyam Venkat (conflicting_sources)\n**CIO**: not found (not found)\n\n**Ramon Laguarta — PepsiCo**\n- Ramon Laguarta is Chairman of the Board of Directors and Chief Executive Officer of PepsiCo. — [PepsiCo](<https://jp.weforum.org/people/ramon-laguarta>) · needs source verification\n- PepsiCo has confirmed that Ramon Laguarta will replace departing CEO Indra K. Nooyi — [PepsiCo](<https://www.verdict.co.uk/commerce/ramon-laguarta-pepsicos-new-ceo>) · needs source verification\n- Chief Executive Officer at PepsiCo, Inc. — [PepsiCo](<https://www.marketscreener.com/insider/RAMON-LAGUARTA-A1KMPQ>) · needs source verification\n\n**Zulfi Ahmed — PepsiCo**\n- Zulfi Ahmed - ciso at PepsiCo — [PepsiCo](<https://www.linkedin.com/in/zulfi-ahmed-26aa789>) · needs source verification\n- The soft drink and snack maker lost its CISO, Zulfi Ahmed, to MetLife Inc earlier this year. — [MetLife Inc](<https://www.khmertimeskh.com/49540/u-s-companies-seek-cyber-experts-for-top-jobs-board-seats>) · needs source verification",
+  "limitations": [
+    "Public search snippets require original-source and current-role verification.",
+    "Historical background is not restricted to the three-month news window.",
+    "Missing information is not proof of no experience or attendance.",
+    "SEC classification uses current membership, not membership at attendance or sports participation."
+  ],
+  "discovery_error": null,
+  "memory": {
+    "saved": true,
+    "record_type": "leadership_background_test",
+    "run_id": "agent4-116"
+  }
+}

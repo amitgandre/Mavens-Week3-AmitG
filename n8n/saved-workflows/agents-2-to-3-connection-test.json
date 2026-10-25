@@ -1,0 +1,117 @@
+{
+  "updatedAt": "2026-10-25T04:08:29.177Z",
+  "createdAt": "2026-10-25T04:08:29.177Z",
+  "id": "Agents2to3ConnectionTest",
+  "name": "Agents 2 to 3 - Connection Test",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "id": "84eea18b-d30d-4af7-bfab-55ad8b585372",
+      "name": "Start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "parameters": {},
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "d8bc623d-be31-4604-81c7-d85f827c2cac",
+      "name": "Recorded Excerpt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "return [{\"json\": {\"company\": \"PepsiCo\", \"source_id\": \"src-90baf9e5\", \"source_url\": \"https://www.linkedin.com/jobs/view/cyber-security-incident-response-senior-manager-at-pepsico-4471775806\", \"title\": \"Cyber Security Incident Response Senior Manager\", \"publisher\": \"LinkedIn\", \"publication_date\": \"2026-10-14\", \"date_status\": \"explicit_date_metadata\", \"date_as_returned\": \"Oct 15, 2026\", \"retrieved_at\": \"2026-10-25T04:01:35.791Z\", \"event_date\": null, \"evidence_level\": \"search_snippet\", \"source_type\": \"job_ad\", \"full_article_retrieved\": false, \"source_publication_verified\": false, \"snippet_cleaning\": \"none\", \"evidence_text\": \"Cyber Security Incident Response Senior Manager\\nCyber Security Incident Response Senior Manager. PepsiCo Plano, TX. 2 weeks ago 48 applicants.\", \"topics\": [\"contracts\"], \"provenance\": [{\"job_id\": \"job-3\", \"engine\": \"google\", \"query\": \"\\\"PepsiCo\\\" (\\\"IT services\\\" OR cybersecurity OR \\\"security operations\\\") (contract OR agreement OR partnership) after:2026-07-23 before:2026-10-25\"}], \"review_reasons\": [], \"eligible_for_agent3\": true, \"company_match\": \"lexical_only\", \"possible_syndication_ids\": [\"src-90baf9e5\"], \"window_start\": \"2026-07-24\", \"window_end\": \"2026-10-24\"}}, {\"json\": {\"company\": \"Example Foods\", \"source_id\": \"test-001\", \"source_url\": \"https://example.com/synthetic-test\", \"publication_date\": \"2026-10-20\", \"evidence_text\": \"SYNTHETIC TEST \\u2014 not real company news.  On October 20, 2026, Example Foods announced that Jordan Lee would become CISO effective November 1, 2026.  The company also announced a signed three-year agreement with Example Security Services to operate its security operations center. Contract value was not disclosed.  Example Foods is piloting ExampleShield endpoint security at one office. Company-wide deployment has not been announced.  A separate job advertisement requests experience with Microsoft Sentinel. The advertisement does not confirm that the company uses Microsoft Sentinel.\", \"source_type\": \"synthetic_test\", \"evidence_level\": \"synthetic_test\", \"eligible_for_agent3\": true, \"window_start\": \"2026-07-24\", \"window_end\": \"2026-10-24\"}}];"
+      },
+      "position": [
+        250,
+        0
+      ]
+    },
+    {
+      "id": "cdf78d87-3298-4ad0-bd21-b0c577a03696",
+      "name": "Analyze with Agent 3",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "parameters": {
+        "source": "database",
+        "workflowId": {
+          "__rl": true,
+          "value": "0VSB891Bm5GvvZGN",
+          "mode": "id"
+        },
+        "mode": "each",
+        "options": {
+          "waitForSubWorkflow": true
+        }
+      },
+      "position": [
+        500,
+        0
+      ]
+    },
+    {
+      "id": "0a0c7081-7097-41ef-87f2-4e95df047be6",
+      "name": "Check Connection",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "const results=$input.all().map(i=>i.json);if(results.length!==2||results.some(r=>r.agent!==3||r.analysis_status!=='complete'))throw new Error('Agent 3 did not complete both records');const real=results.find(r=>r.source_id===\"src-90baf9e5\");const synthetic=results.find(r=>r.source_id==='test-001');if(!real||real.source_url!==\"https://www.linkedin.com/jobs/view/cyber-security-incident-response-senior-manager-at-pepsico-4471775806\")throw new Error('Source changed');if(real.signals.some(s=>['leadership_change','it_security_contract','technology_use'].includes(s.category)))throw new Error('Job-ad overclaim');if(!synthetic||synthetic.signals.length!==4||synthetic.rejected_signals.length)throw new Error('Expected four supported synthetic signals');return [{json:{passed:true,recorded_excerpt_signals:real.signals.length,synthetic_signals:synthetic.signals.length,source_references_preserved:true,results}}];"
+      },
+      "position": [
+        750,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Recorded Excerpt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recorded Excerpt": {
+      "main": [
+        [
+          {
+            "node": "Analyze with Agent 3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze with Agent 3": {
+      "main": [
+        [
+          {
+            "node": "Check Connection",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Chicago"
+  },
+  "staticData": null,
+  "nodeGroups": [],
+  "pinData": {},
+  "versionId": "25545bf6-bb9b-436d-a549-19d1d1ee886c",
+  "versionCounter": 2,
+  "triggerCount": 0,
+  "sourceWorkflowId": null,
+  "tags": []
+}

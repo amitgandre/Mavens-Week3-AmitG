@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "executionStatus": "success",
+  "targetRevenue": 93925000000,
+  "candidates": 5,
+  "selected": [
+    "The Coca-Cola Company"
+  ],
+  "shortfall": 4,
+  "ambiguousFxRejected": true,
+  "unapprovedHandoffBlocked": true,
+  "live_test_execution": 50,
+  "live_test_details": "Actual local Gemma, five candidate revenue searches, and one FX search; cached target PDF/discovery.",
+  "regression_details": "Final FX validation replayed through n8n using the actual recorded outputs; ambiguous FX rejected.",
+  "review_gate_test_execution": 51,
+  "review_gate_details": "Actual local form rendered, Reject submitted, resulting status rejected and zero handoff companies."
+}

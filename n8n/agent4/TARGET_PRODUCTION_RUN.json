@@ -1,0 +1,83 @@
+{
+  "company": "Target",
+  "status": "complete",
+  "statistics": {
+    "leaders_researched": 2,
+    "roles_with_candidates": 2,
+    "claims": 8,
+    "linkedin_profiles": 1,
+    "background_analysis_errors": 0,
+    "initial_search_budget": 12
+  },
+  "roles": [
+    {
+      "role": "CEO",
+      "status": "source_reported_current",
+      "candidates": [
+        {
+          "person_name": "Michael Fiddelke",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-ee110eac",
+          "source_url": "https://indianexpress.com/article/business/from-intern-top-boss-who-is-michael-fiddelke-targets-new-ceo-10200897",
+          "evidence_excerpt": "who is Michael Fiddelke, Target's new CEO\nTarget named longtime company veteran Michael Fiddelke as its CEO, replacing retail industry bigwig Brian Cornell, effective February 1,",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "Aug 20, 2025"
+        },
+        {
+          "person_name": "Michael Fiddelke",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-97d3c279",
+          "source_url": "https://virginiabusiness.com/target-ceo-michael-fiddelke-replaces-brian-cornell",
+          "evidence_excerpt": "Target names 20-year veteran Michael Fiddelke as CEO, succeeding Brian Cornell, as the retailer faces weak sales, messy stores and rising",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "Aug 20, 2025"
+        },
+        {
+          "person_name": "Michael Fiddelke",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-0e42ebf7",
+          "source_url": "https://www.themorningsun.com/2026/03/05/targets-new-ceo-says-fresh-eyes-and-respecting-core-values-will-help-him-regain-customer-trust",
+          "evidence_excerpt": "The CEO guiding the turnaround plan is Michael Fiddelke, who stepped into the chief executive role last month but has worked for Target for more",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "Mar 5, 2026"
+        }
+      ]
+    },
+    {
+      "role": "CISO",
+      "status": "source_reported_current",
+      "candidates": [
+        {
+          "person_name": "Rich Agostino",
+          "role": "CISO",
+          "status": "reported_current",
+          "source_id": "src-496e3948",
+          "source_url": "https://cybermagazine.com/top10/top-10-cisos-2025",
+          "evidence_excerpt": "Role: Chief Information Security Officer & Infrastructure. Company: Target. Rich Agostino, Target's SVP and CISO, leads the company's global",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "Apr 2, 2025"
+        }
+      ]
+    },
+    {
+      "role": "CTO",
+      "status": "not found",
+      "candidates": []
+    },
+    {
+      "role": "CIO",
+      "status": "not found",
+      "candidates": []
+    }
+  ],
+  "background_markdown": "**CEO**: Michael Fiddelke (source_reported_current)\n**CISO**: Rich Agostino (source_reported_current)\n**CTO**: not found (not found)\n**CIO**: not found (not found)\n\n**Michael Fiddelke \u2014 Target**\n- Michael Fiddelke joined Target as an intern while studying for an MBA. He's since worked in merchandising, finance, operations, ... \u2014 [Target](<https://www.businessinsider.com/targets-new-ceo-michael-fiddelke-former-intern-brian-cornell-2025-8>) \u00b7 needs source verification\n- Michael Fiddelke is executive vice president and chief financial officer for Target and a member of its leadership team. \u2014 [Target](<https://engineering.uiowa.edu/alumni-and-friends/alumni-awards/alumni-merit-award/michael-fiddelke>) \u00b7 needs source verification\n- Prior to Target, Michael worked at Deloitte Consulting, LLP. \u2014 [Deloitte](<https://corporate.target.com/about/leadership-team/michael-fiddelke>) \u00b7 needs source verification\n- He worked for three years at Deloitte Consulting LLP before joining Target ... \u2014 [Deloitte](<https://www.reuters.com/sustainability/boards-policy-regulation/intern-top-boss-who-is-michael-fiddelke-targets-new-ceo-2025-08-20>) \u00b7 needs source verification\n- Before Target, Fiddelke studied industrial engineering, worked at Deloitte ... \u2014 [Deloitte](<https://www.facebook.com/100083241103501/posts/michael-fiddelkes-journey-at-target-started-with-a-finance-internship-in-2003-an/1059368610181166>) \u00b7 needs source verification\n\nPublic LinkedIn search results:\n- [Michael Fiddelke - CEO at Target](<https://www.linkedin.com/in/michael-fiddelke>) \u00b7 search snippet only\n\n**Rich Agostino \u2014 Target**\n- Rich Agostino is the Senior Vice President and the Chief Information Security Officer (CISO) at Target. In this role, he leads Target's global Cybersecurity team \u2014 [Target](<https://fortifyexperts.com/cisco-member/richagostino>) \u00b7 needs source verification\n- Target has promoted Rich Agostino to CISO, following the departure of Brad Maiorino \u2014 [Target](<https://www.cio.com/article/234475/target-names-new-ciso-to-replace-brad-maiorino.html>) \u00b7 needs source verification\n- Target hired Rich Agostino as vice president of information security in 2014. He was part of the launch of Target's Cyber Fusion Center \u2014 [Target](<https://www.bizjournals.com/twincities/news/2019/03/18/2019-40-under-40-rich-agostino-target-corp.html>) \u00b7 needs source verification",
+  "search_failures": [],
+  "memory": {
+    "saved": true,
+    "record_type": "leadership_background",
+    "run_id": "agent4-122"
+  }
+}

@@ -1,0 +1,308 @@
+[
+  {
+    "company": "PepsiCo",
+    "source_id": "src-c32e9dea",
+    "source_url": "https://instant.expert/experts/pepsico-security-leaders",
+    "title": "10 PepsiCo security leaders",
+    "publisher": "Instant Expert",
+    "publication_date": "2026-10-15",
+    "date_status": "explicit_date_metadata",
+    "date_as_returned": "Oct 16, 2026",
+    "retrieved_at": "2026-10-25T15:41:14.414Z",
+    "event_date": null,
+    "evidence_level": "search_snippet",
+    "source_type": "public_search_result",
+    "full_article_retrieved": false,
+    "source_publication_verified": false,
+    "snippet_cleaning": "none",
+    "evidence_text": "10 PepsiCo security leaders\nThese ten current and former PepsiCo security leaders have held director-level cybersecurity and business information security officer roles, in areas that ...",
+    "topics": [
+      "contracts"
+    ],
+    "provenance": [
+      {
+        "job_id": "job-3",
+        "engine": "google",
+        "query": "\"PepsiCo\" (\"IT services\" OR cybersecurity OR \"security operations\") (contract OR agreement OR partnership) after:2026-07-24 before:2026-10-26"
+      }
+    ],
+    "review_reasons": [],
+    "eligible_for_agent3": true,
+    "company_match": "lexical_only",
+    "possible_syndication_ids": [
+      "src-c32e9dea"
+    ]
+  },
+  {
+    "company": "PepsiCo",
+    "source_id": "src-c28c2a34",
+    "source_url": "https://www.cio.com/article/230613/new-cio-appointments.html",
+    "title": "New US CIO appointments, October 2026",
+    "publisher": "cio.com",
+    "publication_date": "2026-10-13",
+    "date_status": "explicit_date_metadata",
+    "date_as_returned": "Oct 14, 2026",
+    "retrieved_at": "2026-10-25T15:41:14.414Z",
+    "event_date": null,
+    "evidence_level": "search_snippet",
+    "source_type": "public_search_result",
+    "full_article_retrieved": false,
+    "source_publication_verified": false,
+    "snippet_cleaning": "none",
+    "evidence_text": "New US CIO appointments, October 2026\nEarlier, he served as CIO \u2013 South Asia at Reckitt and had leadership positions at Philips Lighting, PepsiCo, and PwC. ... Prabash Coswatte named CIO for Trader ...",
+    "topics": [
+      "leadership"
+    ],
+    "provenance": [
+      {
+        "job_id": "job-2",
+        "engine": "google",
+        "query": "\"PepsiCo\" (CIO OR CISO OR \"chief information officer\" OR \"chief information security officer\") (appointed OR joins OR departure OR named) after:2026-07-24 before:2026-10-26"
+      }
+    ],
+    "review_reasons": [],
+    "eligible_for_agent3": true,
+    "company_match": "lexical_only",
+    "possible_syndication_ids": [
+      "src-c28c2a34"
+    ]
+  },
+  {
+    "company": "PepsiCo",
+    "source_id": "src-035eec34",
+    "source_url": "https://indiantelevision.com/mam/aditya-vardhan-named-vice-president-it-and-group-chief-information-security-officer-at-jindal-steel",
+    "title": "Aditya Vardhan named vice president IT and group chief ...",
+    "publisher": "Indian Television Dot Com",
+    "publication_date": "2026-10-05",
+    "date_status": "explicit_date_metadata",
+    "date_as_returned": "Oct 6, 2026",
+    "retrieved_at": "2026-10-25T15:41:14.414Z",
+    "event_date": null,
+    "evidence_level": "search_snippet",
+    "source_type": "public_search_result",
+    "full_article_retrieved": false,
+    "source_publication_verified": false,
+    "snippet_cleaning": "none",
+    "evidence_text": "Aditya Vardhan named vice president IT and group chief ...\n... PepsiCo to Adani Group and Quess Corp, will shape ... Aditya Vardhan named vice president IT and group chief information security officer at Jindal Steel.",
+    "topics": [
+      "leadership"
+    ],
+    "provenance": [
+      {
+        "job_id": "job-2",
+        "engine": "google",
+        "query": "\"PepsiCo\" (CIO OR CISO OR \"chief information officer\" OR \"chief information security officer\") (appointed OR joins OR departure OR named) after:2026-07-24 before:2026-10-26"
+      }
+    ],
+    "review_reasons": [],
+    "eligible_for_agent3": true,
+    "company_match": "lexical_only",
+    "possible_syndication_ids": [
+      "src-035eec34"
+    ]
+  },
+  {
+    "company": "PepsiCo",
+    "source_id": "src-40c073ab",
+    "source_url": "https://www.pepsicojobs.com/event-26567/jobs/474536?lang=en-us",
+    "title": "Cloud Network Sr Engineer in Multiple Locations",
+    "publisher": "PepsiCo Careers",
+    "publication_date": "2026-09-27",
+    "date_status": "explicit_date_metadata",
+    "date_as_returned": "Sep 28, 2026",
+    "retrieved_at": "2026-10-25T15:41:14.414Z",
+    "event_date": null,
+    "evidence_level": "search_snippet",
+    "source_type": "job_ad",
+    "full_article_retrieved": false,
+    "source_publication_verified": false,
+    "snippet_cleaning": "none",
+    "evidence_text": "Cloud Network Sr Engineer in Multiple Locations\nPepsiCo Global Cloud Foundation Engineering is seeking an experienced Multi-Cloud Network Engineer to design, document, and operationalize enterprise-scale ...",
+    "topics": [
+      "technology"
+    ],
+    "provenance": [
+      {
+        "job_id": "job-4",
+        "engine": "google",
+        "query": "\"PepsiCo\" (cloud OR identity OR endpoint OR \"OT security\" OR SIEM) (deploys OR adopts OR pilot OR implementation) after:2026-07-24 before:2026-10-26"
+      }
+    ],
+    "review_reasons": [],
+    "eligible_for_agent3": true,
+    "company_match": "lexical_only",
+    "possible_syndication_ids": [
+      "src-40c073ab"
+    ]
+  },
+  {
+    "company": "PepsiCo",
+    "source_id": "src-4ded5ef0",
+    "source_url": "https://www.contentgrip.com/pepsico-publicis-ai-media-model",
+    "title": "PepsiCo turns global media toward an AI-led model",
+    "publisher": "ContentGrip",
+    "publication_date": "2026-09-03",
+    "date_status": "explicit_date_metadata",
+    "date_as_returned": "Sep 4, 2026",
+    "retrieved_at": "2026-10-25T15:41:14.414Z",
+    "event_date": null,
+    "evidence_level": "search_snippet",
+    "source_type": "public_search_result",
+    "full_article_retrieved": false,
+    "source_publication_verified": false,
+    "snippet_cleaning": "none",
+    "evidence_text": "PepsiCo turns global media toward an AI-led model\nPepsiCo's reported Publicis appointment shows how an AI-led media model could reshape agency accountability across global brand operations.",
+    "topics": [
+      "technology"
+    ],
+    "provenance": [
+      {
+        "job_id": "job-4",
+        "engine": "google",
+        "query": "\"PepsiCo\" (cloud OR identity OR endpoint OR \"OT security\" OR SIEM) (deploys OR adopts OR pilot OR implementation) after:2026-07-24 before:2026-10-26"
+      }
+    ],
+    "review_reasons": [],
+    "eligible_for_agent3": true,
+    "company_match": "lexical_only",
+    "possible_syndication_ids": [
+      "src-4ded5ef0"
+    ]
+  },
+  {
+    "company": "PepsiCo",
+    "source_id": "src-d6703585",
+    "source_url": "https://www.pymnts.com/innovation/2026/pepsico-tests-its-factories-in-software-before-steel",
+    "title": "PepsiCo Tests Its Factories in Software Before Steel",
+    "publisher": "PYMNTS.com",
+    "publication_date": "2026-08-10",
+    "date_status": "explicit_date_metadata",
+    "date_as_returned": "Aug 11, 2026",
+    "retrieved_at": "2026-10-25T15:41:14.414Z",
+    "event_date": null,
+    "evidence_level": "search_snippet",
+    "source_type": "public_search_result",
+    "full_article_retrieved": false,
+    "source_publication_verified": false,
+    "snippet_cleaning": "none",
+    "evidence_text": "PepsiCo Tests Its Factories in Software Before Steel\nPepsiCo now builds a digital twin of a plant before it spends money expanding the real one, letting AI test layouts and catch problems first.",
+    "topics": [
+      "technology"
+    ],
+    "provenance": [
+      {
+        "job_id": "job-4",
+        "engine": "google",
+        "query": "\"PepsiCo\" (cloud OR identity OR endpoint OR \"OT security\" OR SIEM) (deploys OR adopts OR pilot OR implementation) after:2026-07-24 before:2026-10-26"
+      }
+    ],
+    "review_reasons": [],
+    "eligible_for_agent3": true,
+    "company_match": "lexical_only",
+    "possible_syndication_ids": [
+      "src-d6703585"
+    ]
+  },
+  {
+    "company": "PepsiCo",
+    "source_id": "src-d03f0656",
+    "source_url": "https://club.pepsico.ru/security-solutions-4e2b43",
+    "title": "Comprehensive Guide Safety Security Solutions for ...",
+    "publisher": "PepsiCo",
+    "publication_date": "2026-08-08",
+    "date_status": "explicit_date_metadata",
+    "date_as_returned": "Aug 9, 2026",
+    "retrieved_at": "2026-10-25T15:41:14.414Z",
+    "event_date": null,
+    "evidence_level": "search_snippet",
+    "source_type": "public_search_result",
+    "full_article_retrieved": false,
+    "source_publication_verified": false,
+    "snippet_cleaning": "none",
+    "evidence_text": "Comprehensive Guide Safety Security Solutions for ...\nPhysical security\u2014traditionally the bedrock of protection\u2014now intersects with cybersecurity in ways that demand unified oversight. ... \u00a9 2026 Pepsico. All ...",
+    "topics": [
+      "contracts"
+    ],
+    "provenance": [
+      {
+        "job_id": "job-3",
+        "engine": "google",
+        "query": "\"PepsiCo\" (\"IT services\" OR cybersecurity OR \"security operations\") (contract OR agreement OR partnership) after:2026-07-24 before:2026-10-26"
+      }
+    ],
+    "review_reasons": [],
+    "eligible_for_agent3": true,
+    "company_match": "lexical_only",
+    "possible_syndication_ids": [
+      "src-d03f0656"
+    ]
+  },
+  {
+    "company": "PepsiCo",
+    "source_id": "src-4e4e9ed1",
+    "source_url": "https://club.pepsico.ru/security-solutions",
+    "title": "How Communities Shape the Future of Comprehensive ...",
+    "publisher": "PepsiCo",
+    "publication_date": "2026-08-07",
+    "date_status": "explicit_date_metadata",
+    "date_as_returned": "Aug 8, 2026",
+    "retrieved_at": "2026-10-25T15:41:14.414Z",
+    "event_date": null,
+    "evidence_level": "search_snippet",
+    "source_type": "public_search_result",
+    "full_article_retrieved": false,
+    "source_publication_verified": false,
+    "snippet_cleaning": "none",
+    "evidence_text": "How Communities Shape the Future of Comprehensive ...\nThe key is aligning with frameworks like the NIST Cybersecurity Framework, which encourages information sharing under controlled conditions. ... \u00a9 2026 Pepsico.",
+    "topics": [
+      "contracts"
+    ],
+    "provenance": [
+      {
+        "job_id": "job-3",
+        "engine": "google",
+        "query": "\"PepsiCo\" (\"IT services\" OR cybersecurity OR \"security operations\") (contract OR agreement OR partnership) after:2026-07-24 before:2026-10-26"
+      }
+    ],
+    "review_reasons": [],
+    "eligible_for_agent3": true,
+    "company_match": "lexical_only",
+    "possible_syndication_ids": [
+      "src-4e4e9ed1"
+    ]
+  },
+  {
+    "company": "PepsiCo",
+    "source_id": "src-a65da4e5",
+    "source_url": "https://club.pepsico.ru/cybersecurity-laws",
+    "title": "Navigating Cybersecurity Legal Implications in the Private ...",
+    "publisher": "PepsiCo",
+    "publication_date": "2026-07-27",
+    "date_status": "explicit_date_metadata",
+    "date_as_returned": "Jul 28, 2026",
+    "retrieved_at": "2026-10-25T15:41:14.414Z",
+    "event_date": null,
+    "evidence_level": "search_snippet",
+    "source_type": "public_search_result",
+    "full_article_retrieved": false,
+    "source_publication_verified": false,
+    "snippet_cleaning": "none",
+    "evidence_text": "Navigating Cybersecurity Legal Implications in the Private ...\nNavigating Cybersecurity Legal Implications in the Private Internet Era ... The data you submit is processed according to the Privacy Policy of Pepsico.",
+    "topics": [
+      "contracts"
+    ],
+    "provenance": [
+      {
+        "job_id": "job-3",
+        "engine": "google",
+        "query": "\"PepsiCo\" (\"IT services\" OR cybersecurity OR \"security operations\") (contract OR agreement OR partnership) after:2026-07-24 before:2026-10-26"
+      }
+    ],
+    "review_reasons": [],
+    "eligible_for_agent3": true,
+    "company_match": "lexical_only",
+    "possible_syndication_ids": [
+      "src-a65da4e5"
+    ]
+  }
+]

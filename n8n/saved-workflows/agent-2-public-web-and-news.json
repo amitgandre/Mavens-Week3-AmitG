@@ -1,0 +1,592 @@
+{
+  "updatedAt": "2026-10-25T17:54:10.000Z",
+  "createdAt": "2026-10-25T03:42:40.465Z",
+  "id": "Agent2PublicResearch",
+  "name": "Agent 2 - Public Web and News",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "id": "1c3081eb-bce2-4d31-ae4a-21be7448f0e9",
+      "name": "Company Research Form",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.6,
+      "parameters": {
+        "formTitle": "Agent 2 \u2014 Recent company evidence",
+        "formDescription": "Low-credit mode: two public searches per company, no automatic retries or extra AI-generated searches. Up to six companies (12 search requests). Existing SerpApi allowance applies.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Company names",
+              "fieldType": "textarea",
+              "requiredField": true,
+              "fieldName": "company_names"
+            }
+          ]
+        },
+        "options": {},
+        "path": "agent2-company-research"
+      },
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "12c2806c-7102-4a9c-b7ac-ecde7cd78a99",
+      "name": "From Approved Agent 1",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "parameters": {
+        "inputSource": "passthrough"
+      },
+      "position": [
+        0,
+        220
+      ]
+    },
+    {
+      "id": "b4dd7ec8-738e-4b65-aaf1-ccc39f124a81",
+      "name": "Validate Companies",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "const input=$input.first().json;\nlet companies;\nif(Object.hasOwn(input,'companies_for_agent2')) {\n  if(input.approved!==true||!Array.isArray(input.companies_for_agent2))\n    throw new Error('Agent 1 must be approved before company research');\n  companies=input.companies_for_agent2.map(c=>c.company);\n} else {\n  const names=input.company_names??input['Company names'];\n  if(typeof names!=='string'||!names.trim())\n    throw new Error('No company names received. Start Company Research Form, open its Test URL, enter a company, and click Submit.');\n  companies=names.split(/[,\\n]+/).map(s=>s.trim()).filter(Boolean);\n}\ncompanies=[...new Map(companies.map(c=>[String(c).toLowerCase(),c])).values()];\nif(!companies.length||companies.length>6)throw new Error('Enter between one and six companies');\nif(companies.some(c=>typeof c!=='string'||c.length<2||c.length>120||Array.from(c).some(ch=>ch.charCodeAt(0)<32||ch.charCodeAt(0)===34||ch.charCodeAt(0)===92)))\n  throw new Error('Use plain company names');\nreturn [{json:{companies,window_start:input.research_window?.start||'',window_end:input.research_window?.end||'',results_per_query:5}}];\n"
+      },
+      "position": [
+        260,
+        100
+      ]
+    },
+    {
+      "id": "80131e1e-b653-46d6-82f1-6c688d21e581",
+      "name": "Research Window",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "fef2340c-535d-44b7-af5a-e453f0a0aeaf",
+              "name": "window_end",
+              "value": "={{ $json.window_end || $now.setZone('America/Chicago').toISODate() }}",
+              "type": "string"
+            },
+            {
+              "id": "c006c468-338e-4da1-81b5-7fa0ec1c2a9e",
+              "name": "window_start",
+              "value": "={{ $json.window_start || DateTime.fromISO($json.window_end || $now.setZone('America/Chicago').toISODate()).minus({months:3}).toISODate() }}",
+              "type": "string"
+            },
+            {
+              "id": "f10ec763-cb28-4d83-b82e-40e9085b8288",
+              "name": "retrieved_at",
+              "value": "={{ $now.toUTC().toISO() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "position": [
+        500,
+        100
+      ]
+    },
+    {
+      "id": "c5f559cd-e200-4c0f-9fe5-3600a157caf3",
+      "name": "Build Search Plan",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "// Pure collection logic. No network requests and no model-generated facts.\nfunction validDay(value) {\n  const s=String(value||'');\n  return /^\\d{4}-\\d{2}-\\d{2}$/.test(s)&&Number.isFinite(Date.parse(s+'T00:00:00Z'))&&new Date(s+'T00:00:00Z').toISOString().slice(0,10)===s;\n}\nfunction canonicalUrl(value) {\n  const s=String(value||'').trim();\n  const m=s.match(/^https?:\\/\\/([^\\s/?#]+)([^#]*)/i);\n  if(!m||m[1].includes('@')||m[1].includes(':'))return null;\n  const host=m[1].toLowerCase();\n  if(!host.includes('.')||/^(?:localhost|127\\.|10\\.|192\\.168\\.|169\\.254\\.|0\\.)/.test(host)||/^172\\.(?:1[6-9]|2\\d|3[01])\\./.test(host)||/\\.(?:local|internal)$/.test(host))return null;\n  const [path,query='']=m[2].split('?');\n  const clean=query.split('&').filter(Boolean).filter(p=>!/^(?:utm_[^=]*|gclid|fbclid|mc_cid|mc_eid)=/i.test(p)).sort().join('&');\n  return (s.toLowerCase().startsWith('https:')?'https://':'http://')+host+(path||'/').replace(/\\/$/,'')+(clean?'?'+clean:'');\n}\nfunction sourceId(company,url) {\n  const input=company.toLowerCase()+'|'+url; let hash=2166136261;\n  for(let i=0;i<input.length;i++)hash=Math.imul(hash^input.charCodeAt(i),16777619)>>>0;\n  return 'src-'+hash.toString(16).padStart(8,'0');\n}\nfunction publicationDate(result, retrievedAt) {\n  const raw=result.iso_date||result.publication_date||result.date||'';\n  if(validDay(raw))return {date:raw,status:'explicit_date_metadata',raw};\n  const iso=/^\\d{4}-\\d{2}-\\d{2}T/.test(raw);\n  const named=/\\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\\b.*\\b20\\d{2}\\b/i.test(raw);\n  const us=/^\\d{2}\\/\\d{2}\\/20\\d{2},/.test(raw);\n  if((iso||named||us)&&Number.isFinite(Date.parse(raw))){\n    const date=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(raw));\n    return {date,status:'explicit_date_metadata',raw};\n  }\n  const relative=String(raw).match(/^(\\d+)\\s+(hour|day|week|month|minute)s?\\s+ago$/i);\n  return {date:null,status:relative?'relative_date_needs_review':'missing_or_ambiguous_date',raw};\n}\nfunction buildSearchJobs(context) {\n  if(!validDay(context.window_start)||!validDay(context.window_end)||context.window_start>context.window_end)\n    throw new Error('Research dates must be valid YYYY-MM-DD values in order');\n  const add=(day,n)=>new Date(Date.parse(day+'T12:00:00Z')+n*86400000).toISOString().slice(0,10);\n  const topics=Number(context.max_queries_per_company||2)<=2?[\n    ['cybersecurity','(cybersecurity OR \"information security\" OR ransomware OR \"cyber incident\")'],\n    ['web_it_signals','(CIO OR CISO OR CTO OR technology OR cloud) (appointed OR contract OR partnership OR deploys OR adopts)']\n  ]:[\n    ['cybersecurity','(cybersecurity OR \"information security\" OR \"cyber incident\" OR ransomware)'],\n    ['leadership','(CIO OR CISO OR \"chief information officer\" OR \"chief information security officer\") (appointed OR joins OR departure OR named)'],\n    ['contracts','(\"IT services\" OR cybersecurity OR \"security operations\") (contract OR agreement OR partnership)'],\n    ['technology','(cloud OR identity OR endpoint OR \"OT security\" OR SIEM) (deploys OR adopts OR pilot OR implementation)']\n  ];\n  const jobs=[];\n  for(const company of context.companies)for(const [topic,terms] of topics) {\n    const engine=topic==='cybersecurity'?'google_news':'google';\n    jobs.push({job_id:'job-'+(jobs.length+1),company,topic,engine,\n      query:'\"'+company+'\" '+terms+' after:'+add(context.window_start,-1)+' before:'+add(context.window_end,1),\n      window_start:context.window_start,window_end:context.window_end});\n  }\n  return jobs;\n}\nfunction collectEvidence(context,jobs,responses) {\n  const records=new Map(), failures=[],searches=[],dropped=[];\n  const key=s=>String(s||'').normalize('NFKD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');\n  const alias=company=>key(company.replace(/^the\\s+/i,'').replace(/\\b(?:company|corporation|corp|incorporated|inc|ltd|limited|plc)\\b\\.?/gi,''));\n  function put(result,job,supplement=false) {\n    const url=canonicalUrl(result.link||result.source_url);\n    if(!url){dropped.push({company:job.company,reason:'Unsupported public source URL',title:result.title||''});return;}\n    const title=String(result.title||'').trim();\n    let body=String(supplement?result.evidence_text||'':result.snippet||result.description||'').trim();\n    const rawSnippet=body;const ellipsis=body.search(/\\.{3}|\u2026/);\n    if(!supplement&&ellipsis>=0&&(body.slice(0,ellipsis).match(/[\u00b7\u203a]/g)||[]).length>=2)\n      body=body.slice(ellipsis+(body[ellipsis]==='\u2026'?1:3)).trim();\n    const date=publicationDate(result,context.retrieved_at);\n    const publisher=typeof result.source==='object'?result.source?.name||result.source?.title||'':result.source||result.publisher||'';\n    const text=(title+' '+body+' '+publisher+' '+url);\n    const nameMatch=alias(job.company).length>2&&key(text).includes(alias(job.company));\n    const topicMatch=/\\b(?:cyber\\w*|security|ransomware|CIO|CISO|CTO|cloud|artificial intelligence|AI|machine learning|Microsoft|Azure|AWS|SAP|Salesforce|ServiceNow|identity|endpoint|SIEM|SOC|network|digital|technology|software|data platform|data center|information systems|information technology|IT services|chief information officer)\\b/i.test(title+' '+body)||/\\bIT\\b/.test(title+' '+body);\n    const issues=[];\n    if(!date.date)issues.push(date.status);\n    else if(date.date<context.window_start||date.date>context.window_end)issues.push('outside_research_window');\n    if(!supplement&&!nameMatch)issues.push('company_match_needs_review');\n    if(!supplement&&!topicMatch)issues.push('IT_cybersecurity_relevance_needs_review');\n    if(body.length<20)issues.push('title_only_or_insufficient_excerpt');\n    const evidenceLevel=supplement?'user_supplied_public_excerpt':body?'search_snippet':'search_title_only';\n    const r={company:job.company,source_id:sourceId(job.company,url),source_url:url,title,publisher,\n      publication_date:date.date,date_status:date.status,date_as_returned:date.raw,\n      retrieved_at:context.retrieved_at,event_date:null,evidence_level:evidenceLevel,\n      source_type:/\\/(?:jobs?|careers)\\//i.test(url)?'job_ad':'public_search_result',\n      full_article_retrieved:false,source_publication_verified:false,\n      snippet_cleaning:rawSnippet!==body?'navigation_prefix_removed':'none',\n      evidence_text:body?title+'\\n'+body:title,\n      topics:[job.topic],provenance:[{job_id:job.job_id,engine:job.engine,query:job.query||''}],\n      review_reasons:issues,eligible_for_agent3:issues.length===0,company_match:nameMatch?'lexical_only':'unconfirmed'};\n    const id=job.company.toLowerCase()+'|'+url;\n    if(records.has(id)) {\n      const prior=records.get(id); const best=r.evidence_text.length>prior.evidence_text.length?r:prior;\n      const other=best===r?prior:r;\n      const merged={...best,topics:[...new Set([...prior.topics,...r.topics])],provenance:[...prior.provenance,...r.provenance]};\n      if(!merged.publication_date&&other.publication_date){merged.publication_date=other.publication_date;merged.date_status=other.date_status;\n        merged.review_reasons=merged.review_reasons.filter(s=>!['missing_or_ambiguous_date','relative_date_needs_review'].includes(s));}\n      if(prior.publication_date&&r.publication_date&&prior.publication_date!==r.publication_date)\n        merged.review_reasons=[...new Set([...merged.review_reasons,'conflicting_publication_dates'])];\n      if(prior.review_reasons.includes('conflicting_publication_dates'))merged.review_reasons.push('conflicting_publication_dates');\n      if(merged.publication_date&&(merged.publication_date<context.window_start||merged.publication_date>context.window_end))\n        merged.review_reasons.push('outside_research_window');\n      merged.review_reasons=[...new Set(merged.review_reasons)];\n      merged.eligible_for_agent3=merged.review_reasons.length===0;\n      records.set(id,merged);\n    } else records.set(id,r);\n  }\n  for(let i=0;i<responses.length;i++) {\n    const response=responses[i];const job=jobs.find(j=>j.query===response.search_parameters?.q)||response._job;\n    if(!job){failures.push({job_id:null,error:'Search result could not be linked to its input query'});continue;}\n    if(response.error){const message=typeof response.error==='string'?response.error:response.error?.message||'Search failed';if(/^(?:Google(?: News)? hasn.t returned any results for this query\\.?|No results found for this query\\.?)$/i.test(message.trim())){searches.push({...job,result_count:0,retained_result_count:0,status:'no_results_found'});continue;}failures.push({job_id:job.job_id,company:job.company,topic:job.topic,engine:job.engine,error:message});continue;}\n    const flat=[];\n    function walk(list){for(const r of list||[]){if(r.link)flat.push(r);if(r.stories)walk(r.stories);if(r.highlight)walk([r.highlight]);}}\n    walk(response.organic_results||response.news_results||[]);\n    searches.push({...job,result_count:flat.length,retained_result_count:Math.min(flat.length,context.results_per_query)});\n    for(const r of flat.slice(0,context.results_per_query))put(r,job);\n  }\n  const completed=new Set([...searches.map(s=>s.job_id),...failures.map(f=>f.job_id)]);\n  for(const job of jobs)if(!completed.has(job.job_id))failures.push({...job,error:'Search response missing'});\n  for(const r of context.supplemental_evidence||[]) {\n    if(!context.companies.includes(r.company))continue;\n    put(r,{company:r.company,topic:'supplemental',job_id:'manual',engine:'user_public_excerpt'},true);\n  }\n  const all=[...records.values()];\n  const titleGroups=new Map();\n  for(const r of all){const t=key(r.title);if(t.length<20)continue;const k=r.company+'|'+t;\n    if(!titleGroups.has(k))titleGroups.set(k,[]);titleGroups.get(k).push(r.source_id);}\n  for(const r of all){r.possible_syndication_ids=titleGroups.get(r.company+'|'+key(r.title))||[];}\n  const ready=all.filter(r=>r.eligible_for_agent3).sort((a,b)=>b.publication_date.localeCompare(a.publication_date)||a.source_id.localeCompare(b.source_id));\n  const review=all.filter(r=>!r.eligible_for_agent3);\n  const coverage=context.companies.map(company=>({company,searches:searches.filter(s=>s.company===company).length,\n    failed_searches:failures.filter(s=>s.company===company).length,records:all.filter(r=>r.company===company).length,\n    ready_records:ready.filter(r=>r.company===company).length,\n    topics:['cybersecurity','leadership','contracts','technology'].map(topic=>({topic,results:all.filter(r=>r.company===company&&r.topics.includes(topic)).length})),\n    status:failures.some(f=>f.company===company)?'search_incomplete':all.some(r=>r.company===company)?'results_collected':'no_results_found'}));\n  return {agent:2,status:failures.length?'partial':'collected',companies:context.companies,\n    research_window:{start:context.window_start,end:context.window_end},retrieved_at:context.retrieved_at,\n    coverage,searches,failed_searches:failures,evidence_records:ready,review_queue:review,dropped_results:dropped,\n    statistics:{queries_planned:jobs.length,queries_succeeded:searches.length,queries_failed:failures.length,\n      unique_sources:all.length,ready_for_agent3:ready.length,needs_review:review.length},\n    analyze_with_agent3:context.analyze_with_agent3,max_analysis_records:context.max_analysis_records,\n    limitations:['Search titles/snippets are public search evidence, not retrieved full articles.',\n      'Dates come from search metadata or user-provided evidence and need original-source verification.',\n      'Unknown dates, out-of-window results, weak company matches, and title-only records are held for review.',\n      'Event dates are deliberately left unknown for Agent 3 to extract from evidence.',\n      'Job advertisements are hiring evidence, not proof of deployed technology or leadership appointments.',\n      'No login automation, private data access, scanning, or direct site-fetch requests are performed.']};\n}\n\n// Local AI suggests search terms only. Headlines and links always come from search results.\nfunction aiSearchPlan(context,modelResult) {\n  const jobs=buildSearchJobs(context),allowed=new Map(context.companies.map(c=>[c.toLowerCase(),c]));\n  const extras=[],seen=new Set();\n  const ideas=modelResult?.output?.searches||modelResult?.searches||[];\n  const add=(day,n)=>new Date(Date.parse(day+'T12:00:00Z')+n*86400000).toISOString().slice(0,10);\n  for(const idea of Number(context.max_queries_per_company||2)>4&&Array.isArray(ideas)?ideas:[]) {\n    const company=allowed.get(String(idea.company||'').trim().toLowerCase());\n    const terms=String(idea.terms||'').replace(/[\\r\\n\\t]/g,' ').replace(/\\s+/g,' ').trim();\n    if(!company||seen.has(company)||terms.length<8||terms.length>180||/https?:|(?:site|before|after|inurl|filetype):|(?:home|personal)\\s+(?:address|phone)|password\\s+dump|doxx|leaked\\s+credentials/i.test(terms))continue;\n    seen.add(company);extras.push({job_id:'ai-'+(extras.length+1),company,topic:'ai_discovery',engine:'google',\n      query:'\"'+company+'\" '+terms+' after:'+add(context.window_start,-1)+' before:'+add(context.window_end,1),\n      window_start:context.window_start,window_end:context.window_end,query_origin:'local_ollama_suggestion'});\n  }\n  const planning={provider:'local_ollama',model:'gemma4:12b',status:extras.length?'applied':'core_search_fallback',\n    additional_queries:extras.length,companies_without_extra_query:context.companies.filter(c=>!seen.has(c)),\n    error:modelResult?.error||null,note:'AI suggestions are query ideas, not factual findings.'};\n  return {jobs:[...jobs,...extras],planning};\n}\nfunction headlineFeed(pack) {\n  const records=[...(pack.evidence_records||[]),...(pack.review_queue||[])];\n  const allowedReasons=new Set(['title_only_or_insufficient_excerpt']);\n  const candidates=[],undated=[];\n  const key=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g,'');\n  for(const r of records) {\n    if(!r.title||!r.source_url||r.source_type==='job_ad'||/\\/(?:jobs?|careers)\\//i.test(r.source_url))continue;\n    // Snippet-only company mentions can describe a former employee at another firm.\n    if(!key(r.title).includes(key(r.company)))continue;\n    const reasons=r.review_reasons||[];\n    const h={company:r.company,headline:r.title,source:r.publisher||r.source_url.match(/^https?:\\/\\/([^/]+)/i)?.[1]||'Public source',\n      publication_date:r.publication_date,source_url:r.source_url,source_id:r.source_id,\n      date_verification:'search_metadata_only',other_sources:[]};\n    if(!r.publication_date){\n      if(reasons.every(x=>allowedReasons.has(x)||['missing_or_ambiguous_date','relative_date_needs_review'].includes(x)))undated.push(h);\n      continue;\n    }\n    if(r.publication_date<pack.research_window.start||r.publication_date>pack.research_window.end||reasons.some(x=>!allowedReasons.has(x)))continue;\n    candidates.push(h);\n  }\n  candidates.sort((a,b)=>b.publication_date.localeCompare(a.publication_date)||a.source_url.localeCompare(b.source_url));\n  const unique=[],titles=new Map();\n  for(const h of candidates){const titleKey=h.company.toLowerCase()+'|'+key(h.headline);\n    if(titles.has(titleKey)){titles.get(titleKey).other_sources.push({source:h.source,source_url:h.source_url});continue;}\n    titles.set(titleKey,h);unique.push(h);}\n  const selected=[];\n  for(const company of pack.companies){const list=unique.filter(h=>h.company===company),domains=new Map(),picked=new Set();\n    for(const allowance of [1,2])for(const h of list){const domain=h.source_url.match(/^https?:\\/\\/([^/]+)/i)?.[1]||h.source;\n      if(picked.has(h.source_id)||(domains.get(domain)||0)>=allowance||picked.size>=12)continue;\n      picked.add(h.source_id);domains.set(domain,(domains.get(domain)||0)+1);selected.push(h);}}\n  const markdown=pack.companies.map(company=>{const hs=selected.filter(h=>h.company===company);\n    return '**'+company+'**\\n'+(hs.length?hs.map(h=>'- ['+h.headline.replace(/[\\[\\]]/g,'')+'](<'+h.source_url.replace(/[<>]/g,c=>encodeURIComponent(c))+'>) \u2014 '+h.source+' \u00b7 '+h.publication_date).join('\\n'):'No dated IT/cybersecurity headlines found in the supplied search results.');}).join('\\n\\n');\n  return {headlines:selected,headline_markdown:markdown,undated_headlines:undated,\n    headline_statistics:{dated_headlines:selected.length,undated_candidates:undated.length,\n      source_domains:new Set(selected.map(h=>h.source_url.match(/^https?:\\/\\/([^/]+)/i)?.[1])).size},\n    headline_note:'Titles and URLs are copied from public search results. Dates are search metadata; undated results are kept separately. Job ads are excluded from this headline feed.'};\n}\n\nconst context=$('Research Window').first().json;const plan=aiSearchPlan(context,$input.first().json);return plan.jobs.map(job=>({json:{...job,ai_planning:plan.planning}}));"
+      },
+      "position": [
+        1100,
+        100
+      ]
+    },
+    {
+      "id": "5f6108da-57a8-43ee-90c0-a0f8e5026a47",
+      "name": "News or Web?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "parameters": {
+        "conditions": {
+          "options": {
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "8e44b120-e6a5-4fc8-919e-5a8adb02b820",
+              "leftValue": "={{ $json.engine === \"google_news\" }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "position": [
+        1500,
+        100
+      ]
+    },
+    {
+      "id": "74158af1-d0ae-416f-97b7-9b797bcf8972",
+      "name": "Google News",
+      "type": "n8n-nodes-serpapi.serpApi",
+      "typeVersion": 1,
+      "parameters": {
+        "operation": "google_news",
+        "q": "={{ $json.query }}",
+        "additionalFields": {
+          "hl": "en"
+        },
+        "requestOptions": {}
+      },
+      "position": [
+        1770,
+        -60
+      ],
+      "retryOnFail": false,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "id": "a0400862-1d12-4f73-90a6-a30be06b0c38",
+      "name": "Google Web",
+      "type": "n8n-nodes-serpapi.serpApi",
+      "typeVersion": 1,
+      "parameters": {
+        "operation": "google",
+        "q": "={{ $json.query }}",
+        "additionalFields": {
+          "hl": "en"
+        },
+        "requestOptions": {}
+      },
+      "position": [
+        1770,
+        260
+      ],
+      "retryOnFail": false,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "id": "25c697e3-7ab7-410f-a21d-23d676c56674",
+      "name": "Combine Search Results",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "parameters": {
+        "mode": "append",
+        "numberInputs": 2
+      },
+      "position": [
+        2040,
+        100
+      ]
+    },
+    {
+      "id": "80d8593c-117f-4fcf-bada-9b210c901095",
+      "name": "Prepare Evidence Package",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "// Pure collection logic. No network requests and no model-generated facts.\nfunction validDay(value) {\n  const s=String(value||'');\n  return /^\\d{4}-\\d{2}-\\d{2}$/.test(s)&&Number.isFinite(Date.parse(s+'T00:00:00Z'))&&new Date(s+'T00:00:00Z').toISOString().slice(0,10)===s;\n}\nfunction canonicalUrl(value) {\n  const s=String(value||'').trim();\n  const m=s.match(/^https?:\\/\\/([^\\s/?#]+)([^#]*)/i);\n  if(!m||m[1].includes('@')||m[1].includes(':'))return null;\n  const host=m[1].toLowerCase();\n  if(!host.includes('.')||/^(?:localhost|127\\.|10\\.|192\\.168\\.|169\\.254\\.|0\\.)/.test(host)||/^172\\.(?:1[6-9]|2\\d|3[01])\\./.test(host)||/\\.(?:local|internal)$/.test(host))return null;\n  const [path,query='']=m[2].split('?');\n  const clean=query.split('&').filter(Boolean).filter(p=>!/^(?:utm_[^=]*|gclid|fbclid|mc_cid|mc_eid)=/i.test(p)).sort().join('&');\n  return (s.toLowerCase().startsWith('https:')?'https://':'http://')+host+(path||'/').replace(/\\/$/,'')+(clean?'?'+clean:'');\n}\nfunction sourceId(company,url) {\n  const input=company.toLowerCase()+'|'+url; let hash=2166136261;\n  for(let i=0;i<input.length;i++)hash=Math.imul(hash^input.charCodeAt(i),16777619)>>>0;\n  return 'src-'+hash.toString(16).padStart(8,'0');\n}\nfunction publicationDate(result, retrievedAt) {\n  const raw=result.iso_date||result.publication_date||result.date||'';\n  if(validDay(raw))return {date:raw,status:'explicit_date_metadata',raw};\n  const iso=/^\\d{4}-\\d{2}-\\d{2}T/.test(raw);\n  const named=/\\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\\b.*\\b20\\d{2}\\b/i.test(raw);\n  const us=/^\\d{2}\\/\\d{2}\\/20\\d{2},/.test(raw);\n  if((iso||named||us)&&Number.isFinite(Date.parse(raw))){\n    const date=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(raw));\n    return {date,status:'explicit_date_metadata',raw};\n  }\n  const relative=String(raw).match(/^(\\d+)\\s+(hour|day|week|month|minute)s?\\s+ago$/i);\n  return {date:null,status:relative?'relative_date_needs_review':'missing_or_ambiguous_date',raw};\n}\nfunction buildSearchJobs(context) {\n  if(!validDay(context.window_start)||!validDay(context.window_end)||context.window_start>context.window_end)\n    throw new Error('Research dates must be valid YYYY-MM-DD values in order');\n  const add=(day,n)=>new Date(Date.parse(day+'T12:00:00Z')+n*86400000).toISOString().slice(0,10);\n  const topics=Number(context.max_queries_per_company||2)<=2?[\n    ['cybersecurity','(cybersecurity OR \"information security\" OR ransomware OR \"cyber incident\")'],\n    ['web_it_signals','(CIO OR CISO OR CTO OR technology OR cloud) (appointed OR contract OR partnership OR deploys OR adopts)']\n  ]:[\n    ['cybersecurity','(cybersecurity OR \"information security\" OR \"cyber incident\" OR ransomware)'],\n    ['leadership','(CIO OR CISO OR \"chief information officer\" OR \"chief information security officer\") (appointed OR joins OR departure OR named)'],\n    ['contracts','(\"IT services\" OR cybersecurity OR \"security operations\") (contract OR agreement OR partnership)'],\n    ['technology','(cloud OR identity OR endpoint OR \"OT security\" OR SIEM) (deploys OR adopts OR pilot OR implementation)']\n  ];\n  const jobs=[];\n  for(const company of context.companies)for(const [topic,terms] of topics) {\n    const engine=topic==='cybersecurity'?'google_news':'google';\n    jobs.push({job_id:'job-'+(jobs.length+1),company,topic,engine,\n      query:'\"'+company+'\" '+terms+' after:'+add(context.window_start,-1)+' before:'+add(context.window_end,1),\n      window_start:context.window_start,window_end:context.window_end});\n  }\n  return jobs;\n}\nfunction collectEvidence(context,jobs,responses) {\n  const records=new Map(), failures=[],searches=[],dropped=[];\n  const key=s=>String(s||'').normalize('NFKD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');\n  const alias=company=>key(company.replace(/^the\\s+/i,'').replace(/\\b(?:company|corporation|corp|incorporated|inc|ltd|limited|plc)\\b\\.?/gi,''));\n  function put(result,job,supplement=false) {\n    const url=canonicalUrl(result.link||result.source_url);\n    if(!url){dropped.push({company:job.company,reason:'Unsupported public source URL',title:result.title||''});return;}\n    const title=String(result.title||'').trim();\n    let body=String(supplement?result.evidence_text||'':result.snippet||result.description||'').trim();\n    const rawSnippet=body;const ellipsis=body.search(/\\.{3}|\u2026/);\n    if(!supplement&&ellipsis>=0&&(body.slice(0,ellipsis).match(/[\u00b7\u203a]/g)||[]).length>=2)\n      body=body.slice(ellipsis+(body[ellipsis]==='\u2026'?1:3)).trim();\n    const date=publicationDate(result,context.retrieved_at);\n    const publisher=typeof result.source==='object'?result.source?.name||result.source?.title||'':result.source||result.publisher||'';\n    const text=(title+' '+body+' '+publisher+' '+url);\n    const nameMatch=alias(job.company).length>2&&key(text).includes(alias(job.company));\n    const topicMatch=/\\b(?:cyber\\w*|security|ransomware|CIO|CISO|CTO|cloud|artificial intelligence|AI|machine learning|Microsoft|Azure|AWS|SAP|Salesforce|ServiceNow|identity|endpoint|SIEM|SOC|network|digital|technology|software|data platform|data center|information systems|information technology|IT services|chief information officer)\\b/i.test(title+' '+body)||/\\bIT\\b/.test(title+' '+body);\n    const issues=[];\n    if(!date.date)issues.push(date.status);\n    else if(date.date<context.window_start||date.date>context.window_end)issues.push('outside_research_window');\n    if(!supplement&&!nameMatch)issues.push('company_match_needs_review');\n    if(!supplement&&!topicMatch)issues.push('IT_cybersecurity_relevance_needs_review');\n    if(body.length<20)issues.push('title_only_or_insufficient_excerpt');\n    const evidenceLevel=supplement?'user_supplied_public_excerpt':body?'search_snippet':'search_title_only';\n    const r={company:job.company,source_id:sourceId(job.company,url),source_url:url,title,publisher,\n      publication_date:date.date,date_status:date.status,date_as_returned:date.raw,\n      retrieved_at:context.retrieved_at,event_date:null,evidence_level:evidenceLevel,\n      source_type:/\\/(?:jobs?|careers)\\//i.test(url)?'job_ad':'public_search_result',\n      full_article_retrieved:false,source_publication_verified:false,\n      snippet_cleaning:rawSnippet!==body?'navigation_prefix_removed':'none',\n      evidence_text:body?title+'\\n'+body:title,\n      topics:[job.topic],provenance:[{job_id:job.job_id,engine:job.engine,query:job.query||''}],\n      review_reasons:issues,eligible_for_agent3:issues.length===0,company_match:nameMatch?'lexical_only':'unconfirmed'};\n    const id=job.company.toLowerCase()+'|'+url;\n    if(records.has(id)) {\n      const prior=records.get(id); const best=r.evidence_text.length>prior.evidence_text.length?r:prior;\n      const other=best===r?prior:r;\n      const merged={...best,topics:[...new Set([...prior.topics,...r.topics])],provenance:[...prior.provenance,...r.provenance]};\n      if(!merged.publication_date&&other.publication_date){merged.publication_date=other.publication_date;merged.date_status=other.date_status;\n        merged.review_reasons=merged.review_reasons.filter(s=>!['missing_or_ambiguous_date','relative_date_needs_review'].includes(s));}\n      if(prior.publication_date&&r.publication_date&&prior.publication_date!==r.publication_date)\n        merged.review_reasons=[...new Set([...merged.review_reasons,'conflicting_publication_dates'])];\n      if(prior.review_reasons.includes('conflicting_publication_dates'))merged.review_reasons.push('conflicting_publication_dates');\n      if(merged.publication_date&&(merged.publication_date<context.window_start||merged.publication_date>context.window_end))\n        merged.review_reasons.push('outside_research_window');\n      merged.review_reasons=[...new Set(merged.review_reasons)];\n      merged.eligible_for_agent3=merged.review_reasons.length===0;\n      records.set(id,merged);\n    } else records.set(id,r);\n  }\n  for(let i=0;i<responses.length;i++) {\n    const response=responses[i];const job=jobs.find(j=>j.query===response.search_parameters?.q)||response._job;\n    if(!job){failures.push({job_id:null,error:'Search result could not be linked to its input query'});continue;}\n    if(response.error){const message=typeof response.error==='string'?response.error:response.error?.message||'Search failed';if(/^(?:Google(?: News)? hasn.t returned any results for this query\\.?|No results found for this query\\.?)$/i.test(message.trim())){searches.push({...job,result_count:0,retained_result_count:0,status:'no_results_found'});continue;}failures.push({job_id:job.job_id,company:job.company,topic:job.topic,engine:job.engine,error:message});continue;}\n    const flat=[];\n    function walk(list){for(const r of list||[]){if(r.link)flat.push(r);if(r.stories)walk(r.stories);if(r.highlight)walk([r.highlight]);}}\n    walk(response.organic_results||response.news_results||[]);\n    searches.push({...job,result_count:flat.length,retained_result_count:Math.min(flat.length,context.results_per_query)});\n    for(const r of flat.slice(0,context.results_per_query))put(r,job);\n  }\n  const completed=new Set([...searches.map(s=>s.job_id),...failures.map(f=>f.job_id)]);\n  for(const job of jobs)if(!completed.has(job.job_id))failures.push({...job,error:'Search response missing'});\n  for(const r of context.supplemental_evidence||[]) {\n    if(!context.companies.includes(r.company))continue;\n    put(r,{company:r.company,topic:'supplemental',job_id:'manual',engine:'user_public_excerpt'},true);\n  }\n  const all=[...records.values()];\n  const titleGroups=new Map();\n  for(const r of all){const t=key(r.title);if(t.length<20)continue;const k=r.company+'|'+t;\n    if(!titleGroups.has(k))titleGroups.set(k,[]);titleGroups.get(k).push(r.source_id);}\n  for(const r of all){r.possible_syndication_ids=titleGroups.get(r.company+'|'+key(r.title))||[];}\n  const ready=all.filter(r=>r.eligible_for_agent3).sort((a,b)=>b.publication_date.localeCompare(a.publication_date)||a.source_id.localeCompare(b.source_id));\n  const review=all.filter(r=>!r.eligible_for_agent3);\n  const coverage=context.companies.map(company=>({company,searches:searches.filter(s=>s.company===company).length,\n    failed_searches:failures.filter(s=>s.company===company).length,records:all.filter(r=>r.company===company).length,\n    ready_records:ready.filter(r=>r.company===company).length,\n    topics:['cybersecurity','leadership','contracts','technology'].map(topic=>({topic,results:all.filter(r=>r.company===company&&r.topics.includes(topic)).length})),\n    status:failures.some(f=>f.company===company)?'search_incomplete':all.some(r=>r.company===company)?'results_collected':'no_results_found'}));\n  return {agent:2,status:failures.length?'partial':'collected',companies:context.companies,\n    research_window:{start:context.window_start,end:context.window_end},retrieved_at:context.retrieved_at,\n    coverage,searches,failed_searches:failures,evidence_records:ready,review_queue:review,dropped_results:dropped,\n    statistics:{queries_planned:jobs.length,queries_succeeded:searches.length,queries_failed:failures.length,\n      unique_sources:all.length,ready_for_agent3:ready.length,needs_review:review.length},\n    analyze_with_agent3:context.analyze_with_agent3,max_analysis_records:context.max_analysis_records,\n    limitations:['Search titles/snippets are public search evidence, not retrieved full articles.',\n      'Dates come from search metadata or user-provided evidence and need original-source verification.',\n      'Unknown dates, out-of-window results, weak company matches, and title-only records are held for review.',\n      'Event dates are deliberately left unknown for Agent 3 to extract from evidence.',\n      'Job advertisements are hiring evidence, not proof of deployed technology or leadership appointments.',\n      'No login automation, private data access, scanning, or direct site-fetch requests are performed.']};\n}\n\n// Local AI suggests search terms only. Headlines and links always come from search results.\nfunction aiSearchPlan(context,modelResult) {\n  const jobs=buildSearchJobs(context),allowed=new Map(context.companies.map(c=>[c.toLowerCase(),c]));\n  const extras=[],seen=new Set();\n  const ideas=modelResult?.output?.searches||modelResult?.searches||[];\n  const add=(day,n)=>new Date(Date.parse(day+'T12:00:00Z')+n*86400000).toISOString().slice(0,10);\n  for(const idea of Number(context.max_queries_per_company||2)>4&&Array.isArray(ideas)?ideas:[]) {\n    const company=allowed.get(String(idea.company||'').trim().toLowerCase());\n    const terms=String(idea.terms||'').replace(/[\\r\\n\\t]/g,' ').replace(/\\s+/g,' ').trim();\n    if(!company||seen.has(company)||terms.length<8||terms.length>180||/https?:|(?:site|before|after|inurl|filetype):|(?:home|personal)\\s+(?:address|phone)|password\\s+dump|doxx|leaked\\s+credentials/i.test(terms))continue;\n    seen.add(company);extras.push({job_id:'ai-'+(extras.length+1),company,topic:'ai_discovery',engine:'google',\n      query:'\"'+company+'\" '+terms+' after:'+add(context.window_start,-1)+' before:'+add(context.window_end,1),\n      window_start:context.window_start,window_end:context.window_end,query_origin:'local_ollama_suggestion'});\n  }\n  const planning={provider:'local_ollama',model:'gemma4:12b',status:extras.length?'applied':'core_search_fallback',\n    additional_queries:extras.length,companies_without_extra_query:context.companies.filter(c=>!seen.has(c)),\n    error:modelResult?.error||null,note:'AI suggestions are query ideas, not factual findings.'};\n  return {jobs:[...jobs,...extras],planning};\n}\nfunction headlineFeed(pack) {\n  const records=[...(pack.evidence_records||[]),...(pack.review_queue||[])];\n  const allowedReasons=new Set(['title_only_or_insufficient_excerpt']);\n  const candidates=[],undated=[];\n  const key=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g,'');\n  for(const r of records) {\n    if(!r.title||!r.source_url||r.source_type==='job_ad'||/\\/(?:jobs?|careers)\\//i.test(r.source_url))continue;\n    // Snippet-only company mentions can describe a former employee at another firm.\n    if(!key(r.title).includes(key(r.company)))continue;\n    const reasons=r.review_reasons||[];\n    const h={company:r.company,headline:r.title,source:r.publisher||r.source_url.match(/^https?:\\/\\/([^/]+)/i)?.[1]||'Public source',\n      publication_date:r.publication_date,source_url:r.source_url,source_id:r.source_id,\n      date_verification:'search_metadata_only',other_sources:[]};\n    if(!r.publication_date){\n      if(reasons.every(x=>allowedReasons.has(x)||['missing_or_ambiguous_date','relative_date_needs_review'].includes(x)))undated.push(h);\n      continue;\n    }\n    if(r.publication_date<pack.research_window.start||r.publication_date>pack.research_window.end||reasons.some(x=>!allowedReasons.has(x)))continue;\n    candidates.push(h);\n  }\n  candidates.sort((a,b)=>b.publication_date.localeCompare(a.publication_date)||a.source_url.localeCompare(b.source_url));\n  const unique=[],titles=new Map();\n  for(const h of candidates){const titleKey=h.company.toLowerCase()+'|'+key(h.headline);\n    if(titles.has(titleKey)){titles.get(titleKey).other_sources.push({source:h.source,source_url:h.source_url});continue;}\n    titles.set(titleKey,h);unique.push(h);}\n  const selected=[];\n  for(const company of pack.companies){const list=unique.filter(h=>h.company===company),domains=new Map(),picked=new Set();\n    for(const allowance of [1,2])for(const h of list){const domain=h.source_url.match(/^https?:\\/\\/([^/]+)/i)?.[1]||h.source;\n      if(picked.has(h.source_id)||(domains.get(domain)||0)>=allowance||picked.size>=12)continue;\n      picked.add(h.source_id);domains.set(domain,(domains.get(domain)||0)+1);selected.push(h);}}\n  const markdown=pack.companies.map(company=>{const hs=selected.filter(h=>h.company===company);\n    return '**'+company+'**\\n'+(hs.length?hs.map(h=>'- ['+h.headline.replace(/[\\[\\]]/g,'')+'](<'+h.source_url.replace(/[<>]/g,c=>encodeURIComponent(c))+'>) \u2014 '+h.source+' \u00b7 '+h.publication_date).join('\\n'):'No dated IT/cybersecurity headlines found in the supplied search results.');}).join('\\n\\n');\n  return {headlines:selected,headline_markdown:markdown,undated_headlines:undated,\n    headline_statistics:{dated_headlines:selected.length,undated_candidates:undated.length,\n      source_domains:new Set(selected.map(h=>h.source_url.match(/^https?:\\/\\/([^/]+)/i)?.[1])).size},\n    headline_note:'Titles and URLs are copied from public search results. Dates are search metadata; undated results are kept separately. Job ads are excluded from this headline feed.'};\n}\n\nconst context=$('Research Window').first().json;const jobs=$('Build Search Plan').all().map(i=>i.json);\nconst responses=$input.all().map((item,i)=>{const response={...item.json};if(!response.search_parameters?.q){try{response._job=$('Build Search Plan').itemMatching(i).json;}catch{}}return response;});\nconst p=collectEvidence(context,jobs,responses);return [{json:{...p,ai_search_planning:jobs[0]?.ai_planning||null,...headlineFeed(p)}}];"
+      },
+      "position": [
+        2310,
+        100
+      ]
+    },
+    {
+      "id": "80c9aec1-c42f-48e8-9773-113084e85209",
+      "name": "Agent 2 - Simple Guide",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "parameters": {
+        "content": "## Low-credit Agent 2\nTwo searches per company: cyber news + combined IT web search.\nAI query expansion is disabled. No automatic search retries.\nMaximum 12 search requests for six companies.\nReal source-linked headlines and evidence still go to local Agent 3.",
+        "height": 290,
+        "width": 530
+      },
+      "position": [
+        200,
+        -440
+      ]
+    },
+    {
+      "id": "9d27dcb8-a6e1-48b2-91de-7b758d453fd2",
+      "name": "Usable Evidence Found?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "parameters": {
+        "conditions": {
+          "options": {
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "028ed604-68be-440c-8a94-5fabbcb78bb0",
+              "leftValue": "={{ $json.evidence_records.length > 0 }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "position": [
+        2580,
+        100
+      ]
+    },
+    {
+      "id": "599d39cb-f236-4c17-a98a-6db63ca2a989",
+      "name": "Ready Evidence",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1.1,
+      "parameters": {
+        "fieldToSplitOut": "evidence_records",
+        "options": {}
+      },
+      "position": [
+        2830,
+        0
+      ]
+    },
+    {
+      "id": "81adaebb-bfb6-43f9-b081-49bbc8a42cdc",
+      "name": "Pass Research Dates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "const p=$('Prepare Evidence Package').first().json;return $input.all().map((item,i)=>({json:{...item.json,window_start:p.research_window.start,window_end:p.research_window.end},pairedItem:{item:i}}));"
+      },
+      "position": [
+        3080,
+        0
+      ]
+    },
+    {
+      "id": "7e96c5bb-95b3-4418-a6f6-b07bbbbd7580",
+      "name": "Analyze with Agent 3",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.3,
+      "parameters": {
+        "source": "database",
+        "workflowId": {
+          "__rl": true,
+          "value": "0VSB891Bm5GvvZGN",
+          "mode": "id"
+        },
+        "mode": "each",
+        "options": {
+          "waitForSubWorkflow": true
+        }
+      },
+      "position": [
+        3330,
+        0
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "id": "e551a88e-f56d-4975-9250-310a523a2f38",
+      "name": "Research and Signals",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "const p=$('Prepare Evidence Package').first().json;\nconst results=$input.all().map(i=>i.json).filter(r=>r.agent===3);\nreturn [{json:{...p,analysis_results:results,analysis_statistics:{sources_sent:p.evidence_records.length,sources_returned:results.length,signals:results.reduce((n,r)=>n+r.signals.length,0),sources_failed_or_missing:p.evidence_records.length-results.filter(r=>r.analysis_status==='complete').length},analysis_note:p.evidence_records.length?'Only usable excerpts were sent to local Gemma. Snippet limitations and rejected signals remain visible.':'No usable excerpts; no model calls made.'}}];"
+      },
+      "position": [
+        3600,
+        100
+      ]
+    },
+    {
+      "id": "5daa5ae2-fa0c-40d9-b7db-07d171538317",
+      "name": "Plan Extra Searches - Local AI",
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "parameters": {
+        "promptType": "define",
+        "text": "=Suggest ONE additional short public-web search for EACH company to discover recent IT/cybersecurity headlines beyond generic searches.\nCompanies: {{ JSON.stringify($json.companies) }}\nWindow: {{ $json.window_start }} to {{ $json.window_end }}\nCopy company names exactly. terms should be 3\u201310 search words/phrases covering a useful angle such as digital transformation partnerships, AI governance, OT security, identity programs, security vendors or leadership interviews.\nDo not invent headlines, facts, source names, URLs, or specific company technology deployments.\nDo not put the company name, URLs, site:, before:, after: or dates in terms; code adds company/date restrictions.\nReturn JSON with searches, an array of objects with company and terms. If unavailable return {\"searches\":[]}. JSON only.",
+        "hasOutputParser": true,
+        "batching": {}
+      },
+      "position": [
+        750,
+        100
+      ],
+      "onError": "continueRegularOutput",
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 1500,
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "model": "gemma4:12b",
+        "options": {
+          "format": "json",
+          "think": false,
+          "numCtx": 4096,
+          "numPredict": 2048
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        750,
+        350
+      ],
+      "id": "201875bf-e4f6-4710-81ff-47019bd39915",
+      "name": "Search Planner - Local Gemma"
+    },
+    {
+      "id": "07b50880-6d53-4b51-8ff1-d6b8d46bdb71",
+      "name": "Search Planner - Schema",
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\"type\": \"object\", \"properties\": {\"searches\": {\"type\": \"array\", \"maxItems\": 6, \"items\": {\"type\": \"object\", \"properties\": {\"company\": {\"type\": \"string\"}, \"terms\": {\"type\": \"string\"}}, \"required\": [\"company\", \"terms\"], \"additionalProperties\": false}}}, \"required\": [\"searches\"], \"additionalProperties\": false}"
+      },
+      "position": [
+        950,
+        350
+      ]
+    }
+  ],
+  "connections": {
+    "Company Research Form": {
+      "main": [
+        [
+          {
+            "node": "Validate Companies",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "From Approved Agent 1": {
+      "main": [
+        [
+          {
+            "node": "Validate Companies",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Companies": {
+      "main": [
+        [
+          {
+            "node": "Research Window",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Research Window": {
+      "main": [
+        [
+          {
+            "node": "Build Search Plan",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Search Plan": {
+      "main": [
+        [
+          {
+            "node": "News or Web?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "News or Web?": {
+      "main": [
+        [
+          {
+            "node": "Google News",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Google Web",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google News": {
+      "main": [
+        [
+          {
+            "node": "Combine Search Results",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Web": {
+      "main": [
+        [
+          {
+            "node": "Combine Search Results",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Combine Search Results": {
+      "main": [
+        [
+          {
+            "node": "Prepare Evidence Package",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Evidence Package": {
+      "main": [
+        [
+          {
+            "node": "Usable Evidence Found?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Usable Evidence Found?": {
+      "main": [
+        [
+          {
+            "node": "Ready Evidence",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Research and Signals",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ready Evidence": {
+      "main": [
+        [
+          {
+            "node": "Pass Research Dates",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pass Research Dates": {
+      "main": [
+        [
+          {
+            "node": "Analyze with Agent 3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze with Agent 3": {
+      "main": [
+        [
+          {
+            "node": "Research and Signals",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Planner - Local Gemma": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Plan Extra Searches - Local AI",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Planner - Schema": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Plan Extra Searches - Local AI",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Plan Extra Searches - Local AI": {
+      "main": [
+        [
+          {
+            "node": "Build Search Plan",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Chicago",
+    "saveDataSuccessExecution": "all",
+    "saveDataErrorExecution": "all"
+  },
+  "staticData": null,
+  "nodeGroups": [],
+  "pinData": {},
+  "versionId": "bc263464-669e-475d-ba43-6d187fa7199a",
+  "versionCounter": 6,
+  "triggerCount": 1,
+  "sourceWorkflowId": null,
+  "tags": []
+}

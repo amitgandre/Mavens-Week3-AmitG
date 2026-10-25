@@ -1,0 +1,214 @@
+{
+  "passed": true,
+  "test": "Local Gemma on nine recorded real excerpts, no new search calls",
+  "sources_processed": 9,
+  "signals": 3,
+  "sources_failed": 0,
+  "checks": [
+    "generic NIST and unified-oversight claims excluded",
+    "other-employer appointment excluded",
+    "cloud hiring mention retained",
+    "digital twin finding retained",
+    "AI media not labeled deployed"
+  ],
+  "results": [
+    {
+      "agent": 3,
+      "company": "PepsiCo",
+      "source_id": "src-c32e9dea",
+      "source_url": "https://instant.expert/experts/pepsico-security-leaders",
+      "publication_date": "2026-10-15",
+      "evidence_level": "search_snippet",
+      "source_type": "public_search_result",
+      "full_article_retrieved": false,
+      "analysis_status": "complete",
+      "error": null,
+      "signals": [],
+      "rejected_signals": [],
+      "limitations": [
+        "Analysis uses supplied excerpts; original source verification is still required."
+      ]
+    },
+    {
+      "agent": 3,
+      "company": "PepsiCo",
+      "source_id": "src-c28c2a34",
+      "source_url": "https://www.cio.com/article/230613/new-cio-appointments.html",
+      "publication_date": "2026-10-13",
+      "evidence_level": "search_snippet",
+      "source_type": "public_search_result",
+      "full_article_retrieved": false,
+      "analysis_status": "complete",
+      "error": null,
+      "signals": [],
+      "rejected_signals": [],
+      "limitations": [
+        "Analysis uses supplied excerpts; original source verification is still required."
+      ]
+    },
+    {
+      "agent": 3,
+      "company": "PepsiCo",
+      "source_id": "src-035eec34",
+      "source_url": "https://indiantelevision.com/mam/aditya-vardhan-named-vice-president-it-and-group-chief-information-security-officer-at-jindal-steel",
+      "publication_date": "2026-10-05",
+      "evidence_level": "search_snippet",
+      "source_type": "public_search_result",
+      "full_article_retrieved": false,
+      "analysis_status": "complete",
+      "error": null,
+      "signals": [],
+      "rejected_signals": [],
+      "limitations": [
+        "Analysis uses supplied excerpts; original source verification is still required."
+      ]
+    },
+    {
+      "agent": 3,
+      "company": "PepsiCo",
+      "source_id": "src-40c073ab",
+      "source_url": "https://www.pepsicojobs.com/event-26567/jobs/474536?lang=en-us",
+      "publication_date": "2026-09-27",
+      "evidence_level": "search_snippet",
+      "source_type": "job_ad",
+      "full_article_retrieved": false,
+      "analysis_status": "complete",
+      "error": null,
+      "signals": [
+        {
+          "category": "technology_mention",
+          "summary": "PepsiCo is hiring a Cloud Network Sr Engineer to work on Multi-Cloud Network infrastructure.",
+          "announcement_date": "not found",
+          "effective_date": "not found",
+          "person": "not found",
+          "role": "not found",
+          "vendor_or_technology": "Multi-Cloud Network",
+          "status": "hiring_signal",
+          "contract_value": "not found",
+          "source_id": "src-40c073ab",
+          "source_url": "https://www.pepsicojobs.com/event-26567/jobs/474536?lang=en-us",
+          "evidence_excerpt": "PepsiCo Global Cloud Foundation Engineering is seeking an experienced Multi-Cloud Network Engineer to design, document, and operationalize enterprise-scale"
+        }
+      ],
+      "rejected_signals": [],
+      "limitations": [
+        "Analysis uses supplied excerpts; original source verification is still required."
+      ]
+    },
+    {
+      "agent": 3,
+      "company": "PepsiCo",
+      "source_id": "src-4ded5ef0",
+      "source_url": "https://www.contentgrip.com/pepsico-publicis-ai-media-model",
+      "publication_date": "2026-09-03",
+      "evidence_level": "search_snippet",
+      "source_type": "public_search_result",
+      "full_article_retrieved": false,
+      "analysis_status": "complete",
+      "error": null,
+      "signals": [
+        {
+          "category": "technology_use",
+          "summary": "PepsiCo is moving toward an AI-led media model in partnership with Publicis.",
+          "announcement_date": "not found",
+          "effective_date": "not found",
+          "person": "not found",
+          "role": "not found",
+          "vendor_or_technology": "AI-led media model",
+          "status": "reported",
+          "contract_value": "not found",
+          "source_id": "src-4ded5ef0",
+          "source_url": "https://www.contentgrip.com/pepsico-publicis-ai-media-model",
+          "evidence_excerpt": "PepsiCo turns global media toward an AI-led model"
+        }
+      ],
+      "rejected_signals": [],
+      "limitations": [
+        "Analysis uses supplied excerpts; original source verification is still required."
+      ]
+    },
+    {
+      "agent": 3,
+      "company": "PepsiCo",
+      "source_id": "src-d6703585",
+      "source_url": "https://www.pymnts.com/innovation/2026/pepsico-tests-its-factories-in-software-before-steel",
+      "publication_date": "2026-08-10",
+      "evidence_level": "search_snippet",
+      "source_type": "public_search_result",
+      "full_article_retrieved": false,
+      "analysis_status": "complete",
+      "error": null,
+      "signals": [
+        {
+          "category": "technology_use",
+          "summary": "PepsiCo is using digital twin technology to model plant layouts and allow AI to test configurations before physical expansion.",
+          "announcement_date": "not found",
+          "effective_date": "not found",
+          "person": "not found",
+          "role": "not found",
+          "vendor_or_technology": "digital twin",
+          "status": "usage",
+          "contract_value": "not found",
+          "source_id": "src-d6703585",
+          "source_url": "https://www.pymnts.com/innovation/2026/pepsico-tests-its-factories-in-software-before-steel",
+          "evidence_excerpt": "PepsiCo now builds a digital twin of a plant before it spends money expanding the real one, letting AI test layouts and catch problems first."
+        }
+      ],
+      "rejected_signals": [],
+      "limitations": [
+        "Analysis uses supplied excerpts; original source verification is still required."
+      ]
+    },
+    {
+      "agent": 3,
+      "company": "PepsiCo",
+      "source_id": "src-d03f0656",
+      "source_url": "https://club.pepsico.ru/security-solutions-4e2b43",
+      "publication_date": "2026-08-08",
+      "evidence_level": "search_snippet",
+      "source_type": "public_search_result",
+      "full_article_retrieved": false,
+      "analysis_status": "complete",
+      "error": null,
+      "signals": [],
+      "rejected_signals": [],
+      "limitations": [
+        "Analysis uses supplied excerpts; original source verification is still required."
+      ]
+    },
+    {
+      "agent": 3,
+      "company": "PepsiCo",
+      "source_id": "src-4e4e9ed1",
+      "source_url": "https://club.pepsico.ru/security-solutions",
+      "publication_date": "2026-08-07",
+      "evidence_level": "search_snippet",
+      "source_type": "public_search_result",
+      "full_article_retrieved": false,
+      "analysis_status": "complete",
+      "error": null,
+      "signals": [],
+      "rejected_signals": [],
+      "limitations": [
+        "Analysis uses supplied excerpts; original source verification is still required."
+      ]
+    },
+    {
+      "agent": 3,
+      "company": "PepsiCo",
+      "source_id": "src-a65da4e5",
+      "source_url": "https://club.pepsico.ru/cybersecurity-laws",
+      "publication_date": "2026-07-27",
+      "evidence_level": "search_snippet",
+      "source_type": "public_search_result",
+      "full_article_retrieved": false,
+      "analysis_status": "complete",
+      "error": null,
+      "signals": [],
+      "rejected_signals": [],
+      "limitations": [
+        "Analysis uses supplied excerpts; original source verification is still required."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,572 @@
+[
+  {
+    "company": "Home Depot",
+    "status": "partial",
+    "roles": [
+      {
+        "role": "CEO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Ted Decker",
+            "role": "CEO",
+            "status": "reported_current",
+            "source_id": "src-19b80701",
+            "source_url": "https://corporate.homedepot.com/bio/ted-decker-chair-president-chief-executive-officer",
+            "evidence_excerpt": "Ted Decker | Chair, President & Chief Executive Officer\nDecker. Chair, President & Chief Executive Officer. Ted Decker is chair, president and CEO of The Home Depot, the world's largest home improvement retailer ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          },
+          {
+            "person_name": "Ted Decker",
+            "role": "CEO",
+            "status": "reported_current",
+            "source_id": "src-0d64423c",
+            "source_url": "https://corporate.homedepot.com/page/home-depot-leadership-0",
+            "evidence_excerpt": "CEO \u00b7 Full Bio Photo \u00b7 Ted Decker. Chair, President & Chief Executive Officer ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          }
+        ]
+      },
+      {
+        "role": "CISO",
+        "status": "not found",
+        "candidates": []
+      },
+      {
+        "role": "CTO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Franziska \"Fran\" Bell",
+            "role": "CTO",
+            "status": "reported_current",
+            "source_id": "src-df2ad91b",
+            "source_url": "https://corporate.homedepot.com/bio/franziska-fran-bell-executive-vice-president-chief-technology-officer",
+            "evidence_excerpt": "Dr. Franziska \u201cFran\u201d Bell is executive vice president (EVP) and chief technology officer (CTO) for The Home Depot.",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          }
+        ]
+      },
+      {
+        "role": "CIO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Angie Brown",
+            "role": "CIO",
+            "status": "reported_current",
+            "source_id": "src-4af153e5",
+            "source_url": "https://corporate.homedepot.com/bio/angie-brown-executive-vice-president-chief-information-officer",
+            "evidence_excerpt": "Angie Brown is executive vice president (EVP) and chief information officer (CIO) of The Home Depot.",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          }
+        ]
+      }
+    ],
+    "statistics": {
+      "leaders_researched": 3,
+      "roles_with_candidates": 3,
+      "claims": 9,
+      "linkedin_profiles": 2,
+      "background_analysis_errors": 0,
+      "initial_search_budget": 16
+    },
+    "search_failures": [
+      {
+        "topic": "profile",
+        "error": "Service unavailable - try again later or consider setting this node to retry automatically (in the node settings)"
+      },
+      {
+        "topic": "education",
+        "error": "Service unavailable - try again later or consider setting this node to retry automatically (in the node settings)"
+      }
+    ],
+    "memory": {
+      "saved": true,
+      "record_type": "leadership_background",
+      "run_id": "agent4-137"
+    }
+  },
+  {
+    "company": "Lowe's",
+    "status": "partial",
+    "roles": [
+      {
+        "role": "CEO",
+        "status": "current_role_disputed",
+        "candidates": [
+          {
+            "person_name": "Marvin R. Ellison",
+            "role": "CEO",
+            "status": "reported_current",
+            "source_id": "src-05a6868e",
+            "source_url": "https://corporate.lowes.com/who-we-are/lowes-leadership/executive-leadership/marvin-r-ellison",
+            "evidence_excerpt": "Marvin R. Ellison\nMarvin Ellison is Chairman and Chief Executive Officer of Lowe's ... CEO of two Fortune 500 companies. Prior to joining Lowe's, Marvin served as ...",
+            "verification_status": "conflicting_historical_or_current_sources",
+            "publication_date": "not found",
+            "contrary_evidence": [
+              {
+                "source_id": "src-05a6868e",
+                "source_url": "https://corporate.lowes.com/who-we-are/lowes-leadership/executive-leadership/marvin-r-ellison",
+                "evidence_excerpt": "Marvin R. Ellison\nMarvin Ellison is Chairman and Chief Executive Officer of Lowe's ... CEO of two Fortune 500 companies. Prior to joining Lowe's, Marvin served as ..."
+              }
+            ]
+          },
+          {
+            "person_name": "Marvin Ellison",
+            "role": "CEO",
+            "status": "reported_current",
+            "source_id": "src-398e3c52",
+            "source_url": "https://corporate.lowes.com/who-we-are/lowes-leadership/executive-leadership",
+            "evidence_excerpt": "Executive Leadership\nWe believe every organization needs a strong foundation. Led by President and CEO Marvin Ellison, this team ensures Lowe's works for our communities.",
+            "verification_status": "conflicting_historical_or_current_sources",
+            "publication_date": "not found",
+            "contrary_evidence": [
+              {
+                "source_id": "src-05a6868e",
+                "source_url": "https://corporate.lowes.com/who-we-are/lowes-leadership/executive-leadership/marvin-r-ellison",
+                "evidence_excerpt": "Marvin R. Ellison\nMarvin Ellison is Chairman and Chief Executive Officer of Lowe's ... CEO of two Fortune 500 companies. Prior to joining Lowe's, Marvin served as ..."
+              }
+            ]
+          },
+          {
+            "person_name": "Marvin Ellison",
+            "role": "CEO",
+            "status": "reported_current",
+            "source_id": "src-340f2b86",
+            "source_url": "https://www.foxbusiness.com/media/lowes-ceo-says-skilled-trades-offer-siz-figure-careers-without-4-year-degree",
+            "evidence_excerpt": "Lowe's CEO says skilled trades can offer six-figure careers ...\nLowe's CEO Marvin Ellison launches a skilled trades coalition aiming to create one million trade jobs by 2035 in plumbing, electrical work, ...",
+            "verification_status": "conflicting_historical_or_current_sources",
+            "publication_date": "Sep 2, 2026",
+            "contrary_evidence": [
+              {
+                "source_id": "src-05a6868e",
+                "source_url": "https://corporate.lowes.com/who-we-are/lowes-leadership/executive-leadership/marvin-r-ellison",
+                "evidence_excerpt": "Marvin R. Ellison\nMarvin Ellison is Chairman and Chief Executive Officer of Lowe's ... CEO of two Fortune 500 companies. Prior to joining Lowe's, Marvin served as ..."
+              }
+            ]
+          },
+          {
+            "person_name": "Marvin Ellison",
+            "role": "CEO",
+            "status": "reported_current",
+            "source_id": "src-c18ed63c",
+            "source_url": "https://www.linkedin.com/in/marvin-ellison-357895408",
+            "evidence_excerpt": "Marvin Ellison - CEO of Lowe's\nI am Marvin Ellison, the CEO of Lowe's. I am 60 years old, and I grew up in Brownsville, Tennessee. I have had many jobs in the past. Some include JCPenney.",
+            "verification_status": "conflicting_historical_or_current_sources",
+            "publication_date": "not found",
+            "contrary_evidence": [
+              {
+                "source_id": "src-05a6868e",
+                "source_url": "https://corporate.lowes.com/who-we-are/lowes-leadership/executive-leadership/marvin-r-ellison",
+                "evidence_excerpt": "Marvin R. Ellison\nMarvin Ellison is Chairman and Chief Executive Officer of Lowe's ... CEO of two Fortune 500 companies. Prior to joining Lowe's, Marvin served as ..."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "CISO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Marc Varner",
+            "role": "CISO",
+            "status": "reported_current",
+            "source_id": "src-5e89de6a",
+            "source_url": "https://www.linkedin.com/in/marc-varner",
+            "evidence_excerpt": "Marc Varner - Corp VP and Global CISO\n... Lowe's Companies, Inc. \u00b7 Location: La Grange \u00b7 500+ connections on ... VP and Global CISO (Chief Information Security Officer). McDonald's. Jan 2010 ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          },
+          {
+            "person_name": "Marc H. Varner",
+            "role": "CISO",
+            "status": "reported_current",
+            "source_id": "src-d972f00a",
+            "source_url": "https://corporate.lowes.com/who-we-are/lowes-leadership/senior-leadership/marc-h-varner",
+            "evidence_excerpt": "Marc H. Varner\nAt Lowe's, he was vice president, chief information security officer, before his promotion to senior vice president. Marc volunteers on the advisory boards of a ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          },
+          {
+            "person_name": "Marc Varner",
+            "role": "CISO",
+            "status": "reported_current",
+            "source_id": "src-11344789",
+            "source_url": "https://events.secureworld.io/speakers/marc-varner",
+            "evidence_excerpt": "Marc Varner\nCorporate VP & Global CISO, Lowe's Companies, Inc. As vice president, chief information security officer, Marc Varner is responsible for the global security ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          },
+          {
+            "person_name": "Marc Varner",
+            "role": "CISO",
+            "status": "reported_current",
+            "source_id": "src-3adf31fd",
+            "source_url": "https://www.instagram.com/reel/DOtYvZPD5IH",
+            "evidence_excerpt": "Hear from Lowe's CISO, Marc Varner, on how ...\n\ud83c\udf99\ufe0f Hear from Lowe's CISO, Marc Varner, on how Lowe's accelerates threat detection and response by 70% with ReliaQuest GreyMatter and Agentic ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          }
+        ]
+      },
+      {
+        "role": "CTO",
+        "status": "not found",
+        "candidates": []
+      },
+      {
+        "role": "CIO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Seemantini Godbole",
+            "role": "CIO",
+            "status": "reported_current",
+            "source_id": "src-0c878563",
+            "source_url": "https://www.linkedin.com/in/seemantini-godbole-241a4a1",
+            "evidence_excerpt": "Seemantini Godbole - Executive Vice President, Chief ...\n... Lowe's Companies, Inc. \u00b7 Education: Texas Tech University \u00b7 Location: United ... Executive Vice President and Chief Information Officer. Lowe's ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          },
+          {
+            "person_name": "Seemantini Godbole",
+            "role": "CIO",
+            "status": "reported_current",
+            "source_id": "src-c23050fe",
+            "source_url": "https://corporate.lowes.com/newsroom/stories/inside-lowes/talking-tech-lowes-cio-her-career-stress-relievers-and-inspiration",
+            "evidence_excerpt": "Talking Tech: Lowe's CIO on her career, stress relievers ...\nTalking Tech: Lowe's CIO on her career, stress relievers ... Lowe's Chief Information Officer, Seemantini Godbole, joined Lowe's in 2018.",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "Apr 11, 2019"
+          },
+          {
+            "person_name": "Seemantini Godbole",
+            "role": "CIO",
+            "status": "reported_current",
+            "source_id": "src-b07c7230",
+            "source_url": "https://www.facebook.com/lowescareers/videos/qa-with-lowes-cio-seemantini-godbole/2320465508016212",
+            "evidence_excerpt": "Lowe's CIO, Seemantini Godbole, is talking tech and sharing ...\nLowe's CIO, Seemantini Godbole, is talking tech and sharing her personal journey as a woman breaking into the tech space.",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          },
+          {
+            "person_name": "Seemantini Godbole",
+            "role": "CIO",
+            "status": "reported_current",
+            "source_id": "src-e8aed0c8",
+            "source_url": "https://www.bizjournals.com/charlotte/partner-insights/charlottecio-orbie-awards-2022/carolina-cio-orbie-leadership-seemantini-godbole.html",
+            "evidence_excerpt": "Carolina CIO ORBIE Leadership Award recipient\nCarolina CIO ORBIE Leadership Award recipient: Seemantini Godbole of Lowe's ... As chief digital and information officer at Lowe's, Seemantini ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "Sep 12, 2025"
+          }
+        ]
+      }
+    ],
+    "statistics": {
+      "leaders_researched": 2,
+      "roles_with_candidates": 2,
+      "claims": 9,
+      "linkedin_profiles": 2,
+      "background_analysis_errors": 0,
+      "initial_search_budget": 12
+    },
+    "search_failures": [
+      {
+        "topic": "education",
+        "error": "Service unavailable - try again later or consider setting this node to retry automatically (in the node settings)"
+      }
+    ],
+    "memory": {
+      "saved": true,
+      "record_type": "leadership_background",
+      "run_id": "agent4-166"
+    }
+  },
+  {
+    "company": "Kroger",
+    "status": "partial",
+    "roles": [
+      {
+        "role": "CEO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Greg Foran",
+            "role": "CEO",
+            "status": "reported_current",
+            "source_id": "src-d39e2b34",
+            "source_url": "https://en.wikipedia.org/wiki/Kroger",
+            "evidence_excerpt": "Kroger ; Greg Foran (CEO) \u00b7 Supercenter/superstore, Other specialty, supermarket",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          }
+        ]
+      },
+      {
+        "role": "CISO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Yael Cosset",
+            "role": "CISO",
+            "status": "reported_current",
+            "source_id": "src-69d62ae5",
+            "source_url": "https://cybersecurityventures.com/ciso-500",
+            "evidence_excerpt": "CISO 500 ; 24, Kroger. Yael Cosset ; 25, Centene. Alan Berry ; 26, Verizon Communications. Nasrin Rezai ; 27, Walgreens Boots Alliance. Tyler ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "Mar 3, 2026"
+          }
+        ]
+      },
+      {
+        "role": "CTO",
+        "status": "not found",
+        "candidates": []
+      },
+      {
+        "role": "CIO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Yael Cosset",
+            "role": "CIO",
+            "status": "reported_current",
+            "source_id": "src-1b1ec347",
+            "source_url": "https://progressivegrocer.com/kroger-moves-yael-cosset-cio-role",
+            "evidence_excerpt": "Kroger Moves Yael Cosset Into CIO Role\n... chief technology officer and the CIO, with the plan that one would ... In other Kroger news, Kroger Health, the grocer's national ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "Jan 30, 2019"
+          }
+        ]
+      }
+    ],
+    "statistics": {
+      "leaders_researched": 2,
+      "roles_with_candidates": 3,
+      "claims": 5,
+      "linkedin_profiles": 0,
+      "background_analysis_errors": 0,
+      "initial_search_budget": 12
+    },
+    "search_failures": [
+      {
+        "topic": "education",
+        "error": "Service unavailable - try again later or consider setting this node to retry automatically (in the node settings)"
+      }
+    ],
+    "memory": {
+      "saved": true,
+      "record_type": "leadership_background",
+      "run_id": "agent4-167"
+    }
+  },
+  {
+    "company": "Albertsons",
+    "status": "complete",
+    "roles": [
+      {
+        "role": "CEO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Susan Morris",
+            "role": "CEO",
+            "status": "reported_current",
+            "source_id": "src-252a8afe",
+            "source_url": "https://www.albertsonscompanies.com/about-aci/our-leadership/default.aspx",
+            "evidence_excerpt": "Susan Morris is the Chief Executive Officer of Albertsons Companies, Inc., a ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          },
+          {
+            "person_name": "Susan Morris",
+            "role": "CEO",
+            "status": "reported_current",
+            "source_id": "src-f296f92f",
+            "source_url": "https://www.linkedin.com/in/morris-susan",
+            "evidence_excerpt": "Susan Morris - CEO at Albertsons Companies\nCEO at Albertsons Companies \u00b7 I serve as the Chief Executive Officer at Albertsons Companies, a leading food and drug retailer, where I help to bring people ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          }
+        ]
+      },
+      {
+        "role": "CISO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Aaron Hughes",
+            "role": "CISO",
+            "status": "reported_current",
+            "source_id": "src-dfb30c50",
+            "source_url": "https://www.rsaconference.com/experts/aaron-hughes",
+            "evidence_excerpt": "Aaron Hughes\nAaron Hughes. Senior Vice President and Chief Information Security Officer, Albertsons Companies. Biography. Aaron Hughes is SVP and CISO at Albertsons ...",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          },
+          {
+            "person_name": "Aaron Hughes",
+            "role": "CISO",
+            "status": "reported_current",
+            "source_id": "src-a9832b44",
+            "source_url": "https://cybersecurityventures.com/ciso-500",
+            "evidence_excerpt": "CISO 500 ; 53, Albertsons. Aaron Hughes ; 54, MetLife. Eric Latalladi ; 55, Goldman Sachs Group. Matthew Chung ; 56, Sysco. Charles Tango.",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "Mar 3, 2026"
+          }
+        ]
+      },
+      {
+        "role": "CTO",
+        "status": "not found",
+        "candidates": []
+      },
+      {
+        "role": "CIO",
+        "status": "current_role_disputed",
+        "candidates": [
+          {
+            "person_name": "Anuj Dhanda",
+            "role": "CIO",
+            "status": "reported_current",
+            "source_id": "src-4ad9be2e",
+            "source_url": "https://www.aabdc.com/team-1/anuj-dhanda",
+            "evidence_excerpt": "Anuj Dhanda\nAnuj Dhanda. Executive Vice President & CIO, Albertsons Companies ... Anuj Dhanda is the Executive Vice President and Chief Information Officer at Albertsons ...",
+            "verification_status": "conflicting_historical_or_current_sources",
+            "publication_date": "not found",
+            "contrary_evidence": [
+              {
+                "source_id": "src-e2a59a73",
+                "source_url": "https://www.albertsonscompanies.com/investors/governance/board-of-directors/person-details/default.aspx?ItemId=3d005a25-1339-4d41-841c-e0be58b4a02b",
+                "evidence_excerpt": "Anuj Dhanda\nPrior to joining Albertsons Cos., Anuj served as the Chief Information Officer ... Before Giant Eagle, he was the Executive Vice President and Chief Information ..."
+              }
+            ]
+          },
+          {
+            "person_name": "Anuj Dhanda",
+            "role": "CIO",
+            "status": "reported_current",
+            "source_id": "src-e2a59a73",
+            "source_url": "https://www.albertsonscompanies.com/investors/governance/board-of-directors/person-details/default.aspx?ItemId=3d005a25-1339-4d41-841c-e0be58b4a02b",
+            "evidence_excerpt": "Anuj Dhanda\nPrior to joining Albertsons Cos., Anuj served as the Chief Information Officer ...",
+            "verification_status": "conflicting_historical_or_current_sources",
+            "publication_date": "not found",
+            "contrary_evidence": [
+              {
+                "source_id": "src-e2a59a73",
+                "source_url": "https://www.albertsonscompanies.com/investors/governance/board-of-directors/person-details/default.aspx?ItemId=3d005a25-1339-4d41-841c-e0be58b4a02b",
+                "evidence_excerpt": "Anuj Dhanda\nPrior to joining Albertsons Cos., Anuj served as the Chief Information Officer ... Before Giant Eagle, he was the Executive Vice President and Chief Information ..."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "statistics": {
+      "leaders_researched": 2,
+      "roles_with_candidates": 2,
+      "claims": 10,
+      "linkedin_profiles": 3,
+      "background_analysis_errors": 0,
+      "initial_search_budget": 12
+    },
+    "search_failures": [],
+    "memory": {
+      "saved": true,
+      "record_type": "leadership_background",
+      "run_id": "agent4-169"
+    }
+  },
+  {
+    "company": "Publix Super Markets",
+    "status": "partial",
+    "roles": [
+      {
+        "role": "CEO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Kevin Murphy",
+            "role": "CEO",
+            "status": "reported_current",
+            "source_id": "src-4fca5972",
+            "source_url": "https://en.wikipedia.org/wiki/Publix",
+            "evidence_excerpt": "Kevin Murphy (CEO); Todd Jones (Chairman).",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          }
+        ]
+      },
+      {
+        "role": "CISO",
+        "status": "not found",
+        "candidates": []
+      },
+      {
+        "role": "CTO",
+        "status": "not found",
+        "candidates": []
+      },
+      {
+        "role": "CIO",
+        "status": "source_reported_current",
+        "candidates": [
+          {
+            "person_name": "Laurie Douglas",
+            "role": "CIO",
+            "status": "reported_current",
+            "source_id": "src-ab80e2dd",
+            "source_url": "https://www.linkedin.com/in/laurie-douglas-48191aa",
+            "evidence_excerpt": "Laurie Douglas. SVP and Chief Information Officer at Publix Supermarkets, Inc.",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          },
+          {
+            "person_name": "Laurie Douglas",
+            "role": "CIO",
+            "status": "reported_current",
+            "source_id": "src-583d45bf",
+            "source_url": "https://corporate.publix.com/newsroom/news-stories/022023---publix-it-executive-laurie-douglas-receives-florida-orbie-award",
+            "evidence_excerpt": "FloridaCIO honored Publix Super Markets Senior Vice President, Chief Information Officer and Chief Digital Officer Laurie Douglas",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          },
+          {
+            "person_name": "Laurie Douglas",
+            "role": "CIO",
+            "status": "reported_current",
+            "source_id": "src-c6893ca4",
+            "source_url": "https://wbcollaborative.org/women_leaders_tech/laurie-zeitlin-douglas",
+            "evidence_excerpt": "Laurie Douglas has served as Senior Vice President, Chief Information Officer and Chief Digital Officer of Publix Super Markets, Inc.",
+            "verification_status": "needs_current_role_verification",
+            "publication_date": "not found"
+          }
+        ]
+      }
+    ],
+    "statistics": {
+      "leaders_researched": 2,
+      "roles_with_candidates": 2,
+      "claims": 6,
+      "linkedin_profiles": 4,
+      "background_analysis_errors": 0,
+      "initial_search_budget": 12
+    },
+    "search_failures": [
+      {
+        "topic": "profile",
+        "error": "Google hasn't returned any results for this query."
+      }
+    ],
+    "memory": {
+      "saved": true,
+      "record_type": "leadership_background",
+      "run_id": "agent4-175"
+    }
+  }
+]

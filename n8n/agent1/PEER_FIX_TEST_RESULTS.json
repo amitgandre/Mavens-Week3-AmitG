@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "placeholder_rejected": true,
+  "cross_company_revenue_blocked": true,
+  "empty_peer_approval_blocked": true,
+  "target": {
+    "company": "PepsiCo",
+    "annual_revenue": "93,925",
+    "currency": "USD",
+    "units": "millions",
+    "fiscal_year": "2025",
+    "reporting_scope": "consolidated",
+    "source_url": "https://investors.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf",
+    "evidence_excerpt": "Consolidated Statement of Income\nPepsiCo, Inc. and Subsidiaries\nFiscal years ended December 27, 2025, December 28, 2024 and December 30, 2023\n(in millions except per share amounts)\n2025 2024 2023\nNet Revenue \n$ 93,925 $ 91,854 $ 91,471",
+    "sector_fit": "same",
+    "sector_overlap": "",
+    "parent_group": "PepsiCo",
+    "discovery_source": "",
+    "evidence_level": "retained_pdf",
+    "issues": [],
+    "usable": true,
+    "revenue_original_units": 93925,
+    "revenue_base_units": 93925000000,
+    "verification_status": "awaiting_human_source_review"
+  },
+  "source": "retained_annual_report",
+  "new_searches_for_retained_test": 0
+}

@@ -1,0 +1,47 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const box={};vm.createContext(box);
+vm.runInContext(fs.readFileSync(__dirname+'/normalize_record.js','utf8')+'\n'+fs.readFileSync(__dirname+'/rank.js','utf8')+'\n'+fs.readFileSync(__dirname+'/validate_fx.js','utf8'),box);
+const evidence={kind:'snippet',sources:[{url:'https://example.com/annual',text:'Target annual 2025 consolidated revenue USD 100 million.'}]};
+const raw={company:'Target',annual_revenue:'100',currency:'USD',units:'millions',fiscal_year:'2025',reporting_scope:'consolidated',source_url:evidence.sources[0].url,evidence_excerpt:evidence.sources[0].text};
+const target=box.normalizeRecord(raw,evidence,{company:'Target'});
+assert(target.usable);assert.equal(target.revenue_base_units,100e6);
+assert(!box.normalizeRecord({...raw,source_url:'https://invented.example'},evidence,{company:'Fake'}).usable);
+assert(!box.normalizeRecord({...raw,annual_revenue:'more than 100'},evidence,{company:'Bound'}).usable);
+assert(!box.normalizeRecord({...raw,annual_revenue:'200'},evidence,{company:'Wrong number'}).usable);
+assert(!box.normalizeRecord({...raw,reporting_scope:'segment'},evidence,{company:'Segment'}).usable);
+assert(!box.normalizeRecord({...raw,fiscal_year:'2026'},evidence,{company:'Invented year'}).usable);
+assert(!box.normalizeRecord({...raw,company:'Walmart'},evidence,{company:'Target'}).usable);
+assert(!box.normalizeRecord(raw,evidence,{company:'Target',official_domain:'different-company.com'}).usable);
+assert(box.normalizeRecord(raw,evidence,{company:'Target',official_domain:'example.com'}).usable);
+const wrongCompanyEvidence={kind:'search_snippet',sources:[{url:'https://stock.walmart.com/annual.pdf',text:'Walmart 2025 consolidated revenue USD 681.0 billion.'}]};
+const disguised={company:'PepsiCo',annual_revenue:'681.0',currency:'USD',units:'billions',fiscal_year:'2025',reporting_scope:'consolidated',source_url:wrongCompanyEvidence.sources[0].url,evidence_excerpt:wrongCompanyEvidence.sources[0].text};
+const blocked=box.normalizeRecord(disguised,wrongCompanyEvidence,{company:'PepsiCo',official_domain:'pepsico.com'});
+assert(!blocked.usable);assert(blocked.issues.includes('Cited evidence does not identify the requested company'));assert(blocked.issues.includes('Target revenue source is outside the official company website'));
+const context={target,sector:'Food',geography:'Global',ratio_min:.5,ratio_max:2,fx_rates:{},research_window:{}};
+const record=(company,amount,extra={})=>({...target,company,parent_group:company,revenue_base_units:amount,sector_fit:'same',...extra});
+const results=box.rankPeers(context,[record('Near',110e6),record('Far',180e6),record('Target',100e6),record('Small',20e6),record('Wrong year',100e6,{fiscal_year:'2024'}),record('Foreign',100e6,{currency:'CHF'}),record('Off sector',100e6,{sector_fit:'no'})]);
+assert.equal(results.selected_count,2);assert.equal(results.selected_peers[0].company,'Near');assert.equal(results.shortfall,3);
+const fx={...context,fx_rates:{CHF:{to_target:1.1,target_currency:'USD',period:'2025',source_url:'https://example.com/fx'}}};
+assert.equal(box.rankPeers(fx,[record('Foreign',100e6,{currency:'CHF'})]).selected_count,1);
+assert.equal(box.rankPeers({...context,target:{...target,usable:false}},[record('Near',110e6)]).selected_count,0);
+assert.equal(box.rankPeers(context,[]).shortfall,5);
+assert.equal(box.rankPeers(context,Array.from({length:7},(_,i)=>record('Peer '+i,(100+i)*1e6))).selected_count,5);
+const fxEvidence={currency:'CHF',target_currency:'USD',period:'2025',sources:[{url:'https://example.com/fx',text:'2025 annual average CHF/USD 1.1'}]};
+assert(box.validateFx({rate:'1.1',source_url:'https://example.com/fx',evidence_excerpt:fxEvidence.sources[0].text},fxEvidence).usable);
+const ambiguous={...fxEvidence,sources:[{url:'https://example.com/fx',text:'Yearly average 2025 0.885771'}]};
+assert(!box.validateFx({rate:'0.885771',source_url:'https://example.com/fx',evidence_excerpt:ambiguous.sources[0].text},ambiguous).usable);
+const inverse={...fxEvidence,sources:[{url:'https://example.com/fx',text:'2025 annual average USD/CHF 1.1'}]};
+assert(!box.validateFx({rate:'1.1',source_url:'https://example.com/fx',evidence_excerpt:inverse.sources[0].text},inverse).usable);
+console.log('PASS: source/quotation validation, numeric units, ranking, self exclusion, band, year, sector, FX, missing baseline, empty evidence, and top-five cap.');
+if(process.argv[2]) {
+ const w=JSON.parse(fs.readFileSync(process.argv[2],'utf8'))[0];
+ const node=w.nodes.find(n=>n.name==='Finalize Reviewed Peers');
+ const draft={target:{usable:true},company:'Target',selected_count:2,shortfall:3,selected_peers:[{company:'A'},{company:'B'}]};
+ function review(decision){return new Function('$input','$',node.parameters.jsCode)({first:()=>({json:decision})},()=>({first:()=>({json:draft})}))[0].json;}
+ assert(!review({Decision:'Reject','Sources verified':'Yes','Accept fewer than five':'Yes'}).approved);
+ assert(!review({Decision:'Approve','Sources verified':'No','Accept fewer than five':'Yes'}).approved);
+ assert(!review({Decision:'Approve','Sources verified':'Yes','Accept fewer than five':'No'}).approved);
+ assert.equal(review({Decision:'Approve','Sources verified':'Yes','Accept fewer than five':'Yes'}).companies_for_agent2.length,3);
+ assert.equal(review({Decision:'Revise'}).companies_for_agent2.length,0);
+ console.log('PASS: reject/revise and unverified sources block handoff; shortfall requires explicit acceptance.');
+}

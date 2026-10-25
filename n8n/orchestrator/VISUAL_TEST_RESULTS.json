@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "target_preview_slides": 4,
+  "synthetic_six_company_main_slides": 6,
+  "editable_graphics": true,
+  "public_linkedin_link_present": true,
+  "all_shapes_in_bounds": true,
+  "full_research_remains_in_memory": true,
+  "n8n_execution": {
+    "passed": true,
+    "slides": 4,
+    "bytes": 193995,
+    "filename": "Target-target-layout-preview.pptx",
+    "editable_ooxml": true
+  },
+  "powerpoint_opened_successfully": true,
+  "powerpoint_pdf_export_passed": true,
+  "powerpoint_visual_inspection_passed": true,
+  "archived_multi_company_slides_before": 19,
+  "archived_multi_company_slides_after": 7,
+  "target_pdf_pages": 4
+}

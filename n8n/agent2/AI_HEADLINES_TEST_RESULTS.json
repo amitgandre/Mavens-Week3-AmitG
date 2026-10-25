@@ -1,0 +1,72 @@
+{
+  "test": "live local Ollama plus five native search queries, followed by cached replay of tightened headline filter",
+  "passed": true,
+  "statistics": {
+    "queries_planned": 5,
+    "queries_succeeded": 5,
+    "queries_failed": 0,
+    "unique_sources": 25,
+    "ready_for_agent3": 9,
+    "needs_review": 16
+  },
+  "planning": {
+    "provider": "local_ollama",
+    "model": "gemma4:12b",
+    "status": "applied",
+    "additional_queries": 1,
+    "companies_without_extra_query": [],
+    "error": null,
+    "note": "AI suggestions are query ideas, not factual findings."
+  },
+  "headlines": [
+    {
+      "company": "PepsiCo",
+      "headline": "10 PepsiCo security leaders",
+      "source": "Instant Expert",
+      "publication_date": "2026-10-15",
+      "source_url": "https://instant.expert/experts/pepsico-security-leaders",
+      "source_id": "src-c32e9dea",
+      "date_verification": "search_metadata_only",
+      "other_sources": []
+    },
+    {
+      "company": "PepsiCo",
+      "headline": "PepsiCo turns global media toward an AI-led model",
+      "source": "ContentGrip",
+      "publication_date": "2026-09-03",
+      "source_url": "https://www.contentgrip.com/pepsico-publicis-ai-media-model",
+      "source_id": "src-4ded5ef0",
+      "date_verification": "search_metadata_only",
+      "other_sources": []
+    },
+    {
+      "company": "PepsiCo",
+      "headline": "PepsiCo Tests Its Factories in Software Before Steel",
+      "source": "PYMNTS.com",
+      "publication_date": "2026-08-10",
+      "source_url": "https://www.pymnts.com/innovation/2026/pepsico-tests-its-factories-in-software-before-steel",
+      "source_id": "src-d6703585",
+      "date_verification": "search_metadata_only",
+      "other_sources": []
+    }
+  ],
+  "headline_markdown": "**PepsiCo**\n- [10 PepsiCo security leaders](<https://instant.expert/experts/pepsico-security-leaders>) — Instant Expert · 2026-10-15\n- [PepsiCo turns global media toward an AI-led model](<https://www.contentgrip.com/pepsico-publicis-ai-media-model>) — ContentGrip · 2026-09-03\n- [PepsiCo Tests Its Factories in Software Before Steel](<https://www.pymnts.com/innovation/2026/pepsico-tests-its-factories-in-software-before-steel>) — PYMNTS.com · 2026-08-10",
+  "undated_headlines": [
+    {
+      "company": "PepsiCo",
+      "headline": "PepsiCo's Enterprise-Ready AI Platform on Azure Cosmos ...",
+      "source": "LinkedIn · Azure Cosmos DB",
+      "publication_date": null,
+      "source_url": "https://www.linkedin.com/posts/azure-cosmos-db_agent-ready-data-how-pepsico-engineered-activity-7489334173422493696-u3hA",
+      "source_id": "src-0aa46771",
+      "date_verification": "search_metadata_only",
+      "other_sources": []
+    }
+  ],
+  "headline_statistics": {
+    "dated_headlines": 3,
+    "undated_candidates": 1,
+    "source_domains": 3
+  },
+  "headline_note": "Titles and URLs are copied from public search results. Dates are search metadata; undated results are kept separately. Job ads are excluded from this headline feed."
+}

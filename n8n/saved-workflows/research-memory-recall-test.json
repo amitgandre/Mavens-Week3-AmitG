@@ -1,0 +1,171 @@
+{
+  "updatedAt": "2026-10-25T04:39:13.030Z",
+  "createdAt": "2026-10-25T04:39:13.030Z",
+  "id": "ResearchMemoryRecallTest",
+  "name": "Research Memory - Recall Test",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "id": "91fc64eb-fc72-41bd-bcab-e8e2e92a697e",
+      "name": "Research History Form",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "parameters": {},
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "90b60cb3-e4ee-4188-bc2d-a82e29bdf106",
+      "name": "Find Company Key",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "const f=$input.first().json;const company=String(f.company||'').trim();if(!company)throw new Error('Enter a company name');return [{json:{company_key:company.normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g,''),run_id:String(f.run_id||'').trim()}}];"
+      },
+      "position": [
+        250,
+        0
+      ]
+    },
+    {
+      "id": "5c280230-6c7d-4ad1-9a04-a6b36860b6ab",
+      "name": "Read Saved Research",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "parameters": {
+        "resource": "row",
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "IoseclveuG5G4kFs",
+          "mode": "id"
+        },
+        "matchType": "allConditions",
+        "filters": {
+          "conditions": []
+        },
+        "returnAll": true,
+        "orderBy": true,
+        "orderByColumn": "run_time",
+        "orderByDirection": "DESC"
+      },
+      "position": [
+        500,
+        0
+      ],
+      "alwaysOutputData": true
+    },
+    {
+      "id": "38250e07-5786-4039-91de-66b8aa3195c8",
+      "name": "Download Saved Research",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "const wanted=$('Find Company Key').first().json.run_id;const rows=$input.all().map(i=>i.json).filter(r=>r.run_id&&(!wanted||r.run_id===wanted));\nif(!rows.length)return [{json:{found:false,message:'No saved research matches this company/run ID.'}}];\nreturn rows.slice(0,20).map(r=>{const binary={research_json:{data:Buffer.from(r.payload_json).toString('base64'),mimeType:'application/json',fileName:r.run_id+'.json'}};\nif(r.pptx_base64)binary.presentation={data:r.pptx_base64,mimeType:'application/vnd.openxmlformats-officedocument.presentationml.presentation',fileName:r.filename};\nreturn {json:{found:true,run_id:r.run_id,company_key:r.company_key,saved_at:r.run_time,record_type:r.record_type,title:r.title,status:r.status,presentation_available:!!r.pptx_base64,total_matching:rows.length,shown:Math.min(rows.length,20)},binary};});"
+      },
+      "position": [
+        750,
+        0
+      ]
+    },
+    {
+      "id": "36443029-5cde-42f3-b8d2-ac5ef09a9086",
+      "name": "Saved Run Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        130,
+        0
+      ],
+      "parameters": {
+        "jsCode": "return [{json:{company:\"PepsiCo\",run_id:\"preview-83\"}}];"
+      }
+    },
+    {
+      "id": "f5f5d227-abc9-46b5-bfda-305e1e889d1e",
+      "name": "Check Retention and Download",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1000,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const rows=$(\"Read Saved Research\").all().map(i=>i.json);const ids=new Set(rows.map(r=>r.run_id));const expected=[\"legacy-exec-17-a\", \"legacy-exec-19-pepsico\", \"legacy-exec-20-pepsico\", \"legacy-exec-21-pepsico\", \"legacy-exec-22-pepsico\", \"legacy-exec-23-pepsico\", \"legacy-exec-30-pepsico\", \"legacy-exec-33-pepsico\", \"document-6f56665ca98970307cc4156b272ae1709456cf0c6e6ede8a5903553c99f7deaa\", \"legacy-exec-41-unknown\", \"legacy-exec-42-examplefoods\", \"legacy-exec-46-pepsico\", \"legacy-exec-48-pepsico\", \"legacy-exec-49-pepsico\", \"legacy-exec-50-pepsico\", \"legacy-exec-51-syntheticreviewtest\", \"legacy-exec-52-pepsico\", \"legacy-exec-53-pepsico\", \"legacy-exec-65-pepsico\", \"legacy-exec-65-thumbsup\", \"legacy-exec-65-heineken\", \"legacy-exec-65-cocacola\", \"legacy-exec-65-millerlite\", \"legacy-exec-65-amrut\", \"legacy-exec-68-unknown\", \"legacy-exec-70-unknown\", \"legacy-exec-72-unknown\", \"legacy-exec-73-unknown\", \"legacy-exec-75-unknown\", \"legacy-exec-76-unknown\", \"legacy-exec-78-unknown\", \"legacy-exec-79-unknown\"];if(!expected.every(id=>ids.has(id)))throw new Error(\"An old research record is missing\");const saved=$input.first();if(!saved.json.presentation_available||!saved.binary?.presentation)throw new Error(\"Saved PowerPoint was not recalled\");return [{json:{passed:true,old_records_retained:expected.length,total_memory_rows:rows.length,recalled_run:saved.json.run_id,powerpoint_recalled:true},binary:saved.binary}];"
+      }
+    }
+  ],
+  "connections": {
+    "Research History Form": {
+      "main": [
+        [
+          {
+            "node": "Saved Run Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Find Company Key": {
+      "main": [
+        [
+          {
+            "node": "Read Saved Research",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Saved Research": {
+      "main": [
+        [
+          {
+            "node": "Download Saved Research",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Saved Run Input": {
+      "main": [
+        [
+          {
+            "node": "Find Company Key",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download Saved Research": {
+      "main": [
+        [
+          {
+            "node": "Check Retention and Download",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Chicago"
+  },
+  "staticData": null,
+  "nodeGroups": [],
+  "pinData": {},
+  "versionId": "e6e90453-e0dc-47aa-b149-dfa388739314",
+  "versionCounter": 1,
+  "triggerCount": 0,
+  "sourceWorkflowId": null,
+  "tags": []
+}

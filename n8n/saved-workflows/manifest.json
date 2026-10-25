@@ -1,0 +1,140 @@
+{
+  "workflow_count": 22,
+  "credential_secrets_included": false,
+  "credential_references_removed_from_portable_exports": true,
+  "memory_export": "../research-memory/memory-export.json",
+  "workflows": [
+    {
+      "workflow": "01 - Local Gemma evidence extraction check",
+      "file": "01-local-gemma-evidence-extraction-check.json",
+      "nodes": 3,
+      "sha256": "cf4482ae44a935063562f83686fc375842ef71165b99a4eef30c0bb437128e1c"
+    },
+    {
+      "workflow": "Week3Project",
+      "file": "week3project.json",
+      "nodes": 4,
+      "sha256": "8780672af0186fc80458789676985595835a698d7e1a546580ac21002b32ce33"
+    },
+    {
+      "workflow": "Research Orchestrator",
+      "file": "research-orchestrator.json",
+      "nodes": 56,
+      "sha256": "2e68bc6a3ac5f212b9d2ec7a6c059f101cecc19d48f4ba0fa837a4af92b00171"
+    },
+    {
+      "workflow": "Cybersecurity Signals",
+      "file": "cybersecurity-signals.json",
+      "nodes": 9,
+      "sha256": "ae7b01b851f5d2f36764bfa5e07bbcac69ea168d7a89f49b56c1ace0af4a1f44"
+    },
+    {
+      "workflow": "Agent 1 - Integration Test",
+      "file": "agent-1-integration-test.json",
+      "nodes": 38,
+      "sha256": "25a45221878bc63c3d9becf7cf6e5747099bde45717e4ec226e71b753f5b3644"
+    },
+    {
+      "workflow": "Agent 1 - Review Gate Test",
+      "file": "agent-1-review-gate-test.json",
+      "nodes": 4,
+      "sha256": "13f4c5299fd5a3b2ff3ffa09ed51890590a23fd0141bec8942cb6f54129160b0"
+    },
+    {
+      "workflow": "Agent 1 - Cached Regression Test",
+      "file": "agent-1-cached-regression-test.json",
+      "nodes": 30,
+      "sha256": "1b613149c5b5985d56239d988a32a632552f7a2b2f82666962825f73119dac62"
+    },
+    {
+      "workflow": "Agent 2 - Public Web and News",
+      "file": "agent-2-public-web-and-news.json",
+      "nodes": 19,
+      "sha256": "a5716b88f72e8f291b90f18f4c69837a141b4ea70ab7989ece27f28e4aab770c"
+    },
+    {
+      "workflow": "Agent 2 - Live Search Test",
+      "file": "agent-2-live-search-test.json",
+      "nodes": 12,
+      "sha256": "06c739212576b8b0cbffacbb7b4a07401cc2af3362902b1e1514642826b11df9"
+    },
+    {
+      "workflow": "Agents 2 to 3 - Connection Test",
+      "file": "agents-2-to-3-connection-test.json",
+      "nodes": 4,
+      "sha256": "10b46698dd68c68bc58a04b42d7e0809f9a9e08554034e86942819e4b6515a41"
+    },
+    {
+      "workflow": "Research Memory - Setup",
+      "file": "research-memory-setup.json",
+      "nodes": 2,
+      "sha256": "af0a499771bc4f05211e378a4d77c32d487d07c1fd99f5ba78a0f26bd14ab1a1"
+    },
+    {
+      "workflow": "Research Memory - Preserve Old Research",
+      "file": "research-memory-preserve-old-research.json",
+      "nodes": 4,
+      "sha256": "052692b23ecbb5431b35ef8adccf9ce229becef4254fd0e1783e6c08e73d6e21"
+    },
+    {
+      "workflow": "Orchestrator - Archived Research Preview",
+      "file": "orchestrator-archived-research-preview.json",
+      "nodes": 8,
+      "sha256": "e081f5362932dee5825c5770202920b086f20e7cdaa5b47986ac0e0293284926"
+    },
+    {
+      "workflow": "Research Memory - Recall",
+      "file": "research-memory-recall.json",
+      "nodes": 4,
+      "sha256": "1c1bf6fb7ca29cf5659c2481f29307fa0221eab61b412bef1d3165746cdd00bb"
+    },
+    {
+      "workflow": "Research Memory - Recall Test",
+      "file": "research-memory-recall-test.json",
+      "nodes": 6,
+      "sha256": "0bc12fd4da7831462bf34729b7503833ee0a1c485a532dc7b2bd094b3030b113"
+    },
+    {
+      "workflow": "Agent 1 - Company Identity Test",
+      "file": "agent-1-company-identity-test.json",
+      "nodes": 12,
+      "sha256": "fd964727f8ce8d59cc5ddb6495347a7af5e4a0289ee9a9beda5451315e677ec2"
+    },
+    {
+      "workflow": "Agent 2 - AI Headlines Test",
+      "file": "agent-2-ai-headlines-test.json",
+      "nodes": 16,
+      "sha256": "5df31a5d6a79ea4b536a22e7cfa80c1126ededd5360f5189bd81be862d4f867f"
+    },
+    {
+      "workflow": "Agent 3 - Attribution Regression Test",
+      "file": "agent-3-attribution-regression-test.json",
+      "nodes": 7,
+      "sha256": "4f0e4bfdf54d9ecccd6a3ab443693e3541f399ec32e61dbda96ef5c9ad5ebe3f"
+    },
+    {
+      "workflow": "Agent 4 - Leadership Integration Test",
+      "file": "agent-4-leadership-integration-test.json",
+      "nodes": 20,
+      "sha256": "e694aceb46acf9fde63e6c1186cd3d0027f03e26da10a04d3317c2f5d5e25880"
+    },
+    {
+      "workflow": "Agent 4 - Public Leadership Background",
+      "file": "agent-4-public-leadership-background.json",
+      "nodes": 24,
+      "sha256": "7f8161d5e9bbf3d10704af922e1eb50551dcc6680a119d24f29df303f3735204"
+    },
+    {
+      "workflow": "Agent 4 - Public LinkedIn Search Test",
+      "file": "agent-4-public-linkedin-search-test.json",
+      "nodes": 10,
+      "sha256": "58081d78753153b3f0e1f3fd8e2a74c3d1801e58928fb7a0748723a9417a997d"
+    },
+    {
+      "workflow": "Orchestrator - Visual Presentation Test",
+      "file": "orchestrator-visual-presentation-test.json",
+      "nodes": 4,
+      "sha256": "448f8634fea33bf902dcdd98df6b716368ea6e293f964df0c88e697a298692a4"
+    }
+  ]
+}

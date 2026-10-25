@@ -1,0 +1,17 @@
+{
+  "table": "Week3 Research Memory",
+  "columns": [
+    "run_id",
+    "company_key",
+    "run_time",
+    "record_type",
+    "title",
+    "payload_json",
+    "pptx_base64",
+    "filename",
+    "window_start",
+    "window_end",
+    "status"
+  ],
+  "retention": "append_only_no_automatic_deletion"
+}

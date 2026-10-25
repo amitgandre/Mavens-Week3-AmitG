@@ -1,0 +1,114 @@
+{
+  "updatedAt": "2026-10-24T23:13:29.099Z",
+  "createdAt": "2026-10-24T23:06:02.043Z",
+  "id": "iOtlQi1UJiC7j9jl",
+  "name": "Week3Project",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.5,
+      "position": [
+        0,
+        0
+      ],
+      "id": "8f71e821-3338-4a41-afee-a68bfaa721b4",
+      "name": "When chat message received"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Extract facts from this synthetic evidence.\nUse only the supplied text. Preserve the difference between\na pilot and a completed deployment.\n\nEvidence:\nSource ID: demo-1\nExample Foods announced a pilot of ExampleShield endpoint\nsecurity at one office. Company-wide deployment has not\nbeen announced.\n\nReturn company, technology, status, and source_id.",
+        "hasOutputParser": true,
+        "batching": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.9,
+      "position": [
+        224,
+        0
+      ],
+      "id": "cb973635-f600-44a9-b79e-c37360eb2c44",
+      "name": "Basic LLM Chain"
+    },
+    {
+      "parameters": {
+        "model": "gemma4:12b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        128,
+        192
+      ],
+      "id": "8808fc45-e704-41a5-aa06-582fe1151895",
+      "name": "Ollama Chat Model"
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n  \"company\": \"Example Foods\",\n  \"technology\": \"ExampleShield\",\n  \"status\": \"pilot\",\n  \"source_id\": \"demo-1\"\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        360,
+        232
+      ],
+      "id": "001d4a0f-d859-48ef-91a1-a3bebf774f17",
+      "name": "Structured Output Parser"
+    }
+  ],
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "staticData": null,
+  "nodeGroups": [],
+  "pinData": {},
+  "versionId": "f6eec956-7d10-451a-a1c9-42d87376e7a7",
+  "versionCounter": 12,
+  "triggerCount": 0,
+  "sourceWorkflowId": null,
+  "tags": []
+}

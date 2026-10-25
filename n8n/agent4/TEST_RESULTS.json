@@ -1,0 +1,194 @@
+{
+  "passed": true,
+  "test": "Native public searches and local Gemma tested live; final regression replays recorded model/search outputs through final evidence guards and native append-only memory",
+  "company": "PepsiCo",
+  "roles": [
+    {
+      "role": "CEO",
+      "status": "source_reported_current",
+      "candidates": [
+        {
+          "person_name": "Ramon Laguarta",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-156e07c0",
+          "source_url": "https://www.linkedin.com/in/ramonlaguarta",
+          "evidence_excerpt": "Ramon Laguarta - Chairman & Chief Executive Officer at ... Chairman & Chief Executive Officer at PepsiCo · CEO of PepsiCo, a global food and beverage leader with 23 brands generating more than $1 billion each in",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        },
+        {
+          "person_name": "Ramon Laguarta",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-6bcfe9a6",
+          "source_url": "https://en.wikipedia.org/wiki/Ram%C3%B3n_Laguarta",
+          "evidence_excerpt": "Ramón Laguarta (born 1963) is a Spanish businessman who is the chairman and chief executive officer of PepsiCo. He became CEO on 3 October 2018.",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        },
+        {
+          "person_name": "Ramon Laguarta",
+          "role": "CEO",
+          "status": "reported_current",
+          "source_id": "src-da83b1b5",
+          "source_url": "https://www.historyoasis.com/post/pepsico-ceo",
+          "evidence_excerpt": "PepsiCo's leadership timeline from 1898 founder Caleb Bradham to current CEO Ramon Laguarta through pivotal eras shaping the company.",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "Oct 13, 2025"
+        }
+      ]
+    },
+    {
+      "role": "CISO",
+      "status": "current_role_disputed",
+      "candidates": [
+        {
+          "person_name": "Zulfi Ahmed",
+          "role": "CISO",
+          "status": "reported_current",
+          "source_id": "src-8a668625",
+          "source_url": "https://www.linkedin.com/in/zulfi-ahmed-26aa789",
+          "evidence_excerpt": "Zulfi Ahmed - ciso at PepsiCo\nciso at PepsiCo · Experience: PepsiCo · Education: mba · Location: Plano · 100 connections on LinkedIn. View Zulfi Ahmed's profile on LinkedIn, ...",
+          "verification_status": "conflicting_historical_or_current_sources",
+          "publication_date": "not found",
+          "contrary_evidence": [
+            {
+              "source_id": "src-290c2246",
+              "source_url": "https://www.khmertimeskh.com/49540/u-s-companies-seek-cyber-experts-for-top-jobs-board-seats",
+              "evidence_excerpt": "The soft drink and snack maker lost its CISO, Zulfi Ahmed, to MetLife Inc earlier this year."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "CTO",
+      "status": "conflicting_sources",
+      "candidates": [
+        {
+          "person_name": "Anil Sharma",
+          "role": "CTO",
+          "status": "reported_current",
+          "source_id": "src-99e423c6",
+          "source_url": "https://www.linkedin.com/posts/kyndryl-india_anil-sharma-cto-at-pepsico-secret-mantras-activity-7353325593431560192-b6ik",
+          "evidence_excerpt": "Anil Sharma , CTO at PepsiCo | Secret Mantras for driving Innovation.",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        },
+        {
+          "person_name": "Anil Sharma",
+          "role": "CTO",
+          "status": "reported_current",
+          "source_id": "src-ebec4cd6",
+          "source_url": "https://x.com/KyndrylIndia/status/1947574892318130553",
+          "evidence_excerpt": "Anil Sharma, Chief Technology Officer at PepsiCo, shares his vision for innovation at scale and the significant value it brings to the",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        },
+        {
+          "person_name": "Shyam Venkat",
+          "role": "CTO",
+          "status": "reported_current",
+          "source_id": "src-0dbe3a18",
+          "source_url": "https://www.comparably.com/companies/pepsico/shyam-venkat",
+          "evidence_excerpt": "Shyam Venkat — SVP & Global CTO at PepsiCo\nShyam Venkat serves as the SVP & Global CTO of PepsiCo. Shyam started at PepsiCo in November of 2016. Shyam currently resides in the Dallas/Fort Worth Area.",
+          "verification_status": "needs_current_role_verification",
+          "publication_date": "not found"
+        }
+      ]
+    },
+    {
+      "role": "CIO",
+      "status": "not found",
+      "candidates": []
+    }
+  ],
+  "statistics": {
+    "leaders_researched": 2,
+    "roles_with_candidates": 1,
+    "claims": 5,
+    "background_analysis_errors": 0,
+    "initial_search_budget": 10
+  },
+  "memory": {
+    "saved": true,
+    "record_type": "leadership_background_test",
+    "run_id": "agent4-116"
+  },
+  "claims": [
+    {
+      "category": "professional_role",
+      "organization": "PepsiCo",
+      "statement": "Ramon Laguarta is Chairman of the Board of Directors and Chief Executive Officer of PepsiCo.",
+      "date_or_period": "not found",
+      "source_id": "src-5afae18d",
+      "source_url": "https://jp.weforum.org/people/ramon-laguarta",
+      "evidence_excerpt": "Ramon Laguarta is Chairman of the Board of Directors and Chief Executive Officer of PepsiCo.",
+      "evidence_level": "search_snippet",
+      "verification_status": "needs_original_source_verification",
+      "sec_school": null,
+      "sec_membership_basis": null
+    },
+    {
+      "category": "professional_role",
+      "organization": "PepsiCo",
+      "statement": "PepsiCo has confirmed that Ramon Laguarta will replace departing CEO Indra K. Nooyi",
+      "date_or_period": "Aug 6, 2018",
+      "source_id": "src-d0f420ea",
+      "source_url": "https://www.verdict.co.uk/commerce/ramon-laguarta-pepsicos-new-ceo",
+      "evidence_excerpt": "PepsiCo has confirmed that Ramon Laguarta will replace departing CEO Indra K. Nooyi after she announced she will step down as head of the",
+      "evidence_level": "search_snippet",
+      "verification_status": "needs_original_source_verification",
+      "sec_school": null,
+      "sec_membership_basis": null
+    },
+    {
+      "category": "professional_role",
+      "organization": "PepsiCo",
+      "statement": "Chief Executive Officer at PepsiCo, Inc.",
+      "date_or_period": "not found",
+      "source_id": "src-46fcb4fa",
+      "source_url": "https://www.marketscreener.com/insider/RAMON-LAGUARTA-A1KMPQ",
+      "evidence_excerpt": "Chief Executive Officer at PepsiCo, Inc.",
+      "evidence_level": "search_snippet",
+      "verification_status": "needs_original_source_verification",
+      "sec_school": null,
+      "sec_membership_basis": null
+    },
+    {
+      "category": "professional_role",
+      "organization": "PepsiCo",
+      "statement": "Zulfi Ahmed - ciso at PepsiCo",
+      "date_or_period": "not found",
+      "source_id": "src-e16c164d",
+      "source_url": "https://www.linkedin.com/in/zulfi-ahmed-26aa789",
+      "evidence_excerpt": "Zulfi Ahmed - ciso at PepsiCo\nciso at PepsiCo · Experience: PepsiCo · Education: mba · Location: Plano · 100 connections on LinkedIn.",
+      "evidence_level": "search_snippet",
+      "verification_status": "needs_original_source_verification",
+      "sec_school": null,
+      "sec_membership_basis": null
+    },
+    {
+      "category": "professional_role",
+      "organization": "MetLife Inc",
+      "statement": "The soft drink and snack maker lost its CISO, Zulfi Ahmed, to MetLife Inc earlier this year.",
+      "date_or_period": "May 31, 2014",
+      "source_id": "src-290c2246",
+      "source_url": "https://www.khmertimeskh.com/49540/u-s-companies-seek-cyber-experts-for-top-jobs-board-seats",
+      "evidence_excerpt": "The soft drink and snack maker lost its CISO, Zulfi Ahmed, to MetLife Inc earlier this year.",
+      "evidence_level": "search_snippet",
+      "verification_status": "needs_original_source_verification",
+      "sec_school": null,
+      "sec_membership_basis": null
+    }
+  ],
+  "checks": [
+    "four requested roles represented",
+    "unresolved/conflicting identities explicit",
+    "sources and verbatim quotations retained",
+    "zero background analysis errors; upstream search failures explicitly marked partial",
+    "latest deterministic guards replayed",
+    "test memory separate from production"
+  ]
+}

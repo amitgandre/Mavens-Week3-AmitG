@@ -1,0 +1,147 @@
+{
+  "updatedAt": "2026-10-25T04:36:52.110Z",
+  "createdAt": "2026-10-25T04:36:52.110Z",
+  "id": "ResearchMemoryRecall",
+  "name": "Research Memory - Recall",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "id": "91fc64eb-fc72-41bd-bcab-e8e2e92a697e",
+      "name": "Research History Form",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.6,
+      "parameters": {
+        "path": "research-history",
+        "formTitle": "Find saved research",
+        "formDescription": "Enter the same company name used in research. Optionally enter a run ID to retrieve a specific older snapshot.",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Company name",
+              "fieldName": "company",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Run ID (optional)",
+              "fieldName": "run_id"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "90b60cb3-e4ee-4188-bc2d-a82e29bdf106",
+      "name": "Find Company Key",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "const f=$input.first().json;const company=String(f.company||'').trim();if(!company)throw new Error('Enter a company name');return [{json:{company_key:company.normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g,''),run_id:String(f.run_id||'').trim()}}];"
+      },
+      "position": [
+        250,
+        0
+      ]
+    },
+    {
+      "id": "5c280230-6c7d-4ad1-9a04-a6b36860b6ab",
+      "name": "Read Saved Research",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "parameters": {
+        "resource": "row",
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "IoseclveuG5G4kFs",
+          "mode": "id"
+        },
+        "matchType": "allConditions",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "company_key",
+              "condition": "eq",
+              "keyValue": "={{ $json.company_key }}"
+            }
+          ]
+        },
+        "returnAll": true,
+        "orderBy": true,
+        "orderByColumn": "run_time",
+        "orderByDirection": "DESC"
+      },
+      "position": [
+        500,
+        0
+      ],
+      "alwaysOutputData": true
+    },
+    {
+      "id": "38250e07-5786-4039-91de-66b8aa3195c8",
+      "name": "Download Saved Research",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "parameters": {
+        "jsCode": "const wanted=$('Find Company Key').first().json.run_id;const rows=$input.all().map(i=>i.json).filter(r=>r.run_id&&(!wanted||r.run_id===wanted));\nif(!rows.length)return [{json:{found:false,message:'No saved research matches this company/run ID.'}}];\nreturn rows.slice(0,20).map(r=>{const binary={research_json:{data:Buffer.from(r.payload_json).toString('base64'),mimeType:'application/json',fileName:r.run_id+'.json'}};\nif(r.pptx_base64)binary.presentation={data:r.pptx_base64,mimeType:'application/vnd.openxmlformats-officedocument.presentationml.presentation',fileName:r.filename};\nreturn {json:{found:true,run_id:r.run_id,company_key:r.company_key,saved_at:r.run_time,record_type:r.record_type,title:r.title,status:r.status,presentation_available:!!r.pptx_base64,total_matching:rows.length,shown:Math.min(rows.length,20)},binary};});"
+      },
+      "position": [
+        750,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Research History Form": {
+      "main": [
+        [
+          {
+            "node": "Find Company Key",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Find Company Key": {
+      "main": [
+        [
+          {
+            "node": "Read Saved Research",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Saved Research": {
+      "main": [
+        [
+          {
+            "node": "Download Saved Research",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Chicago"
+  },
+  "staticData": null,
+  "nodeGroups": [],
+  "pinData": {},
+  "versionId": "e89b907b-64f1-4409-9bc8-b296db3e38c0",
+  "versionCounter": 1,
+  "triggerCount": 0,
+  "sourceWorkflowId": null,
+  "tags": []
+}

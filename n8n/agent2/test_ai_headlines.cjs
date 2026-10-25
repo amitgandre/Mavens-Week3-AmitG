@@ -1,0 +1,20 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const box={};vm.createContext(box);vm.runInContext(fs.readFileSync(__dirname+'/collector.js','utf8')+'\n'+fs.readFileSync(__dirname+'/ai_headlines.js','utf8'),box);
+const context={max_queries_per_company:5,companies:['Example Foods','Example Drinks'],window_start:'2026-07-25',window_end:'2026-10-25'};
+const plan=box.aiSearchPlan(context,{output:{searches:[{company:'Example Foods',terms:'AI governance cloud partnership'},{company:'Example Foods',terms:'duplicate extra search'},{company:'Invented Company',terms:'security leadership appointments'},{company:'Example Drinks',terms:'before:2020 private news'}]}});
+assert.equal(plan.jobs.length,9);assert.equal(plan.planning.additional_queries,1);assert(plan.jobs.at(-1).query.includes('after:2026-07-24 before:2026-10-26'));
+assert.equal(box.aiSearchPlan(context,{error:'Ollama unavailable'}).jobs.length,8);
+assert.equal(box.aiSearchPlan(context,{searches:[{company:'Example Foods',terms:'personal home address phone'}]}).jobs.length,8);
+const record=(id,url,date='2026-10-20',extra={})=>({company:'Example Foods',source_id:id,source_url:url,title:'Example Foods announces security partnership '+id,publisher:'Publisher '+id,publication_date:date,review_reasons:[],source_type:'public_search_result',...extra});
+const pack={companies:context.companies,research_window:{start:context.window_start,end:context.window_end},evidence_records:[record('a','https://one.example/news'),record('b','https://two.example/news')],review_queue:[record('c','https://three.example/news','2026-10-21',{review_reasons:['title_only_or_insufficient_excerpt']}),record('old','https://old.example/news','2020-01-01',{review_reasons:['outside_research_window']}),record('job','https://jobs.example/jobs/123','2026-10-20',{source_type:'job_ad'}),record('unknown','https://unknown.example/news',null,{review_reasons:['missing_or_ambiguous_date']}),record('wrong','https://wrong.example/news','2026-10-20',{review_reasons:['company_match_needs_review']})]};
+const result=box.headlineFeed(pack);
+assert.equal(result.headlines.length,3);assert.equal(result.undated_headlines.length,1);assert.equal(result.headline_statistics.source_domains,3);
+assert(result.headlines.some(h=>h.source_url==='https://three.example/news'));assert(!result.headlines.some(h=>['job','old','wrong'].includes(h.source_id)));
+assert.equal(result.headlines.find(h=>h.source_id==='a').headline,pack.evidence_records[0].title);
+assert(result.headline_markdown.includes('[Example Foods announces security partnership a](<https://one.example/news>)'));
+assert(result.headline_markdown.includes('No dated IT/cybersecurity headlines found'));
+const duplicate=box.headlineFeed({...pack,evidence_records:[record('x','https://one.example/x'),record('y','https://two.example/y','2026-10-20',{title:'Example Foods announces security partnership x'})],review_queue:[]});
+assert.equal(duplicate.headlines.length,1);assert.equal(duplicate.headlines[0].other_sources.length,1);
+console.log('PASS: bounded AI planning, company/date restrictions, unavailable-AI fallback, nonintrusive query checks, real titles/links, dates, source diversity, duplicate headlines, job-ad exclusion.');
+
+assert.equal(box.headlineFeed({...pack,evidence_records:[record('former','https://other.example/news','2026-10-20',{title:'New CISO appointed at Other Company'})],review_queue:[]}).headlines.length,0);

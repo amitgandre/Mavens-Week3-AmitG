@@ -1,0 +1,168 @@
+{
+  "passed": true,
+  "query": "site:linkedin.com/in/ \"Michael Fiddelke\" \"Target\"",
+  "agent": 4,
+  "person_name": "Michael Fiddelke",
+  "company_name": "Target",
+  "company_key": "target",
+  "retrieved_at": "2026-10-25T16:48:54.009Z",
+  "sources": [
+    {
+      "source_id": "src-f0834434",
+      "source_url": "https://www.linkedin.com/in/michael-fiddelke",
+      "title": "Michael Fiddelke - CEO at Target",
+      "evidence_text": "Michael Fiddelke - CEO at Target\nCEO at Target \u00b7 As Chief Executive Officer, Michael Fiddelke leads more than 400000 team members committed to helping all families discover the joy of ...",
+      "publication_date": "not found",
+      "retrieved_at": "2026-10-25T16:48:54.009Z",
+      "evidence_level": "search_snippet",
+      "full_article_retrieved": false,
+      "review_reasons": [],
+      "source_type": "linkedin_search_snippet",
+      "search_topics": [
+        "linkedin_public"
+      ],
+      "profile_page_retrieved": false
+    }
+  ],
+  "review_queue": [
+    {
+      "source_id": "src-5447d29c",
+      "source_url": "https://www.linkedin.com/in/brett-craig-4b165313",
+      "title": "Brett Craig - Retired// Prior Chief Information Officer at ...",
+      "evidence_text": "Brett Craig - Retired// Prior Chief Information Officer at ...\nPrior to serving as chief information officer, I was senior vice president of Target's digital team, leading the site merchandising, digital solutions, and ...",
+      "publication_date": "not found",
+      "retrieved_at": "2026-10-25T16:48:54.009Z",
+      "evidence_level": "search_snippet",
+      "full_article_retrieved": false,
+      "review_reasons": [
+        "Full person name not present"
+      ],
+      "source_type": "linkedin_search_snippet",
+      "search_topics": [
+        "linkedin_public"
+      ],
+      "profile_page_retrieved": false
+    },
+    {
+      "source_id": "src-4f8c5a17",
+      "source_url": "https://www.linkedin.com/in/brad-taylor-white-2ab4145",
+      "title": "Brad Taylor-White - Senior Executive | Former SVP & CEO ...",
+      "evidence_text": "Brad Taylor-White - Senior Executive | Former SVP & CEO ...\nMost recently, I served as Senior Vice President and first-ever CEO Chief of Staff at Target, where I established and led the company's first CEO Chief of Staff ...",
+      "publication_date": "not found",
+      "retrieved_at": "2026-10-25T16:48:54.009Z",
+      "evidence_level": "search_snippet",
+      "full_article_retrieved": false,
+      "review_reasons": [
+        "Full person name not present"
+      ],
+      "source_type": "linkedin_search_snippet",
+      "search_topics": [
+        "linkedin_public"
+      ],
+      "profile_page_retrieved": false
+    },
+    {
+      "source_id": "src-3d7e58d7",
+      "source_url": "https://www.linkedin.com/in/danmichael1",
+      "title": "Dan Michael, LSSBB, PMP, CSM - Target",
+      "evidence_text": "Dan Michael, LSSBB, PMP, CSM - Target\n* I am a Target Team Member. All posts are my own. Specialties: Certified Project Management Professional (PMP)",
+      "publication_date": "not found",
+      "retrieved_at": "2026-10-25T16:48:54.009Z",
+      "evidence_level": "search_snippet",
+      "full_article_retrieved": false,
+      "review_reasons": [
+        "Full person name not present"
+      ],
+      "source_type": "linkedin_search_snippet",
+      "search_topics": [
+        "linkedin_public"
+      ],
+      "profile_page_retrieved": false
+    },
+    {
+      "source_id": "src-b847f966",
+      "source_url": "https://www.linkedin.com/in/eric-michael-23225451",
+      "title": "Eric Michael - Executive Team Lead - Store Operations at ...",
+      "evidence_text": "Eric Michael - Executive Team Lead - Store Operations at ...\nExecutive Team Lead - Store Operations at Target \u00b7 Experience: Target \u00b7 Education: Central Michigan University \u00b7 Location: Sachse \u00b7 115 connections on ...",
+      "publication_date": "not found",
+      "retrieved_at": "2026-10-25T16:48:54.009Z",
+      "evidence_level": "search_snippet",
+      "full_article_retrieved": false,
+      "review_reasons": [
+        "Full person name not present"
+      ],
+      "source_type": "linkedin_search_snippet",
+      "search_topics": [
+        "linkedin_public"
+      ],
+      "profile_page_retrieved": false
+    },
+    {
+      "source_id": "src-e1780591",
+      "source_url": "https://www.linkedin.com/in/david-paulk-97722326",
+      "title": "David Paulk - Senior Group Vice President | Target Stores ...",
+      "evidence_text": "David Paulk - Senior Group Vice President | Target Stores ...\nI am an experienced Sr. Group Vice President for Target Stores. I currently lead Target's San Francisco Bay Area Group to maximize profitability, ...",
+      "publication_date": "not found",
+      "retrieved_at": "2026-10-25T16:48:54.009Z",
+      "evidence_level": "search_snippet",
+      "full_article_retrieved": false,
+      "review_reasons": [
+        "Full person name not present"
+      ],
+      "source_type": "linkedin_search_snippet",
+      "search_topics": [
+        "linkedin_public"
+      ],
+      "profile_page_retrieved": false
+    }
+  ],
+  "search_failures": [],
+  "search_count": 1,
+  "identity_note": "Sources require full name and company context; name matches alone are not accepted. Same-name ambiguity still requires review.",
+  "analysis_status": "complete",
+  "error": null,
+  "claims": [
+    {
+      "category": "professional_role",
+      "organization": "Target",
+      "statement": "As Chief Executive Officer, Michael Fiddelke leads more than 400000 team members committed to helping all families discover the joy of ...",
+      "date_or_period": "not found",
+      "source_id": "src-f0834434",
+      "source_url": "https://www.linkedin.com/in/michael-fiddelke",
+      "evidence_excerpt": "Michael Fiddelke - CEO at Target\nCEO at Target \u00b7 As Chief Executive Officer, Michael Fiddelke leads more than 400000 team members committed to helping all families discover the joy of ...",
+      "evidence_level": "search_snippet",
+      "verification_status": "needs_original_source_verification",
+      "sec_school": null,
+      "sec_membership_basis": null
+    }
+  ],
+  "rejected_claims": [],
+  "linkedin_profiles": [
+    {
+      "person_name": "Michael Fiddelke",
+      "source_id": "src-f0834434",
+      "source_url": "https://www.linkedin.com/in/michael-fiddelke",
+      "title": "Michael Fiddelke - CEO at Target",
+      "evidence_level": "search_snippet",
+      "profile_page_retrieved": false,
+      "verification_status": "needs_profile_verification"
+    }
+  ],
+  "requested_firm_experience": {
+    "status": "not found",
+    "matches": []
+  },
+  "sec_education": {
+    "status": "not found",
+    "matches": []
+  },
+  "limitations": [
+    "Public professional background only; no contact details, family information, personal addresses, or private data collected.",
+    "Search snippets are preliminary evidence; current roles, employment and education need original-source verification.",
+    "Not found means insufficient supplied evidence, not proof of no experience or attendance.",
+    "Background research is historical and is not restricted to the three-month news window.",
+    "SEC attendance does not imply playing football or any other sport."
+  ],
+  "background_markdown": "**Michael Fiddelke \u2014 Target**\n- As Chief Executive Officer, Michael Fiddelke leads more than 400000 team members committed to helping all families discover the joy of ... \u2014 [Target](<https://www.linkedin.com/in/michael-fiddelke>) \u00b7 needs source verification\n\nPublic LinkedIn search results:\n- [Michael Fiddelke - CEO at Target](<https://www.linkedin.com/in/michael-fiddelke>) \u00b7 search snippet only",
+  "profile_type": "person_background"
+}
