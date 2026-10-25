@@ -18,3 +18,4 @@ node_modules/
 ~$*
 n8n/research-memory/source-documents/
 n8n/output/*.json
+n8n/output/project-screenshots/
